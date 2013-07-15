@@ -1,0 +1,3 @@
+	<div id="footer">
+		<p>Звоните прямо сейчас: vel 198-70-77, мтс 758-00-77.  &nbsp;&bull;&nbsp; &copy;&nbsp;Cooler.by <a href="http://cooler.by#wrapper">Купить компьютер в Минске</a></p>
+	</div>

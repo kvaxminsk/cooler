@@ -1,0 +1,21 @@
+  <!-- начало меню -->
+	<div id="menu">
+		<ul>
+
+		</ul>
+	</div>
+	<!-- start header -->
+	<div id="header">
+	            <div id="dostavka">
+				     Бесплатная доставка 
+					 <br>15.00-22.00 (пн-пт)
+			         <br>Приём звонков: 10:00-19:00
+			    </div>
+			    <div id="tel">
+				     Звоните по тел: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skype: cooler.by
+			         <br>VEL: <font size="2">(029)</font> 198-70-77&nbsp;&nbsp; ICQ: 610853976
+				     <br>MTS: <font size="2">(029)</font> 758-00-77 &nbsp;&nbsp;Гор: 284-76-14
+			    </div>
+				<img id="glv_komp" src="images/glv_komp.png" alt="компьютер в минске" title="компьютер в минске"/>
+                <a href="index.html"><img id="logo" src="images/logo.png" alt="купить компьютер в минске" title="купить компьютер в минске"/></a>
+	</div>

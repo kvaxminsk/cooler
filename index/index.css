@@ -1,0 +1,282 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0px -1px 8px;
+    letter-spacing: 0px;
+    
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	padding: 0px 0px 0px 0px;
+	margin-top: 4px
+}
+
+/* komp_office */
+.akciya {
+    height: 270px !important;
+}
+.img-slide img{
+    margin: 15px 0 0 10px;
+}
+.cena-sist-bl {
+    float: right;
+    width: auto;
+	height: 22px;
+	padding: 2px 9px 0 6px;
+	margin: -5px 183px 30px 0;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: url(http://cooler.by/index/cena_akcia.png) repeat-x;
+    border: 1px solid #82acdd;
+    border-radius: 2px;
+}
+.cena-sist-bl .cenagl {
+    font: bold 16px "Century Gothic";
+    padding-left: 5px;
+}
+.comlekt {
+    width: 365px;
+    font: normal 11px "Helvetica";
+    position: relative;
+    left: 336px;
+    bottom: 210px;
+    display: block;
+    padding-top: 12px;
+    line-height: 14px;
+}
+.comlekt p {
+    text-align: justify;
+    line-height: 14px;
+}
+.cena-slide {
+    color: #E43C15;
+    font-size: 13px;
+}
+
+#komp {
+    height: 220px;
+    border-bottom: 1px solid;
+}
+#komp h3{
+    margin: 15px 0 0 10px;
+    font: bold 14px ;
+	color: #E43C15;
+}
+#img_komp {
+    float: left;
+    margin: 6px 0 15px 5px;
+	border: none;
+}
+#cena_komp {
+    float: right;
+    width: 83px;
+	height: 21px;
+	padding: 23px 0 0 32px;
+	margin: -11px 147px 0 0;
+	font: bold 16px "arial"; 
+	color: #fff;
+	background: url(cena_kompjuter.png) no-repeat;
+}
+#cena_sist {
+    float: right;
+    width: 368px;
+	height: 17px;
+	padding: 17px 0 0 10px;
+	margin: 13px 10px 0 0;
+	font: bold 12px "Helvetica"; 
+	color: #fff;
+	background: url(cena_sistemnyj_blok.png) no-repeat;
+}
+.komp {
+    height: 220px;
+    border-bottom: 1px solid;
+}
+.komp h3{
+    margin: 15px 0 0 10px;
+    font: bold 14px ;
+	color: #E43C15;
+}
+.img_komp {
+    float: left;
+    /*margin: 6px 0 15px 5px;*/
+	border: none;
+}
+.cena_komp {
+    float: left;
+    width: auto;
+	height: 22px;
+	padding: 2px 9px 0 6px;
+	margin: 2px 6px 0 10px;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: url(http://cooler.by/index/cena_komp1.png) repeat-x;
+    border: 1px solid #da5353;
+    border-radius: 2px;
+}
+.cena_komp .cena_komp_gl {
+    font: bold 16px "Century Gothic";
+    padding-left: 5px;
+}
+.cena_sist {
+    float: right;
+    width: 368px;
+	height: 17px;
+	padding: 17px 0 0 10px;
+	margin: 13px 10px 0 0;
+	font: bold 12px "Helvetica"; 
+	color: #fff;
+	background: url(http://cooler.by/index/cena_sistemnyj_blok.png) no-repeat;
+}
+.spisok {
+    float: left;
+	width: 370px;
+    padding: 10px 0 0 10px;
+	font: normal 11px "Helvetica";
+	line-height: 14px;
+}
+.sb {
+    float: left;
+	width: 92px;	
+    text-align: center;
+}
+.mn {
+    float: left;
+	width: 49px;
+    margin-left: 15px;	
+    text-align: center;
+}
+.klv {
+    float: left;
+	width: 67px;
+    margin-left: 15px;	
+    text-align: center;
+}
+.msh {
+    float: left;
+	width: 34px;
+    margin-left: 15px;		
+    text-align: center;
+}
+.kln {
+    float: left;
+	width: 46px;
+    margin-left: 15px;		
+    text-align: center;
+}
+
+#spisok {
+    float: left;
+	width: 370px;
+    padding: 10px 0 0 7px;
+	font: normal 11px "Helvetica";
+	line-height: 14px;
+}
+
+#text_footer {
+    text-align: justify;
+    margin: 18px 22px 5px 14px;
+}
+#text_footer p{
+    margin: 15px 0 7px 0;
+	color: #E43C15;
+	font-weight: bold;
+}
+#SlideShow1 {
+margin: -90px 0 0 80px;
+}
+#SlideShow2 {
+margin: -315px 0 0 150px;
+}
+#wb_Shape1 {
+margin: -250px 0 0 58px;
+}
+#wb_Shape2 {
+margin: -250px 0 0 610px;
+}
+.overlay span {
+    font-size: 12px;
+}
+/***********slideshow***********/
+.komp-slid {
+    height: 245px !important;
+    border-bottom: 1px solid !important;
+    border-top: 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: -5px 0px 5px 0;
+}
+#slideshow {
+	margin:0px 0px 0 0;
+	width:710px;
+	height:250px;
+    left: 6px;
+	position:relative;
+    overflow: hidden;
+    display: block;
+}
+.control {
+  display:block;
+  width:39px;
+  height:250px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:0;
+  left:0;
+  background:transparent url(img/control_left.png) no-repeat 0 0;
+}
+#rightControl {
+  top:0;
+  right:0;
+  background:transparent url(img/control_right.png) no-repeat 0 0;
+}
+#slideshow .slide {
+  margin: 0 auto;
+  padding-left: 0px;
+  width:710px;
+  height:250px;
+}
+
+.slide img {
+  float:right;
+  margin:0px 0px 0 0px;
+}
+
+/*Город*/
+#tabl {
+    float: left;
+	margin: 10px 0 0 10px;
+	font-size: 12px;
+}
+#tabl h3 {    
+    font-size: 14px ;
+	color: #E43C15;
+    margin: 10px 0 9px 0;
+}
+#tabl a{
+    color: #474848;
+	text-decoration: underline;
+}
+#tabl a:hover{
+    color: #E43C15;
+}
+#goroda {
+    float: left;
+	margin: 0 30px 0 0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	text-align: justify;
+	padding: 10px 0 10px 10px;
+	margin-top: 4px
+}
+#text h3{
+    margin: 3px 0 5px 10px;
+    font-size: 14px ;
+	color: #E43C15;
+}	
+#text ul {
+    margin-left: 10px;
+	float: left;
+}
+#text li {
+    width: 450px;
+    padding: 3px 0 0 25px;
+	line-height: 15px;
+    background: url(img11.gif) no-repeat 10px 10px;
+}
+#dostavka_img {
+    float: right;
+	margin: 35px 20px 0 0;
+}
+#tabl {
+    float: left;
+	margin: 10px 0 0 10px;
+	font-size: 12px;
+}
+#tabl h3 {    
+    font-size: 14px ;
+	color: #E43C15;
+    margin: 10px 0 9px 0;
+}
+#tabl a{
+    color: #474848;
+	text-decoration: underline;
+}
+#tabl a:hover{
+    color: #E43C15;
+}
+
+/*Город*/
+#goroda {
+    float: left;
+	margin: 0 30px 0 0;
+}
+
+#text_footer {
+    text-align: justify;
+    margin: 18px 22px 5px 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

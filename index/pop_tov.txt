@@ -1,0 +1,65 @@
+	 <div id="popul_tov">
+	     <a name="bottom"></a>
+	     <p><b>Популярные товары к компьютеру:</b></p>
+		 <TABLE BORDER="0px" ALIGN="center" CELLSPACING="3px" bgcolor="#ffffff">
+ <TR ALIGN="center" VALIGN="bottom" height="120px">
+ <TD width="175px"><a href="popul_tov/sven_314.jpg" rel="lightbox" title="sven_314"><img src="popul_tov/popul_tov_small/sven_314.jpg"/></a></TD>
+ <TD width="175px"><a href="popul_tov/sven_609.jpg" rel="lightbox" title="sven_609"><img src="popul_tov/popul_tov_small/sven_609.jpg"/></a></TD>
+ <TD width="175px"><a href="popul_tov/sven-sps-820.jpg" rel="lightbox" title="sven-sps-820"><img src="popul_tov/popul_tov_small/sven-sps-820.jpg"/></a></TD>
+ <TD width="175px"><a href="popul_tov/sven_stream.jpg" rel="lightbox" title="sven_stream"><img src="popul_tov/popul_tov_small/sven_stream.jpg"/></a></TD>
+ <TD width="175px"><a href="popul_tov/sven_ihoo.jpg" rel="lightbox" title="sven_ihoo_t100"><img src="popul_tov/popul_tov_small/sven_ihoo.jpg"/></a></TD>
+ </TR>
+ <TR  ALIGN="center" VALIGN="top" height="60px">
+ <TD><u><b>Sven 314 </b></u><br><font size="1">2x2Вт, 100-20000Гц, USB</font><br><font color="#ff0000"><b>20 у.е.</b></font></TD>
+ <TD><u><b>Sven SPS-609</b></u><br><font size="1">2x5Вт, 70-18000Гц, MDF</font><br><font color="#ff0000"><b>29 у.е.</b></font></TD>
+ <TD><u><b>Sven SPS-820</b></u><br><font size="1">2x10Вт+18Вт, 20-20000 Гц, MDF</font><br><font color="#ff0000"><b>45 у.е.</b></font></TD>
+ <TD><u><b>Sven Stream Light</b></u><br><font size="1">2x30Вт, 45-27000 Гц, MDF</font><br><font color="#ff0000"><b>98 у.е.</b></font></TD>
+ <TD><u><b>Sven IHOO T100</b></u><br><font size="1">5x20+50 Вт, 40-22000 Гц</font><br><font color="#ff0000"><b>193 у.е.</b></font></TD>
+ </TR>
+
+ <TR ALIGN="center" VALIGN="bottom" height="120px">
+ <TD ><a href="popul_tov/xerox-phaser_3010.jpg" rel="lightbox" title="xerox-phaser_3010"><img src="popul_tov/popul_tov_small/xerox-phaser_3010.jpg"/></a></TD>
+ <TD><a href="popul_tov/canon_mp280.jpg" rel="lightbox" title="canon_mp280"><img src="popul_tov/popul_tov_small/canon_mp280.jpg"/></a></TD>
+ <TD><a href="popul_tov/canon_laser_shot.jpg" rel="lightbox" title="canon_laser_shot"><img src="popul_tov/popul_tov_small/canon_laser_shot.jpg"/></a></TD>
+ <TD><a href="popul_tov/hp_laserjet_m1132.jpg" rel="lightbox" title="hp_laserjet_m1132"><img src="popul_tov/popul_tov_small/hp_laserjet_m1132.jpg"/></a></TD>
+ <TD><a href="popul_tov/sven_400.jpg" rel="lightbox" title="sven_400"><img src="popul_tov/popul_tov_small/sven_400.jpg"/></a></TD>
+ </TR>
+ <TR  ALIGN="center" VALIGN="top" height="60px">
+ <TD><u><b>Xerox Phaser 3010</b></u><br><font size="1">Принтер светодиодный 1200x1200 dpi,20 cтр/мин,64Mb,USB</font><br><font color="#ff0000"><b>113 у.е.</b></font></TD>
+ <TD><u><b>Canon Pixma MP280</b></u><br><font size="1">МФУ 4800x1200dpi, струйный, 4-цветн.</font><br><font color="#ff0000"><b>76 у.е.</b></font></TD>
+ <TD><u><b>Canon Laser Shot LBP-6000B</b></u><br><font size="1">Принтер лазерный 2400х600 dpi</font><br><font color="#ff0000"><b>89 у.е.</b></font></TD>
+ <TD><u><b>HP LaserJet M1132</b></u><br><font size="1">МФУ 600х600 dpi, 18 cтр/мин,цветной сканер 1200 dpi </font><br><font color="#ff0000"><b>195 у.е.</b></font></TD>
+ <TD><u><b>Sven Pro+ 400 VA</b></u><br><font size="1">ИБП 400ВА время работы 2.5/8 мин</font><br><font color="#ff0000"><b>67 у.е.</b></font></TD>
+ </TR>
+
+ <TR ALIGN="center" VALIGN="bottom" height="120px">
+ <TD><a href="popul_tov/sven_cu-1.jpg" rel="lightbox" title="sven_cu-1"><img src="popul_tov/popul_tov_small/sven_cu-1.jpg"/></a></TD>
+ <TD><a href="popul_tov/genius_facecam_300.jpg" rel="lightbox" title="genius_facecam_300"><img src="popul_tov/popul_tov_small/genius_facecam_300.jpg"/></a></TD>
+ <TD><a href="popul_tov/tv-tuner_compro.jpg" rel="lightbox" title="tv-tuner_compro"><img src="popul_tov/popul_tov_small/tv-tuner_compro.jpg"/></a></TD>
+ <TD><a href="popul_tov/sven_ap-540.jpg" rel="lightbox" title="sven_ap-540"><img src="popul_tov/popul_tov_small/sven_ap-540.jpg"/></a></TD>
+ <TD><a href="popul_tov/grundig_g38218.jpg" rel="lightbox" title="grundig_g38218"><img src="popul_tov/popul_tov_small/grundig_g38218.jpg"/></a></TD>
+ </TR>
+ <TR  ALIGN="center" VALIGN="top" height="60px">
+ <TD><u><b>Sven CU-1.2</b></u><br><font size="1">USB 1,3Мп, микрофон, подсветка объекта</font><br><font color="#ff0000"><b>24 у.е.</b></font></TD>
+ <TD><u><b>Genius FaceCam 300</b></u><br><font size="1"> USB 1.1,0.3 мпикс.,CMOS,видео 640x480, 30 Гц,крепление на мониторе</font><br><font color="#ff0000"><b>25 у.е.</b></font></TD>
+ <TD><u><b>TV-tuner Compro M330F</b></u><br><font size="1">TV-Tuner аналоговый, FM, ДУ,внутренний,PCI, SECAM, PAL, NTSC </font><br><font color="#ff0000"><b>45 у.е.</b></font></TD>
+ <TD><u><b>Sven AP-540</b></u><br><font size="1">Наушники с микрофоном 106 дБ, 20-20000 Гц, 32 Ом, регулятор громкости</font><br><font color="#ff0000"><b>13 у.е.</b></font></TD>
+ <TD><u><b>Grundig G38218</b></u><br><font size="1">Наушники-вкладыши шумоизолирующие, 2 комплекта запасных подушечек</font><br><font color="#ff0000"><b>16 у.е.</b></font></TD>
+ </TR> 
+
+ <TR ALIGN="center" VALIGN="bottom" height="120px">
+ <TD><a href="popul_tov/genius_8010.jpg" rel="lightbox" title="genius_8010"><img src="popul_tov/popul_tov_small/genius_8010.jpg"/></a></TD>
+ <TD><a href="popul_tov/sven_basic_304.jpg" rel="lightbox" title="sven_basic_304"><img src="popul_tov/popul_tov_small/sven_basic_304.jpg"/></a></TD>
+ <TD><a href="popul_tov/defender_adrenaline.jpg" rel="lightbox" title="defender_adrenaline"><img src="popul_tov/popul_tov_small/defender_adrenaline.jpg"/></a></TD>
+ <TD><a href="popul_tov/gp-f20el.jpg" rel="lightbox" title="gp-f20el"><img src="popul_tov/popul_tov_small/gp-f20el.jpg"/></a></TD>
+ <TD><a href="popul_tov/dialog_gw-201.jpg" rel="lightbox" title="dialog_gw-201"><img src="popul_tov/popul_tov_small/dialog_gw-201.jpg"/></a></TD>
+ </TR>
+ <TR  ALIGN="center" VALIGN="top" height="60px">
+ <TD><u><b>Genius SlimStar 8010</b></u><br><font size="1">Беспроводные клавиатура и мышь</font><br><font color="#ff0000"><b>28 у.е.</b></font></TD>
+ <TD><u><b>Sven Basic 304</b></u><br><font size="1">Клавиатура USB, 104 клавиш</font><br><font color="#ff0000"><b>10 у.е.</b></font></TD>
+ <TD><u><b>Defender ADRENALINE MINI</b></u><br><font size="1">Руль игровой 200мм,количество кнопок 12,USB</font><br><font color="#ff0000"><b>45 у.е.</b></font></TD>
+ <TD><u><b>Геймпад GP-F20EL Nakatomi Fighter</b></u><br><font size="1">Вибрация, подстветка, 12 кнопок, USB</font><br><font color="#ff0000"><b>24 у.е.</b></font></TD>
+ <TD><u><b>Dialog GW-201 STREET RACER II</b></u><br><font size="1">Джойстик-руль с эффектом вибрации, 2 педали, USB</font><br><font color="#ff0000"><b>71 у.е.</b></font></TD>
+ </TR>
+ </TABLE>
+	 </div>

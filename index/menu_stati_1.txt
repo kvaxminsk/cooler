@@ -1,0 +1,21 @@
+			<div id="sidebar">
+				<ul>
+						<h4>Компьютеры</h4>
+                        <li class="triangle"></li>
+							<li class="line"><a href="http://cooler.by/ofisnyj_kompjuter.html">Офисный компьютер</a></li>
+							<li><a href="http://cooler.by/kompjuter_shkolniku.html">Школьнику компьютер</a></li>
+							<li><a href="http://cooler.by/domashnij_kompjuter.html">Домашний компьютер</a></li>
+							<li><a href="http://cooler.by/igrovoj_kompjuter.html">Игровой компьютер GeForce</a></li>
+                            <li><a href="http://cooler.by/igrovoj_kompjuter_radeon.html">Игровой компьютер Radeon</a></li>
+							<li><a href="http://cooler.by/multimedijnyj_kompjuter.html">Суперигровой компьютер</a></li>
+                            <li class="block-top"><a href="http://cooler.by/kompjutery-po-beznalichnomu-raschetu.html">Компьютеры по безналу</a></li>
+                            <li><a href="http://cooler.by/kompjuter_v_kredit_v_minske.html">Компьютеры в кредит</a></li>
+                        <h4><b>Подбор компьютера</b></h4>    
+                        <li class="triangle"></li>
+                            <li class="line"><a href="http://cooler.by/sistemnyj-blok.php">Системные блоки</a></li>
+							<li><a href="http://cooler.by/sobrat_kompjuter_onlajn.php">Собрать компьютер онлайн</a></li>
+                            <li><a href="http://cooler.by/igry/sistemnye-trebovanija.html">Компьютерные игры</a></li>
+						<h4></h4>
+						    <br><li><a href="novosti_i_stati.html"><<<  К списку статей</a></li>
+				</ul>
+			</div>

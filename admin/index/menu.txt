@@ -1,0 +1,36 @@
+			<div id="sidebar">
+				<ul>
+						<h4>Компьютеры</h4>
+							<li><a href="new_kompjuter.php">Добавить</a></li>
+							<li><a href="edit_kompjuter.php?type=ofisnyj">Редактировать</a></li>
+						<h4>Безнал</h4>						
+							<li><a href="new_beznal_computer.php">Добавить</a></li>
+							<li><a href="edit_beznal_computer.php">Редактировать</a></li>	
+						<h4>Варианты сборки СБ</h4>						
+							<li><a href="new_build_computer.php">Добавить</a></li>
+							<li><a href="edit_build_computer.php?type=ofisnyj">Редактировать</a></li>
+						<h4>Системные блоки</h4>
+                                <li><a href="new_system_block.php">Добавить</a></li>
+                                <li><a href="list_system_block.php">Редактировать</a></li>
+                                <li><a href="list_computer_accessories.php">Редактировать список</a></li>
+                        <h4>Планшеты</h4>
+                            <li><a href="new_tablet.php">Добавить</a></li>
+                            <li><a href="list_tablet.php">Редактировать</a></li>
+						<h4>Мониторы</h4>
+							<li><a href="new_monitor.php">Добавить</a></li>
+							<li><a href="edit_monitor.php?brand=acer">Редактировать</a></li>
+						<h4>ПЕРИФЕРИЯ</h4>						
+							<li><a href="new_usb_pamjat.php">USB flesh память</a></li>
+							<li><a href="new_tv_tjunery.php">TV тюнеры</a></li>	
+							<li><a href="new_veb_kamera.php">Веб-камеры</a></li>
+							<li><a href="new_kolonki.php">Колонки</a></li>
+							<li><a href="new_naushniki.php">Наушники</a></li>
+							<li><a href="new_klaviaturji.php">Клавиатуры</a></li>
+							<li><a href="new_mjishji.php">Мыши</a></li>	
+							<li><a href="new_igrovye_manipuljatory.php">Игровые манипуляторы</a></li>	
+							<li><a href="new_ibp.php">ИБП</a></li>	
+							<li><a href="new_stabilizatory_naprjazhenija.php">Стабилизаторы напряжения</a></li>	
+							<li><a href="new_printer.php">Принтеры и МФУ</a></li>						
+						<h4>Справка</h4>	
+					<div style="margin:5px; style="text-align:justify"><em>Для принудительного переноса на новую строку используйте тег</em> <strong>&lt;br /&gt;</strong></div>
+			</div>

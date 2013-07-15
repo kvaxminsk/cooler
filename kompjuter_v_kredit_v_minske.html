@@ -1,0 +1,462 @@
+﻿<?php
+   function ValidateEmail($email)
+   {
+      $pattern = '/^([0-9a-z]([-.\w]*[0-9a-z])*@(([0-9a-z])+([-\w]*[0-9a-z])*\.)+[a-z]{2,6})$/i';
+      return preg_match($pattern, $email);
+   }
+   if($_SERVER['REQUEST_METHOD'] == 'POST')
+   {
+      $mailto = 'coolernoyt@gmail.com';
+      $mailfrom = 'zakaz-kredit@cooler.by';
+      $subject = 'Website form';
+      $message = 'Values submitted from web site form:';
+      $success_url = './kompjuter_v_kredit_v_minske.html';
+      $error_url = './kompjuter_v_kredit_v_minske.html';
+      $error = '';
+      $eol = "\n";
+      $max_filesize = isset($_POST['filesize']) ? $_POST['filesize'] * 1024 : 1024000;
+      $boundary = md5(uniqid(time()));
+	  
+      $header  = 'From: '.$mailfrom.$eol;
+      $header .= 'Reply-To: '.$mailfrom.$eol;
+      $header .= 'MIME-Version: 1.0'.$eol;
+      $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+      $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address is invalid!\n<br>";
+      }
+      if (!empty($error))
+      {
+         $errorcode = file_get_contents($error_url);
+         $replace = "##error##";
+         $errorcode = str_replace($replace, $error, $errorcode);
+         echo $errorcode;
+         exit;
+      }	  
+      $internalfields = array ("submit", "reset", "send", "captcha_code");
+      $message .= $eol;
+      $message .= "IP Address : ";
+      $message .= $_SERVER['REMOTE_ADDR'];
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }	  
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=UTF-8'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+          foreach ($_FILES as $key => $value)
+          {
+             if ($_FILES[$key]['error'] == 0 && $_FILES[$key]['size'] <= $max_filesize)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      mail($mailto, $subject, $body, $header);
+      //header('Location: '.$success_url);
+      //exit;
+   }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Компьютеры в кредит, расчет платежей и условия кредитования</title>
+<meta name="keywords" content="Кредит, рассрочка"/>
+<meta name="description" content="Сделать покупку компьютера в кредит или рассрочку очень просто:
+Нужную выбрать компьютер или системный блок.
+Выбрать банк и на какой срок берете кредит.
+Заполнить онлайн Оформление кредита 
+В течении 15 мин с вами свяжется менеджер и расскажет подробности.
+После приезда курьера предъявите документы и компьютер Ваш! " />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="kompjuter_v_kredit_v_minske/kompjuter_v_kredit.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/kompjuter_v_kredit_v_minske/1.js"></script>
+  <script type="text/javascript" src="/kompjuter_v_kredit_v_minske/2.js"></script>
+  <script type="text/javascript" src="/kompjuter_v_kredit_v_minske/3.js"></script>
+<script type="text/javascript">
+<!--
+function ValidateForm1(theForm)
+{
+var strFilter = /^[A-Za-zѓЉЊЋљњћџАБВГДЕЖЗИЙКЛМНОПРСТУФХЦШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцшщъыьэюя \t\r\n\f]*$/;
+var chkVal = theForm.Editbox1.value;
+if (!strFilter.test(chkVal))
+{
+   alert("Please enter only letter and whitespace characters in the \"Editbox1\" field.");
+   theForm.Editbox1.focus();
+   return false;
+}
+if (theForm.Editbox2.value.length < 1)
+{
+   alert("Вы не заполнили поле \"Населенный пункт\"");
+   theForm.Editbox2.focus();
+   return false;
+}
+if (theForm.Editbox3.value.length < 1)
+{
+   alert("Вы не заполнили поле \"Контактный телефон\"");
+   theForm.Editbox3.focus();
+   return false;
+}
+return true;
+}
+//-->
+</script>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+<?php include ("index/header-callme.txt"); ?>
+
+	<!-- start page -->
+	<div id="page">
+		<div id="bgtop"></div>
+		<div id="bgbottom">
+			<!-- start menu -->
+
+<?php include ("index/menu.txt"); ?>
+
+			<!-- начало Right -->
+			<div id="right"><?php include ("index/soc-seti.txt"); ?> 
+			     <h1>Компьютер и системный блок в кредит и рассрочку.</h1>
+				     <div id="text">
+<table class="contentpaneopen">
+<tr>
+<td valign="top">
+<p><h2>Сделать покупку компьютера в кредит или рассрочку очень просто:</h2></p>
+<ol class="kupi">
+<li>Нужную выбрать компьютер или системный блок.</li>
+<li>Выбрать банк и на какой срок берете кредит.</li>
+<li>Заполнить онлайн "Оформление заявки на кредит" (нужно отсканировать или сфотографировать паспорт)</li>
+<li>В течении 15 мин с вами свяжется менеджер и расскажет подробности.</li>
+<li>После приезда курьера предъявите документы и компьютер Ваш!</li>
+</ol>
+
+<!-------- Подсчет --------->
+<p><br> 
+            <script type="text/javascript">
+__FC_FORMULA = ['price={price1}*10200','cena=price-{vznos}-{vznos_2}',
+
+'prior_pr_komis=0.05','prior_pr_god=0.6',    'prior_6=cena*Math.pow(1+prior_pr_god/12,6)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,6)-1)',
+                                             'prior_12=cena*Math.pow(1+prior_pr_god/12,12)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,12)-1)',
+                                             'prior_24=cena*Math.pow(1+prior_pr_god/12,24)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,24)-1)',  
+                                             'prior_36=cena*Math.pow(1+prior_pr_god/12,36)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,36)-1)', 
+'sombe_pr_komis=0.069','sombe_pr_god=0.828', 'sombe_6=cena*Math.pow(1+sombe_pr_god/12,6)*sombe_pr_god/12/(Math.pow(1+sombe_pr_god/12,6)-1)',
+                                             'sombe_12=cena*Math.pow(1+sombe_pr_god/12,12)*sombe_pr_god/12/(Math.pow(1+sombe_pr_god/12,12)-1)',
+                                             'sombe_24=cena*Math.pow(1+sombe_pr_god/12,24)*sombe_pr_god/12/(Math.pow(1+sombe_pr_god/12,24)-1)',  
+                                             'sombe_36=cena*Math.pow(1+sombe_pr_god/12,36)*sombe_pr_god/12/(Math.pow(1+sombe_pr_god/12,36)-1)', 
+'som_pr_komis=0.065','som_pr_god=0.78',      'som_6=cena*Math.pow(1+som_pr_god/12,6)*som_pr_god/12/(Math.pow(1+som_pr_god/12,6)-1)',
+                                             'som_12=cena*Math.pow(1+som_pr_god/12,12)*som_pr_god/12/(Math.pow(1+som_pr_god/12,12)-1)', 
+'so_pr_komis=0.05','so_pr_god=0.6',          'so_6=cena*Math.pow(1+so_pr_god/12,6)*so_pr_god/12/(Math.pow(1+so_pr_god/12,6)-1)',
+                                             'so_12=cena*Math.pow(1+so_pr_god/12,12)*so_pr_god/12/(Math.pow(1+so_pr_god/12,12)-1)',                                                                                                                                                                   
+'vtb_pr_komis=0.07083','vtb_pr_god=0.85',    'vtb_12=cena*Math.pow(1+vtb_pr_god/12,12)*vtb_pr_god/12/(Math.pow(1+vtb_pr_god/12,12)-1)',                                                                                                                                    
+                                             
+/*'delay_pr=0.033','delay_12=cena/12+cena*delay_pr','delay_24=cena/24+cena*delay_pr','delay_36=cena/36+cena*delay_pr',
+'prior_pr_komis=0.015','prior_pr_god=0.15','prior_pr_fiks=25000','prior_12=(cena+cena*0.0096)*Math.pow(1+prior_pr_god/12,12)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,12)-1)+(cena+cena*0.0096)*prior_pr_komis+prior_pr_fiks','prior_24=(cena+cena*0.0192)*Math.pow(1+prior_pr_god/12,24)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,24)-1)+(cena+cena*0.0192)*prior_pr_komis+prior_pr_fiks','prior_36=(cena+cena*0.0288)*Math.pow(1+prior_pr_god/12,36)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,36)-1)+(cena+cena*0.0288)*prior_pr_komis+prior_pr_fiks','prior_48=(cena+cena*0.0384)*Math.pow(1+prior_pr_god/12,48)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,48)-1)+(cena+cena*0.0384)*prior_pr_komis+prior_pr_fiks',
+'delta_pr_komis=0.0388','delta_pr_god=0.15','delta_12=cena*Math.pow(1+delta_pr_god/12,12)*delta_pr_god/12/(Math.pow(1+delta_pr_god/12,12)-1)+cena*delta_pr_komis','delta_24=cena*Math.pow(1+delta_pr_god/12,24)*delta_pr_god/12/(Math.pow(1+delta_pr_god/12,24)-1)+cena*delta_pr_komis','delta_36=cena*Math.pow(1+delta_pr_god/12,36)*delta_pr_god/12/(Math.pow(1+delta_pr_god/12,36)-1)+cena*delta_pr_komis',
+'home_pr_komis=0.0469','home_pr_god=0.001','home_12=cena*Math.pow(1+home_pr_god/12,12)*home_pr_god/12/(Math.pow(1+home_pr_god/12,12)-1)+cena*home_pr_komis','home_24=cena*Math.pow(1+home_pr_god/12,24)*home_pr_god/12/(Math.pow(1+home_pr_god/12,24)-1)+cena*home_pr_komis',
+'ecredit_pr_12=0.0295','ecredit_pr_24=0.045','ecredit_pr_36=0.055','ecredit_12=cena/12+cena*ecredit_pr_12','ecredit_24=cena/24+cena*ecredit_pr_24','ecredit_36=cena/36+cena*ecredit_pr_36'*/];
+                __FC_SUBMIT = true;
+                __FC_CAPTCHA_TEXT = 'Неверно введены символы с картинки.';
+            </script>
+            <h3>Расчет платежей по кредиту</h3>
+            <div class="form_descr"><p>Введите стоимость товара в условных единицах и желаемую сумму первого взноса в рублях</p></div>
+            <form  name="calcForm" id="calcForm" method="post">
+           
+<script>
+function hide(nodeId)
+{
+    var node = document.getElementById(nodeId);
+    if (node)
+    {
+        node.style.display = 'none';
+    } 
+}
+function show(nodeId)
+{
+    var node = document.getElementById(nodeId);
+    if (node)
+    {
+        node.style.display = 'block';
+    } 
+}
+</script>
+<br>
+  <table width="680" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="160" class="line_4">Цена товара в у.е</td>
+    <td width="520"><input type="text" id="price1" name="price1" class="validate(number)" placeholder="456" value> у.е.
+</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="line_4">Первоначальный взнос</td>
+    <td width="500px"><input type="text" name="vznos_2" class="validate(number)" placeholder="0...9 155 000"> бел.р. 
+    <input type="button" id="knopka-1" value="Расчитать" onclick="show('rez')">
+    <input type="button" id="knopka-2" value="Скрыть" onclick="hide('rez')"></td>
+    </tr>
+    <tr>
+    <td class="line_4">&nbsp;</td>
+    <td>
+    </tr>
+</table>
+
+
+<div id="rez" style="display:none">
+<table border="0" cellspacing="0" cellpadding="0" class="calc">
+  <tr>
+    <td colspan="5"><b>Ежемесячный плановый платеж по кредиту</b></td>
+  </tr>
+  <tr>
+    <td>Кредиты</td>
+    <td><span>на 6 мес.</span></td>
+    <td><span>на 12 мес.</span></td>
+    <td><span>на 24 мес.</span></td>
+    <td><span>на 36 мес.</span></td>
+  </tr>
+  <tr>
+    <td class="rez" id="leftbank"><span>Приорбанк</span> «Лучшие покупки»</td>
+    <td class="rez"><span id="prior_6_disp">&nbsp;</span><input type="hidden" id="prior_6" name="prior_6" value> бел.р.</td>
+    <td class="rez"><span id="prior_12_disp">&nbsp;</span><input type="hidden" id="prior_12" name="prior_12" value> бел.р.</td>
+    <td class="rez"><span id="prior_24_disp">&nbsp;</span><input type="hidden" id="prior_24" name="prior_24" value> бел.р.</td>
+    <td class="rez"><span id="prior_36_disp">&nbsp;</span><input type="hidden" id="prior_36" name="prior_36" value> бел.р.</td>
+  </tr>
+  <tr>
+    <td class="rez" id="leftbank"><span>Idea Bank</span> «Праздничный»</td>
+    <td class="rez"><span id="sombe_6_disp">&nbsp;</span><input type="hidden" id="sombe_6" name="sombe_6" value> бел.р.</td>
+    <td class="rez"><span id="sombe_12_disp">&nbsp;</span><input type="hidden" id="sombe_12" name="sombe_12" value> бел.р.</td>
+    <td class="rez"><span id="sombe_24_disp">&nbsp;</span><input type="hidden" id="sombe_24" name="sombe_24" value> бел.р.</td>
+    <td class="rez"><span id="sombe_36_disp">&nbsp;</span><input type="hidden" id="sombe_36" name="sombe_36" value> бел.р.</td>
+  </tr>
+  <tr>
+    <td class="rez" id="leftbank"><span>Idea Bank</span> «Весенний»</td>
+    <td class="rez"><span id="som_6_disp">&nbsp;</span><input type="hidden" id="som_6" name="som_6" value> бел.р.</td>
+    <td class="rez"><span id="som_12_disp">&nbsp;</span><input type="hidden" id="som_12" name="som_12" value> бел.р.</td>
+    <td class="rez">-</td>
+    <td class="rez">-</td>
+  </tr>
+  <tr>
+    <td class="rez" id="leftbank"><span>Idea Bank</span> «Святочны»</td>
+    <td class="rez"><span id="so_6_disp">&nbsp;</span><input type="hidden" id="so_6" name="so_6" value> бел.р.</td>
+    <td class="rez"><span id="so_12_disp">&nbsp;</span><input type="hidden" id="so_12" name="so_12" value> бел.р.</td>
+    <td class="rez">-</td>
+    <td class="rez">-</td>
+  </tr>
+  <tr>
+    <td class="rez" id="leftbank"><span>ВТБ Банк</span> «Интернет»</td>
+    <td class="rez">-</td>
+    <td class="rez"><span id="vtb_12_disp">&nbsp;</span><input type="hidden" id="vtb_12" name="vtb_12" value> бел.р.</td>
+    <td class="rez">-</td>
+    <td class="rez">-</td>
+  </tr>
+</table>
+</div>
+
+<div style="display:none;"><input type="text" name="vznos" value="0"></div>
+<div style="display:none;"><span id="cena_disp">&nbsp;</span><input type="hidden" id="cena" name="cena" value></div>
+<div style="display:none;"><span id="price_disp">&nbsp;</span><input type="hidden" id="price" name="price" value></div>
+
+<div style="display:none;"><span id="prior_pr_komis_disp">&nbsp;</span><input type="hidden" id="prior_pr_komis" name="prior_pr_komis" value></div>
+<div style="display:none;"><span id="prior_pr_god_disp">&nbsp;</span><input type="hidden" id="prior_pr_god" name="prior_pr_god" value></div>
+
+<div style="display:none;"><span id="sombe_pr_komis_disp">&nbsp;</span><input type="hidden" id="sombe_pr_komis" name="sombe_pr_komis" value></div>
+<div style="display:none;"><span id="sombe_pr_god_disp">&nbsp;</span><input type="hidden" id="sombe_pr_god" name="sombe_pr_god" value></div>
+
+<div style="display:none;"><span id="som_pr_komis_disp">&nbsp;</span><input type="hidden" id="som_pr_komis" name="som_pr_komis" value></div>
+<div style="display:none;"><span id="som_pr_god_disp">&nbsp;</span><input type="hidden" id="som_pr_god" name="som_pr_god" value></div>
+
+<div style="display:none;"><span id="so_pr_komis_disp">&nbsp;</span><input type="hidden" id="so_pr_komis" name="so_pr_komis" value></div>
+<div style="display:none;"><span id="so_pr_god_disp">&nbsp;</span><input type="hidden" id="so_pr_god" name="so_pr_god" value></div>
+
+<div style="display:none;"><span id="vtb_pr_komis_disp">&nbsp;</span><input type="hidden" id="vtb_pr_komis" name="vtb_pr_komis" value></div>
+<div style="display:none;"><span id="vtb_pr_god_disp">&nbsp;</span><input type="hidden" id="vtb_pr_god" name="vtb_pr_god" value></div>
+  
+<input type="hidden" name="option" value="com_formcalc">
+            <input type="hidden" name="task" value="submit">
+            <input type="hidden" name="formid" value="1">
+            <input type="hidden" name="Itemid" value="139">
+            <input type="hidden" name="d5c6eeeb9fc0f208fe3796141ca94243" value="1">           
+             </form>
+</p>
+             
+ 
+<!-------- Таблица --------->             	
+		
+<table id="credit_tabl" class="credit" style="width: 690px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="32px" align="left" valign="bottom" colspan="6"><span style="color: #F43939">Выберите подходящий вариант кредитования</span></td>
+</tr>
+<tr>
+<td width="100"><span>«Лучшие покупки»<span></td>
+<td width="100"><span>«Праздничный»<span></td>
+<td width="100"><span>«Весенний»<span></td>
+<td width="100"><span>«Святочны»<span></td>
+<td width="100"><span>ВТБ «Интернет»<span></td>
+</tr>
+<tr>
+<td class="credit" colspan="6">ПРОЦЕНТНАЯ СТАВКА</td>
+</tr>
+<tr>
+<td><span>5,0%</span> мес.</td>
+<td><span>6,9%</span> мес.</td>
+<td><span>6,5%</span> мес.</td>
+<td><span>5,0%</span> мес.</td>
+<td><span>7,08%</span> мес.</td>
+</tr>
+<tr>
+<td class="credit" colspan="6">ПЕРВОНАЧАЛЬНЫЙ ВЗНОС</td>
+</tr>
+<tr>
+<td>от <span>10%</span></td>
+<td>от <span>0%</span></td>
+<td>от <span>0%</span></td>
+<td>от <span>10%</span></td>
+<td>от <span>20%</span></td>
+</tr>
+<tr>
+<td class="credit" colspan="6">СРОК КРЕДИТОВАНИЯ</td>
+</tr>
+<tr>
+<td>от <span>3</span> до <span>48</span> месяцев</td>
+<td>от <span>3</span> до <span>36</span> месяцев</td>
+<td>от <span>3</span> до <span>18</span> месяцев</td>
+<td>от <span>3</span> до <span>12</span> месяцев</td>
+<td>от <span>12</span> до <span>12</span> месяцев</td>
+</tr>
+<tr>
+<td class="credit" colspan="6">ВОЗРАСТ КРЕДИТОПОЛУЧАТЕЛЯ</td>
+</tr>
+<tr>
+<td>от <span>22</span> до <span>63</span> лет</td>
+<td>от <span>18</span> до <span>65</span> лет</td>
+<td>от <span>18</span> до <span>65</span> лет</td>
+<td>от <span>18</span> до <span>65</span> лет</td>
+<td>от <span>25</span> до <span>65</span> лет</td>
+</tr>
+<tr>
+<td class="credit" colspan="6">МИНИМАЛЬНЫЙ СТАЖ РАБОТЫ</td>
+</tr>
+<tr>
+<td>от <span>3</span> мес</td>
+<td>от <span>3</span> мес</td>
+<td>от <span>3</span> мес</td>
+<td>от <span>3</span> мес</td>
+<td>от <span>3</span> мес</td>
+</tr>
+<tr>
+<td class="credit" colspan="6">НЕОБХОДИМЫЕ ДОКУМЕНТЫ</td>
+</tr>
+<tr>
+<td>Паспорт</td>
+<td>Паспорт, воен.билет лицам до 24 лет</td>
+<td>Паспорт, воен.билет лицам до 24 лет</td>
+<td>Паспорт, воен.билет лицам до 24 лет</td>
+<td>Паспорт</td>
+</tr>
+<tr>
+<td class="credit" colspan="6">ПРОЧИЕ УСЛОВИЯ</td>
+</tr>
+<tr valign="top">
+<td> Досрочное погашение без штрафных санкций </td>
+<td> Досрочное погашение без штрафных санкций </td>
+<td> Досрочное погашение без штрафных санкций </td>
+<td> Досрочное погашение без штрафных санкций </td>
+<td> Досрочное погашение без штрафных санкций </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+</table>
+<!-------- Форма онлайн --------->             
+<div id="wb_Form2" >
+<form method="POST" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" accept-charset="UTF-8" id="Form1" onsubmit="return ValidateForm1(this)">
+
+<div id="wb_Text26" class="name" ><b id="namegl">Оформление заявки на кредит</b></div>
+<div class="pole" id="pasport"></div>
+
+<div id="wb_Text27" class="name">Имя</div>
+<input type="text" id="Editbox1"  class="pole" name="Имя" value="" maxlength="50"></input>
+
+<div id="wb_Text28" class="name">Населенный пункт</div>
+<input type="text" id="Editbox2"  class="pole" name="Населенный пункт" value="" maxlength="40"></input>
+
+<div id="wb_Text29" class="name">Контактный телефон</div>
+<input type="text" id="Editbox3"  class="pole" name="Контактный телефон" value="" maxlength="50"></input>
+
+<div id="wb_Text30" class="name">Название компьютера</div>
+<textarea type="text" id="Editbox4"  class="pole" name="Название товара" value="" maxlength="400"></textarea>
+
+<div id="wb_Text31" class="name"><b>Страницы паспорта</b></div>
+<div class="pole" id="pasport">Отсканируйте или сфотографируйте: <b>1</b> - стр.25-прописка; <br><b>2</b> - стр.27-отметка загс; <b>3</b> -стр.31; <b>4</b> - стр.32 и 33</div>
+
+<div id="wb_Text32" class="name">Прикрепить файл 1</div>
+<input type="file" id="FileUpload2"  class="pole" name="FileUpload2"/>
+
+<div id="wb_Text33" class="name">Прикрепить файл 2</div>
+<input type="file" id="FileUpload3"  class="pole" name="FileUpload3"/>
+
+<div id="wb_Text34" class="name">Прикрепить файл 3</div>
+<input type="file" id="FileUpload4"  class="pole" name="FileUpload4"/>
+
+<div id="wb_Text35" class="name">Прикрепить файл 4</div>
+<input type="file" id="FileUpload5"  class="pole" name="FileUpload5"/>
+
+<input type="submit" id="Button1" name="" value="Отправить" title="Отправить заявку">		                
+<a href="./kompjuter_v_kredit_v_minske.html"><input type="reset" id="Button2" name="" value="Очистить" title="Очистить форму"></a>				 
+</div>
+                     </div>
+                     
+
+					 
+					 <div id="text_footer">
+После выбора кредита вам не обязательно ехать к нам в офис с паспортом и лично оформлять заказ на компьютер. Достаточно оформить онлайн, которое займет не 
+более 10 минут, вы сможете забрать покупку либо курьер ее вам доставит и подключит при необходимости. Погашение происходит  во всех отделениях банков, в сети магазинов "Связной", в почтовых отделениях
+или в сети расчетно-платежных терминалов Cash-In. Досрочно погасить кредит можно в отделениях Банка в любую удобную для вас дату.
+
+					 </div>
+		</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<hr />
+	<!-- start footer -->
+<?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika_jivo.txt"); ?>
+
+<?php if($_SERVER['REQUEST_METHOD'] == 'POST') : ?>
+   <script type="text/javascript">alert("Заявка отправлена.");</script>
+<?php endif; ?>
+</body>
+</html>

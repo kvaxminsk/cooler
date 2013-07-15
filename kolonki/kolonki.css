@@ -1,0 +1,39 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	text-align: justify;
+	padding: 20px 0 0 15px;
+	margin: 4px 0 0 0;
+	font-size: 12px;
+}
+#line {
+color: #ff0000;
+font-size: 15px;
+}
+#line_1 a {
+color: #1D62B3;
+font-size: 13px;
+}
+#line_1 a:hover {
+color: #ff0000;
+}
+
+#text_footer {
+    text-align: justify;
+	font-size: 12px;
+    margin: 20px 22px 5px 14px;
+}
+#td_kolonki {padding: 15px 0;}
+#td_kolonki1 {max-width:190px; min-width:190px; width:190px; word-wrap:break-word; padding: 15px 0;}

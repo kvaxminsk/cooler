@@ -1,0 +1,372 @@
+﻿<?php
+include ("blocks/bd.php");/*Connecting to BD!*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Купить принтеры и МФУ Epson с СНПЧ</title>
+    <meta name="keywords" content="Принтеры с СНПЧ, МФУ с СНПЧ купить в Минске система непрерывной подачи чернил для принтера Epson Stylus Photo"/>
+    <meta name="description" content="Принтеры Epson давно себя зарекомендовали как надежные и неприхотливые машины для печати, которые очень хорошо
+    дружат с СНПЧ (система непрерывной подачи чернил).
+    Струйные принтеры и МФУ делятся на серии:
+     Stylus и Stylus Photo - устройства для домашней печати документов и фотографий, возможна печать как на
+    простой так и на фото-бумаге."/>
+    <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="snpch/snpch.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen"/>
+    <!--Подключаем highslide-->
+    <script type="text/javascript" src="/highslide/highslide-with-gallery.js"></script>
+    <script type="text/javascript" src="/scripts/config_highslide.js"></script>
+    <link rel="stylesheet" type="text/css" href="./highslide/highslide.css"/>
+    <!----------------------------->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+<?php include ("index/header-callme.txt"); ?>
+
+<!-- start page -->
+<div id="page">
+<div id="bgtop"></div>
+<div id="bgbottom">
+<!-- start menu -->
+
+<?php include ("index/menu.txt"); ?>
+
+<!-- начало Right -->
+<div id="right"><?php include ("index/soc-seti.txt"); ?> 
+<h1>Принтеры и МФУ Epson с СНПЧ</h1>
+
+<div id="text">
+<p>Принтеры Epson давно себя зарекомендовали как надежные и неприхотливые машины для печати, которые очень хорошо
+    "дружат" с СНПЧ (система непрерывной подачи чернил).
+    Струйные принтеры и МФУ делятся на серии:
+    <br>&mdash; Stylus и Stylus Photo - устройства для домашней печати документов и фотографий, возможна печать как на
+    простой так и на фото-бумаге.
+    <br>&mdash; L серия - мини "фабрики печати" для малого и среднего бизнеса, от изготовителя имеют ёмкость для
+    заправки чернил, выдерживают большие нагрузки и очень низкую себестоимость печати.
+    <br>&mdash; WorkForce - для офиса и бизнеса, печатают формат А3, отличаются высокой скоростью печати и наличием
+    wi-fi.
+    <br>Мы предлагаем принтера с установленным СНПЧ, это экономит ваше время и деньги!
+    <br><a href="#video"><b>Видео про экономию с СНПЧ.</b></a>&nbsp;&nbsp;&nbsp; <b>Кабель USB в комплект не входит, мы
+        дарим его в подарок!</b></p>
+
+<?php
+$result = mysql_query("SELECT image_big,image_small,model,color_print,functions,format,resolution_max,kol_color,bez_pc,wi_fi,ethernet,bluetooth,fax,card,lcd,photo_print,weight,height,width,depth,cost FROM printer WHERE type='epson_snpch' AND series='epson_stylus' ORDER BY cost", $db);
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br/><strong>Код ошибки:</strong></p>";
+exit (mysql_error());
+}
+
+if (mysql_num_rows($result) > 0)
+{
+$myrow = mysql_fetch_array($result);
+}
+else
+{
+echo "<p>Нет записей!</p>";
+exit ();
+}
+
+echo "
+<TABLE BORDER='0px' ALIGN='center' CELLSPACING='2px' bgcolor='#ffffff'>
+<TR ALIGN='left' VALIGN='center' height='30px'>
+    <TD id='line'><b><u>Epson Stylus</u></b></TD>
+</TR>
+";
+$cols = 2; // desired count of columns
+$col = 0;
+
+do
+{
+
+if( !$col ) echo "
+<TR ALIGN='left' VALIGN='top' height='140px'>";
+    printf("
+    <TD id='td_kolonki' width='150px'><a href='%s' class='highslide' onclick='return hs.expand(this)'>
+        <img src='%s' width='150px'/></a></TD>
+    <TD id='td_laser' id='td_kolonki' width='210px'><u><b>%s</b></u><font size='1'>
+        <br>Печать: %s
+        <br>Функции: %s
+        <br>Формат: %s
+        <br>Разрешение макс: %s
+        <br>Кол-во цветов: %s
+        <br>Печать без компьютера: %s
+        <br>Wi-Fi: %s
+        <br>Ethernet: %s
+        <br>Bluetooth: %s
+        <br>Факс: %s
+        <br>Картридер: %s
+        <br>ЖК-дисплей: %s
+        <br>Фотопечать: %s
+        <br>Вес, кг: %s
+        <br>Высота, мм: %s
+        <br>Ширина, мм: %s
+        <br>Глубина, мм: %s</font>
+        <br><font color='#ff0000' size='2'><b>%s у.е.</b></font></TD>
+    ", $myrow["image_big"], $myrow["image_small"], $myrow["model"], $myrow["color_print"], $myrow["functions"],
+    $myrow["format"], $myrow["resolution_max"], $myrow["kol_color"], $myrow["bez_pc"], $myrow["wi_fi"],
+    $myrow["ethernet"], $myrow["bluetooth"], $myrow["fax"], $myrow["card"], $myrow["lcd"], $myrow["photo_print"],
+    $myrow["weight"], $myrow["height"], $myrow["width"], $myrow["depth"], $myrow["cost"]);
+
+    $col++;
+    if($col == $cols) {
+    echo "
+</TR>
+";
+$col = 0;
+
+}
+
+}
+while($myrow = mysql_fetch_array($result));
+?>
+<?php
+$result = mysql_query("SELECT image_big,image_small,model,color_print,functions,format,resolution_max,kol_color,bez_pc,wi_fi,ethernet,bluetooth,fax,card,lcd,photo_print,weight,height,width,depth,cost FROM printer WHERE type='epson_snpch' AND series='epson_stylus_photo' ORDER BY cost", $db);
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br/><strong>Код ошибки:</strong></p>";
+exit (mysql_error());
+}
+
+if (mysql_num_rows($result) > 0)
+{
+$myrow = mysql_fetch_array($result);
+}
+else
+{
+echo "<p>Нет записей!</p>";
+exit ();
+}
+
+echo "
+<TR ALIGN='left' VALIGN='center' height='30px'>
+    <TD id='line'><b><u>Epson Stylus Photo</u></b></TD>
+</TR>
+";
+$cols = 2; // desired count of columns
+$col = 0;
+
+do
+{
+
+if( !$col ) echo "
+<TR ALIGN='left' VALIGN='top' height='140px'>";
+    printf("
+    <TD id='td_kolonki' width='150px'><a href='%s' class='highslide' onclick='return hs.expand(this)'>
+        <img src='%s' width='150px'/></a></TD>
+    <TD id='td_kolonki' width='210px'><u><b>%s</b></u><font size='1'>
+        <br>Печать: %s
+        <br>Функции: %s
+        <br>Формат: %s
+        <br>Разрешение макс: %s
+        <br>Кол-во цветов: %s
+        <br>Печать без компьютера: %s
+        <br>Wi-Fi: %s
+        <br>Ethernet: %s
+        <br>Bluetooth: %s
+        <br>Факс: %s
+        <br>Картридер: %s
+        <br>ЖК-дисплей: %s
+        <br>Фотопечать: %s
+        <br>Вес, кг: %s
+        <br>Высота, мм: %s
+        <br>Ширина, мм: %s
+        <br>Глубина, мм: %s</font>
+        <br><font color='#ff0000' size='2'><b>%s у.е.</b></font></TD>
+    ", $myrow["image_big"], $myrow["image_small"], $myrow["model"], $myrow["color_print"], $myrow["functions"],
+    $myrow["format"], $myrow["resolution_max"], $myrow["kol_color"], $myrow["bez_pc"], $myrow["wi_fi"],
+    $myrow["ethernet"], $myrow["bluetooth"], $myrow["fax"], $myrow["card"], $myrow["lcd"], $myrow["photo_print"],
+    $myrow["weight"], $myrow["height"], $myrow["width"], $myrow["depth"], $myrow["cost"]);
+
+    $col++;
+    if($col == $cols) {
+    echo "
+</TR>
+";
+$col = 0;
+
+}
+
+}
+while($myrow = mysql_fetch_array($result));
+?>
+<?php
+$result = mysql_query("SELECT image_big,image_small,model,color_print,functions,format,resolution_max,kol_color,bez_pc,wi_fi,ethernet,bluetooth,fax,card,lcd,photo_print,weight,height,width,depth,cost FROM printer WHERE type='epson_snpch' AND series='epson_l_series' ORDER BY cost", $db);
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br/><strong>Код ошибки:</strong></p>";
+exit (mysql_error());
+}
+
+if (mysql_num_rows($result) > 0)
+{
+$myrow = mysql_fetch_array($result);
+}
+else
+{
+echo "<p>Нет записей!</p>";
+exit ();
+}
+
+echo "
+<TR ALIGN='left' VALIGN='center' height='30px'>
+    <TD id='line'><b><u>Epson L-серия</u></b></TD>
+</TR>
+";
+$cols = 2; // desired count of columns
+$col = 0;
+
+do
+{
+
+if( !$col ) echo "
+<TR ALIGN='left' VALIGN='top' height='140px'>";
+    printf("
+    <TD id='td_kolonki' width='150px'><a href='%s' class='highslide' onclick='return hs.expand(this)'>
+        <img src='%s' width='150px'/></a></TD>
+    <TD id='td_kolonki' width='210px'><u><b>%s</b></u><font size='1'>
+        <br>Печать: %s
+        <br>Функции: %s
+        <br>Формат: %s
+        <br>Разрешение макс: %s
+        <br>Кол-во цветов: %s
+        <br>Печать без компьютера: %s
+        <br>Wi-Fi: %s
+        <br>Ethernet: %s
+        <br>Bluetooth: %s
+        <br>Факс: %s
+        <br>Картридер: %s
+        <br>ЖК-дисплей: %s
+        <br>Фотопечать: %s
+        <br>Вес, кг: %s
+        <br>Высота, мм: %s
+        <br>Ширина, мм: %s
+        <br>Глубина, мм: %s</font>
+        <br><font color='#ff0000' size='2'><b>%s у.е.</b></font></TD>
+    ", $myrow["image_big"], $myrow["image_small"], $myrow["model"], $myrow["color_print"], $myrow["functions"],
+    $myrow["format"], $myrow["resolution_max"], $myrow["kol_color"], $myrow["bez_pc"], $myrow["wi_fi"],
+    $myrow["ethernet"], $myrow["bluetooth"], $myrow["fax"], $myrow["card"], $myrow["lcd"], $myrow["photo_print"],
+    $myrow["weight"], $myrow["height"], $myrow["width"], $myrow["depth"], $myrow["cost"]);
+
+    $col++;
+    if($col == $cols) {
+    echo "
+</TR>
+";
+$col = 0;
+
+}
+
+}
+while($myrow = mysql_fetch_array($result));
+?>
+<?php
+$result = mysql_query("SELECT image_big,image_small,model,color_print,functions,format,resolution_max,kol_color,bez_pc,wi_fi,ethernet,bluetooth,fax,card,lcd,photo_print,weight,height,width,depth,cost FROM printer WHERE type='epson_snpch' AND series='epson_workforce' ORDER BY cost", $db);
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br/><strong>Код ошибки:</strong></p>";
+exit (mysql_error());
+}
+
+if (mysql_num_rows($result) > 0)
+{
+$myrow = mysql_fetch_array($result);
+}
+else
+{
+echo "<p>Нет записей!</p>";
+exit ();
+}
+
+echo "
+<TR ALIGN='left' VALIGN='center' height='30px'>
+    <TD id='line'><b><u>Epson WorkForce</u></b></TD>
+</TR>
+";
+$cols = 2; // desired count of columns
+$col = 0;
+
+do
+{
+
+if( !$col ) echo "
+<TR ALIGN='left' VALIGN='top' height='140px'>";
+    printf("
+    <TD id='td_kolonki' width='150px'><a href='%s' class='highslide' onclick='return hs.expand(this)'>
+        <img src='%s' width='150px'/></a></TD>
+    <TD id='td_kolonki' width='210px'><u><b>%s</b></u><font size='1'>
+        <br>Печать: %s
+        <br>Функции: %s
+        <br>Формат: %s
+        <br>Разрешение макс: %s
+        <br>Кол-во цветов: %s
+        <br>Печать без компьютера: %s
+        <br>Wi-Fi: %s
+        <br>Ethernet: %s
+        <br>Bluetooth: %s
+        <br>Факс: %s
+        <br>Картридер: %s
+        <br>ЖК-дисплей: %s
+        <br>Фотопечать: %s
+        <br>Вес, кг: %s
+        <br>Высота, мм: %s
+        <br>Ширина, мм: %s
+        <br>Глубина, мм: %s</font>
+        <br><font color='#ff0000' size='2'><b>%s у.е.</b></font></TD>
+    ", $myrow["image_big"], $myrow["image_small"], $myrow["model"], $myrow["color_print"], $myrow["functions"],
+    $myrow["format"], $myrow["resolution_max"], $myrow["kol_color"], $myrow["bez_pc"], $myrow["wi_fi"],
+    $myrow["ethernet"], $myrow["bluetooth"], $myrow["fax"], $myrow["card"], $myrow["lcd"], $myrow["photo_print"],
+    $myrow["weight"], $myrow["height"], $myrow["width"], $myrow["depth"], $myrow["cost"]);
+
+    $col++;
+    if($col == $cols) {
+    echo "
+</TR>
+";
+$col = 0;
+
+}
+
+}
+while($myrow = mysql_fetch_array($result));
+echo "
+</TABLE>
+";
+?>
+
+<br>
+
+<p id="line"><b>Реальная экономия денег в 30 раз с СНПЧ для Epson.</b></p>
+<a name="video">
+    <iframe width="550" height="309" src="http://www.youtube.com/embed/Z7i2FzK4clI?rel=0" frameborder="0"
+            allowfullscreen></iframe>
+</a>
+
+</div>
+
+
+<div id="text_footer">
+
+</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+</div>
+<hr/>
+<!-- start footer -->
+<?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika_jivo.txt"); ?>
+</body>
+</html>

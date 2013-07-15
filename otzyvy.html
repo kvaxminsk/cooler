@@ -1,0 +1,319 @@
+﻿<?php
+   function ValidateEmail($email)
+   {
+      $pattern = '/^([0-9a-z]([-.\w]*[0-9a-z])*@(([0-9a-z])+([-\w]*[0-9a-z])*\.)+[a-z]{2,6})$/i';
+      return preg_match($pattern, $email);
+   }
+   if($_SERVER['REQUEST_METHOD'] == 'POST')
+   {
+      $mailto = 'varetis@mail.ru';
+      $mailfrom = 'otzyv@cooler.by';
+      $subject = 'Website form';
+      $message = 'Values submitted from web site form:';
+      $success_url = 'http://remont.cooler.by/';
+      $error_url = 'http://remont.cooler.by/';
+      $error = '';
+      $eol = "\n";
+      $max_filesize = isset($_POST['filesize']) ? $_POST['filesize'] * 1024 : 1024000;
+      $boundary = md5(uniqid(time()));
+	  
+      $header  = 'From: '.$mailfrom.$eol;
+      $header .= 'Reply-To: '.$mailfrom.$eol;
+      $header .= 'MIME-Version: 1.0'.$eol;
+      $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+      $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address is invalid!\n<br>";
+      }
+      if (!empty($error))
+      {
+         $errorcode = file_get_contents($error_url);
+         $replace = "##error##";
+         $errorcode = str_replace($replace, $error, $errorcode);
+         echo $errorcode;
+         exit;
+      }	  
+      $internalfields = array ("submit", "reset", "send", "captcha_code");
+      $message .= $eol;
+      $message .= "IP Address : ";
+      $message .= $_SERVER['REMOTE_ADDR'];
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }	  
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=UTF-8'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+          foreach ($_FILES as $key => $value)
+          {
+             if ($_FILES[$key]['error'] == 0 && $_FILES[$key]['size'] <= $max_filesize)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      mail($mailto, $subject, $body, $header);
+      //header('Location: '.$success_url);
+      //exit;
+   }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Отзывы о интернет-магазине Cooler.by</title>
+<meta name="keywords" content="Отзывы о интернет-магазине cooler.by"/>
+<meta name="description" content="Здесь вы можете оставить мнение о работе магазина Cooler.by, будем рады содержанию любого отзыва, даже если вдруг будет критика в наш адрес, мы постараемся стать еще лучше. 
+Все отзывы размещенные на этой странице написаны реальными клиентами магазина Cooler.by" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="kompjuter_v_kredit_v_minske/otzyvy.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+<?php include ("index/header-callme.txt"); ?>
+
+	<!-- start page -->
+	<div id="page">
+		<div id="bgtop"></div>
+		<div id="bgbottom">
+			<!-- start menu -->
+
+<?php include ("index/menu.txt"); ?>
+
+			<!-- начало Right -->
+			<div id="right">
+			     <h1>Оставить отзыв</h1>
+				     				     <div id="text">
+<img id="img_1" src="kompjuter_v_kredit_v_minske/otzyvy.jpg" alt="Отзыв" title="Напиши отзыв" />
+
+<div id="wb_Form2"">
+<form method="POST" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" accept-charset="UTF-8" id="Form1" onsubmit="return ValidateForm1(this)">
+<div id="wb_Text1">
+<font style="font-size:12px" color="#000000" face="Arial">Ваше имя:</font></div>
+<input type="text" id="Editbox1" name="Ваше имя" value="" maxlength="25">
+<div id="wb_Text2">
+<font style="font-size:12px" color="#000000" face="Arial">E-mail:</font></div>
+<input type="text" id="Editbox2" name="e-mail" value="" maxlength="75">
+<div id="wb_Text3">
+<font style="font-size:12px" color="#000000" face="Arial">Ваш отзыв:</font></div>
+<textarea id="Editbox3" name="Отзыв" ></textarea>		                
+
+<input type="submit" id="Button1" name="" value="Отправить" title="Отправить вопрос">
+</form>
+                
+</div>
+<div id="vopros-text">
+Здесь вы можете оставить мнение о работе магазина Cooler.by, будем рады содержанию любого отзыва, даже если вдруг будет критика в наш адрес, мы постараемся стать еще лучше. 
+Все отзывы размещенные на этой странице <b>написаны реальными клиентами</b> магазина Cooler.by.</div>
+					 </div>
+                     
+                     
+					 <div id="text_footer">
+					     <h2>Отзывы о cooler.by</h2>
+
+<div class="cherta">
+<div id="imy">Александр</div>
+<div id="data">Май 2013</div>
+<b>Отзыв:</b> 17 мая заказал системный блок. Девушка по телефону предварительно подробно проконсультировала по всем интересующим меня вопросам. Заказ был доставлен вовремя и со всеми документами. Остался очень доволен. Спасибо!
+</div>
+
+<div class="cherta">
+<div id="imy">helga</div>
+<div id="data">Февраль 2013</div>
+<b>Отзыв:</b> Я очень рада, что покупала системный блок именно в этом магазине. Изначально меня привлекла цена, но при общении с консультантом я поняла, 
+что цены в этом магазине - не самое главное преимущество. Отличный сервис, дельные советы при выборе, безграничное терпение к моим "а как?", "а почему?". 
+Помогли вписать отличный системник в мой бюджет, так крутили-вертели с комплектующими, пока я не осталась довольна, как слон. Подарили коврик и какие-то там провода дефицитные. 
+Помогли с доставкой в Слуцк (привезли наутро после заказа). Только положительные эмоции от сотрудничества. Подумываю, что бы еще купить у них?
+</div>
+
+<div class="cherta">
+<div id="imy">Татьяна</div>
+<div id="data">Январь 2013</div>
+<b>Отзыв:</b> Покупала системный блок сыну в подарок, остались очень довольны. Прекрасный консультант - Анастасия, уделила достаточно времени, ответила на все вопросы. 
+Курьеру по имени Роман также огромное спасибо. Будьте всегда также внимательны и отзывчивы к клиентам. Огромное спасибо. 
+</div>
+
+<div class="cherta">
+<div id="imy">Сергей</div>
+<div id="data">Январь 2013</div>
+<b>Отзыв:</b> + Купил недавно системник. Все детали собрал сам в онлайне, про отсутствующие детали сразу сообщили и предложили заменить схожие по цене. Доставили через 2 дня в Несвиж. Очень оперативно. Отличное обслуживание.
+<br>- курьер только осуществляет доставку, без проверки и установки.
+<br><b>Комментарий cooler.by:</b> Курьеры службы доставки распаковку и подключение не производят, но можно задержать до 10 мин и самостоятельно произвести проверку товара. Наш курьер доставляет только по Минску, он делает все что пожелаете.))
+</div>
+
+<div class="cherta">
+<div id="imy">Александр</div>
+<div id="data">Январь 2013</div>
+<b>Отзыв:</b> Отличный интернет-магазин. Заказал системный блок 3.01 с доставкой в Добруш пообещали привезти 10.01 привезли 9.01 это(+), не плохое обслуживание консультантов, 
+цены на порядок ниже чем у других интернет-магазинах, жаль нету собственной службы доставки (курьер немножко подкачал), в общем я доволен вашей работой. Спасибо!  P.S. РЕКОМЕНДУЮ.
+</div>
+
+<div class="cherta">
+<div id="imy">Павел</div>
+<div id="data">Декабрь 2012</div>
+<b>Отзыв:</b> Хорошая фирма. Недавно заказывал компьютер, собрали и привезли оперативно. По сравнению с другими интернет магазинами, цена порадовала. 
+Спасибо консультанту Анастасии за помощь в выборе системного блока и монитора, и Роману за доставку и установку.
+</div>
+ 
+<div class="cherta">
+<div id="imy">Татьяна</div>
+<div id="data">Декабрь 2012</div>
+<b>Отзыв:</b> Недавно приобрели бюджетный компьютер для офиса. Стоимость порадовала. Работает на данный момент хорошо. Хорошая и быстрая работа консультантов.
+</div> 
+  
+<div class="cherta">
+<div id="imy">Ирина</div>
+<div id="data">Декабрь 2012</div>
+<b>Отзыв:</b> Отличная компания, отличный сервис, хорошие цены по сравнению с другими магазинами, хорошие консультанты. Очень довольна вашим магазином.
+</div>  
+                         
+<div class="cherta">
+<div id="imy">Роман</div>
+<div id="data">Декабрь 2012</div>
+<b>Отзыв:</b> Самые лучшие впечатления о работе магазина cooler.by. Порадовала цена, скорость доставки, внимательность консультантов. Огромное спасибо Роману за помощь в установке и доброжелательное отношение. 
+Вы - молодцы. так держать))) приятный бонус-коврик с лягушечкой)) всегда будем к вам обращаться))...
+</div>                         
+                         
+<div class="cherta">
+<div id="imy">Александр</div>
+<div id="data">Декабрь 2012</div>
+<b>Отзыв:</b> Я много пересмотрел фирм занимающиеся компьютерами. Большое количество. И каждый хочет приманить к себе клиента. 
+Но остановился я именно на этом сайте и выбрал именно здесь компьютер. Собрали оперативно и доставили тоже быстро. 
+Цена меня порадовала и сборкой не обделили. В общем хорошая фирма и специалисты. Особенно Анастасия заслуживает большого внимания к своим клиентам. Вы - молодцы.
+</div> 
+                         
+<div class="cherta">
+<div id="imy">Руслан</div>
+<div id="data">Ноябрь 2012</div>
+<b>Отзыв:</b> Заказали компьютер в сборе, на следующий день привезли, а везли в Добруш. Это около 450 км. Проверили все ок , Гарантия и цена порадовали,
+ Дешевле на порядок по сравнению с магазинами и с другими сайтами, а доставка всего 10 у,е. Уже не первый раз пользуемся интернет_магазинами:-Это лучший.
+</div>                         
+                                                 
+<div class="cherta">
+<div id="imy">Борис</div>
+<div id="data">Ноябрь 2012</div>
+<b>Отзыв:</b> Самые лучшие впечатления о работе фирмы.
+<br>Сделал онлайновую сборку. Описал дополнительные требования. Все остальное обсуждение шло с Анастасией по скайпу. Выполнили все мои пожелания, даже те, про которые менеджер и не знала. 
+ Чтобы потом не возиться, попросил сразу разбить диск на разделы. Сделали, да и еще и систему сразу поставили, причем именно ту, что я и собирался ставить. Все было сделано и доставлено 
+ оперативно.
+<br>Если буду заказывать еще, только здесь.
+<br>Молодцы! Так держать!
+</div>                         
+   
+<div class="cherta">
+<div id="imy">Александр</div>
+<div id="data">Октябрь 2012</div>
+<b>Отзыв:</b> Отличные ребята там работают! Всегда помогут и подскажут! Спасибо вам что вы есть !) Да и компьютеры хорошие и цены тоже) Скидки, доставка, короче все как положено!)
+</div>   
+  
+<div class="cherta">
+<div id="imy">Юлия</div>
+<div id="data">Июль 2012</div>
+<b>Отзыв:</b> Остались только положительные впечатления от работы этого продавца. 
+<br>У данного продавца приобрела компьютер в подарок сестре.
+Всем осталась очень довольна,менеджер Николай вежливо и подробно ответил на все интересующие меня вопросы.Помог определиться на окончательной начинке системного блока. 
+Купила среди прочего монитор Philips 19", процессор AMD Athlon 250 и жесткий диск Hitachi 1TB.Что порадовало, так это возможность самовывоза в удобное время( сама не из Минска).
+Сумма итоговая тоже порадовала:)
+Теперь подумываю о покупке ноутбука, для себя решила что за ним только к Вам!
+Спасибо огромное!
+</div>                         
+                         
+<div class="cherta">
+<div id="imy">Kali_Laska</div>
+<div id="data">Июль 2012</div>
+<b>Отзыв:</b> Неделю назад заказал компьютер в этой фирме.
+ Хочу сказать, что работать с ребятами очень удобно и приятно.
+ Работают как по телефону, так и по скайпу. Я заказ делал, находясь вообще за пределами Беларуси, поэтому скайп был очень актуален. 
+ Общение начали с базовых конфигураций, представленных на сайте. Ответили на вопросы, которые меня интересовали в плане сравнения готовых моделей, 
+ возможности и целесообразности изменения конфигурации и выбора оптимального варианта при моем бюджете. Без проблем дали полное детальное описание 
+ комплектующих, чтобы снять мои возможные сомнения в "резаных/нерезанных" (когда то по неопытности "попал" на этом в одной очень известной сейчас фирме). 
+ Сравнив цены на комплектующие с ценами на Онлайнере отбросил все сомнения - цена на готовый компьютер меня устроила на 100%. Еще и монитор заказал здесь же.
+ Заказывал с доставкой в город Бобруйск. Уже на следующий день после принятия мной решения о покупке компьютер был доставлен на место. Все четко, оперативно и, 
+ очень важно, честно. Молодцы!
+</div>
+
+  
+  
+                     
+                     </div>
+		</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<hr />
+	<!-- start footer -->
+<?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika_jivo.txt"); ?>
+
+<?php if($_SERVER['REQUEST_METHOD'] == 'POST') : ?>
+   <script type="text/javascript">alert("Спасибо за Ваш отзыв!");</script>
+<?php endif; ?>
+
+
+<script language="JavaScript" type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+jQuery(function(){
+ $("#Go_Top").hide().removeAttr("href");
+ if ($(window).scrollTop()>="750") $("#Go_Top").fadeIn("slow")
+ $(window).scroll(function(){
+  if ($(window).scrollTop()<="750") $("#Go_Top").fadeOut("slow")
+  else $("#Go_Top").fadeIn("slow")
+ });
+
+ $("#Go_Bottom").hide().removeAttr("href");
+ if ($(window).scrollTop()<=$(document).height()-"999") $("#Go_Bottom").fadeIn("slow")
+ $(window).scroll(function(){
+  if ($(window).scrollTop()>=$(document).height()-"999") $("#Go_Bottom").fadeOut("slow")
+  else $("#Go_Bottom").fadeIn("slow")
+ });
+
+ $("#Go_Top").click(function(){
+  $("html, body").animate({scrollTop:0},"slow")
+ })
+ $("#Go_Bottom").click(function(){
+  $("html, body").animate({scrollTop:$(document).height()},"slow")
+ })
+});
+</script>
+
+<a style='position: fixed; bottom: 190px; right: 3%; cursor:pointer; display:none;'
+href='#' id='Go_Top'>
+ <img src="./images/go_up.png" alt="Вверх" title="Вверх">
+</a>
+<a style='position: fixed; bottom: 150px; right: 3%; cursor:pointer; display:none;'
+href='#' id='Go_Bottom'>
+ <img src="./images/go_bottom.png" alt="Вниз" title="Вниз">
+</a>
+
+</body>
+</html>

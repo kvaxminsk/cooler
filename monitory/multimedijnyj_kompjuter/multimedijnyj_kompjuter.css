@@ -1,0 +1,126 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	border-bottom: 1px solid;
+	text-align: justify;
+	padding: 10px 30px 10px 16px;
+	margin-top: 4px
+}
+
+/* komp_office */
+#komp {
+    height: 212px;
+    border-bottom: 1px solid;
+}
+#komp h3{
+    margin: 20px 0 0 10px;
+    font-size: 14px ;
+	color: #E43C15;
+}
+#img_komp {
+    float: left;
+    margin: 6px 0 15px 5px;
+}
+#cena_komp {
+    float: right;
+    width: 83px;
+	height: 21px;
+	padding: 23px 0 0 32px;
+	margin: -16px 150px 0 0;
+	font: bold 16px "arial"; 
+	color: #fff;
+	background: url(../index/cena_kompjuter.png) no-repeat;
+}
+#cena_sist {
+    float: right;
+    width: 368px;
+	height: 17px;
+	padding: 17px 0 0 10px;
+	margin: 13px 15px 0 0;
+	font: bold 12px "Helvetica"; 
+	color: #fff;
+	background: url(../index/cena_sistemnyj_blok.png) no-repeat;
+}
+.sb {
+    float: left;
+	width: 92px;	
+    text-align: center;
+}
+.mn {
+    float: left;
+	width: 49px;
+    margin-left: 15px;	
+    text-align: center;
+}
+.klv {
+    float: left;
+	width: 67px;
+    margin-left: 15px;	
+    text-align: center;
+}
+.msh {
+    float: left;
+	width: 34px;
+    margin-left: 15px;		
+    text-align: center;
+}
+.kln {
+    float: left;
+	width: 46px;
+    margin-left: 15px;		
+    text-align: center;
+}
+#spisok {
+    float: left;
+	width: 370px;
+    padding: 10px 0 0 2px;
+	font: normal 11px "Helvetica";
+	line-height: 14px;
+}
+#spisok a{
+    float: right;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+/* tablica */
+#tabl {
+    margin: 8px 10px 0 -190px;
+	font-size: 12px;
+}
+#tabl p{
+    margin: 15px 0 5px 0px;
+}
+#korp {
+   margin: 20px 0 20px 0;
+}
+#korp_img{
+   margin: 0 0 -6px 7px;
+}
+
+/* попул€рные_товары */
+#popul_tov {
+    margin: 8px 0 0 -180px;
+	font-size: 12px;
+}
+#popul_tov p{
+    margin: 18px 0 5px 0;
+	color: #E43C15;
+}
+
+#text_footer {
+    text-align: justify;
+    margin: 18px 30px 0 -160px;
+}

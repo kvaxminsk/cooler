@@ -1,0 +1,74 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	text-align: justify;
+	padding: 10px 30px 10px 16px;
+	margin-top: 4px
+}
+#vk_groups {
+    float: right;
+    margin: 35px 28px 0 0;
+}
+#vkont {
+    float: right;
+    margin: 5px 28px 5px 30px;
+    font-weight: bold;
+    position: relative;
+    left: 200px;
+    top: 2px;
+}
+#telefon {
+    float: left;
+    margin: 5px 0 0 17px;
+}
+#kont {
+    margin: 7px 0 0 107px;
+}
+#text1 {
+	padding: 10px 30px 10px 16px;
+	margin-top: 4px
+}
+#dost {
+    float: left;
+    margin: 5px 0 0 17px;
+}
+#dost-text {
+    margin: 30px 0 50px 107px;
+}
+#chasji {
+    float: left;
+    margin: 12px 0 0 30px;
+}
+#rezh {
+    margin: 7px 0 0 107px;
+}
+#komp {
+    float: left;
+    margin: 25px 0 0 20px;
+}
+#text2 {
+	padding: 30px 30px 10px 107px;
+}
+#text_g {
+	padding: 20px 30px 5px 107px;
+}
+#gar {
+    float: left;
+    margin: 5px 0 0 18px;
+}
+#text_footer {
+    text-align: justify;
+    margin: 18px 22px 5px 14px;
+}

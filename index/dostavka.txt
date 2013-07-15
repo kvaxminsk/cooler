@@ -1,0 +1,156 @@
+
+	 <div id="tabl">
+     <h3>Мы отправляем через службу доставки в следующие города :</h3>
+	<div id="goroda">
+     <b>Брестская <br>&nbsp;область</b>
+     <br>Антополь
+     <br><a href="http://baranovichi.cooler.by">Барановичи</a>
+     <br>Белоозерск
+     <br><a href="http://bereza.cooler.by">Береза</a>
+     <br><a href="http://brest.cooler.by">Брест</a>
+     <br><a href="http://gancevichi.cooler.by">Ганцевичи</a>
+     <br><a href="http://drogichin.cooler.by">Дрогичин</a>
+     <br><a href="http://zhabinka.cooler.by">Жабинка</a>
+     <br><a href="http://ivanovo.cooler.by">Иваново</a>
+     <br><a href="http://ivacevichi.cooler.by">Ивацевичи</a>
+     <br><a href="http://kobrin.cooler.by">Кобрин</a>
+	 <br>Логишин
+     <br>Лунин
+     <br><a href="http://luninec.cooler.by">Лунинец</a>
+     <br>Ляховичи
+     <br>Микашевичи
+     <br><a href="http://pinsk.cooler.by">Пинск</a>
+	 <br><a href="http://pruzhany.cooler.by">Пружаны</a>
+</div>	 
+<div id="goroda">
+      <b>Витебская <br>&nbsp;область</b> 
+     <br>Барань
+     <br>Бегомль
+     <br>Бешенковичи
+     <br>Богушевск
+     <br>Боровуха
+     <br>Браслав
+     <br>Верхнедвинск
+     <br>Верховье
+     <br>Ветрино
+     <br><a href="http://vitebsk.cooler.by">Витебск</a>
+     <br><a href="http://glubokoe.cooler.by">Глубокое</a>
+     <br>Дисна
+     <br>Докшицы
+     <br>Дрозды
+     <br>Дубровно
+     <br>Коханово
+     <br><a href="http://lepel.cooler.by">Лепель</a>
+     <br>Миоры
+     <br><a href="http://novolukoml.cooler.by">Новолукомль</a>
+     <br><a href="http://novopolock.cooler.by">Новополоцк</a>
+     <br>Оболь
+     <br><a href="http://orsha.cooler.by">Орша</a>
+     <br><a href="http://polock.cooler.by">Полоцк</a>
+     <br>Порплище
+     <br><a href="http://postavy.cooler.by">Поставы</a>
+     <br>Свеча
+     <br>Сенно
+     <br>Толочин
+     <br>Ушачи
+     <br>Чашники
+     <br>Шарковщина
+     <br>Шумилино
+</div>	 
+<div id="goroda">
+    <b>Гомельская <br>&nbsp;область</b>
+     <br>Буда-Кошелево
+	 <br>Ветка
+     <br><a href="http://gomel.cooler.by">Гомель</a>
+     <br><a href="http://dobrush.cooler.by">Добруш</a>
+     <br><a href="http://zhlobin.cooler.by">Жлобин</a>
+     <br>Ильич
+     <br><a href="http://kalinkovichi.cooler.by">Калинковичи</a>
+     <br>Костюковка
+     <br><a href="http://mozyr.cooler.by">Мозырь</a>
+     <br>Паричи
+     <br><a href="http://rechica.cooler.by">Речица</a>
+     <br><a href="http://rogachev.cooler.by">Рогачев</a>
+     <br><a href="http://svetlogorsk.cooler.by">Светлогорск</a>
+     <br>Уваровичи
+</div>
+<div id="goroda">
+     <b>Гродненская <br>&nbsp;область</b>
+	 <br>Берёзовка
+     <br><a href="http://volkovysk.cooler.by">Волковыск</a>
+     <br><a href="http://grodno.cooler.by">Гродно</a>
+	 <br>Дятлово
+     <br>Зельва
+     <br>Ивье
+     <br>Красносельский
+     <br><a href="http://lida.cooler.by">Лида</a>
+     <br>Мосты
+	 <br><a href="http://novogrudok.cooler.by">Новогрудок</a>
+	 <br>Островец
+	 <br><a href="http://oshmjany.cooler.by">Ошмяны</a>
+     <br>Россь
+     <br>Скидель
+	 <br><a href="http://smorgon.cooler.by">Сморгонь</a>
+     <br><a href="http://slonim.cooler.by">Слоним</a>
+     <br><a href="http://shhuchin.cooler.by">Щучин</a>
+</div>
+<div id="goroda">
+    <b>Минская <br>&nbsp;область</b>
+     <br>Березино
+     <br><a href="http://borisov.cooler.by">Борисов</a>
+     <br><a href="http://vileyka.cooler.by">Вилейка</a>
+     <br>Воложин
+     <br>Городея
+     <br><a href="http://dzerzhinsk.cooler.by">Дзержинск</a>
+     <br><a href="http://zhodino.cooler.by">Жодино</a>
+     <br><a href="http://zaslavl.cooler.by">Заславль</a>
+     <br>Клецк
+     <br>Копыль
+     <br><a href="http://krupki.cooler.by">Крупки</a>
+     <br><a href="http://logojsk.cooler.by">Логойск</a>
+     <br>Любань
+     <br><a href="http://marina-gorka.cooler.by">Марьина Горка</a>
+     <br>Мир
+     <br><a href="http://molodechno.cooler.by">Молодечно</a>
+     <br><a href="http://mjadel.cooler.by">Мядель</a>
+     <br>Нарочь
+     <br><a href="http://nesvizh.cooler.by">Несвиж</a>
+     <br>Плещеницы
+     <br><a href="http://radashkovichi.cooler.by">Радашковичи</a>
+     <br>Раков
+     <br><a href="http://sluck.cooler.by">Слуцк</a>
+     <br>Смиловичи
+     <br><a href="http://smolevichi.cooler.by">Смолевичи
+     <br><a href="http://soligorsk.cooler.by">Солигорск</a>
+     <br>Старобин
+     <br>Старые Дороги
+     <br><a href="http://stolbcy.cooler.by">Столбцы</a>
+     <br>Узда
+     <br>Фаниполь
+     <br>Червень
+     <br>Чисть
+</div>
+<div id="goroda">
+     <b>Могилевская <br>&nbsp;область</b>
+     <br>Белыничи
+     <br><a href="http://bobrujsk.cooler.by">Бобруйск</a>
+     <br>Быхов
+	 <br><a href="http://gorki.cooler.by">Горки</a>
+	 <br>Дрибин
+     <br><a href="http://klimovichi.cooler.by">Климовичи</a>
+     <br><a href="http://kostjukovichi.cooler.by">Костюковичи</a>
+     <br>Краснополье
+     <br><a href="http://krichev.cooler.by">Кричев</a>
+	 <br><a href="http://krugloe.cooler.by">Круглое</a>
+     <br><a href="http://mogilev.cooler.by">Могилев</a>
+     <br><a href="http://mstislavl.cooler.by">Мстиславль</a>
+     <br><a href="http://osipovichi.cooler.by">Осиповичи</a>
+     <br>Сидоровичи
+     <br>Славгород
+     <br>Ходасы
+     <br>Чаусы
+     <br>Чериков
+     <br><a href="http://shklov.cooler.by">Шклов</a>
+</div> 
+
+     </div>

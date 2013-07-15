@@ -1,0 +1,865 @@
+﻿<?php
+include ("blocks/bd.php");/*Connecting to BD!*/
+?>
+<?php
+   function ValidateEmail($email)
+   {
+      $pattern = '/^([0-9a-z]([-.\w]*[0-9a-z])*@(([0-9a-z])+([-\w]*[0-9a-z])*\.)+[a-z]{2,6})$/i';
+      return preg_match($pattern, $email);
+   }
+   if($_SERVER['REQUEST_METHOD'] == 'POST')
+   {
+      $mailto = 'coolernoyt@gmail.com';
+      $mailfrom = 'zakaz-beznal@cooler.by';
+      $subject = 'Website form';
+      $message = 'Values submitted from web site form:';
+      $success_url = './kompjutery-po-beznalichnomu-raschetu.html';
+      $error_url = './kompjutery-po-beznalichnomu-raschetu.html';
+      $error = '';
+      $eol = "\n";
+      $max_filesize = isset($_POST['filesize']) ? $_POST['filesize'] * 1024 : 1024000;
+      $boundary = md5(uniqid(time()));
+	  
+      $header  = 'From: '.$mailfrom.$eol;
+      $header .= 'Reply-To: '.$mailfrom.$eol;
+      $header .= 'MIME-Version: 1.0'.$eol;
+      $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+      $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address is invalid!\n<br>";
+      }
+      if (!empty($error))
+      {
+         $errorcode = file_get_contents($error_url);
+         $replace = "##error##";
+         $errorcode = str_replace($replace, $error, $errorcode);
+         echo $errorcode;
+         exit;
+      }	  
+      $internalfields = array ("submit", "reset", "send", "captcha_code");
+      $message .= $eol;
+      $message .= "IP Address : ";
+      $message .= $_SERVER['REMOTE_ADDR'];
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }	  
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=UTF-8'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+          foreach ($_FILES as $key => $value)
+          {
+             if ($_FILES[$key]['error'] == 0 && $_FILES[$key]['size'] <= $max_filesize)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      mail($mailto, $subject, $body, $header);
+      //header('Location: '.$success_url);
+      //exit;
+   }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Купить компьютер по безналу в минске за безналичный расчет.</title>
+<meta name="keywords" content="Купить компьютер по безналу в минске за безналичный расчет"/>
+<meta name="description" content="Как купить компьютер по безналу на cooler.by?
+Для получения счета необходимо отправить онлайн заявку либо в удобной для вас форме
+прислать реквезиты вашей организации с контактами для обратной связи 
+на E-mail : beznal@cooler.by или факс +375-17-284-76-14. "/>
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="o_magazine/beznal.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="sko/beznal.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="/colorbox/jquery.colorbox.js"></script>
+<link media="screen" rel="stylesheet" href="/colorbox/colorbox.css" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/global.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.lightbox-0.5.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.treeview.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript" src="js/jquery.treeview.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/flyshit.js"></script>
+<script type="text/javascript">
+function  dataArray(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z) {
+ this.col1=a;this.col2=b;this.col3=c;this.col4=d;this.col5=e;this.col6=f;this.col7=g;this.col8=h;this.col9=i;this.col10=j;this.col11=k;this.col12=l;this.col13=m;this.col14=n;this.col15=o;this.col16=p;this.col17=q;this.col18=r;this.col19=s;this.col20=t;this.col21=u;this.col22=v;this.col23=w;this.col24=x;this.col25=y;this.col26=z
+}
+ function addconf(id)
+ {
+ 	var el = document.getElementById('tov'+id);
+ 	var e2 = document.getElementById('kol'+id);
+ 	var e3 = document.getElementById('rent'+id);
+ 	var e4 = document.getElementById('inf'+id);
+ 	var e5 = document.getElementById('globalrent');
+ 	var e6 = document.getElementById('tovkol'+id);
+ 	var e7 = document.getElementById('sel'+id);
+ 	var e8 = document.getElementById('kolval'+id);
+ 	var rentall = Math.abs(e5.value);
+if(el.value>0)var tovrent = Math.abs(eval('da['+el.value+'].col2'));
+ 	var tovkol = Math.abs(e6.value);
+ 	var kolval = Math.abs(e8.value);
+ 	if(rentall>0 && e7.value>0)
+ 	{
+	 		var lastrent = Math.abs(eval('da['+e7.value+'].col2'));
+	 		rentall = rentall -(kolval*lastrent);
+	 	//	ajaxSend('/ajax/tov.php','action=edit&bid='+e7.value+'&kol='+tovkol,'1');
+ 	}
+ 	e7.value = el.value;
+ 	e8.value = tovkol;
+ 	if(el.value>0)
+ 	{
+ 		el.className='w80 act';
+ 		e2.style.display='';
+ 		e3.style.display='';
+ 		e4.style.display='';
+ 		e4.href = eval('da['+e7.value+'].col1')
+ 		//ajaxSend("/ajax/tov.php","action=add&kol="+tovkol+"&rent="+tovrent+"&bid="+e7.value,"basket");
+ 		rentall = rentall+(tovrent*tovkol);
+ 		e3.innerHTML = '<span>'+tovrent+' бел.р. </span>';
+ 	}else 
+ 	{
+ 		el.className='w80';
+ 		e2.style.display='none';
+ 		e3.style.display='none';
+ 		e4.style.display='none';
+ 	}
+ 	// skidk
+ 	var skidkanum = 1;
+ 	var skidkanum2 = 0;
+ 	if(rentall>0 && rentall<1)
+ 	{
+ 		document.getElementById('skidkatext').innerHTML = '0';
+ 		document.getElementById('skidka').innerHTML = '0';
+ 	}else if(rentall>=1 && rentall<600)
+ 	{
+ 		skidkanum = 1;
+ 		skidkanum2 = 0;
+ 		document.getElementById('skidkatext').innerHTML = '0';
+ 		document.getElementById('skidka').innerHTML = '0';
+ 	}else if(rentall>=600 && rentall<1200)
+ 	{
+ 		skidkanum = 1;
+ 		skidkanum2 = 1;
+ 		document.getElementById('skidkatext').innerHTML = '0';
+ 		document.getElementById('skidka').innerHTML = '0';
+ 	}else if(rentall>=1200 && rentall<3000)
+ 	{
+ 		skidkanum = 1;
+ 		skidkanum2 = 2;
+ 		document.getElementById('skidkatext').innerHTML = '';
+ 		document.getElementById('skidka').innerHTML = '0';
+ 	}
+
+// 	alert(rentall);
+ 	e5.value = rentall;
+ 	document.getElementById('summall').innerHTML = ''+(rentall*skidkanum+0).toFixed(0)+' бел.р. ';
+ 	document.getElementById('globalrent2').value=(rentall*skidkanum).toFixed(0);
+ 	if(rentall>0)
+ 	{
+ 		document.getElementById('printon').className='printon';
+ 		document.getElementById('printonimg').src='img//print_ico.gif';
+ 	}
+ 	else 
+ 	{
+ 		document.getElementById('printonimg').src='img/print2_ico.gif';
+ 		document.getElementById('printon').className='printoff';
+ 	}
+ 	document.getElementById('printon').value=skidkanum2;
+ 	document.getElementById('gskidka2').value=skidkanum2;
+ }
+ function basketadd()
+ {
+ 	var f = document.getElementsByTagName('select');
+ 	 for(var i=0;i<f.length;i++)
+ 	 {
+ 	 	if(f[i].value>0)
+	 	{
+	 		ajaxSend("/ajax/tov.php","action=add&kol="+document.getElementById('kolval'+f[i].id.substr(3)).value+"&rent="+eval('da['+f[i].value+'].col2')+"&bid="+f[i].value,"1");
+	 	}
+ 	 }
+ 	 window.setTimeout('window.window.location.href=\'/basket\'',1000);
+ }
+ var da=new Array();
+</script>
+
+<script type="text/javascript">
+<!--
+function ValidateForm1(theForm) {
+
+var strFilter = /^[ѓЉЊЋљњћџАБВГДЕЖЗИЙКЛМНОПРСТУФХЦШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцшщъыьэюя \t\r\n\f]*$/;
+var chkVal = theForm.Editbox1.value;
+if (!strFilter.test(chkVal))
+{
+   alert("Только русский язык в поле \"Название организации\"");
+   theForm.Editbox1.focus();
+   return false;
+}
+if (theForm.Editbox1.value == "")
+{
+   alert("Вы не заполнили поле \"Название организации\"");
+   theForm.Editbox1.focus();
+   return false;
+}
+if (theForm.Editbox1.value.length < 2)
+{
+   alert("Слишком короткий \"Название организации\"");
+   theForm.Editbox1.focus();
+   return false;
+}
+if (theForm.Editbox1.value.length > 70)
+{
+   alert("Вы не заполнили поле \"Название организации\"");
+   theForm.Editbox1.focus();
+   return false;
+}
+
+if (theForm.Editbox6.value == "")
+{
+   alert("Вы не заполнили поле \"Куда высылать счет\"");
+   theForm.Editbox6.focus();
+   return false;
+}
+if (theForm.Editbox6.value.length < 1)
+{
+   alert("Вы не заполнили поле \"Куда высылать счет\"");
+   theForm.Editbox6.focus();
+   return false;
+}
+return true;
+}
+//-->
+</script>
+<script type="text/javascript" src="./js_index/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+<?php include ("index/header-callme.txt"); ?>
+
+	<!-- start page -->
+	<div id="page">
+		<div id="bgtop"></div>
+		<div id="bgbottom">
+			<!-- start menu -->
+
+<?php include ("index/menu.txt"); ?>
+
+			<!-- начало Right -->
+			<div id="right"><?php include ("index/soc-seti.txt"); ?> 
+			     <h1>Компьютеры по безналу</h1>
+				     <div id="text">
+Как <strong>купить компьютер по безналу</strong> на cooler.by?
+<br> Для получения счета необходимо отправить онлайн заявку либо в удобной для вас форме
+прислать реквезиты вашей организации с контактами для обратной связи 
+на <b>E-mail : <script language="JavaScript">
+var lg1  = 'bez'+'nal';
+var sr4 = 'coo'+'ler'+'.b'+'y';
+var emq  = lg1+'@'+sr4;
+document.write(emq);
+</script><noscript>
+Для просмотра email включите java-script
+</noscript></b> или факс +375-17-<b>284-76-14</b>.
+<br>
+Наши реквизиты: ЧТУП "Варетис" УНП 191309139. Режим работы: ежедневно 10.00 - 19.00.
+</br><a href="price-cooler.by.xls"> <b id="price">>> Скачать прайс по безналичному расчету <<</b></a>
+</div>
+<div id="wb_Form2" style="position:relative;background-color:#F7F9FC;top:0px;height:400px;z-index:71">
+<form method="POST" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" accept-charset="UTF-8" id="Form1" onsubmit="return ValidateForm1(this)">
+				<table class="conf-t">
+					<tr>
+						<th style="color:#f43939">Заказать СЧЕТ</th><th align="left" width="60px">Кол-во</th><th align="left">Цена</th>
+					</tr>
+					<tr>
+						<td colspan="3"><div class="sep">&nbsp;</div></td>
+					</tr>
+
+<!------------------------------------------------------------------//-->
+					<tr height="25px">					
+						<td style="width:555px"><input id="sel1"  type="hidden" />
+						<input id="kolval1"  type="hidden" />
+						<input name="parentid[]" value="19667" type="hidden" />
+						<select  style="font-size:11px;width:492px;" name="Компьютеры" id="tov1" onchange="addconf('1');">
+						<option value="0">Компьютеры и системные блоки</option>
+						
+						
+				
+						<option value="0">- - Компьютеры (в комплекте с монитором, клавиатурой и мышью) - -</option>
+						<script>
+						da[1]=new dataArray('sko/cpu/12.html','3814000');
+						</script>			
+							<option value="1">Компьютер Эко-130 = 3.814.000 бел.р.</option>
+							
+                          
+                        <script>
+						da[2]=new dataArray('sko/cpu/12.html','3837000');
+						</script>
+							<option value="2">Компьютер для офиса Celeron G530 = 3.837.000 бел.р.</option>    
+						
+                        <script>
+						da[3]=new dataArray('sko/cpu/12.html','3874000');
+						</script>			
+							<option value="3">Компьютер Бухгалтер-профи Celeron G540 = 3.874.000 бел.р.</option>
+                            
+                        <option value="0">- - Системные блоки - -</option>    
+							
+						<script>
+						da[5]=new dataArray('sko/cpu/12.html','2494000');
+						</script>
+							<option value="5">Системный блок Эко-130 = 2.494.000 бел.р.</option>
+                                                                       
+                        <script>
+						da[7]=new dataArray('sko/cpu/12.html','2517000');
+						</script>
+							<option value="7">Системный блок для офиса Celeron G530 = 2.517.000 бел.р.</option>
+                            
+                        <script>
+						da[8]=new dataArray('sko/cpu/12.html','2554000');
+						</script>
+							<option value="8">Системный блок Бухгалтер-профи Celeron G540 = 2.554.000 бел.р.</option>   
+                            
+                        <script>
+						da[9]=new dataArray('sko/cpu/12.html','2362000');
+						</script>
+							<option value="9">Системный блок Intel Celeron G530   = 2.362.000 бел.р.</option>
+                            
+                        <script>
+						da[110]=new dataArray('sko/cpu/12.html','2465000');
+						</script>
+							<option value="110">Системный блок Athlon X2 240    = 2.465.000 бел.р.</option>	
+                            
+                        <script>
+						da[111]=new dataArray('sko/cpu/12.html','2477000');
+						</script>
+							<option value="111">Системный блок AMD Athlon X2 245  = 2.477.000 бел.р.</option>
+                            
+                        <script>
+						da[112]=new dataArray('sko/cpu/12.html','2499000');
+						</script>
+							<option value="112">Системный блок AMD Athlon X2 250  = 2.499.000 бел.р.</option> 
+                            
+                        <script>
+						da[113]=new dataArray('sko/cpu/12.html','2500000');
+						</script>
+							<option value="113">Системный блок AMD Athlon X2 255   = 2.500.000 бел.р.</option>
+                            
+                        <script>
+						da[114]=new dataArray('sko/cpu/12.html','2522000');
+						</script>
+							<option value="114">Системный блок AMD Athlon X2 260   = 2.522.000 бел.р.</option>	
+                            
+                        <script>
+						da[115]=new dataArray('sko/cpu/12.html','2636000');
+						</script>
+							<option value="115">Системный блок AMD Athlon  X2 B24    = 2.636.000 бел.р.</option>
+                            
+                        <script>
+						da[116]=new dataArray('sko/cpu/12.html','2647000');
+						</script>
+							<option value="116">Системный блок Intel Celeron G550   = 2.647.000 бел.р.</option>  
+                            
+                        <script>
+						da[117]=new dataArray('sko/cpu/12.html','2659000');
+						</script>
+							<option value="117">Системный блок AMD Athlon X2 270    = 2.659.000 бел.р.</option>
+                            
+                        <script>
+						da[118]=new dataArray('sko/cpu/12.html','2807000');
+						</script>
+							<option value="118">Системный блок Intel Celeron G550   = 2.807.000 бел.р.</option>           			
+		                <script>
+						da[119]=new dataArray('sko/cpu/12.html','2829000');
+						</script>
+							<option value="119">Системный блок Intel Celeron G860    = 2.829.000 бел.р.</option> 
+							<script>
+						da[120]=new dataArray('sko/cpu/12.html','2863000');
+						</script>
+							<option value="120">Системный блок Intel Celeron G620   = 2.863.000 бел.р.</option> 
+							<script>
+						da[121]=new dataArray('sko/cpu/12.html','3011000');
+						</script>
+							<option value="121">Системный блок Intel Pentium G870   = 3.011.000 бел.р.</option> 
+							<script>
+						da[122]=new dataArray('sko/cpu/12.html','3023000');
+						</script>
+							<option value="122">Системный блок Intel Pentium G640  = 3.023.000 бел.р.</option> <script>
+						da[123]=new dataArray('sko/cpu/12.html','3102000');
+						</script>
+							<option value="123">Системный блок Intel Pentium G840   = 3.102.000 бел.р.</option> <script>
+						da[124]=new dataArray('sko/cpu/12.html','3387000');
+						</script>
+							<option value="124">Системный блок AMD Athlon 2 X4 645   = 3.387.000 бел.р.</option> 
+						</select>
+						<a href="#" id="inf1" class="infcolorbox" target="_blank" style="display:none" ></a></td>
+						<td class="tac" id="kol1" style="display:none">
+						<input id="tovkol1"  onchange="addconf('1');" name="k[]" type="text" size="3" value="1" />
+						</td>
+						<td class="tac" id="rent1" style="display:none" ></td>
+					</tr>
+<!------------------------------------------------------------------//-->
+					<tr height="25px">					
+						<td style="width:555px"><input id="sel2"  type="hidden" />
+						<input id="kolval2"  type="hidden" />
+						<input name="parentid[]" value="19667" type="hidden" />
+						<select  style="font-size:11px;width:492px;" name="Монитор" id="tov2" onchange="addconf('2');">
+						<option value="0">Мониторы</option>
+						
+						<script>
+						da[21]=new dataArray('sko/cpu/12.html','1190000');
+						</script>
+							<option value="21">Монитор 19" LG, Philips = 1.190.000 бел.р.</option>
+                            
+						<script>
+						da[22]=new dataArray('sko/cpu/12.html','1369000');
+						</script>
+							<option value="22">Монитор 20" LG, Philips = 1.369.000 бел.р.</option>
+                            
+                        <script>
+						da[23]=new dataArray('sko/cpu/12.html','1620000');
+						</script>
+							<option value="23">Монитор 22" LG, Philips = 1.620.000 бел.р.</option>
+                            
+						<script>
+						da[24]=new dataArray('sko/cpu/12.html','2085000');
+						</script>
+							<option value="24">Монитор 23" LG, Philips = 2.085.000 бел.р.</option>
+                            
+                        <script>
+						da[25]=new dataArray('sko/cpu/12.html','2240000');
+						</script>
+							<option value="25">Монитор 24" LG, Philips = 2.240.000 бел.р.</option> 
+                            
+                        <script>
+						da[26]=new dataArray('sko/cpu/12.html','3680000');
+						</script>
+							<option value="26">Монитор 27"(26") LG, Philips = 3.680.000 бел.р.</option>       					
+																											
+							
+						</select>
+						<a href="#" id="inf2" class="infcolorbox" target="_blank" style="display:none" ></a></td>
+						<td class="tac" id="kol2" style="display:none">
+						<input id="tovkol2"  onchange="addconf('2');" name="k[]" type="text" size="3" value="1" />
+						</td>
+						<td class="tac" id="rent2" style="display:none" ></td>
+					</tr>	
+<!----------------------------------------------------------------//-->	
+					<tr height="25px">					
+						<td style="width:555px"><input id="sel3"  type="hidden" />
+						<input id="kolval3"  type="hidden" />
+						<input name="parentid[]" value="19667" type="hidden" />
+						<select  style="font-size:11px;width:492px;" name="Клавиатура" id="tov3" onchange="addconf('3');">
+						<option value="0">Клавиатуры</option>
+						
+						<script>
+						da[31]=new dataArray('sko/cpu/12.html','80000');
+						</script>
+							<option value="31">Клавиатура офисная, классический дизайн = 80.000 бел.р.</option>
+                            
+						<script>
+						da[32]=new dataArray('sko/cpu/12.html','140000');
+						</script>
+							<option value="32">Клавиатура мультимедийная  = 140.000 бел.р.</option>
+                            
+                        <script>
+						da[33]=new dataArray('sko/cpu/12.html','275000');
+						</script>
+							<option value="33">Набор беспроводная клавиатура и мышь  = 275.000 бел.р.</option>					
+																				
+							
+							
+						</select>
+						<a href="#" id="inf3" class="infcolorbox" target="_blank" style="display:none" ></a></td>
+						<td class="tac" id="kol3" style="display:none">
+						<input id="tovkol3"  onchange="addconf('3');" name="k[]" type="text" size="3" value="1" />
+						</td>
+						<td class="tac" id="rent3" style="display:none" ></td>
+					</tr>	
+<!----------------------------------------------------------------//-->	
+					<tr height="25px">					
+						<td style="width:555px"><input id="sel4"  type="hidden" />
+						<input id="kolval4"  type="hidden" />
+						<input name="parentid[]" value="19667" type="hidden" />
+						<select  style="font-size:11px;width:492px;" name="Мышь" id="tov4" onchange="addconf('4');">
+						<option value="0">Мыши</option>
+						
+						<script>
+						da[41]=new dataArray('sko/cpu/12.html','50000');
+						</script>
+							<option value="41">Мышь офисная, классический дизайн = 50.000 бел.р.</option>
+						<script>
+						da[42]=new dataArray('sko/cpu/12.html','155000');
+						</script>
+							<option value="42">Мышь беспроводная  = 164.000 бел.р.</option>					
+																				
+							
+							
+						</select>
+						<a href="#" id="inf4" class="infcolorbox" target="_blank" style="display:none" ></a></td>
+						<td class="tac" id="kol4" style="display:none">
+						<input id="tovkol4"  onchange="addconf('4');" name="k[]" type="text" size="3" value="1" />
+						</td>
+						<td class="tac" id="rent4" style="display:none" ></td>
+					</tr>	
+<!----------------------------------------------------------------//-->
+					<tr height="25px">					
+						<td style="width:555px"><input id="sel5"  type="hidden" />
+						<input id="kolval5"  type="hidden" />
+						<input name="parentid[]" value="19667" type="hidden" />
+						<select  style="font-size:11px;width:492px;" name="Колонки" id="tov5" onchange="addconf('5');">
+						<option value="0">Колонки</option>
+						
+						<script>
+						da[51]=new dataArray('sko/cpu/12.html','99000');
+						</script>
+							<option value="51">Колонки Sven Stereo офисные = 99.000 бел.р.</option>
+                            
+						<script>
+						da[52]=new dataArray('sko/cpu/12.html','165000');
+						</script>
+							<option value="52">Колонки Sven Stereo+ = 165.000 бел.р.</option>					
+																				
+							
+							
+						</select>
+						<a href="#" id="inf5" class="infcolorbox" target="_blank" style="display:none" ></a></td>
+						<td class="tac" id="kol5" style="display:none">
+						<input id="tovkol5"  onchange="addconf('5');" name="k[]" type="text" size="3" value="1" />
+						</td>
+						<td class="tac" id="rent5" style="display:none" ></td>
+					</tr>	
+<!----------------------------------------------------------------//-->
+				
+		                <tr>
+						<td colspan="3"><div class="sep">&nbsp;</div></td>
+					</tr>
+
+					<tr>
+						
+						<td><h3><span id="skidka"></span></h3></td>
+						<td class="tac"><h3>Сумма&nbsp;</h3></td>
+						<td class="tac" valign="top">						
+
+						<h3 id="summall"style="white-space:nowrap" >0 бел.р.</h3></td><input type="hidden"  name="Стоимость" id="globalrent" value="0">
+						<input type="hidden"  id="globalrent2" value="0">
+						<input type="hidden" name="Скидка" id="gskidka2" value="0">
+					</tr>
+				</table> 
+					
+
+<div id="wb_Text27" style="position:relative;left:3px;bottom:17px;width:145px;height:15px;text-align:left;">
+<font style="font-size:12px" color="#000000" face="Arial">Название организации*</font></div>
+<div id="wb_Text28" style="position:relative;left:3px;bottom:3px;width:145px;height:15px;text-align:left;">
+<font style="font-size:12px" color="#000000" face="Arial">УНП организации</font></div>
+<div id="wb_Text29" style="position:relative;left:3px;bottom:-12px;width:145px;height:15px;text-align:left;">
+<font style="font-size:12px" color="#000000" face="Arial">Юридический адрес</font></div>
+<div id="wb_Text30" style="position:relative;left:3px;bottom:-26px;width:145px;height:30px;text-align:left;">
+<font style="font-size:12px" color="#000000" face="Arial">Банковские реквизиты</font></div>
+<div id="wb_Text31" style="position:relative;left:405px;top:30px;width:145px;height:30px;text-align:left;">
+<font style="font-size:12px" color="#000000" face="Arial">Контактный тел:</font></div>
+<input type="text" id="Editbox1" style="position:relative;left:157px;bottom:123px;width:342px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;" name="Название организации" value="" maxlength="99">
+<input type="text" id="Editbox2" style="position:relative;right:191px;bottom:95px;width:342px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;" name="УНП организации" value="" maxlength="25">
+<input type="text" id="Editbox3" style="position:relative;left:157px;bottom:86px;width:506px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;" name="Юридический адрес" value="" maxlength="170">
+<input type="text" id="Editbox4" style="position:relative;left:157px;bottom:76px;width:506px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;" name="Банковские реквизиты" value="" maxlength="180">
+<input type="text" id="Editbox5" style="position:relative;right:11px;bottom:42px;width:162px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;" name="Контактный тел:" value="" maxlength="40">				                
+<div id="wb_Text32" style="margin:0;position:relative;left:3px;bottom:67px;width:145px;height:30px;text-align:left;">
+<font style="font-size:12px" color="#000000" face="Arial"><b>Куда высылать счет?*</b> <br>Укажите E-mail или Факс</font></div>
+<input type="text" id="Editbox6" style="position:relative;left:157px;bottom:96px;width:220px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;" name="E-mail или Факс" value="" maxlength="70">
+<input type="submit" id="Button1" name="" value="Отправить" title="Отправить заявку">
+<a href="./kompjutery-po-beznalichnomu-raschetu.html"><input type="reset" id="Button2" name="" value="Очистить" title="Очистить форму"></a>
+</form>
+                
+</div>
+                     
+<?php
+$result = mysql_query("SELECT title,image,image_alt,image_title,beznal,beznal_sb,beznal_monitor,beznal_keyboard,beznal_mouse,beznal_loudspeakers,processor,hdd,ram,optical_drive,motherboard,housing,vga,monitor,loudspeakers,information FROM beznal_computer", $db); 
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+exit (mysql_error());	
+}
+
+if (mysql_num_rows($result) <= 0)
+{
+
+echo "<p>Нет записей!</p>";	
+exit ();
+}
+$i=0;
+while($myrow = mysql_fetch_array($result))
+{
+	printf("<div class='komp' itemscope itemtype='http://schema.org/Product'>
+		    <h3 itemprop='name'>%s</h3>
+			<img class='img_komp' itemprop='image' src='%s' alt='%s' title='%s'/>
+			<div class='cena_komp' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>Компьютер<span class='cena_komp_gl' itemprop='price'>%s</span></div>
+                <form method='post'>
+                    <table>
+                        <tr>
+                            <td>
+                                <button id='show-ocb-form%s' class='kupi-sist-bl' >Купить</button>
+
+
+                                <div class='ocb-form' id='ocb-form-wrap%s' style='display: none'>
+                                    <div class='ocb-form-header'>
+
+                                        <div class='ocb-form-header-caption'>Быстрый заказ</div>
+                                        <div class='ocb-form-header-close'></div>
+                                    </div>
+                                    <div id='ocb-form%s'>
+                                        <div id='ocb-params%s'>
+                                            <input type='hidden' id='titleSystemBlock%s' value='%s'/>
+                                            <input type='hidden' id='itemCost%s' value='%s'/>
+                                            <div class='ocb-form-field'>
+                                                <label>Ваше имя
+                                                    <ins>*</ins>
+                                                </label>
+                                                <input type='text' name='new_order%s[FIO]' value='' id='ocb-id-FIO%s'/>
+
+                                                <div id='ocb-id-FIO%s-error%s' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                                </div>
+
+                                            </div>
+                                            <div class='ocb-form-field'>
+                                                <label>Контактный телефон
+                                                    <ins>*</ins>
+                                                </label>
+                                                <select name='operator%s'
+                                                        style='width: 70px; text-align: left; margin-right: 10px' id='operator%s'>
+                                                    <option value='velcom'>Velcom</option>
+                                                    <option value='mts'>МТС</option>
+                                                    <option value='life'>life</option>
+                                                </select><input type='text' name='new_order%s[PHONE]' value='' id='ocb-id-PHONE%s'
+                                                                style='width: 250px'/>
+
+                                                <div id='ocb-id-PHONE%s-error%s' class='ocb-error-msg'>Обязательно укажите
+                                                    контактный телефон
+                                                </div>
+
+                                            </div>
+
+                                            <div class='intaro-modules-button ptichka'>
+                                                <input type='submit' value='Отправить заказ' id='ocb-form-button%s'
+                                                       name='ocb_form_button%s'/>
+                                            </div>
+                                            <div class='ocb-form-loader'></div>
+                                        </div>
+                                    </div>
+                                    <div class='ocb-form-result' id='ocb-form-result%s'>
+                                        <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
+                                        <div class='ocb-result-icon-fail'>Ошибка!</div>
+
+                                        <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+							  <div class='cena_sist'>
+							     	 <div class='sb'>%s</div>
+									 <div class='mn'>%s</div>
+									 <div class='klv'>%s</div>
+									 <div class='msh'>%s</div>
+									 <div class='kln'>%s</div>						     						 
+							 </div>
+							 <div class='spisok' itemprop='description'>
+			Процессор - <b>%s</b> Жёсткий диск - <b>%s</b>
+			Оперативная память - <b>%s</b> Оптический привод - <b>%s</b>
+			Материнская плата - <b>%s</b> Корпус - <b>%s</b> 
+            Видеокарта - <b>%s</b>
+            <br>Монитор - <b>%s</b> Колонки - <b>%s</b>
+			<br>%s 
+			</div>
+			</div>", $myrow["title"], $myrow["image"], $myrow["image_alt"], $myrow["image_title"], $myrow["beznal"],$i,$i,$i,$i,$i, $myrow["title"],$i,$myrow["beznal"],$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i, $myrow["beznal_sb"], $myrow["beznal_monitor"], $myrow["beznal_keyboard"], $myrow["beznal_mouse"], $myrow["beznal_loudspeakers"], $myrow["processor"], $myrow["hdd"], $myrow["ram"], $myrow["optical_drive"], $myrow["motherboard"], $myrow["housing"], $myrow["vga"], $myrow["monitor"], $myrow["loudspeakers"], $myrow["information"]);
+$i++;
+            }
+
+
+?> 					 
+
+<div id="fon">
+	 <div id="tabl">
+     <p><b>Таблица вариантов сборки системных блоков при покупке по безналу. <span style="color: #E43C15; font-size: 14px;">Конфигурацию можно изменять!</span></b></p>
+<?php
+$result = mysql_query("SELECT number,processor,ram,hdd,vga,motherboard,dvd_rw,housing,cost_clearing FROM build_computer WHERE type='beznal' ORDER BY number", $db); 
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+exit (mysql_error());	
+}
+
+if (mysql_num_rows($result) <= 0)
+{
+echo "<p>Нет записей!</p>";
+exit ();
+}
+
+echo "<TABLE BORDER='1px' CELLSPACING='0px'  bgcolor='#ffffff'>
+<TR ALIGN='center' bgcolor='#f0f0f0'>
+<TD ALIGN='left' width='22px'>№</TD><TD width='127px'>Процессор<br>(ядер X такт.частота)</TD><TD width='93px'>RAM</TD><TD width='60px'>HDD</TD><TD width='140px'>Видеокарта</TD><TD width='170px'>
+Материнская плата</TD><TD width='35px'>DVD-RW</TD><TD width='120px'>Корпус (блок питания)</TD><TD width='80px'>Цена системного<br>блока по безнал.расч<br>в бел.руб.</TD>
+</TR>";
+do
+{
+	printf("<TR  ALIGN='center' height='42px'>
+<TD>%s.</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD>
+</TR>", $myrow["number"], $myrow["processor"], $myrow["ram"], $myrow["hdd"], $myrow["vga"], $myrow["motherboard"], $myrow["dvd_rw"], $myrow["housing"], $myrow["cost_clearing"]);	
+}
+while($myrow = mysql_fetch_array($result));
+echo "</TR></TABLE>";
+?>
+     </div>
+	        <div id="korp">Чтобы выбрать корпус перейдите на страницу выбора: <a href="korpusy.html"><img src="ofisnyj_kompjuter/img01.png" id="korp_img"></a></div>
+</div>					 					 				 					 
+					 <div id="text_footer">
+                     
+Уважаемые клиенты, отвечаем на часто задаваемые вопросы при покупке <strong>компьютера по безналичному расчету</strong>:
+<br><br>
+1. Почему вы должны приобрести товар на Cooler.by?
+<br> Мы предоставляем вам персонльного менеджера, который подберет 
+товар для вашей компании, 
+организует БЕСПЛАТНУЮ ДОСТАВКУ по городу Минску, в удобное для вас время. 
+А так как мы являемся представителями крупных импортеров  
+компьютерной и офисной техники в Республике Беларусь, 
+Вас ожидают приятные ценовые предложения.
+<br><br>
+2.  Что Вы получаете сделав заказ у нас?
+<br>Вы экономите свое время и деньги!
+Став клиентом нашей компании будте уверены, что купили качественный товар,
+т.к. вся продукция сертифицирована в Республике Беларусь и имеет сервисную поддержку официальных 
+центров обслуживания.
+<br><br>
+                     
+                     
+					 <b>Компьютеры по безналичному расчету</b>
+                      <br>Для выписки счёта необходимо:
+                       <br>1. Уточнить все важные нюансы, интересующего Вас товара, у менеджера.
+                       <br>2. Выслать информацию на  e-mail:
+                       <br>- название организации, индивидуального предпринимателя;
+                       <br> - юридический адрес;
+                       <br> - название банка, р/с, адрес, код;
+                       <br> - ФИО директора  (для договора);
+                        <br>- контактные телефоны.
+					 </div>
+		</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<hr />
+	<!-- start footer -->
+<?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika_jivo.txt"); ?>
+
+<?php if($_SERVER['REQUEST_METHOD'] == 'POST') : ?>
+   <script type="text/javascript">alert("Заявка отправлена.");</script>
+<?php endif; ?>
+<?php
+
+           for($j=0;$j<=$i;$j++)
+           {
+               printf(" <script type='text/javascript'>
+$(document).ready(function() {
+$('#show-ocb-form{$j}').live('click', function() {
+$('#ocb-form-wrap{$j}').show();
+$('#ocb-form{$j}').show();
+$('#ocb-form-result{$j}').hide();
+return !1;
+});
+
+$('.ocb-form-header-close').live('click', function() {
+$('.ocb-error-msg').each(function(index) { $(this).hide(); });
+$('.ocb-result-icon-success').hide();
+$('.ocb-result-icon-fail').hide();
+$('#ocb-form-wrap{$j}').fadeOut();
+return !1;
+});
+
+$('button.intaro-modules-button.disabled, .intaro-modules-button.disabled input').live('click', function() {
+return false;
+});
+
+$('#ocb-form-button{$j}').live('click', function() {
+$('.ocb-error-msg').each(function(index) { $(this).hide(); });
+var fieldId, fieldVal, checked = !0, self = $(this);
+$('input[name^=\"new_order{$j}\"]').each(function() {
+fieldId = $(this).attr('id');
+fieldVal = $(this).val();
+if (fieldVal=='') {
+$('#' + fieldId + '-error{$j}').show();
+checked = !1;
+}
+});
+if (!checked) return !1;
+$('.intaro-modules-button', $(this)).addClass('disabled');
+$('.ocb-form-loader').show();
+
+if(!$('#ocb-antispam{$j}').length) {
+$('#ocb-params{$j}').prepend(\"<input id='ocb-antispam' type='hidden' name='antispam' value=''>\");
+}
+
+$.ajax({
+url: \"/send_mail.php\",
+data: \"firstname=\" + $(\"#ocb-id-FIO{$j}\").val() + \"&mobile_phone=\" + $(\"#ocb-id-PHONE{$j}\").val() + \"&title=\" + $(\"#titleSystemBlock{$j}\").val() + \"&price=\" + $(\"#itemCost{$j}\").val() + \"&mobile_operator=\" + $(\"#operator{$j}\").val(),
+type: 'POST',
+dataType: 'json',
+error: function(obj, text, err) {
+},
+success: function(data) {
+if(data.ok!='Y') {
+$('.ocb-result-icon-fail').show();
+$('.ocb-result-text').text(data.msg);
+} else {
+$('.ocb-result-icon-success').show();
+if ($('#cart_line{$j}').length > 0)
+$('#cart_line{$j}').html(data.msg);
+}
+$('.ocb-form-loader').hide();
+$('.intaro-modules-button', self).removeClass('disabled');
+$('#ocb-form{$j}').hide();
+$('#ocb-form-result{$j}').show();
+window.setTimeout(function() { $('.ocb-form-header-close').click(); }, 3000);
+}
+});
+return !1;
+});
+});
+
+</script>
+");
+}
+
+?>
+</body>
+</html>

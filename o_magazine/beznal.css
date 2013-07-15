@@ -1,0 +1,160 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	border-bottom: 1px solid;
+	text-align: justify;
+	padding: 10px 30px 10px 16px;
+	margin-top: 4px
+}
+
+/* komp_office */
+#komp {
+    height: 212px;
+    border-bottom: 1px solid;
+}
+#komp h3{
+    margin: 20px 0 0 10px;
+    font-size: 14px ;
+	color: #E43C15;
+}
+#img_komp {
+    float: left;
+    margin: 6px 0 15px 5px;
+}
+.komp {
+    height: 220px;
+    border-bottom: 1px solid;
+}
+.komp h3{
+    margin: 15px 0 0 10px;
+    font: bold 14px ;
+	color: #E43C15;
+}
+.img_komp {
+    float: left;
+    /*margin: 6px 0 15px 5px;*/
+	border: none;
+}
+.cena_komp {
+    float: left;
+    width: auto;
+	height: 22px;
+	padding: 2px 9px 0 6px;
+	margin: 2px 6px 0 10px;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: url(http://cooler.by/index/cena_komp1.png) repeat-x;
+    border: 1px solid #da5353;
+    border-radius: 2px;
+}
+.cena_komp .cena_komp_gl {
+    font: bold 16px "Century Gothic";
+    padding-left: 5px;
+}
+.cena_sist {
+    float: right;
+    width: 368px;
+	height: 17px;
+	padding: 17px 0 0 10px;
+	margin: 13px 10px 0 0;
+	font: bold 12px "Helvetica"; 
+	color: #fff;
+	background: url(http://cooler.by/index/cena_sistemnyj_blok.png) no-repeat;
+}
+.spisok {
+    float: left;
+	width: 370px;
+    padding: 10px 0 0 10px;
+	font: normal 11px "Helvetica";
+	line-height: 14px;
+}
+.sb, .mn, .klv, .msh, .kln {
+    float: left;  
+    text-align: center;	
+}
+.sb {
+	width: 92px;	
+}
+.mn {
+	width: 49px;
+    margin-left: 13px;	
+}
+.klv {
+	width: 67px;
+    margin-left: 15px;	
+}
+.msh {
+	width: 34px;
+    margin-left: 15px;		
+}
+.kln {
+	width: 46px;
+    margin-left: 15px;		
+}
+#spisok {
+    float: left;
+	width: 370px;
+    padding: 10px 0 0 2px;
+	font: normal 11px "Helvetica";
+	line-height: 14px;
+}
+#spisok a{
+    float: right;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+/* tablica */
+#fon {
+    margin-left: -229px;
+    padding-left: 245px;
+	background-color: #fff;
+}
+#tabl {
+    margin: 8px 10px 0 -190px;
+	font-size: 12px;
+}
+#tabl p{
+    margin: 15px 0 5px 0px;
+}
+#tabl tr:hover {
+   background-color: #FFE88C;
+   color: #000;
+}
+#tabl tr:first-child {
+   background-color: #f0f0f0;
+   color: #474848;
+}
+#korp {
+   margin: 20px 0 20px -182px;
+}
+#korp_img{
+   margin: 0 0 -6px 7px;
+}
+
+/* попул€рные_товары */
+#popul_tov {
+    margin: 8px 0 0 -180px;
+	font-size: 12px;
+}
+#popul_tov p{
+    margin: 18px 0 5px 0;
+	color: #E43C15;
+}
+
+#text_footer {
+    text-align: justify;
+    margin: 18px 20px 0 10px;
+}

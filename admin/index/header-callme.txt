@@ -1,0 +1,14 @@
+  <!-- начало меню -->
+	<div id="menu">
+		<!--<ul>
+			<li><a href="novosti_i_stati.html">Надо знать</a></li>
+			<li><a href="kompjuter_v_kredit_v_minske.html">В кредит</a></li>
+			<li><a href="dostavka_rb.html">Доставка РБ</a></li>
+			<li><a href="kompjutery-po-beznalichnomu-raschetu.html">Безнал</a></li>
+			<li><a href="o_magazine.html">О магазине</a></li>
+		</ul>-->
+	</div>
+	<!-- start header -->
+	<div id="header">
+                <a href="index.php"><img id="logo" src="images/logo.png" alt="купить компьютер в минске" title="купить компьютер в минске"/></a>
+	</div>

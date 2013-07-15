@@ -1,0 +1,25 @@
+  <!-- начало меню -->
+	<div id="menu">
+		<ul>
+			<li><a href="novosti_i_stati.html">Надо знать</a></li>
+			<li><a href="kompjuter_v_kredit_v_minske.html">В кредит</a></li>
+			<li><a href="dostavka_rb.html">Доставка РБ</a></li>
+			<li><a href="kompjutery-po-beznalichnomu-raschetu.html">Безнал</a></li>
+			<li><a href="o_magazine.html">О магазине</a></li>
+		</ul>
+	</div>
+	<!-- start header -->
+	<div id="header">
+	            <div id="dostavka">
+				     Бесплатная доставка* 
+					 <br>15.00-22.00 (пн-пт)
+			         <br>Приём звонков: 10:00-19:00
+			    </div>
+			    <div id="tel">
+				     Звоните по тел: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skype: cooler.by
+			         <br>VEL: <font size="2">(029)</font> 198-70-77&nbsp;&nbsp; ICQ: 610853976
+				     <br>MTS: <font size="2">(029)</font> 758-00-77 &nbsp;&nbsp;Гор: 284-76-14
+			    </div>
+				<img id="glv_komp" src="images/glv_komp.png" alt="компьютеры в минске" title="компьютеры в минске"/>
+                <a href="index.html"><img id="logo" src="images/logo.png" alt="купить компьютер в минске" title="купить компьютер в минске"/></a>
+	</div>

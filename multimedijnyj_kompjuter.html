@@ -1,0 +1,405 @@
+﻿<?php
+include ("blocks/bd.php");/*Connecting to BD!*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Суперигровые мультимедийные компьютеры для 3D игр</title>
+<meta name="description" content="Суперигровой компьютер - это мощный компьютер, предназначенный для задач, которые требуют от системы большой 
+производительности и вычислительной мощности. Такой супер компьютер справится с любой задачей, будь-то программа обработки трехмерного изображения 
+либо современная требовательная компьютерная игра. Представленные нами готовые решения максимально подобраны и сбалансированы для получения 
+максимальной производительности при меньших финансовых затратах.">
+<meta name="keywords" content="Мультимедийный компьютер, мощный компьютер, супер компьютер" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="multimedijnyj_kompjuter/multimedijnyj_kompjuter.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/global.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.lightbox-0.5.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.treeview.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript" src="js/jquery.treeview.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/flyshit.js"></script>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+<?php include ("index/header-callme.txt"); ?>
+
+	<!-- start page -->
+	<div id="page">
+		<div id="bgtop"></div>
+		<div id="bgbottom">
+			<!-- start menu -->
+
+<?php include ("index/menu.txt"); ?>
+
+			<!-- начало Right -->
+			<div id="right"><?php include ("index/soc-seti.txt"); ?> 
+			     <h1>Суперигровой компьютер</h1>
+				     <div id="text">
+Суперигровой компьютер - это мощный компьютер, предназначенный для задач, которые требуют от системы большой производительности и вычислительной мощности. Такой супер компьютер 
+справится с любой задачей, будь-то программа обработки трехмерного изображения либо современная требовательная компьютерная игра. Представленные нами готовые решения максимально
+подобраны и сбалансированы для получения максимальной производительности при меньших финансовых затратах.
+<br>
+Системные блоки можно приобрести без монитора и периферии!
+<br><br>
+<a href="tablica-videokart.html" target="_blank"><b>Сравнительный тест видеокарт</b></a>
+<br>
+<a href="tablica-processorov.html" target="_blank"><b>Сравнение производительности процессоров</b></a>
+                     </div>
+					 
+<?php
+$result = mysql_query("SELECT title,image,cost,information,processor,hdd,ram,optical_drive,motherboard,housing,vga FROM kompjuter WHERE type='akciya_multimedijnyj'", $db); 
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+exit (mysql_error());	
+}
+
+if (mysql_num_rows($result)<= 0)
+{
+
+echo "<p>Нет записей!</p>";	
+exit ();
+}
+$i=0;
+while($myrow = mysql_fetch_array($result))
+{
+	printf("<div id='komp' class='akciya' itemscope itemtype='http://schema.org/Product'>
+                         <h3 itemprop='name'>%s</h3>
+                           <span class='img-slide'><img itemprop='image' src='%s' alt='компьютер'/></span>
+                             <div class='cena-sist-bl' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>Системный блок <span class='cenagl' itemprop='price'>%s</span> у.е.</div>
+                <form method='post'>
+                    <table>
+                        <tr>
+                            <td>
+                                <button id='show-ocb-form%s' class='kupi-sist-bl' >Купить</button>
+
+
+                                <div class='ocb-form' id='ocb-form-wrap%s' style='display: none'>
+                                    <div class='ocb-form-header'>
+
+                                        <div class='ocb-form-header-caption'>Быстрый заказ</div>
+                                        <div class='ocb-form-header-close'></div>
+                                    </div>
+                                    <div id='ocb-form%s'>
+                                        <div id='ocb-params%s'>
+                                            <input type='hidden' id='titleSystemBlock%s' value='%s'/>
+                                            <input type='hidden' id='itemCost%s' value='%s'/>
+                                            <div class='ocb-form-field'>
+                                                <label>Ваше имя
+                                                    <ins>*</ins>
+                                                </label>
+                                                <input type='text' name='new_order%s[FIO]' value='' id='ocb-id-FIO%s'/>
+
+                                                <div id='ocb-id-FIO%s-error%s' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                                </div>
+
+                                            </div>
+                                            <div class='ocb-form-field'>
+                                                <label>Контактный телефон
+                                                    <ins>*</ins>
+                                                </label>
+                                                <select name='operator%s'
+                                                        style='width: 70px; text-align: left; margin-right: 10px' id='operator%s'>
+                                                    <option value='velcom'>Velcom</option>
+                                                    <option value='mts'>МТС</option>
+                                                    <option value='life'>life</option>
+                                                </select><input type='text' name='new_order%s[PHONE]' value='' id='ocb-id-PHONE%s'
+                                                                style='width: 250px'/>
+
+                                                <div id='ocb-id-PHONE%s-error%s' class='ocb-error-msg'>Обязательно укажите
+                                                    контактный телефон
+                                                </div>
+
+                                            </div>
+
+                                            <div class='intaro-modules-button ptichka'>
+                                                <input type='submit' value='Отправить заказ' id='ocb-form-button%s'
+                                                       name='ocb_form_button%s'/>
+                                            </div>
+                                            <div class='ocb-form-loader'></div>
+                                        </div>
+                                    </div>
+                                    <div class='ocb-form-result' id='ocb-form-result%s'>
+                                        <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
+                                        <div class='ocb-result-icon-fail'>Ошибка!</div>
+
+                                        <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <span class='comlekt' itemprop='description'>
+                                     <p>%s</p>
+                                     <b>Комплектация:</b>
+                                     <br>Процессор - <b>%s</b> Жёсткий диск - <b>%s</b>
+			                         <br>Оперативная память - <b>%s</b> Оптический привод - <b>%s</b>
+                                     <br>Материнская плата - <b>%s</b> Корпус - <b>%s</b> 
+                                     <br>Видеокарта - <b>%s</b></span>
+                     </div>
+", $myrow["title"], $myrow["image"], $myrow["cost"],$i,$i,$i,$i,$i, $myrow["title"],$i,$myrow["cost"],$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i, $myrow["information"], $myrow["processor"], $myrow["hdd"], $myrow["ram"], $myrow["optical_drive"], $myrow["motherboard"], $myrow["housing"], $myrow["vga"]);
+$i++;
+                }
+
+
+?> 
+<?php
+$result = mysql_query("SELECT title,image,cost,cost_sb,cost_monitor,cost_keyboard,cost_mouse,cost_loudspeakers,processor,hdd,ram,optical_drive,motherboard,housing,vga,monitor,loudspeakers,information FROM kompjuter WHERE type='multimedijnyj'", $db); 
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+exit (mysql_error());	
+}
+
+if (mysql_num_rows($result) <= 0)
+{
+
+echo "<p>Нет записей!</p>";	
+exit ();
+}
+
+while($myrow = mysql_fetch_array($result))
+{
+	printf("<div class='komp' itemscope itemtype='http://schema.org/Product'>
+		    <h3 itemprop='name'>%s</h3>
+			<img class='img_komp' itemprop='image' src='%s' alt='Суперигровой компьютер' title='Суперигровой компьютер'/>
+			<div class='cena_komp' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>Компьютер<span class='cena_komp_gl' itemprop='price'>%s</span> у.е. </div>
+                <form method='post'>
+                    <table>
+                        <tr>
+                            <td>
+                                <button id='show-ocb-form%s' class='kupi-sist-bl' >Купить</button>
+
+
+                                <div class='ocb-form' id='ocb-form-wrap%s' style='display: none'>
+                                    <div class='ocb-form-header'>
+
+                                        <div class='ocb-form-header-caption'>Быстрый заказ</div>
+                                        <div class='ocb-form-header-close'></div>
+                                    </div>
+                                    <div id='ocb-form%s'>
+                                        <div id='ocb-params%s'>
+                                            <input type='hidden' id='titleSystemBlock%s' value='%s'/>
+                                            <input type='hidden' id='itemCost%s' value='%s'/>
+                                            <div class='ocb-form-field'>
+                                                <label>Ваше имя
+                                                    <ins>*</ins>
+                                                </label>
+                                                <input type='text' name='new_order%s[FIO]' value='' id='ocb-id-FIO%s'/>
+
+                                                <div id='ocb-id-FIO%s-error%s' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                                </div>
+
+                                            </div>
+                                            <div class='ocb-form-field'>
+                                                <label>Контактный телефон
+                                                    <ins>*</ins>
+                                                </label>
+                                                <select name='operator%s'
+                                                        style='width: 70px; text-align: left; margin-right: 10px' id='operator%s'>
+                                                    <option value='velcom'>Velcom</option>
+                                                    <option value='mts'>МТС</option>
+                                                    <option value='life'>life</option>
+                                                </select><input type='text' name='new_order%s[PHONE]' value='' id='ocb-id-PHONE%s'
+                                                                style='width: 250px'/>
+
+                                                <div id='ocb-id-PHONE%s-error%s' class='ocb-error-msg'>Обязательно укажите
+                                                    контактный телефон
+                                                </div>
+
+                                            </div>
+
+                                            <div class='intaro-modules-button ptichka'>
+                                                <input type='submit' value='Отправить заказ' id='ocb-form-button%s'
+                                                       name='ocb_form_button%s'/>
+                                            </div>
+                                            <div class='ocb-form-loader'></div>
+                                        </div>
+                                    </div>
+                                    <div class='ocb-form-result' id='ocb-form-result%s'>
+                                        <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
+                                        <div class='ocb-result-icon-fail'>Ошибка!</div>
+
+                                        <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+							  <div class='cena_sist'>
+							     	 <div class='sb'>%s у.е.</div>
+									 <div class='mn'>%s у.е.</div>
+									 <div class='klv'>%s у.е.</div>
+									 <div class='msh'>%s у.е.</div>
+									 <div class='kln'>%s у.е.</div>						     						 
+							 </div>
+							 <div class='spisok' itemprop='description'>
+			Процессор - <b>%s</b> Жёсткий диск - <b>%s</b>
+			Оперативная память - <b>%s</b> Оптический привод - <b>%s</b>
+			Материнская плата - <b>%s</b> Корпус - <b>%s</b> 
+            Видеокарта - <b>%s</b>
+            <br>Монитор - <b>%s</b> Колонки - <b>%s</b>
+			<br>%s 
+			<br><a href='#bottom'>С этим компьютером покупают >>></a>
+			</div>
+			</div>", $myrow["title"], $myrow["image"], $myrow["cost"],$i,$i,$i,$i,$i, $myrow["title"],$i,$myrow["cost"],$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i, $myrow["cost_sb"], $myrow["cost_monitor"], $myrow["cost_keyboard"], $myrow["cost_mouse"], $myrow["cost_loudspeakers"], $myrow["processor"], $myrow["hdd"], $myrow["ram"], $myrow["optical_drive"], $myrow["motherboard"], $myrow["housing"], $myrow["vga"], $myrow["monitor"], $myrow["loudspeakers"], $myrow["information"]);
+
+                $i++;
+                }
+
+
+?>                                           
+					
+<div id="fon">
+	 <div id="tabl">
+     <p><b>Таблица вариантов сборки системных блоков для суперигрового компьютера:</b></p>
+<?php
+$result = mysql_query("SELECT number,processor,ram,hdd,vga,motherboard,dvd_rw,housing,cost_sb_ue FROM build_computer WHERE type='multimedijnyj' ORDER BY number", $db); 
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+exit (mysql_error());	
+}
+
+if (mysql_num_rows($result) > 0)
+{
+$myrow = mysql_fetch_array($result);
+}
+else
+{
+echo "<p>Нет записей!</p>";	
+exit ();
+}
+
+echo "<TABLE BORDER='1px' CELLSPACING='0px'  bgcolor='#ffffff'>
+<TR ALIGN='center' bgcolor='#f0f0f0'>
+<TD ALIGN='left' width='22px'>№</TD><TD width='127px'>Процессор<br>(ядер X такт.частота)</TD><TD width='93px'>RAM</TD><TD width='60px'>HDD</TD><TD width='140px'>Видеокарта</TD><TD width='170px'>
+Материнская плата</TD><TD width='35px'>DVD-RW</TD><TD width='120px'>Корпус (блок питания)</TD><TD width='70px'>Цена<br>системного<br>блока в у.е.</TD>
+</TR>";
+do
+{
+	printf("<TR  ALIGN='center' height='42px'>
+<TD>%s.</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD>
+</TR>", $myrow["number"], $myrow["processor"], $myrow["ram"], $myrow["hdd"], $myrow["vga"], $myrow["motherboard"], $myrow["dvd_rw"], $myrow["housing"], $myrow["cost_sb_ue"]);	
+}
+while($myrow = mysql_fetch_array($result));
+echo "</TR></TABLE>";
+?>
+     </div>
+	 
+<div id="korp">Чтобы выбрать корпус перейдите на страницу выбора: <a href="korpusy.html"><img src="ofisnyj_kompjuter/img01.png" id="korp_img"></a></div>	 
+	 
+
+<?php include ("index/pop_tov.txt"); ?>
+</div>
+					 					 				 					 
+					 <div id="text_footer">
+
+					 </div>
+		</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<hr />
+	<!-- start footer -->
+<?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika_jivo.txt"); ?>
+<?php
+
+           for($j=0;$j<=$i;$j++)
+           {
+               printf(" <script type='text/javascript'>
+$(document).ready(function() {
+$('#show-ocb-form{$j}').live('click', function() {
+$('#ocb-form-wrap{$j}').show();
+$('#ocb-form{$j}').show();
+$('#ocb-form-result{$j}').hide();
+return !1;
+});
+
+$('.ocb-form-header-close').live('click', function() {
+$('.ocb-error-msg').each(function(index) { $(this).hide(); });
+$('.ocb-result-icon-success').hide();
+$('.ocb-result-icon-fail').hide();
+$('#ocb-form-wrap{$j}').fadeOut();
+return !1;
+});
+
+$('button.intaro-modules-button.disabled, .intaro-modules-button.disabled input').live('click', function() {
+return false;
+});
+
+$('#ocb-form-button{$j}').live('click', function() {
+$('.ocb-error-msg').each(function(index) { $(this).hide(); });
+var fieldId, fieldVal, checked = !0, self = $(this);
+$('input[name^=\"new_order{$j}\"]').each(function() {
+fieldId = $(this).attr('id');
+fieldVal = $(this).val();
+if (fieldVal=='') {
+$('#' + fieldId + '-error{$j}').show();
+checked = !1;
+}
+});
+if (!checked) return !1;
+$('.intaro-modules-button', $(this)).addClass('disabled');
+$('.ocb-form-loader').show();
+
+if(!$('#ocb-antispam{$j}').length) {
+$('#ocb-params{$j}').prepend(\"<input id='ocb-antispam' type='hidden' name='antispam' value=''>\");
+}
+
+$.ajax({
+url: \"/send_mail.php\",
+data: \"firstname=\" + $(\"#ocb-id-FIO{$j}\").val() + \"&mobile_phone=\" + $(\"#ocb-id-PHONE{$j}\").val() + \"&title=\" + $(\"#titleSystemBlock{$j}\").val() + \"&price=\" + $(\"#itemCost{$j}\").val() + \"&mobile_operator=\" + $(\"#operator{$j}\").val(),
+type: 'POST',
+dataType: 'json',
+error: function(obj, text, err) {
+},
+success: function(data) {
+if(data.ok!='Y') {
+$('.ocb-result-icon-fail').show();
+$('.ocb-result-text').text(data.msg);
+} else {
+$('.ocb-result-icon-success').show();
+if ($('#cart_line{$j}').length > 0)
+$('#cart_line{$j}').html(data.msg);
+}
+$('.ocb-form-loader').hide();
+$('.intaro-modules-button', self).removeClass('disabled');
+$('#ocb-form{$j}').hide();
+$('#ocb-form-result{$j}').show();
+window.setTimeout(function() { $('.ocb-form-header-close').click(); }, 3000);
+}
+});
+return !1;
+});
+});
+
+</script>
+");
+}
+
+?>
+</body>
+</html>

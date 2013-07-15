@@ -1,0 +1,202 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "Arial";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	border-bottom: 2px solid #88add8;
+	text-align: justify;
+	padding: 10px 30px 10px 16px;
+	margin-top: 4px
+}
+
+/* komp_office */
+#igra {
+    height: 212px;
+    border-bottom: 1px solid #E7E7E7;
+}
+#igra h3{
+    margin: 10px 0 5px 16px;
+    font-size: 14px ;
+	color: #E43C15;
+    line-height: 25px;
+}
+#komp {
+    height: 190px;
+    border-bottom: 1px solid #E7E7E7;
+}
+#komp h3{
+    margin: 12px 0 -14px 271px;
+    font-size: 14px ;
+	color: #E43C15;
+    line-height: 25px;
+}
+.img-slide img{
+    float: left;
+    margin: -15px 0 5px 12px;
+}
+.cena-sist-bl {
+    float: left;
+    width: auto;
+	height: 22px;
+	padding: 2px 9px 0 6px;
+	margin: 28px 6px 0 0;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: #3e78bb no-repeat;
+    border: 1px solid #82acdd;
+    border-radius: 2px;
+}
+.cena-sist-bl span {
+    font: bold 16px "Century Gothic";
+    padding-left: 5px;
+}
+.cena-igra {
+    float: left;
+    width: auto;
+	height: 21px;
+	padding: 1px 10px 0 7px;
+	margin: 9px 0px 0 36px;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: #3e78bb no-repeat;
+    border: 1px solid #82acdd;
+    border-radius: 2px
+}
+.cena-igra span {
+    font: bold 16px "Century Gothic";
+    padding-left: 5px;
+}
+.belrub {
+    float: left;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+}
+.comlekt {
+    font: normal 11px "trebuchet ms";
+    padding-top: 40px;
+    display: block;
+    line-height: 15px;
+}
+.comlekt b {
+    font-size: 12px;
+}
+.img-igr {
+    float: left;
+    margin: -20px 0 0 36px;
+}
+.rekomentr {
+    padding: 0px 0 0 184px;
+    color: #000;
+    font-size: 12px;
+    position: relative;
+    bottom: 1px;
+}
+.stolb-left {
+    margin: -9px 0 0 50px;
+    width: 160px;
+    float: left; 
+    line-height: 17px; 
+    list-style: disc outside !important;
+}
+.stolb-left span {
+    color: #ec6d10;
+}
+.stolb-right {
+    float: left;
+    margin-top: -9px;
+    line-height: 17px;
+    width: 340px;
+}
+.opisanie-left {
+    float: left;
+    line-height: 16px;
+    width: 260px;
+    margin-top: 15px;
+}
+.opisanie-right {
+    margin-top: 15px;
+    line-height: 16px;
+    float: right;
+    width: 190px;
+}
+/*slide*/
+a:focus { 
+        outline: none; 
+} 
+#panel { 
+        background: #ffffff; 
+        display: none; 
+        margin: 0 0 0px 7px;
+} 
+.panel p { 
+    text-align: justify !important;
+    line-height: normal !important;
+    padding: 5px 25px 7px 9px !important;
+    border-bottom: 0px solid #E7E7E7;
+}
+.slide { 
+        margin: 0; 
+        padding: 0; 
+        border-top: solid 2px #88add8; 
+} 
+.btn-slide { 
+        background: #E62A2A url(icostr1.png) no-repeat 104px; 
+        text-align: left; 
+        width: 128px; 
+        height: 22px; 
+        padding: 6px 0px 0 18px; 
+        margin: -35px 0 0 550px; 
+        display: block; 
+        font: bold 14px Arial, Helvetica, sans-serif; 
+        color: #fff; 
+        text-decoration: none; 
+        z-index: 100;
+} 
+.btn-slide:hover { 
+    color: #fff;
+    background: #E62A2A url(icostr1.png) no-repeat 104px; 
+    }
+.active {
+    color: #fff;
+    background: #E62A2A url(icostr2.png) no-repeat 104px; 
+} 
+.active:hover {
+    color: #fff;
+    background: #E62A2A url(icostr2.png) no-repeat 104px; 
+} 
+.image_foto {
+    float: left;
+    margin: 7px 0 5px 10px;
+}
+.imgblok {
+    width: 100%;
+    height: 127px;
+}
+/*sist*/
+.titlebr {
+    font-weight: bold;;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: #000;
+    padding: 8px 0 8px 10px;
+    border-top: 0px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+    width: 712px;
+}
+
+#text_footer {
+    text-align: justify;
+    margin: 18px 20px 0 10px;
+}

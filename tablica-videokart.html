@@ -1,0 +1,692 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Сранительный тест видеокарт в виде таблицы. Сравнение мощности и производтельности nVidia GeForce и ATI radeon.</title>
+<meta name="keywords" content="Сранительный тест видеокарт в виде таблицы. Сравнение мощности и производтельности nVidia GeForce и ATI radeon." />
+<meta name="description" content="В данной таблице представлены результатов тестирования производительности видеокарт и их примерная рыночная стоимость. Тесты проводились на платформе Intel Core i5 под операционной системой Windows 7. 
+Представленные результаты вычислялись в процентах относительно максимально производительной видеокарты, взятой за 100%. Показатели вычислялись из результатов приложений для тестирования в игровом режиме. " />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="igrovoj_kompjuter/tablica-videokart.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+             
+             var CopyPage = []; // копия страницы в ихсодном виде
+                         
+             function TrimStr(s) {
+                 s = s.replace( /^\s+/g, '');
+                 return s.replace( /\s+$/g, '');
+             }
+             
+             
+             function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+
+                 var obj = window.document.getElementById(inputId);
+                 var textToFind;
+
+                 if (obj) {
+                     textToFind = TrimStr(obj.value);//обрезаем пробелы
+                 } else {
+                     alert("Введенная фраза не найдена");
+                     return;
+                 }
+                 
+                 if (textToFind == "") {
+                     alert("Вы ничего не ввели");
+                     return;
+                 }
+                         if(document.getElementById('price').innerHTML.toLowerCase().indexOf(textToFind.toLowerCase()) == -1)
+                 {
+                 alert("Ничего не найдено, проверьте правильность ввода!");
+                 }
+                 
+                 else
+                 {
+                 
+                 for (var i=0; i<556; i++)
+                 {
+                 var id=document.getElementById("fing_"+i);
+
+                 if (CopyPage[i] == undefined)
+                      {CopyPage[i]=id.innerHTML;}
+                 else {id.innerHTML=CopyPage[i];}
+
+                 
+                 if(~id.innerHTML.toLowerCase().indexOf(textToFind.toLowerCase())) //(если не -1)
+                 //if (copy_page[i] != '')
+                     {
+                     //id.style.display='block';
+                     id.innerHTML = id.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" class=find>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
+
+                     } else {
+                                         id.style.display='none';
+                     }}
+                 }
+                 }   
+             
+         </script>
+
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+<?php include ("index/header-callme.txt"); ?>
+
+	<!-- start page -->
+	<div id="page">
+		<div id="bgtop"></div>
+		<div id="bgbottom">
+			<!-- start menu -->
+
+<?php include ("index/menu.txt"); ?>
+
+			<!-- начало Right -->
+			<div id="right">
+			     <h1>Сравнительный тест видеокарт в виде таблицы</h1>				 
+				     <div id="text">
+ В данной таблице представлены результатов тестирования производительности видеокарт и их примерная рыночная стоимость. Тесты проводились на платформе Intel Core i5 под операционной системой Windows 7. 
+ Показатели представлены в баллах и вычислялись из результатов приложений для тестирования в игровом режиме. 
+ <br>Смотрите также: <a href="tablica-processorov.html" target="_blank">Сравнение производительности процессоров</a>.
+<br>Через поиск вы можете выделить нужный параметр в виде <b>одного слова</b>, например по графическому процессору, введя в поиск <b><i>550Ti</i></b>, по объему памяти - введя <b><i>2GB</i></b> или оставить нужного производителя - введя <b><i>Palit</i></b>.
+					 
+        <form action='' method='GET' id="super-forma">
+             <input type="text" id="find" style="width:300px" value=""> 
+             <input id="knopka-1" type="button" onclick="javascript: FindOnPage('find'); return false;" value="Искать"/>
+			 <a href="http://cooler.by/tablica-videokart.html"><input  id="knopka-2" name="" value="Новый поиск"/></a>
+         </form>	
+	
+<script type="text/javascript">	
+	jQuery('#super-forma').bind("submit", function(e) {e.preventDefault(); FindOnPage('find');  })
+</script>
+				 
+	 <table class='price' id='price' >
+<tr id="shapka">	<td width="35px"><b> №	</b></td>	<td width="580px"><b>	Видеокарта</b></td>	<td  width="45px" style="line-height:100%" align="center"><b>Производи- <br>тельность</b></td>	<td width="50px" style="line-height:100%" align="center"><b> Цена в у.е.</b></td>	</tr>
+<tr id="fing_0">	<td>	1	</td>	<td>	4Gb  DDR-5 ASUS GTX690-4GD5 (RTL) 3xDVI+miniDP+SLI &lt;GeForce GTX690>	</td>	<td align="center">	315.0	</td>	<td align="center">	1057	</td>	</tr>
+<tr id="fing_1">	<td>	2	</td>	<td>	4Gb  DDR-5 MSI V801 N690GTX-P3D4GD5 (RTL) 3xDVI+miniDP+SLI &lt;GeForce GTX690>	</td>	<td align="center">	314.5	</td>	<td align="center">	1078	</td>	</tr>
+<tr id="fing_2">	<td>	3	</td>	<td>	4Gb  DDR-5 Gigabyte GV-N690D5-4GD-B (RTL) 3xDVI+miniDP+SLI &lt;GeForce GTX690>	</td>	<td align="center">	313.8	</td>	<td align="center">	1018	</td>	</tr>
+<tr id="fing_3">	<td>	4	</td>	<td>	4Gb  DDR-5 ZOTAC &lt;GeForce GTX690> (RTL) 3xDVI+miniDP+SLI	</td>	<td align="center">	313.4	</td>	<td align="center">	999	</td>	</tr>
+<tr id="fing_4">	<td>	5	</td>	<td>	4Gb  DDR-5 Palit &lt;GeForce GTX690> (RTL) 3xDVI+miniDP+SLI	</td>	<td align="center">	311.4	</td>	<td align="center">	1087	</td>	</tr>
+<tr id="fing_5">	<td>	6	</td>	<td>	3Gb  DDR-5 ASUS MATRIX-HD7970-P-3GD5 (RTL) DualDVI+4xDP &lt;RADEON HD7970 GHz Ed>	</td>	<td align="center">	232.0	</td>	<td align="center">	557	</td>	</tr>
+<tr id="fing_6">	<td>	7	</td>	<td>	3Gb  DDR-5 Gigabyte GV-R797TO-3GD (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7970 GHz Ed>	</td>	<td align="center">	228.7	</td>	<td align="center">	458	</td>	</tr>
+<tr id="fing_7">	<td>	8	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N680SO-2GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	224.5	</td>	<td align="center">	582	</td>	</tr>
+<tr id="fing_8">	<td>	9	</td>	<td>	3Gb  DDR-5 MSI V278 R7970 Lightning (RTL) DualDVI+4xminiDP &lt;RADEON HD7970>	</td>	<td align="center">	219.5	</td>	<td align="center">	544	</td>	</tr>
+<tr id="fing_9">	<td>	10	</td>	<td>	2Gb  DDR-5 MSI V283 N680GTX Lightning (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	219.4	</td>	<td align="center">	616	</td>	</tr>
+<tr id="fing_10">	<td>	11	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX680 AMP! Edit.> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	219.1	</td>	<td align="center">	574	</td>	</tr>
+<tr id="fing_11">	<td>	12	</td>	<td>	2Gb  DDR-5 ASUS GTX680-DC2T-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	218.9	</td>	<td align="center">	621	</td>	</tr>
+<tr id="fing_12">	<td>	13	</td>	<td>	6Gb  DDR-5 Sapphire &lt;RADEON HD7970 GHZ Ed. Vapor-X OC Ver.> (RTL) DualDVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	218.7	</td>	<td align="center">	656	</td>	</tr>
+<tr id="fing_13">	<td>	14	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7970 GHZ Ed. Vapor-X> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	218.4	</td>	<td align="center">	490	</td>	</tr>
+<tr id="fing_14">	<td>	15	</td>	<td>	2Gb  DDR-5 ASUS GTX670-DC2OG-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX670>	</td>	<td align="center">	218.2	</td>	<td align="center">	452	</td>	</tr>
+<tr id="fing_15">	<td>	16	</td>	<td>	3Gb  DDR-5 Gigabyte GV-R797D5-3GD-B (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7970>	</td>	<td align="center">	218.1	</td>	<td align="center">	440	</td>	</tr>
+<tr id="fing_16">	<td>	17	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX670 JetStream> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	217.9	</td>	<td align="center">	417	</td>	</tr>
+<tr id="fing_17">	<td>	18	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7970 OC with Boost Ed.> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	217.8	</td>	<td align="center">	471	</td>	</tr>
+<tr id="fing_18">	<td>	19	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX680 JetStream> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	217.7	</td>	<td align="center">	536	</td>	</tr>
+<tr id="fing_19">	<td>	20	</td>	<td>	3Gb  DDR-5 PowerColor <AX7970 3GBD5-2DHV3> (RTL) DualDVI+HDMI+DualminiDP&lt;RADEON HD7970>	</td>	<td align="center">	217.7	</td>	<td align="center">	432	</td>	</tr>
+<tr id="fing_20">	<td>	21	</td>	<td>	4Gb  DDR-5 ZOTAC &lt;GeForce GTX680> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	217.7	</td>	<td align="center">	640	</td>	</tr>
+<tr id="fing_21">	<td>	22	</td>	<td>	3Gb  DDR-5 ASUS HD7970-3GD5 (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7970>	</td>	<td align="center">	217.6	</td>	<td align="center">	501	</td>	</tr>
+<tr id="fing_22">	<td>	23	</td>	<td>	2Gb  DDR-5 ASUS GTX680-DC2-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	217.4	</td>	<td align="center">	560	</td>	</tr>
+<tr id="fing_23">	<td>	24	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX680 Phantom> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	217.2	</td>	<td align="center">	542	</td>	</tr>
+<tr id="fing_24">	<td>	25	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7970> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	217.2	</td>	<td align="center">	450	</td>	</tr>
+<tr id="fing_25">	<td>	26	</td>	<td>	3Gb  DDR-5 PowerColor <AX7970-3GBD5-2DH> (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7970>	</td>	<td align="center">	217.2	</td>	<td align="center">	422	</td>	</tr>
+<tr id="fing_26">	<td>	27	</td>	<td>	2Gb  DDR-5 Leadtek GTX680-Fan (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	216.9	</td>	<td align="center">	495	</td>	</tr>
+<tr id="fing_27">	<td>	28	</td>	<td>	3Gb  DDR-5 XFX <FX-797A-TNFC> (RTL) DVI+HDMI+DualminiDP+Crossfire &lt;RADEON HD7970>	</td>	<td align="center">	216.7	</td>	<td align="center">	551	</td>	</tr>
+<tr id="fing_28">	<td>	29	</td>	<td>	2Gb  DDR-5 ASUS GTX670-DC2T-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX670>	</td>	<td align="center">	216.4	</td>	<td align="center">	478	</td>	</tr>
+<tr id="fing_29">	<td>	30	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7970> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	216.2	</td>	<td align="center">	451	</td>	</tr>
+<tr id="fing_30">	<td>	31	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX680> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	215.9	</td>	<td align="center">	514	</td>	</tr>
+<tr id="fing_31">	<td>	32	</td>	<td>	3Gb  DDR-5 ASUS HD7970-DC2T-3GD5 (RTL) DualDVI+4xDP &lt;RADEON HD7970>	</td>	<td align="center">	215.8	</td>	<td align="center">	538	</td>	</tr>
+<tr id="fing_32">	<td>	33	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N680OC-2GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	215.6	</td>	<td align="center">	526	</td>	</tr>
+<tr id="fing_33">	<td>	34	</td>	<td>	2Gb  DDR-5 ASUS GTX680-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	215.4	</td>	<td align="center">	653	</td>	</tr>
+<tr id="fing_34">	<td>	35	</td>	<td>	2Gb  DDR-5 ASUS GTX680-DC2O-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	215.2	</td>	<td align="center">	594	</td>	</tr>
+<tr id="fing_35">	<td>	36	</td>	<td>	4Gb  DDR-5 Inno3D <N68V-2DDN-M5DS> (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	214.8	</td>	<td align="center">	573	</td>	</tr>
+<tr id="fing_36">	<td>	37	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX680> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	214.7	</td>	<td align="center">	511	</td>	</tr>
+<tr id="fing_37">	<td>	38	</td>	<td>	2Gb  DDR-5 Inno3D <N68V-1DDN-E5DS> (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	214.3	</td>	<td align="center">	479	</td>	</tr>
+<tr id="fing_38">	<td>	39	</td>	<td>	2Gb  DDR-5 MSI V282 N680GTX Twin Frozr 2GD5-OC (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	214.2	</td>	<td align="center">	570	</td>	</tr>
+<tr id="fing_39">	<td>	40	</td>	<td>	2Gb  DDR-5 MSI V801/V282 N680GTX-PM2D2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	214.2	</td>	<td align="center">	535	</td>	</tr>
+<tr id="fing_40">	<td>	41	</td>	<td>	3Gb  DDR-5 Gigabyte GV-R797OC-3GD (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7970>	</td>	<td align="center">	214.1	</td>	<td align="center">	422	</td>	</tr>
+<tr id="fing_41">	<td>	42	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX670 AMP! Edit.> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	213.9	</td>	<td align="center">	492	</td>	</tr>
+<tr id="fing_42">	<td>	43	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N680D5-2GD-B (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	213.7	</td>	<td align="center">	578	</td>	</tr>
+<tr id="fing_43">	<td>	44	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7970 OC Ver.> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	213.6	</td>	<td align="center">	478	</td>	</tr>
+<tr id="fing_44">	<td>	45	</td>	<td>	4Gb  DDR-5 Palit &lt;GeForce GTX680 JetStream> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	213.6	</td>	<td align="center">	593	</td>	</tr>
+<tr id="fing_45">	<td>	46	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N680WF3-2GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX680>	</td>	<td align="center">	213.4	</td>	<td align="center">	534	</td>	</tr>
+<tr id="fing_46">	<td>	47	</td>	<td>	3Gb  DDR-5 MSI V277 R7970-2PMD3GD5-OC (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7970>	</td>	<td align="center">	213.4	</td>	<td align="center">	501	</td>	</tr>
+<tr id="fing_47">	<td>	48	</td>	<td>	4Gb  DDR-5 Gainward &lt;GeForce GTX680 Phantom> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	213.3	</td>	<td align="center">	646	</td>	</tr>
+<tr id="fing_48">	<td>	49	</td>	<td>	2Gb  DDR-5 MSI V284 N670GTX-PM2D2GD5/OC (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX670>	</td>	<td align="center">	213.1	</td>	<td align="center">	426	</td>	</tr>
+<tr id="fing_49">	<td>	50	</td>	<td>	3Gb  DDR-5 ASUS HD7970-DC2-3GD5 (RTL) DualDVI+4xDP &lt;RADEON HD7970>	</td>	<td align="center">	213.1	</td>	<td align="center">	461	</td>	</tr>
+<tr id="fing_50">	<td>	51	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX680> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	213.1	</td>	<td align="center">	517	</td>	</tr>
+<tr id="fing_51">	<td>	52	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N670OC-2GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX670>	</td>	<td align="center">	212.7	</td>	<td align="center">	416	</td>	</tr>
+<tr id="fing_52">	<td>	53	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX670> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	212.1	</td>	<td align="center">	396	</td>	</tr>
+<tr id="fing_53">	<td>	54	</td>	<td>	2Gb  DDR-5 Inno3D <N670-1DDN-E5DS> (OEM) DualDVI+HDMI+DP+SLI &lt;GeForce GTX670>	</td>	<td align="center">	211.9	</td>	<td align="center">	459	</td>	</tr>
+<tr id="fing_54">	<td>	55	</td>	<td>	4Gb  DDR-5 ZOTAC &lt;GeForce GTX670> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	211.8	</td>	<td align="center">	518	</td>	</tr>
+<tr id="fing_55">	<td>	56	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N670WF2-2GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX670>	</td>	<td align="center">	211.4	</td>	<td align="center">	403	</td>	</tr>
+<tr id="fing_56">	<td>	57	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX670 Phantom> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	211.1	</td>	<td align="center">	433	</td>	</tr>
+<tr id="fing_57">	<td>	58	</td>	<td>	2Gb  DDR-5 Leadtek GTX 670-Fan (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX670>	</td>	<td align="center">	210.9	</td>	<td align="center">	410	</td>	</tr>
+<tr id="fing_58">	<td>	59	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX670> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	210.8	</td>	<td align="center">	420	</td>	</tr>
+<tr id="fing_59">	<td>	60	</td>	<td>	2Gb  DDR-5 ASUS GTX670-DC2-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX670>	</td>	<td align="center">	210.7	</td>	<td align="center">	438	</td>	</tr>
+<tr id="fing_60">	<td>	61	</td>	<td>	3Gb  DDR-5 ASUS HD7950-DC2T-3GD5 (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7950>	</td>	<td align="center">	209.1	</td>	<td align="center">	401	</td>	</tr>
+<tr id="fing_61">	<td>	62	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7950 OC Ver.> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	208.8	</td>	<td align="center">	374	</td>	</tr>
+<tr id="fing_62">	<td>	63	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX670> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	208.7	</td>	<td align="center">	413	</td>	</tr>
+<tr id="fing_63">	<td>	64	</td>	<td>	3Gb  DDR-5 Gigabyte GV-R795WF3-3GD (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7950>	</td>	<td align="center">	208.7	</td>	<td align="center">	334	</td>	</tr>
+<tr id="fing_64">	<td>	65	</td>	<td>	3Gb  DDR-5 ASUS HD7950-DC2T-3GD5-V2 (RTL) DualDVI+HDMI+DP &lt;RADEON HD7950>	</td>	<td align="center">	208.6	</td>	<td align="center">	364	</td>	</tr>
+<tr id="fing_65">	<td>	66	</td>	<td>	3Gb  DDR-5 MSI V277 R7950 Twin Frozr 3GD5 V2/OC (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7950>	</td>	<td align="center">	208.5	</td>	<td align="center">	357	</td>	</tr>
+<tr id="fing_66">	<td>	67	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7950 Vapor-X OC with Boost> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	207.7	</td>	<td align="center">	352	</td>	</tr>
+<tr id="fing_67">	<td>	68	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7950 Flex Ed. OC with Boost> (RTL) DualDVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	207.5	</td>	<td align="center">	361	</td>	</tr>
+<tr id="fing_68">	<td>	69	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7950 Flex Ed. OC Ver.> (RTL) DualDVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	207.1	</td>	<td align="center">	369	</td>	</tr>
+<tr id="fing_69">	<td>	70	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX660Ti AMP! Edit.> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	203.9	</td>	<td align="center">	347	</td>	</tr>
+<tr id="fing_70">	<td>	71	</td>	<td>	3Gb  DDR-5 MSI V276 R7950-2PMD3GD5-OC (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7950>	</td>	<td align="center">	203.2	</td>	<td align="center">	323	</td>	</tr>
+<tr id="fing_71">	<td>	72	</td>	<td>	3Gb  DDR-5 Gigabyte GV-N66TOC-3GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660Ti>	</td>	<td align="center">	200.7	</td>	<td align="center">	365	</td>	</tr>
+<tr id="fing_72">	<td>	73	</td>	<td>	2Gb  DDR-5 MSI V284 N660Ti PE 2GD5/OC (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660Ti>	</td>	<td align="center">	199.9	</td>	<td align="center">	348	</td>	</tr>
+<tr id="fing_73">	<td>	74	</td>	<td>	2Gb  DDR-5 ASUS GTX660 TI-DC2O-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660Ti>	</td>	<td align="center">	199.6	</td>	<td align="center">	337	</td>	</tr>
+<tr id="fing_74">	<td>	75	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX660Ti Phantom> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	199.5	</td>	<td align="center">	329	</td>	</tr>
+<tr id="fing_75">	<td>	76	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N66TOC-2GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660Ti>	</td>	<td align="center">	199.4	</td>	<td align="center">	330	</td>	</tr>
+<tr id="fing_76">	<td>	77	</td>	<td>	3Gb  DDR-5 PowerColor <AX7950 3GBD5-2DHV5> (RTL) DualDVI+HDMI+DualminiDP &lt;RADEON HD7950>	</td>	<td align="center">	199.3	</td>	<td align="center">	340	</td>	</tr>
+<tr id="fing_77">	<td>	78	</td>	<td>	3Gb  DDR-5 ASUS HD7950-DC2-3GD5-V2 (RTL) DualDVI+HDMI+DP &lt;RADEON HD7950>	</td>	<td align="center">	199.2	</td>	<td align="center">	372	</td>	</tr>
+<tr id="fing_78">	<td>	79	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7950> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	199.0	</td>	<td align="center">	351	</td>	</tr>
+<tr id="fing_79">	<td>	80	</td>	<td>	2Gb  DDR-5 ASUS GTX660 TI-DC2OG-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660Ti>	</td>	<td align="center">	198.9	</td>	<td align="center">	366	</td>	</tr>
+<tr id="fing_80">	<td>	81	</td>	<td>	3Gb  DDR-5 ASUS HD7950-DC2-3GD5 (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7950>	</td>	<td align="center">	198.9	</td>	<td align="center">	360	</td>	</tr>
+<tr id="fing_81">	<td>	82	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX660Ti JetStream> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	198.9	</td>	<td align="center">	324	</td>	</tr>
+<tr id="fing_82">	<td>	83	</td>	<td>	3Gb  DDR-5 PowerColor <AX7950 3GBD5-2DH> (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7950>	</td>	<td align="center">	198.8	</td>	<td align="center">	358	</td>	</tr>
+<tr id="fing_83">	<td>	84	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N66TWF2-2GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660Ti>	</td>	<td align="center">	198.5	</td>	<td align="center">	313	</td>	</tr>
+<tr id="fing_84">	<td>	85	</td>	<td>	2Gb  DDR-5 ASUS GTX660 TI-DC2-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660Ti>	</td>	<td align="center">	196.0	</td>	<td align="center">	332	</td>	</tr>
+<tr id="fing_85">	<td>	86	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX660Ti> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	195.9	</td>	<td align="center">	316	</td>	</tr>
+<tr id="fing_86">	<td>	87	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX660Ti> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	195.6	</td>	<td align="center">	316	</td>	</tr>
+<tr id="fing_87">	<td>	88	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX660Ti> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	195.5	</td>	<td align="center">	296	</td>	</tr>
+<tr id="fing_88">	<td>	89	</td>	<td>	1536Mb  DDR-5 ZOTAC &lt;GeForce GTX580 AMP! Edit.> (RTL) DualDVI+MiniHDMI+SLI	</td>	<td align="center">	185.2	</td>	<td align="center">	330	</td>	</tr>
+<tr id="fing_89">	<td>	90	</td>	<td>	2Gb  DDR-5 MSI V274 R7870-2GD5T/OC (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7870>	</td>	<td align="center">	184.6	</td>	<td align="center">	261	</td>	</tr>
+<tr id="fing_90">	<td>	91	</td>	<td>	3Gb  DDR-5 Leadtek GTX580 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX580>	</td>	<td align="center">	184.5	</td>	<td align="center">	378	</td>	</tr>
+<tr id="fing_91">	<td>	92	</td>	<td>	2Gb  DDR-5 ASUS HD7870-DC2TG-2GD5-V2 (RTL) DualDVI+HDMI+DP &lt;RADEON HD7870>	</td>	<td align="center">	184.4	</td>	<td align="center">	289	</td>	</tr>
+<tr id="fing_92">	<td>	93	</td>	<td>	2Gb  DDR-5 MSI V287 N660 TF 2GD5/OC (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660>	</td>	<td align="center">	184.2	</td>	<td align="center">	254	</td>	</tr>
+<tr id="fing_93">	<td>	94	</td>	<td>	2Gb  DDR-5 PowerColor <AX7870 2GBD5-2DHPP> (RTL) DualDVI+HDMI+DualminiDP&lt;RADEON HD7870>	</td>	<td align="center">	184.0	</td>	<td align="center">	395	</td>	</tr>
+<tr id="fing_94">	<td>	95	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N660OC-2GD (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660>	</td>	<td align="center">	184.0	</td>	<td align="center">	240	</td>	</tr>
+<tr id="fing_95">	<td>	96	</td>	<td>	2Gb  DDR-5 Gigabyte GV-R787OC-2GD (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7870>	</td>	<td align="center">	184.0	</td>	<td align="center">	259	</td>	</tr>
+<tr id="fing_96">	<td>	97	</td>	<td>	2Gb  DDR-5 PowerColor <AX7870 2GBD5-2DHV2> (RTL) DualDVI+HDMI+DualminiDP&lt;RADEON HD7870>	</td>	<td align="center">	183.9	</td>	<td align="center">	242	</td>	</tr>
+<tr id="fing_97">	<td>	98	</td>	<td>	1536Mb  DDR-5 Gainward &lt;GeForce GTX580 Phantom> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	183.9	</td>	<td align="center">	346	</td>	</tr>
+<tr id="fing_98">	<td>	99	</td>	<td>	2Gb  DDR-5 ASUS GTX660-DC2O-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660>	</td>	<td align="center">	183.9	</td>	<td align="center">	258	</td>	</tr>
+<tr id="fing_99">	<td>	100	</td>	<td>	2Gb  DDR-5 MSI V274 R7870 Twin Frozr 2GD5-OC (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7870>	</td>	<td align="center">	183.8	</td>	<td align="center">	307	</td>	</tr>
+<tr id="fing_100">	<td>	101	</td>	<td>	1536Mb  DDR-5 Leadtek GTX580-Fan (RTL) DualDVI+miniHDMI+SLI&lt;GeForce GTX580>	</td>	<td align="center">	183.7	</td>	<td align="center">	324	</td>	</tr>
+<tr id="fing_101">	<td>	102	</td>	<td>	1536Mb  DDR-5 MSI V256 N580GTX Twin Frozr III 15D5 Power Ed.-OC (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX580>	</td>	<td align="center">	183.6	</td>	<td align="center">	453	</td>	</tr>
+<tr id="fing_102">	<td>	103	</td>	<td>	1536Mb  DDR-5 Gigabyte GV-N580UD-15I (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX580>	</td>	<td align="center">	183.6	</td>	<td align="center">	467	</td>	</tr>
+<tr id="fing_103">	<td>	104	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX660 OC> (OEM) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	183.6	</td>	<td align="center">	237	</td>	</tr>
+<tr id="fing_104">	<td>	105	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7870 GHZ Ed. OC Ver.> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	183.5	</td>	<td align="center">	273	</td>	</tr>
+<tr id="fing_105">	<td>	106	</td>	<td>	1536Mb  DDR-5 ASUS ENGTX580 DCII/2DIS/1536MD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX580>	</td>	<td align="center">	183.5	</td>	<td align="center">	478	</td>	</tr>
+<tr id="fing_106">	<td>	107	</td>	<td>	1536Mb  DDR-5 ZOTAC &lt;GeForce GTX580> (RTL) DualDVI+MiniHDMI+SLI	</td>	<td align="center">	183.3	</td>	<td align="center">	311	</td>	</tr>
+<tr id="fing_107">	<td>	108	</td>	<td>	3Gb  DDR-5 ZOTAC &lt;GeForce GTX580> (RTL) DualDVI+miniHDMI+SLI	</td>	<td align="center">	183.2	</td>	<td align="center">	409	</td>	</tr>
+<tr id="fing_108">	<td>	109	</td>	<td>	2Gb  DDR-5 ASUS HD7870-DC2-2GD5-V2 (RTL) DualDVI+HDMI+DP&lt;RADEON HD7870>	</td>	<td align="center">	183.2	</td>	<td align="center">	282	</td>	</tr>
+<tr id="fing_109">	<td>	110	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7870 GHZ Ed. OC Ver.> (OEM) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	183.2	</td>	<td align="center">	271	</td>	</tr>
+<tr id="fing_110">	<td>	111	</td>	<td>	2Gb  DDR-5 MSI V287 N660-2GD5/OC (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660>	</td>	<td align="center">	183.0	</td>	<td align="center">	244	</td>	</tr>
+<tr id="fing_111">	<td>	112	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX660> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	183.0	</td>	<td align="center">	232	</td>	</tr>
+<tr id="fing_112">	<td>	113	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7870 GHZ Ed.> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	182.9	</td>	<td align="center">	276	</td>	</tr>
+<tr id="fing_113">	<td>	114	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX660 GS> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	182.6	</td>	<td align="center">	243	</td>	</tr>
+<tr id="fing_114">	<td>	115	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7870 Flex GHZ Ed.> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	182.5	</td>	<td align="center">	290	</td>	</tr>
+<tr id="fing_115">	<td>	116	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7870 GHZ Ed.> (OEM) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	182.5	</td>	<td align="center">	273	</td>	</tr>
+<tr id="fing_116">	<td>	117	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX660> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	182.4	</td>	<td align="center">	237	</td>	</tr>
+<tr id="fing_117">	<td>	118	</td>	<td>	2Gb  DDR-5 ASUS GTX660-DC2-2GD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX660>	</td>	<td align="center">	182.3	</td>	<td align="center">	274	</td>	</tr>
+<tr id="fing_118">	<td>	119	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX660 OC> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	182.3	</td>	<td align="center">	241	</td>	</tr>
+<tr id="fing_119">	<td>	120	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX660> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	182.2	</td>	<td align="center">	236	</td>	</tr>
+<tr id="fing_120">	<td>	121	</td>	<td>	2Gb  DDR-5 MSI V237 R6970 Lightning (RTL) DualDVI+HDMI+DualminiDP &lt;RADEON HD6970>	</td>	<td align="center">	182.2	</td>	<td align="center">	314	</td>	</tr>
+<tr id="fing_121">	<td>	122	</td>	<td>	2Gb  DDR-5 ASUS HD7870-DC2-2GD5 (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7870>	</td>	<td align="center">	182.0	</td>	<td align="center">	273	</td>	</tr>
+<tr id="fing_122">	<td>	123	</td>	<td>	1280Mb  DDR-5 Palit &lt;GeForce GTX570 Sonic Platinum> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	174.6	</td>	<td align="center">	292	</td>	</tr>
+<tr id="fing_123">	<td>	124	</td>	<td>	1280Mb  DDR-5 Gigabyte GV-N570OC-13I Rev2.0 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX570>	</td>	<td align="center">	172.5	</td>	<td align="center">	289	</td>	</tr>
+<tr id="fing_124">	<td>	125	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7850 OC Ver.> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	172.4	</td>	<td align="center">	257	</td>	</tr>
+<tr id="fing_125">	<td>	126	</td>	<td>	3Gb  DDR-5 Sapphire &lt;RADEON HD7950 with Boost> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	169.2	</td>	<td align="center">	336	</td>	</tr>
+<tr id="fing_126">	<td>	127	</td>	<td>	1280Mb  DDR-5 Gainward &lt;GeForce GTX570 Golden Sample> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	169.0	</td>	<td align="center">	292	</td>	</tr>
+<tr id="fing_127">	<td>	128	</td>	<td>	1280Mb  DDR-5 Leadtek GTX570-Fan (RTL) DualDVI+HDMI+DP+SLI&lt;GeForce GTX570>	</td>	<td align="center">	168.9	</td>	<td align="center">	271	</td>	</tr>
+<tr id="fing_128">	<td>	129	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7850 OC Ver.> (OEM) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	168.9	</td>	<td align="center">	200	</td>	</tr>
+<tr id="fing_129">	<td>	130	</td>	<td>	2Gb  DDR-5 Gigabyte GV-R785OC-2GD (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7850>	</td>	<td align="center">	168.8	</td>	<td align="center">	220	</td>	</tr>
+<tr id="fing_130">	<td>	131	</td>	<td>	1280Mb  DDR-5 Palit &lt;GeForce GTX570 Sonic> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	168.7	</td>	<td align="center">	284	</td>	</tr>
+<tr id="fing_131">	<td>	132	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7850 OC Ver.> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	168.6	</td>	<td align="center">	203	</td>	</tr>
+<tr id="fing_132">	<td>	133	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7850> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	168.2	</td>	<td align="center">	196	</td>	</tr>
+<tr id="fing_133">	<td>	134	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7850> (OEM) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	167.9	</td>	<td align="center">	197	</td>	</tr>
+<tr id="fing_134">	<td>	135	</td>	<td>	1280Mb  DDR-5 ZOTAC &lt;GeForce GTX560Ti 448 Cores LE> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	167.8	</td>	<td align="center">	262	</td>	</tr>
+<tr id="fing_135">	<td>	136	</td>	<td>	2Gb  DDR-5 MSI V273 R7850 Power Edition 2GD5/OC (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7850>	</td>	<td align="center">	167.6	</td>	<td align="center">	234	</td>	</tr>
+<tr id="fing_136">	<td>	137	</td>	<td>	1280Mb  DDR-5 MSI V222 N570GTX Twin Frozr II (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX570>	</td>	<td align="center">	167.6	</td>	<td align="center">	299	</td>	</tr>
+<tr id="fing_137">	<td>	138	</td>	<td>	1280Mb  DDR-5 Inno3D <N56P-3SDN-J5KW> (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560Ti 448>	</td>	<td align="center">	167.5	</td>	<td align="center">	275	</td>	</tr>
+<tr id="fing_138">	<td>	139	</td>	<td>	1280Mb  DDR-5 ZOTAC &lt;GeForce GTX570> (RTL) DualDVI+MiniHDMI+SLI	</td>	<td align="center">	167.2	</td>	<td align="center">	280	</td>	</tr>
+<tr id="fing_139">	<td>	140	</td>	<td>	1280Mb  DDR-5 ZOTAC &lt;GeForce GTX570 Synergy Edit.> (RTL)DualDVI+MiniHDMI+SLI	</td>	<td align="center">	167.2	</td>	<td align="center">	277	</td>	</tr>
+<tr id="fing_140">	<td>	141	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7850 OC Ver.> (OEM) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	167.0	</td>	<td align="center">	228	</td>	</tr>
+<tr id="fing_141">	<td>	142	</td>	<td>	1280Mb  DDR-5 Palit &lt;GeForce GTX570> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	166.8	</td>	<td align="center">	289	</td>	</tr>
+<tr id="fing_142">	<td>	143	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7850 OC Ver.> (OEM) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	166.6	</td>	<td align="center">	256	</td>	</tr>
+<tr id="fing_143">	<td>	144	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7850 OC Ver.> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	165.8	</td>	<td align="center">	233	</td>	</tr>
+<tr id="fing_144">	<td>	145	</td>	<td>	1280Mb  DDR-5 MSI V222 N560Ti-448-12D5 (RTL) DualDVI+MiniHDMI+SLI &lt;GeForce GTX560Ti 448>	</td>	<td align="center">	165.5	</td>	<td align="center">	251	</td>	</tr>
+<tr id="fing_145">	<td>	146	</td>	<td>	1280Mb  DDR-5 Palit &lt;GeForce GTX560Ti 448 Cores> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	165.2	</td>	<td align="center">	262	</td>	</tr>
+<tr id="fing_146">	<td>	147	</td>	<td>	1280Mb  DDR-5 Gigabyte GV-N560448-13I (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX560Ti 448 Cores>	</td>	<td align="center">	165.1	</td>	<td align="center">	243	</td>	</tr>
+<tr id="fing_147">	<td>	148	</td>	<td>	1280Mb  DDR-5 Gainward &lt;GeForce GTX570> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	165.0	</td>	<td align="center">	283	</td>	</tr>
+<tr id="fing_148">	<td>	149	</td>	<td>	1280Mb  DDR-5 Gainward &lt;GeForce GTX560Ti 448 Limited Edition> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	164.9	</td>	<td align="center">	269	</td>	</tr>
+<tr id="fing_149">	<td>	150	</td>	<td>	1280Mb  DDR-5 ASUS ENGTX570 DCII/2DIS/1280MD5 (RTL) DualDVI+HDMI+DP+SLI &lt;GeForce GTX570>	</td>	<td align="center">	164.8	</td>	<td align="center">	330	</td>	</tr>
+<tr id="fing_150">	<td>	151	</td>	<td>	2Gb  DDR-5 MSI V273 R7850 Twin Frozr 2GD5-OC (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7850>	</td>	<td align="center">	164.0	</td>	<td align="center">	218	</td>	</tr>
+<tr id="fing_151">	<td>	152	</td>	<td>	2Gb  DDR-5 ASUS HD7850-DC2-2GD5 (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7850>	</td>	<td align="center">	163.8	</td>	<td align="center">	273	</td>	</tr>
+<tr id="fing_152">	<td>	153	</td>	<td>	1Gb  DDR-5 XFX &lt;RADEON HD6950 800M> (RTL) DualDVI+HDMI+DualminiDP+Crossfire <HD-695X-ZDFS	</td>	<td align="center">	163.5	</td>	<td align="center">	243	</td>	</tr>
+<tr id="fing_153">	<td>	154	</td>	<td>	2Gb  DDR-5 Gigabyte GV-R785WF2-2GD (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7850>	</td>	<td align="center">	163.2	</td>	<td align="center">	229	</td>	</tr>
+<tr id="fing_154">	<td>	155	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX560Ti AMP! Edit.> (RTL) DualDVI+miniHDMI+SLI	</td>	<td align="center">	163.0	</td>	<td align="center">	245	</td>	</tr>
+<tr id="fing_155">	<td>	156	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7850> (OEM) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	162.9	</td>	<td align="center">	214	</td>	</tr>
+<tr id="fing_156">	<td>	157	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7850> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	162.6	</td>	<td align="center">	230	</td>	</tr>
+<tr id="fing_157">	<td>	158	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7850> (OEM) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	162.3	</td>	<td align="center">	248	</td>	</tr>
+<tr id="fing_158">	<td>	159	</td>	<td>	2Gb  DDR-5 Sapphire &lt;RADEON HD7850> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	161.6	</td>	<td align="center">	217	</td>	</tr>
+<tr id="fing_159">	<td>	160	</td>	<td>	1Gb  DDR-5 ASUS HD7850-DC-1GD5 (RTL) DualDVI+HDMI+DP &lt;RADEON HD7850>	</td>	<td align="center">	160.5	</td>	<td align="center">	203	</td>	</tr>
+<tr id="fing_160">	<td>	161	</td>	<td>	2Gb  DDR-5 ASUS HD7850-DC2-2GD5-V2 (RTL) DualDVI+HDMI+DP &lt;RADEON HD7850>	</td>	<td align="center">	159.9	</td>	<td align="center">	230	</td>	</tr>
+<tr id="fing_161">	<td>	162	</td>	<td>	1Gb  DDR-5 Inno3D <C560-1DDN-D5DWX> (RTL) DualDVI+mini HDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	158.0	</td>	<td align="center">	216	</td>	</tr>
+<tr id="fing_162">	<td>	163	</td>	<td>	2Gb  DDR-5 ASUS ENGTX560 Ti DC2 TOP/2DI/2GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	156.5	</td>	<td align="center">	263	</td>	</tr>
+<tr id="fing_163">	<td>	164	</td>	<td>	1Gb  DDR-5 Gigabyte GV-N560OC-1GI (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	156.3	</td>	<td align="center">	231	</td>	</tr>
+<tr id="fing_164">	<td>	165	</td>	<td>	1Gb  DDR-5 ASUS ENGTX560 TI DCII TOP/2DI/1GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	156.2	</td>	<td align="center">	261	</td>	</tr>
+<tr id="fing_165">	<td>	166	</td>	<td>	1Gb  DDR-5 Inno3D <G560-1DDN-D5DWX> (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	156.1	</td>	<td align="center">	212	</td>	</tr>
+<tr id="fing_166">	<td>	167	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX560Ti Sonic> (RTL) D-Sub+DualDVI+HDMI+SLI	</td>	<td align="center">	155.9	</td>	<td align="center">	229	</td>	</tr>
+<tr id="fing_167">	<td>	168	</td>	<td>	1Gb  DDR-5 PowerColor <AX6930-1GBD5-2DH> (RTL) DualDVI+HDMI+DualminiDP&lt;RADEON HD6930>	</td>	<td align="center">	152.9	</td>	<td align="center">	170	</td>	</tr>
+<tr id="fing_168">	<td>	169	</td>	<td>	1Gb  DDR-5 HIS <H693QN1G2M> (OEM) DualDVI+HDMI+DualminiDP+Crossfire &lt;RADEON HD6930>	</td>	<td align="center">	152.6	</td>	<td align="center">	163	</td>	</tr>
+<tr id="fing_169">	<td>	170	</td>	<td>	1Gb  DDR-5 HIS <H693QN1G2M> (RTL) DualDVI+HDMI+DualminiDP+Crossfire &lt;RADEON HD6930>	</td>	<td align="center">	152.4	</td>	<td align="center">	165	</td>	</tr>
+<tr id="fing_170">	<td>	171	</td>	<td>	2Gb  DDR-5 PowerColor <AX6930 2GBD5-2DH> (RTL) DualDVI+HDMI+DualminiDP &lt;RADEON HD6930>	</td>	<td align="center">	152.3	</td>	<td align="center">	216	</td>	</tr>
+<tr id="fing_171">	<td>	172	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX560Ti OC> (RTL) DualDVI+miniHDMI+SLI	</td>	<td align="center">	152.1	</td>	<td align="center">	224	</td>	</tr>
+<tr id="fing_172">	<td>	173	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX560Ti> (OEM) D-Sub+DualDVI+HDMI+SLI	</td>	<td align="center">	151.2	</td>	<td align="center">	221	</td>	</tr>
+<tr id="fing_173">	<td>	174	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX560Ti> (OEM) D-Sub+DualDVI+HDMI+SLI	</td>	<td align="center">	150.4	</td>	<td align="center">	239	</td>	</tr>
+<tr id="fing_174">	<td>	175	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX560 AMP! Edit.> (RTL) DualDVI+miniHDMI+SLI	</td>	<td align="center">	150.2	</td>	<td align="center">	190	</td>	</tr>
+<tr id="fing_175">	<td>	176	</td>	<td>	2Gb  DDR-5 ASUS ENGTX560 Ti DC2/2DI/2GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	150.1	</td>	<td align="center">	265	</td>	</tr>
+<tr id="fing_176">	<td>	177	</td>	<td>	1Gb  DDR-5 MSI V232 N560GTX-Ti-M2D1GD5-OC (RTL) DualDVI+MiniHDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	149.8	</td>	<td align="center">	243	</td>	</tr>
+<tr id="fing_177">	<td>	178	</td>	<td>	1Gb  DDR-5 ASUS ENGTX560 TI DC/2DI/1GD5 (RTL) DualDVI+miniHDMI+SLI&lt;GeForce GTX560Ti>	</td>	<td align="center">	149.7	</td>	<td align="center">	243	</td>	</tr>
+<tr id="fing_178">	<td>	179	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX560Ti> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	149.6	</td>	<td align="center">	223	</td>	</tr>
+<tr id="fing_179">	<td>	180	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX560Ti> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	149.5	</td>	<td align="center">	260	</td>	</tr>
+<tr id="fing_180">	<td>	181	</td>	<td>	1Gb  DDR-5 Gigabyte GV-N56GOC-1GI (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560>	</td>	<td align="center">	149.4	</td>	<td align="center">	185	</td>	</tr>
+<tr id="fing_181">	<td>	182	</td>	<td>	1Gb  DDR-5 ASUS ENGTX560 TI DCII/2DI/1GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	149.3	</td>	<td align="center">	247	</td>	</tr>
+<tr id="fing_182">	<td>	183	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX560Ti Phantom> (RTL) D-Sub+DualDVI+HDMI+SLI	</td>	<td align="center">	149.3	</td>	<td align="center">	259	</td>	</tr>
+<tr id="fing_183">	<td>	184	</td>	<td>	1Gb  DDR-5 Gigabyte GV-N560UD-1GI (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560Ti>	</td>	<td align="center">	149.2	</td>	<td align="center">	233	</td>	</tr>
+<tr id="fing_184">	<td>	185	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6870 OC Edition> (RTL) DualDVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	149.1	</td>	<td align="center">	184	</td>	</tr>
+<tr id="fing_185">	<td>	186	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX560Ti> (RTL) D-Sub+DualDVI+HDMI+SLI	</td>	<td align="center">	149.1	</td>	<td align="center">	223	</td>	</tr>
+<tr id="fing_186">	<td>	187	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX560Ti> (RTL) D-Sub+DualDVI+HDMI+SLI	</td>	<td align="center">	149.0	</td>	<td align="center">	254	</td>	</tr>
+<tr id="fing_187">	<td>	188	</td>	<td>	1Gb  DDR-5 ASUS ENGTX560 DCII TOP/2DI/1GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560>	</td>	<td align="center">	148.9	</td>	<td align="center">	202	</td>	</tr>
+<tr id="fing_188">	<td>	189	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX650Ti OC> (OEM) D-Sub+DVI+miniHDMI	</td>	<td align="center">	145.2	</td>	<td align="center">	156	</td>	</tr>
+<tr id="fing_189">	<td>	190	</td>	<td>	1Gb  DDR-5 ASUS GTX650TI-DC2T-1GD5 (RTL) D-Sub+DualDVI+HDMI &lt;GeForce GTX650Ti>	</td>	<td align="center">	142.7	</td>	<td align="center">	188	</td>	</tr>
+<tr id="fing_190">	<td>	191	</td>	<td>	1Gb  DDR-5 MSI V280 N650Ti-1GD5/OC (RTL) DualDVI+MiniHDMI &lt;GeForce GTX650Ti>	</td>	<td align="center">	141.8	</td>	<td align="center">	156	</td>	</tr>
+<tr id="fing_191">	<td>	192	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX650Ti> (OEM) D-Sub+DVI+miniHDMI	</td>	<td align="center">	141.5	</td>	<td align="center">	171	</td>	</tr>
+<tr id="fing_192">	<td>	193	</td>	<td>	1Gb  DDR-5 ASUS ENGTX560 DCII OC/2DI/1GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560>	</td>	<td align="center">	141.5	</td>	<td align="center">	206	</td>	</tr>
+<tr id="fing_193">	<td>	194	</td>	<td>	1Gb  DDR-5 ASUS GTX650TI-DC2O-1GD5 (RTL) D-Sub+DualDVI+HDMI &lt;GeForce GTX650Ti>	</td>	<td align="center">	141.5	</td>	<td align="center">	182	</td>	</tr>
+<tr id="fing_194">	<td>	195	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6870> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	141.3	</td>	<td align="center">	180	</td>	</tr>
+<tr id="fing_195">	<td>	196	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX650Ti> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	141.3	</td>	<td align="center">	173	</td>	</tr>
+<tr id="fing_196">	<td>	197	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX560 OC> (RTL) DualDVI+miniHDMI+SLI	</td>	<td align="center">	141.3	</td>	<td align="center">	188	</td>	</tr>
+<tr id="fing_197">	<td>	198	</td>	<td>	1Gb  DDR-5 MSI V245 R6870-2PM2D1GD5-OC (RTL) DualDVI+HDMI+DualminiDP &lt;RADEON HD6870>	</td>	<td align="center">	141.3	</td>	<td align="center">	184	</td>	</tr>
+<tr id="fing_198">	<td>	199	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6870> (OEM) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	141.1	</td>	<td align="center">	176	</td>	</tr>
+<tr id="fing_199">	<td>	200	</td>	<td>	1Gb  DDR-5 ASUS EAH6870 DC/2DI2S/1GD5 (RTL) DualDVI+DualDP &lt;RADEON HD6870>	</td>	<td align="center">	141.1	</td>	<td align="center">	179	</td>	</tr>
+<tr id="fing_200">	<td>	201	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX650Ti> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	139.5	</td>	<td align="center">	153	</td>	</tr>
+<tr id="fing_201">	<td>	202	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX560> (RTL) D-Sub+DualDVI+HDMI+SLI	</td>	<td align="center">	139.5	</td>	<td align="center">	212	</td>	</tr>
+<tr id="fing_202">	<td>	203	</td>	<td>	1Gb  DDR-5 ASUS ENGTX560 DCII/2DI/1GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560>	</td>	<td align="center">	139.3	</td>	<td align="center">	190	</td>	</tr>
+<tr id="fing_203">	<td>	204	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX560> (RTL) D-Sub+DualDVI+HDMI+SLI	</td>	<td align="center">	139.3	</td>	<td align="center">	198	</td>	</tr>
+<tr id="fing_204">	<td>	205	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX560> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	139.1	</td>	<td align="center">	177	</td>	</tr>
+<tr id="fing_205">	<td>	206	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX650Ti> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	138.9	</td>	<td align="center">	188	</td>	</tr>
+<tr id="fing_206">	<td>	207	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX560> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	138.8	</td>	<td align="center">	196	</td>	</tr>
+<tr id="fing_207">	<td>	208	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX650Ti> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	138.7	</td>	<td align="center">	162	</td>	</tr>
+<tr id="fing_208">	<td>	209	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX560 GS> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	138.7	</td>	<td align="center">	183	</td>	</tr>
+<tr id="fing_209">	<td>	210	</td>	<td>	1Gb  DDR-5 ASUS GTX650TI-1GD5 (RTL) D-Sub+DualDVI+HDMI &lt;GeForce GTX650Ti>	</td>	<td align="center">	138.7	</td>	<td align="center">	176	</td>	</tr>
+<tr id="fing_210">	<td>	211	</td>	<td>	1Gb  DDR-5 ASUS ENGTX560 DC/2DI/1GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560>	</td>	<td align="center">	138.6	</td>	<td align="center">	186	</td>	</tr>
+<tr id="fing_211">	<td>	212	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX560> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	138.5	</td>	<td align="center">	178	</td>	</tr>
+<tr id="fing_212">	<td>	213	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX650Ti> (OEM) D-Sub+DVI+miniHDMI	</td>	<td align="center">	138.4	</td>	<td align="center">	151	</td>	</tr>
+<tr id="fing_213">	<td>	214	</td>	<td>	1Gb  DDR-5 Leadtek GTX560 (RTL) DualDVI+miniHDMI+SLI&lt;GeForce GTX560>	</td>	<td align="center">	138.4	</td>	<td align="center">	174	</td>	</tr>
+<tr id="fing_214">	<td>	215	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX560 OC ed.> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	138.2	</td>	<td align="center">	175	</td>	</tr>
+<tr id="fing_215">	<td>	216	</td>	<td>	1Gb  DDR-5 MSI MS-V232 N560GTX-M2D1GD5 (RTL) DualDVI+MiniHDMI+SLI &lt;GeForce GTX560>	</td>	<td align="center">	138.2	</td>	<td align="center">	184	</td>	</tr>
+<tr id="fing_216">	<td>	217	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX560 OC ed.> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	137.9	</td>	<td align="center">	178	</td>	</tr>
+<tr id="fing_217">	<td>	218	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7770 GHZ Ed. OC Ver.> (OEM) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	137.5	</td>	<td align="center">	137	</td>	</tr>
+<tr id="fing_218">	<td>	219	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7770 GHZ Ed. OC Ver.> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	137.3	</td>	<td align="center">	139	</td>	</tr>
+<tr id="fing_219">	<td>	220	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX650Ti GS> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	131.4	</td>	<td align="center">	166	</td>	</tr>
+<tr id="fing_220">	<td>	221	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7770 GHZ Ed. Vapor-X OC Ver.> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	131.1	</td>	<td align="center">	157	</td>	</tr>
+<tr id="fing_221">	<td>	222	</td>	<td>	1Gb  DDR-5 ASUS HD7770-DCT-1GD5 (RTL) DualDVI+HDMI+DP &lt;RADEON HD7770>	</td>	<td align="center">	130.3	</td>	<td align="center">	154	</td>	</tr>
+<tr id="fing_222">	<td>	223	</td>	<td>	1Gb  DDR-5 MSI V271 R7770 Power Edition 1GD5/OC (RTL) DVI+HDMI+DP &lt;RADEON HD7770>	</td>	<td align="center">	130.1	</td>	<td align="center">	141	</td>	</tr>
+<tr id="fing_223">	<td>	224	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6850 Vapor-X> (RTL) DualDVI +HDMI+DP+Crossfire	</td>	<td align="center">	129.8	</td>	<td align="center">	163	</td>	</tr>
+<tr id="fing_224">	<td>	225	</td>	<td>	1Gb  DDR-5 MSI MS-V244 R6850-PM2D1GD5-OC (RTL) DualDVI+HDMI+DP &lt;RADEON HD6850>	</td>	<td align="center">	128.0	</td>	<td align="center">	128	</td>	</tr>
+<tr id="fing_225">	<td>	226	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX560 Phantom> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	126.2	</td>	<td align="center">	196	</td>	</tr>
+<tr id="fing_226">	<td>	227	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX460> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	125.9	</td>	<td align="center">	123	</td>	</tr>
+<tr id="fing_227">	<td>	228	</td>	<td>	1Gb  DDR-5 ASUS HD7770-DC-1GD5-V2 (RTL) DualDVI+HDMI+DP&lt;RADEON HD7770>	</td>	<td align="center">	125.1	</td>	<td align="center">	129	</td>	</tr>
+<tr id="fing_228">	<td>	229	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7770 GHZ Ed. Flex> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	125.0	</td>	<td align="center">	151	</td>	</tr>
+<tr id="fing_229">	<td>	230	</td>	<td>	1Gb  DDR-5 ASUS HD7770-DC-1GD5 (RTL) +DVI+HDMI+DualminiDP&lt;RADEON HD7770>	</td>	<td align="center">	124.9	</td>	<td align="center">	136	</td>	</tr>
+<tr id="fing_230">	<td>	231	</td>	<td>	2Gb  DDR-5 ASUS HD7770-2GD5 (RTL) DualDVI+HDMI+DP&lt;RADEON HD7770>	</td>	<td align="center">	124.8	</td>	<td align="center">	158	</td>	</tr>
+<tr id="fing_231">	<td>	232	</td>	<td>	1Gb  DDR-5 MSI V271 R7770-2PMD1GD5/OC (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7770>	</td>	<td align="center">	124.7	</td>	<td align="center">	120	</td>	</tr>
+<tr id="fing_232">	<td>	233	</td>	<td>	1Gb  DDR-5 Gigabyte GV-R777OC-1GD (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7770>	</td>	<td align="center">	124.2	</td>	<td align="center">	119	</td>	</tr>
+<tr id="fing_233">	<td>	234	</td>	<td>	1Gb  DDR-5 PowerColor <AX6850-1GBD5-DH> (RTL) DualDVI+HDMI+DP &lt;RADEON HD6850>	</td>	<td align="center">	123.4	</td>	<td align="center">	129	</td>	</tr>
+<tr id="fing_234">	<td>	235	</td>	<td>	1Gb  DDR-5 PowerColor <AX7770 1GBD5-DH> (RTL) DVI+HDMI+DP&lt;RADEON HD7770>	</td>	<td align="center">	123.1	</td>	<td align="center">	120	</td>	</tr>
+<tr id="fing_235">	<td>	236	</td>	<td>	1Gb  DDR-5 Inno3D <N56SE-3SDN-D5GW> (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTX560SE>	</td>	<td align="center">	123.0	</td>	<td align="center">	135	</td>	</tr>
+<tr id="fing_236">	<td>	237	</td>	<td>	1Gb  DDR-5 Gigabyte GV-R777D5-1GD (RTL) DVI+HDMI+DualminiDP &lt;RADEON HD7770>	</td>	<td align="center">	122.9	</td>	<td align="center">	117	</td>	</tr>
+<tr id="fing_237">	<td>	238	</td>	<td>	1Gb  DDR-5 Inno3D <N56SE-3SDN-D5GW> (OEM) DualDVI+miniHDMI+SLI &lt;GeForce GTX560SE>	</td>	<td align="center">	122.8	</td>	<td align="center">	138	</td>	</tr>
+<tr id="fing_238">	<td>	239	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7770 GHZ Ed.> (OEM) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	122.7	</td>	<td align="center">	123	</td>	</tr>
+<tr id="fing_239">	<td>	240	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7770 GHZ Ed.> (RTL) DVI+HDMI+DualminiDP+Crossfire	</td>	<td align="center">	122.6	</td>	<td align="center">	127	</td>	</tr>
+<tr id="fing_240">	<td>	241	</td>	<td>	1Gb  DDR-5 MSI V244 R6790-PM2D1GD5-OC (RTL) DualDVI+HDMI+DP&lt;RADEON HD6790>	</td>	<td align="center">	120.2	</td>	<td align="center">	135	</td>	</tr>
+<tr id="fing_241">	<td>	242	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6850> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	119.9	</td>	<td align="center">	134	</td>	</tr>
+<tr id="fing_242">	<td>	243	</td>	<td>	1Gb  DDR-5 MSI V280 N650-1GD5/OC (RTL) DualDVI+MiniHDMI &lt;GeForce GTX650>	</td>	<td align="center">	119.0	</td>	<td align="center">	119	</td>	</tr>
+<tr id="fing_243">	<td>	244	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX650 AMP! Edit.> (RTL) DualDVI+DualHDMI	</td>	<td align="center">	117.7	</td>	<td align="center">	146	</td>	</tr>
+<tr id="fing_244">	<td>	245	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX560SE> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	117.6	</td>	<td align="center">	145	</td>	</tr>
+<tr id="fing_245">	<td>	246	</td>	<td>	1Gb  DDR-5 MSI V232 N560GTX-SE-M2D1GD5-OC (RTL) DualDVI+miniHDMI &lt;GeForce GTX560SE>	</td>	<td align="center">	117.4	</td>	<td align="center">	147	</td>	</tr>
+<tr id="fing_246">	<td>	247	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX560SE> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	116.7	</td>	<td align="center">	133	</td>	</tr>
+<tr id="fing_247">	<td>	248	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX560 SMART EDITION> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	115.9	</td>	<td align="center">	123	</td>	</tr>
+<tr id="fing_248">	<td>	249	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6790> (RTL) DVI+HDMI+DP+Crossfire	</td>	<td align="center">	113.5	</td>	<td align="center">	135	</td>	</tr>
+<tr id="fing_249">	<td>	250	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6790> (OEM) DVI+HDMI+DP+Crossfire	</td>	<td align="center">	111.6	</td>	<td align="center">	124	</td>	</tr>
+<tr id="fing_250">	<td>	251	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX560 SMART EDITION> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	111.3	</td>	<td align="center">	132	</td>	</tr>
+<tr id="fing_251">	<td>	252	</td>	<td>	1Gb  DDR-5 ASUS GTX650-DC-1GD5 (RTL) D-Sub+DualDVI+HDMI &lt;GeForce GTX650>	</td>	<td align="center">	110.5	</td>	<td align="center">	133	</td>	</tr>
+<tr id="fing_252">	<td>	253	</td>	<td>	2Gb  DDR-5 Gigabyte GV-N650OC-2GI (RTL) D-Sub+DualDVI+HDMI &lt;GeForce GTX650>	</td>	<td align="center">	110.4	</td>	<td align="center">	147	</td>	</tr>
+<tr id="fing_253">	<td>	254	</td>	<td>	1Gb  DDR-5 MSI V280 N650 PE 1GD5/OC (RTL) DualDVI+MiniHDMI &lt;GeForce GTX650>	</td>	<td align="center">	110.4	</td>	<td align="center">	137	</td>	</tr>
+<tr id="fing_254">	<td>	255	</td>	<td>	2Gb  DDR-5 Gainward &lt;GeForce GTX650> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	110.3	</td>	<td align="center">	134	</td>	</tr>
+<tr id="fing_255">	<td>	256	</td>	<td>	1Gb  DDR-5 Gigabyte GV-N650OC-1GI (RTL) D-Sub+DualDVI+HDMI &lt;GeForce GTX650>	</td>	<td align="center">	110.3	</td>	<td align="center">	118	</td>	</tr>
+<tr id="fing_256">	<td>	257	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX650> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	110.2	</td>	<td align="center">	136	</td>	</tr>
+<tr id="fing_257">	<td>	258	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX650 OC> (OEM) D-Sub+DVI+miniHDMI	</td>	<td align="center">	110.1	</td>	<td align="center">	117	</td>	</tr>
+<tr id="fing_258">	<td>	259	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX650> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	110.0	</td>	<td align="center">	113	</td>	</tr>
+<tr id="fing_259">	<td>	260	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX650 GS> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	109.9	</td>	<td align="center">	115	</td>	</tr>
+<tr id="fing_260">	<td>	261	</td>	<td>	1Gb  DDR-5 MSI V809 N650-1GD5/OCV1 (RTL) D-Sub+DVI+HDMI&lt;GeForce GTX650>	</td>	<td align="center">	109.9	</td>	<td align="center">	117	</td>	</tr>
+<tr id="fing_261">	<td>	262	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX650> (OEM) D-Sub+DVI+miniHDMI	</td>	<td align="center">	109.8	</td>	<td align="center">	113	</td>	</tr>
+<tr id="fing_262">	<td>	263	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX650 OC> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	109.7	</td>	<td align="center">	118	</td>	</tr>
+<tr id="fing_263">	<td>	264	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX650> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	109.7	</td>	<td align="center">	117	</td>	</tr>
+<tr id="fing_264">	<td>	265	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX650> (RTL) D-Sub+DVI+miniHDMI	</td>	<td align="center">	109.7	</td>	<td align="center">	116	</td>	</tr>
+<tr id="fing_265">	<td>	266	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX550Ti Sonic> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	109.6	</td>	<td align="center">	120	</td>	</tr>
+<tr id="fing_266">	<td>	267	</td>	<td>	2Gb  DDR-5 ZOTAC &lt;GeForce GTX650> (RTL) DualDVI+DualHDMI	</td>	<td align="center">	109.5	</td>	<td align="center">	144	</td>	</tr>
+<tr id="fing_267">	<td>	268	</td>	<td>	2Gb  DDR-5 Palit &lt;GeForce GTX650> (OEM) D-Sub+DVI+miniHDMI	</td>	<td align="center">	109.5	</td>	<td align="center">	134	</td>	</tr>
+<tr id="fing_268">	<td>	269	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX550Ti GSLE> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	109.5	</td>	<td align="center">	126	</td>	</tr>
+<tr id="fing_269">	<td>	270	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX550Ti GS> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	109.3	</td>	<td align="center">	126	</td>	</tr>
+<tr id="fing_270">	<td>	271	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX550Ti Sonic> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	109.2	</td>	<td align="center">	121	</td>	</tr>
+<tr id="fing_271">	<td>	272	</td>	<td>	1Gb  DDR-5 Gigabyte GV-R677SL-1GD (RTL) DVI+HDMI+DP &lt;RADEON HD6770>	</td>	<td align="center">	105.5	</td>	<td align="center">	103	</td>	</tr>
+<tr id="fing_272">	<td>	273	</td>	<td>	1Gb  DDR-5 PowerColor <AX6770-1GBD5-H> (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6770>	</td>	<td align="center">	105.4	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_273">	<td>	274	</td>	<td>	1Gb  DDR-5 ASUS ENGTX550 TI DC TOP/DI/1GD5 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	105.1	</td>	<td align="center">	129	</td>	</tr>
+<tr id="fing_274">	<td>	275	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7750 OC Ver.> (RTL) DVI+HDMI+DP	</td>	<td align="center">	105.1	</td>	<td align="center">	113	</td>	</tr>
+<tr id="fing_275">	<td>	276	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7750 OC Ver.> (OEM) DVI+HDMI+DP	</td>	<td align="center">	104.9	</td>	<td align="center">	111	</td>	</tr>
+<tr id="fing_276">	<td>	277	</td>	<td>	1Gb  DDR-5 Gigabyte GV-N550WF2-1GI (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	104.8	</td>	<td align="center">	130	</td>	</tr>
+<tr id="fing_277">	<td>	278	</td>	<td>	1Gb  DDR-5 PowerColor <AX6770-1GBD5-HV2> (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6770>	</td>	<td align="center">	104.7	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_278">	<td>	279	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX550Ti> (OEM) DualDVI+miniHDMI+SLI	</td>	<td align="center">	103.2	</td>	<td align="center">	115	</td>	</tr>
+<tr id="fing_279">	<td>	280	</td>	<td>	1Gb  DDR-5 Gigabyte GV-N550D5-1GI (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	103.1	</td>	<td align="center">	117	</td>	</tr>
+<tr id="fing_280">	<td>	281	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX550Ti> (RTL) DualDVI+miniHDMI+SLI	</td>	<td align="center">	103.0	</td>	<td align="center">	119	</td>	</tr>
+<tr id="fing_281">	<td>	282	</td>	<td>	1Gb  DDR-5 Inno3D <N550-2SDN-D5GX> (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.9	</td>	<td align="center">	111	</td>	</tr>
+<tr id="fing_282">	<td>	283	</td>	<td>	1Gb  DDR-5 MSI V809 N550GTX-Ti-MD1GD5 V2 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.9	</td>	<td align="center">	125	</td>	</tr>
+<tr id="fing_283">	<td>	284	</td>	<td>	2Gb  DDR-5 Inno3D <N550-2SDN-E5GX> (OEM) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.9	</td>	<td align="center">	154	</td>	</tr>
+<tr id="fing_284">	<td>	285	</td>	<td>	1Gb  DDR-5 ASUS HD7750-1GD5-V2 (RTL) DVI+HDMI+DP &lt;RADEON HD7750>	</td>	<td align="center">	102.9	</td>	<td align="center">	105	</td>	</tr>
+<tr id="fing_285">	<td>	286	</td>	<td>	1Gb  DDR-5 ASUS ENGTX550 Ti/DI/1GD5/V2 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.8	</td>	<td align="center">	106	</td>	</tr>
+<tr id="fing_286">	<td>	287	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX550Ti> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	102.8	</td>	<td align="center">	115	</td>	</tr>
+<tr id="fing_287">	<td>	288	</td>	<td>	1Gb  DDR-5 MSI V236 N550GTX-Ti-MD1GD5 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.8	</td>	<td align="center">	107	</td>	</tr>
+<tr id="fing_288">	<td>	289	</td>	<td>	1Gb  DDR-5 MSI V809 N550GTX-Ti-MD1GD5 V2 (OEM) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.7	</td>	<td align="center">	119	</td>	</tr>
+<tr id="fing_289">	<td>	290	</td>	<td>	1Gb  DDR-5 ASUS HD7750-1GD5 (RTL) DVI+HDMI+DP &lt;RADEON HD7750>	</td>	<td align="center">	102.7	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_290">	<td>	291	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTX550Ti> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	102.6	</td>	<td align="center">	113	</td>	</tr>
+<tr id="fing_291">	<td>	292	</td>	<td>	1Gb  DDR-5 Inno3D <N550-3DDN-D5GP> (RTL) DualDVI+DualHDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.6	</td>	<td align="center">	116	</td>	</tr>
+<tr id="fing_292">	<td>	293	</td>	<td>	1Gb  DDR-5 Gigabyte GV-N550D5-1GI (OEM) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.6	</td>	<td align="center">	115	</td>	</tr>
+<tr id="fing_293">	<td>	294	</td>	<td>	1Gb  DDR-5 ASUS HD7770-1GD5 (RTL) DVI+HDMI+DP &lt;RADEON HD7770>	</td>	<td align="center">	102.5	</td>	<td align="center">	129	</td>	</tr>
+<tr id="fing_294">	<td>	295	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX550Ti> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	102.5	</td>	<td align="center">	113	</td>	</tr>
+<tr id="fing_295">	<td>	296	</td>	<td>	1Gb  DDR-5 ASUS ENGTX550 Ti/DI/1GD5 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.4	</td>	<td align="center">	123	</td>	</tr>
+<tr id="fing_296">	<td>	297	</td>	<td>	1Gb  DDR-5 MSI V279 R7750-PMD1GD5-OC (RTL) DVI+HDMI+DP &lt;RADEON HD7750>	</td>	<td align="center">	102.4	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_297">	<td>	298	</td>	<td>	1Gb  DDR-5 ASUS ENGTX550 TI DC/DI/1GD5 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	102.3	</td>	<td align="center">	131	</td>	</tr>
+<tr id="fing_298">	<td>	299	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTX550Ti> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	102.1	</td>	<td align="center">	112	</td>	</tr>
+<tr id="fing_299">	<td>	300	</td>	<td>	1Gb  DDR-5 ASUS EAH6770 DC SL/2DI/1GD5 (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6770>	</td>	<td align="center">	102.0	</td>	<td align="center">	123	</td>	</tr>
+<tr id="fing_300">	<td>	301	</td>	<td>	1Gb  DDR-5 ZOTAC &lt;GeForce GTX550Ti> (RTL) DualDVI+HDMI+DP+SLI	</td>	<td align="center">	101.6	</td>	<td align="center">	106	</td>	</tr>
+<tr id="fing_301">	<td>	302	</td>	<td>	1Gb  DDR-5 MSI V279 R7750-PMD1GD5 (RTL) DVI+HDMI+DP &lt;RADEON HD7750>	</td>	<td align="center">	101.4	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_302">	<td>	303	</td>	<td>	1Gb  DDR-5 MSI V214 R6770-MD1GD5 (RTL) D-Sub+DVI+HDMI&lt;RADEON HD6770>	</td>	<td align="center">	101.2	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_303">	<td>	304	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6770> (RTL) D-Sub+DVI+HDMI+Crossfire	</td>	<td align="center">	100.0	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_304">	<td>	305	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6770> (OEM) D-Sub+DVI+HDMI+Crossfire	</td>	<td align="center">	99.8	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_305">	<td>	306	</td>	<td>	2Gb  DDR-5 Leadtek GTX 550 Ti -Fan (RTL) DualDVI+miniHDMI+SLI&lt;GeForce GTX550Ti>	</td>	<td align="center">	99.0	</td>	<td align="center">	139	</td>	</tr>
+<tr id="fing_306">	<td>	307	</td>	<td>	1Gb  DDR-5 ASUS EAH6770 DC/2DI/1GD5 (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6770>	</td>	<td align="center">	98.6	</td>	<td align="center">	118	</td>	</tr>
+<tr id="fing_307">	<td>	308	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTS450 Sonic> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	97.6	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_308">	<td>	309	</td>	<td>	1Gb  DDR-5 Gigabyte GV-R675OC-1GI (RTL) D-Sub+DualDVI+HDMI &lt;RADEON HD6750>	</td>	<td align="center">	95.0	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_309">	<td>	310	</td>	<td>	1Gb  DDR-5 MSI V279 R7750 Power Edition 1GD5/OC (RTL) DVI+HDMI+DP &lt;RADEON HD7750>	</td>	<td align="center">	94.1	</td>	<td align="center">	107	</td>	</tr>
+<tr id="fing_310">	<td>	311	</td>	<td>	1Gb  DDR-5 Gigabyte GV-R775OC-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD7750>	</td>	<td align="center">	94.0	</td>	<td align="center">	98	</td>	</tr>
+<tr id="fing_311">	<td>	312	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6750 Vapor-X OC Ver.> (RTL) DualDVI+HDMI+DP+Crossfire	</td>	<td align="center">	91.4	</td>	<td align="center">	111	</td>	</tr>
+<tr id="fing_312">	<td>	313	</td>	<td>	1Gb  DDR-5 Gigabyte GV-N450-1GI (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	89.3	</td>	<td align="center">	102	</td>	</tr>
+<tr id="fing_313">	<td>	314	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTS450> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	88.9	</td>	<td align="center">	95	</td>	</tr>
+<tr id="fing_314">	<td>	315	</td>	<td>	1Gb  DDR-5 ASUS EAH6750 /DI/1GD5 (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6750>	</td>	<td align="center">	88.0	</td>	<td align="center">	105	</td>	</tr>
+<tr id="fing_315">	<td>	316	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6750> (OEM) DVI+HDMI+DP+Crossfire	</td>	<td align="center">	87.9	</td>	<td align="center">	98	</td>	</tr>
+<tr id="fing_316">	<td>	317	</td>	<td>	1Gb  DDR-5 Inno3D <N450-4SDN-D5CX> (OEM) D-Sub+DVI+HDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	87.8	</td>	<td align="center">	98	</td>	</tr>
+<tr id="fing_317">	<td>	318	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTS450> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	87.7	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_318">	<td>	319	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTS450> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	87.6	</td>	<td align="center">	102	</td>	</tr>
+<tr id="fing_319">	<td>	320	</td>	<td>	1536Mb  DDR-3 Inno3D <N550-2DDV-K3GX> (OEM) D-Sub+DVI+HDMI+SLI &lt;GeForce GTX550Ti>	</td>	<td align="center">	81.1	</td>	<td align="center">	104	</td>	</tr>
+<tr id="fing_320">	<td>	321	</td>	<td>	2Gb  DDR-3 Gigabyte GV-N640OC-2GI (RTL) D-Sub+DualDVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	79.6	</td>	<td align="center">	90	</td>	</tr>
+<tr id="fing_321">	<td>	322	</td>	<td>	1Gb  DDR-5 MSI V809 N450GTS-M2D1GD5 (OEM) DualDVI+miniHDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	79.5	</td>	<td align="center">	101	</td>	</tr>
+<tr id="fing_322">	<td>	323	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GT640 Zone Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	76.9	</td>	<td align="center">	106	</td>	</tr>
+<tr id="fing_323">	<td>	324	</td>	<td>	1Gb  DDR-3 ASUS GT640-1GD3-L (RTL) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	76.8	</td>	<td align="center">	85	</td>	</tr>
+<tr id="fing_324">	<td>	325	</td>	<td>	2Gb  DDR-3 Inno3D <N640-1DDV-E3CX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	76.7	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_325">	<td>	326	</td>	<td>	2Gb  DDR-3 MSI V275 N640GT-MD2GD3 V3 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	76.6	</td>	<td align="center">	92	</td>	</tr>
+<tr id="fing_326">	<td>	327	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6670HM> (OEM) DVI+HDMI+DP	</td>	<td align="center">	76.5	</td>	<td align="center">	90	</td>	</tr>
+<tr id="fing_327">	<td>	328	</td>	<td>	2Gb  DDR-3 Inno3D <N640-1DDV-E3CX> (RTL) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	76.5	</td>	<td align="center">	102	</td>	</tr>
+<tr id="fing_328">	<td>	329	</td>	<td>	512Mb  DDR-5 Palit &lt;GeForce GTS450> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	76.4	</td>	<td align="center">	73	</td>	</tr>
+<tr id="fing_329">	<td>	330	</td>	<td>	2Gb  DDR-3 Leadtek GT640-Fan (RTL) D-Sub+DVI+HDMI+DP &lt;GeForceGT640>	</td>	<td align="center">	76.4	</td>	<td align="center">	96	</td>	</tr>
+<tr id="fing_330">	<td>	331	</td>	<td>	512Mb  DDR-5 Palit &lt;GeForce GTS450> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	76.3	</td>	<td align="center">	69	</td>	</tr>
+<tr id="fing_331">	<td>	332	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GT640> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	76.3	</td>	<td align="center">	98	</td>	</tr>
+<tr id="fing_332">	<td>	333	</td>	<td>	2Gb  DDR-3 MSI V275 N640GT-MD2GD3/OC (RTL) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	76.2	</td>	<td align="center">	102	</td>	</tr>
+<tr id="fing_333">	<td>	334	</td>	<td>	2Gb  DDR-3 Gainward &lt;GeForce GT640> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	76.2	</td>	<td align="center">	93	</td>	</tr>
+<tr id="fing_334">	<td>	335	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6670HM> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	76.1	</td>	<td align="center">	82	</td>	</tr>
+<tr id="fing_335">	<td>	336	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT640> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	76.1	</td>	<td align="center">	91	</td>	</tr>
+<tr id="fing_336">	<td>	337	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTS450 Smart Ed.> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	76.0	</td>	<td align="center">	92	</td>	</tr>
+<tr id="fing_337">	<td>	338	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GT640 LP> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	76.0	</td>	<td align="center">	90	</td>	</tr>
+<tr id="fing_338">	<td>	339	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT640> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	76.0	</td>	<td align="center">	88	</td>	</tr>
+<tr id="fing_339">	<td>	340	</td>	<td>	1Gb  DDR-5 Gainward &lt;GeForce GTS450 Green> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	75.9	</td>	<td align="center">	93	</td>	</tr>
+<tr id="fing_340">	<td>	341	</td>	<td>	1Gb  DDR-3 Leadtek GT640-Fan (RTL) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	75.9	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_341">	<td>	342	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT640> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	75.9	</td>	<td align="center">	93	</td>	</tr>
+<tr id="fing_342">	<td>	343	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6670HM> (RTL) DVI+HDMI+DP	</td>	<td align="center">	75.8	</td>	<td align="center">	92	</td>	</tr>
+<tr id="fing_343">	<td>	344	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT640> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	75.8	</td>	<td align="center">	86	</td>	</tr>
+<tr id="fing_344">	<td>	345	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT640> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	75.8	</td>	<td align="center">	94	</td>	</tr>
+<tr id="fing_345">	<td>	346	</td>	<td>	1Gb  DDR-5 ASUS EAH6670 /DIS/1GD5 (RTL) DVI+HDMI+DP &lt;RADEON HD6670>	</td>	<td align="center">	75.7	</td>	<td align="center">	77	</td>	</tr>
+<tr id="fing_346">	<td>	347	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT640> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	75.7	</td>	<td align="center">	96	</td>	</tr>
+<tr id="fing_347">	<td>	348	</td>	<td>	1Gb  DDR-5 ASUS HD7750-DCSL-1GD5 (RTL) DVI+HDMI+DP &lt;RADEON HD7750>	</td>	<td align="center">	75.7	</td>	<td align="center">	118	</td>	</tr>
+<tr id="fing_348">	<td>	349	</td>	<td>	1Gb  DDR-5 MSI V809 N450GTS-M2D1GD5 (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	75.6	</td>	<td align="center">	102	</td>	</tr>
+<tr id="fing_349">	<td>	350	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GTS450 Smart Ed.> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	75.6	</td>	<td align="center">	98	</td>	</tr>
+<tr id="fing_350">	<td>	351	</td>	<td>	1Gb  DDR-5 HIS <H775F1GD> (RTL) DVI+HDMI+DP &lt;RADEON HD7750>	</td>	<td align="center">	75.6	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_351">	<td>	352	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD6670HM> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	75.5	</td>	<td align="center">	81	</td>	</tr>
+<tr id="fing_352">	<td>	353	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7750 Ultimate> (RTL) DVI+HDMI+DP	</td>	<td align="center">	75.5	</td>	<td align="center">	128	</td>	</tr>
+<tr id="fing_353">	<td>	354	</td>	<td>	1Gb  DDR-5 PowerColor <AX7750 1GBD5-DH> (RTL) DVI+HDMI+DP &lt;RADEON HD7750>	</td>	<td align="center">	75.4	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_354">	<td>	355	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7750> (OEM) DVI+HDMI+DP	</td>	<td align="center">	75.3	</td>	<td align="center">	95	</td>	</tr>
+<tr id="fing_355">	<td>	356	</td>	<td>	1Gb  DDR-5 Sapphire &lt;RADEON HD7750> (RTL) DVI+HDMI+DP	</td>	<td align="center">	75.2	</td>	<td align="center">	96	</td>	</tr>
+<tr id="fing_356">	<td>	357	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT640 Synergy Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	74.0	</td>	<td align="center">	89	</td>	</tr>
+<tr id="fing_357">	<td>	358	</td>	<td>	2Gb  DDR-3 Gainward &lt;GeForce GT640> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	71.1	</td>	<td align="center">	89	</td>	</tr>
+<tr id="fing_358">	<td>	359	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GTS450 Green> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	70.2	</td>	<td align="center">	89	</td>	</tr>
+<tr id="fing_359">	<td>	360	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N450D3-1GI (RTL) DualDVI+miniHDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	70.1	</td>	<td align="center">	100	</td>	</tr>
+<tr id="fing_360">	<td>	361	</td>	<td>	1Gb  DDR-5 ASUS ENGTS450 DirectCU/DI/1GD5 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	70.0	</td>	<td align="center">	112	</td>	</tr>
+<tr id="fing_361">	<td>	362	</td>	<td>	1Gb  DDR-3 MSI V275 N640GT-MD1GD3 (OEM) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	66.1	</td>	<td align="center">	92	</td>	</tr>
+<tr id="fing_362">	<td>	363	</td>	<td>	1Gb  DDR-3 MSI V275 N640GT-MD1GD3 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	66.0	</td>	<td align="center">	103	</td>	</tr>
+<tr id="fing_363">	<td>	364	</td>	<td>	2Gb  DDR-3 ASUS GT640-2GD3 (RTL) D-Sub+DualDVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	64.5	</td>	<td align="center">	91	</td>	</tr>
+<tr id="fing_364">	<td>	365	</td>	<td>	2Gb  DDR-3 MSI V275 N640GT-MD2GD3 V2 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT640>	</td>	<td align="center">	64.4	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_365">	<td>	366	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD6750> (OEM) D-Sub+DVI+HDMI+Crossfire	</td>	<td align="center">	64.1	</td>	<td align="center">	82	</td>	</tr>
+<tr id="fing_366">	<td>	367	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD6750> (RTL) D-Sub+DVI+HDMI+Crossfire	</td>	<td align="center">	64.0	</td>	<td align="center">	85	</td>	</tr>
+<tr id="fing_367">	<td>	368	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD6750> (OEM) D-Sub+DVI+HDMI+Crossfire	</td>	<td align="center">	63.6	</td>	<td align="center">	92	</td>	</tr>
+<tr id="fing_368">	<td>	369	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD6750> (RTL) D-Sub+DVI+HDMI+Crossfire	</td>	<td align="center">	63.5	</td>	<td align="center">	96	</td>	</tr>
+<tr id="fing_369">	<td>	370	</td>	<td>	2Gb  DDR-3 ASUS HD6670-2GD3 (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6670>	</td>	<td align="center">	61.1	</td>	<td align="center">	80	</td>	</tr>
+<tr id="fing_370">	<td>	371	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GTS450 Smart Ed.> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	61.0	</td>	<td align="center">	90	</td>	</tr>
+<tr id="fing_371">	<td>	372	</td>	<td>	2Gb  DDR-3 Gainward &lt;GeForce GTS450> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	60.9	</td>	<td align="center">	99	</td>	</tr>
+<tr id="fing_372">	<td>	373	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GTS450> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	60.8	</td>	<td align="center">	87	</td>	</tr>
+<tr id="fing_373">	<td>	374	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GTS450> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	60.8	</td>	<td align="center">	86	</td>	</tr>
+<tr id="fing_374">	<td>	375	</td>	<td>	1Gb  DDR-3 ASUS EAH6670 /DI/1GD3 (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6670>	</td>	<td align="center">	60.7	</td>	<td align="center">	69	</td>	</tr>
+<tr id="fing_375">	<td>	376	</td>	<td>	1Gb  DDR-3 Gigabyte GV-R667D3-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6670>	</td>	<td align="center">	60.5	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_376">	<td>	377	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD7750> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	60.1	</td>	<td align="center">	98	</td>	</tr>
+<tr id="fing_377">	<td>	378	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD7750> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	60.0	</td>	<td align="center">	96	</td>	</tr>
+<tr id="fing_378">	<td>	379	</td>	<td>	1Gb  DDR-3 ASUS ENGTS450 DC SL/DI/1GD3 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	59.0	</td>	<td align="center">	96	</td>	</tr>
+<tr id="fing_379">	<td>	380	</td>	<td>	1Gb  DDR-3 ASUS ENGTS450 DI/1GD3 (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	58.9	</td>	<td align="center">	101	</td>	</tr>
+<tr id="fing_380">	<td>	381	</td>	<td>	2Gb  DDR-3 Gigabyte GV-R667D3-2GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6670>	</td>	<td align="center">	57.8	</td>	<td align="center">	68	</td>	</tr>
+<tr id="fing_381">	<td>	382	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GT640 Synergy Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	57.8	</td>	<td align="center">	103	</td>	</tr>
+<tr id="fing_382">	<td>	383	</td>	<td>	 <NEW> 2Gb  DDR-3 Gainward &lt;GeForce GT610> (OEM)	</td>	<td align="center">	57.7	</td>	<td align="center">	46	</td>	</tr>
+<tr id="fing_383">	<td>	384	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GTS450 Green> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	57.7	</td>	<td align="center">	89	</td>	</tr>
+<tr id="fing_384">	<td>	385	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GTS450 Smart Ed.> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	57.6	</td>	<td align="center">	82	</td>	</tr>
+<tr id="fing_385">	<td>	386	</td>	<td>	2Gb  DDR-3 PowerColor <AX6670 2GBK3-H> (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6670>	</td>	<td align="center">	57.5	</td>	<td align="center">	78	</td>	</tr>
+<tr id="fing_386">	<td>	387	</td>	<td>	2Gb  DDR-3 Inno3D <N450-2DDV-E3CX> (RTL) D-Sub+DVI+HDMI+SLI &lt;GeForce GTS450>	</td>	<td align="center">	57.5	</td>	<td align="center">	98	</td>	</tr>
+<tr id="fing_387">	<td>	388	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GTS450> (OEM) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	57.4	</td>	<td align="center">	89	</td>	</tr>
+<tr id="fing_388">	<td>	389	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD6670HM> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	57.3	</td>	<td align="center">	78	</td>	</tr>
+<tr id="fing_389">	<td>	390	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GTS450> (RTL) D-Sub+DVI+HDMI+SLI	</td>	<td align="center">	57.3	</td>	<td align="center">	91	</td>	</tr>
+<tr id="fing_390">	<td>	391	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD6670HM> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	57.3	</td>	<td align="center">	79	</td>	</tr>
+<tr id="fing_391">	<td>	392	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD6670> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	56.9	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_392">	<td>	393	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD6670> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	56.8	</td>	<td align="center">	69	</td>	</tr>
+<tr id="fing_393">	<td>	394	</td>	<td>	1Gb  DDR-5 ASUS GT630-1GD5 (RTL) D-Sub+DVI+HDMI &lt;GeForceGT630>	</td>	<td align="center">	56.6	</td>	<td align="center">	86	</td>	</tr>
+<tr id="fing_394">	<td>	395	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N630-1GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	56.5	</td>	<td align="center">	62	</td>	</tr>
+<tr id="fing_395">	<td>	396	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GT630> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	56.5	</td>	<td align="center">	73	</td>	</tr>
+<tr id="fing_396">	<td>	397	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GT630> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	56.4	</td>	<td align="center">	75	</td>	</tr>
+<tr id="fing_397">	<td>	398	</td>	<td>	1Gb  DDR-5 ASUS ENGT440 DI/1GD5 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT440>	</td>	<td align="center">	56.3	</td>	<td align="center">	82	</td>	</tr>
+<tr id="fing_398">	<td>	399	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GTS450 ECO Edit.> (RTL) DVI+HDMI+DP+SLI	</td>	<td align="center">	56.2	</td>	<td align="center">	93	</td>	</tr>
+<tr id="fing_399">	<td>	400	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GTS450 ECO Edit.> (RTL) DVI+HDMI+DP+SLI	</td>	<td align="center">	56.2	</td>	<td align="center">	86	</td>	</tr>
+<tr id="fing_400">	<td>	401	</td>	<td>	1Gb  DDR-3 ASUS EAH6570 /DI/1GD3/LP (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6570>	</td>	<td align="center">	56.1	</td>	<td align="center">	63	</td>	</tr>
+<tr id="fing_401">	<td>	402	</td>	<td>	1Gb  DDR-5 Palit &lt;GeForce GT440> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	56.0	</td>	<td align="center">	74	</td>	</tr>
+<tr id="fing_402">	<td>	403	</td>	<td>	1Gb  DDR-3 MSI V250 R6570-MD1GD3 (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6570>	</td>	<td align="center">	54.7	</td>	<td align="center">	59	</td>	</tr>
+<tr id="fing_403">	<td>	404	</td>	<td>	1Gb  DDR-3 Gigabyte GV-R657OC-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6570>	</td>	<td align="center">	54.6	</td>	<td align="center">	61	</td>	</tr>
+<tr id="fing_404">	<td>	405	</td>	<td>	1Gb  DDR-3 MSI V250 R6570-MD1GD3-LP (RTL) D-Sub+DVI+HDMI &lt;RADEONHD6570>	</td>	<td align="center">	54.6	</td>	<td align="center">	64	</td>	</tr>
+<tr id="fing_405">	<td>	406	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD6570> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	54.5	</td>	<td align="center">	59	</td>	</tr>
+<tr id="fing_406">	<td>	407	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD6570> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	54.4	</td>	<td align="center">	57	</td>	</tr>
+<tr id="fing_407">	<td>	408	</td>	<td>	1Gb  DDR-3 MSI V811 R6670-MD1GD3 (RTL) D-Sub+DVI+HDMI&lt;RADEON HD6670>	</td>	<td align="center">	54.1	</td>	<td align="center">	68	</td>	</tr>
+<tr id="fing_408">	<td>	409	</td>	<td>	2Gb  DDR-3 MSI V250 R6670-MD2GD3 V2 (OEM) D-Sub+DVI+HDMI&lt;RADEON HD6670>	</td>	<td align="center">	53.8	</td>	<td align="center">	72	</td>	</tr>
+<tr id="fing_409">	<td>	410	</td>	<td>	1Gb  DDR-3 MSI V250 R6670-MD1GD3 V2 (OEM) D-Sub+DVI+HDMI&lt;RADEON HD6670>	</td>	<td align="center">	53.7	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_410">	<td>	411	</td>	<td>	2Gb  DDR-3 Gigabyte GV-R657D3-2GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6570>	</td>	<td align="center">	53.7	</td>	<td align="center">	65	</td>	</tr>
+<tr id="fing_411">	<td>	412	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD6570> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	53.6	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_412">	<td>	413	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD6570> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	53.6	</td>	<td align="center">	67	</td>	</tr>
+<tr id="fing_413">	<td>	414	</td>	<td>	1Gb  DDR-3 MSI V250 R6670-MD1GD3 V2 (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6670>	</td>	<td align="center">	53.2	</td>	<td align="center">	68	</td>	</tr>
+<tr id="fing_414">	<td>	415	</td>	<td>	2Gb  DDR-3 ASUS GT630-2GD3 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	52.1	</td>	<td align="center">	67	</td>	</tr>
+<tr id="fing_415">	<td>	416	</td>	<td>	512Mb  DDR-5 Palit &lt;GeForce GT440> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	52.0	</td>	<td align="center">	63	</td>	</tr>
+<tr id="fing_416">	<td>	417	</td>	<td>	1Gb  DDR-3 ASUS ENGT440 DI/1GD3 (RTL) D-Sub+DVI+HDMI &lt;GeForceGT440>	</td>	<td align="center">	50.9	</td>	<td align="center">	64	</td>	</tr>
+<tr id="fing_417">	<td>	418	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N630-1GI (OEM) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	50.7	</td>	<td align="center">	60	</td>	</tr>
+<tr id="fing_418">	<td>	419	</td>	<td>	2Gb  DDR-3 Gigabyte GV-N630-2GI (OEM) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	50.6	</td>	<td align="center">	64	</td>	</tr>
+<tr id="fing_419">	<td>	420	</td>	<td>	1Gb  DDR-3 MSI V250 R6570-MD1GD3 (OEM) D-Sub+DVI+HDMI &lt;RADEON HD6570>	</td>	<td align="center">	50.6	</td>	<td align="center">	58	</td>	</tr>
+<tr id="fing_420">	<td>	421	</td>	<td>	2Gb  DDR-3 Gigabyte GV-N630-2GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	50.5	</td>	<td align="center">	64	</td>	</tr>
+<tr id="fing_421">	<td>	422	</td>	<td>	2Gb  DDR-3 MSI V250 R6570-MD2GD3-LP (OEM) D-Sub+DVI+HDMI &lt;RADEONHD6570>	</td>	<td align="center">	50.5	</td>	<td align="center">	70	</td>	</tr>
+<tr id="fing_422">	<td>	423	</td>	<td>	1Gb  DDR-3 PowerColor <AX6570-1GBK3-H> (OEM) D-Sub+DVI+HDMI &lt;RADEON HD6570>	</td>	<td align="center">	50.4	</td>	<td align="center">	56	</td>	</tr>
+<tr id="fing_423">	<td>	424	</td>	<td>	2Gb  DDR-3 MSI V250 R6570-MD2GD3-LP (RTL) D-Sub+DVI+HDMI &lt;RADEONHD6570>	</td>	<td align="center">	50.3	</td>	<td align="center">	64	</td>	</tr>
+<tr id="fing_424">	<td>	425	</td>	<td>	2Gb  DDR-3 XFX <HD-657X-CNF3> (RTL) D-Sub+DVI+HDMI&lt;RADEON HD6570>	</td>	<td align="center">	50.3	</td>	<td align="center">	73	</td>	</tr>
+<tr id="fing_425">	<td>	426	</td>	<td>	2Gb  DDR-3 Gigabyte GV-N440-2GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT440>	</td>	<td align="center">	50.1	</td>	<td align="center">	76	</td>	</tr>
+<tr id="fing_426">	<td>	427	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT630> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	49.7	</td>	<td align="center">	62	</td>	</tr>
+<tr id="fing_427">	<td>	428	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT630> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	49.7	</td>	<td align="center">	61	</td>	</tr>
+<tr id="fing_428">	<td>	429	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT630> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	49.6	</td>	<td align="center">	56	</td>	</tr>
+<tr id="fing_429">	<td>	430	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT630> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	49.5	</td>	<td align="center">	67	</td>	</tr>
+<tr id="fing_430">	<td>	431	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT440> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	49.2	</td>	<td align="center">	64	</td>	</tr>
+<tr id="fing_431">	<td>	432	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT440> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	49.2	</td>	<td align="center">	57	</td>	</tr>
+<tr id="fing_432">	<td>	433	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N430OC-1GL (RTL) D-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	49.1	</td>	<td align="center">	67	</td>	</tr>
+<tr id="fing_433">	<td>	434	</td>	<td>	2Gb  DDR-3 Inno3D <N630-2DDV-E3CX> (RTL) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	47.3	</td>	<td align="center">	65	</td>	</tr>
+<tr id="fing_434">	<td>	435	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT630 Synergy Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	46.9	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_435">	<td>	436	</td>	<td>	1Gb  DDR-3 Inno3D <N630-2DDV-D3CX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	46.8	</td>	<td align="center">	57	</td>	</tr>
+<tr id="fing_436">	<td>	437	</td>	<td>	2Gb  DDR-3 Inno3D <N440-2DDV-E3CX> (RTL) D-Sub+DVI+HDMI &lt;GeForce GT440>	</td>	<td align="center">	46.8	</td>	<td align="center">	63	</td>	</tr>
+<tr id="fing_437">	<td>	438	</td>	<td>	1Gb  DDR-3 Inno3D <N440-2DDV-D3CX> (RTL) D-Sub+DVI+HDMI &lt;GeForce GT440>	</td>	<td align="center">	46.7	</td>	<td align="center">	57	</td>	</tr>
+<tr id="fing_438">	<td>	439	</td>	<td>	2Gb  DDR-3 Inno3D <N630-2DDV-E3CX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	46.4	</td>	<td align="center">	60	</td>	</tr>
+<tr id="fing_439">	<td>	440	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GT630 Synergy Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	46.3	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_440">	<td>	441	</td>	<td>	2Gb  DDR-3 Gigabyte GV-N430-2GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	46.3	</td>	<td align="center">	62	</td>	</tr>
+<tr id="fing_441">	<td>	442	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT440> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	45.8	</td>	<td align="center">	58	</td>	</tr>
+<tr id="fing_442">	<td>	443	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT430 Synergy Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	43.2	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_443">	<td>	444	</td>	<td>	1Gb  DDR-3 ASUS ENGT430 DC SL/DI/1GD3(EU) (RTL) D-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	43.2	</td>	<td align="center">	75	</td>	</tr>
+<tr id="fing_444">	<td>	445	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT430 Zone Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	42.6	</td>	<td align="center">	65	</td>	</tr>
+<tr id="fing_445">	<td>	446	</td>	<td>	1Gb  DDR-3 Inno3D <N630-2DDV-D3CX> (RTL) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	42.2	</td>	<td align="center">	58	</td>	</tr>
+<tr id="fing_446">	<td>	447	</td>	<td>	1Gb  DDR-3 Leadtek GT630-Fan (RTL) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	42.1	</td>	<td align="center">	61	</td>	</tr>
+<tr id="fing_447">	<td>	448	</td>	<td>	1Gb  DDR-3 Gigabyte GV-R557D3-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD5570>	</td>	<td align="center">	42.1	</td>	<td align="center">	62	</td>	</tr>
+<tr id="fing_448">	<td>	449	</td>	<td>	1Gb  DDR-3 Leadtek GT440-Fan (RTL) D-Sub+DVI+HDMI&lt;GeForce GT440>	</td>	<td align="center">	42.0	</td>	<td align="center">	58	</td>	</tr>
+<tr id="fing_449">	<td>	450	</td>	<td>	4Gb  DDR-3 ZOTAC &lt;GeForce GT630 Synergy Edit.> (OEM) DualDVI+miniHDMI	</td>	<td align="center">	41.6	</td>	<td align="center">	74	</td>	</tr>
+<tr id="fing_450">	<td>	451	</td>	<td>	4Gb  DDR-3 ZOTAC &lt;GeForce GT630 Synergy Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	41.6	</td>	<td align="center">	80	</td>	</tr>
+<tr id="fing_451">	<td>	452	</td>	<td>	4Gb  DDR-3 Inno3D <N63K-3DDV-M3CX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	41.5	</td>	<td align="center">	77	</td>	</tr>
+<tr id="fing_452">	<td>	453	</td>	<td>	2Gb  DDR-3 MSI V809 N630GT-MD2GD3 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	41.5	</td>	<td align="center">	65	</td>	</tr>
+<tr id="fing_453">	<td>	454	</td>	<td>	2Gb  DDR-3 MSI V809 N630GT-MD2GD3 (OEM) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	41.4	</td>	<td align="center">	64	</td>	</tr>
+<tr id="fing_454">	<td>	455	</td>	<td>	4Gb  DDR-3 MSI V809 N630GT-MD4GD3 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	41.4	</td>	<td align="center">	77	</td>	</tr>
+<tr id="fing_455">	<td>	456	</td>	<td>	2Gb  DDR-3 Gainward &lt;GeForce GT630> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	41.3	</td>	<td align="center">	64	</td>	</tr>
+<tr id="fing_456">	<td>	457	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT630> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	41.3	</td>	<td align="center">	69	</td>	</tr>
+<tr id="fing_457">	<td>	458	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT630> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	41.2	</td>	<td align="center">	59	</td>	</tr>
+<tr id="fing_458">	<td>	459	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT440> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	41.2	</td>	<td align="center">	65	</td>	</tr>
+<tr id="fing_459">	<td>	460	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT440> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	41.2	</td>	<td align="center">	60	</td>	</tr>
+<tr id="fing_460">	<td>	461	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N430-1GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	41.1	</td>	<td align="center">	60	</td>	</tr>
+<tr id="fing_461">	<td>	462	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT430> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	41.1	</td>	<td align="center">	47	</td>	</tr>
+<tr id="fing_462">	<td>	463	</td>	<td>	1Gb  DDR-3 ASUS ENGT430 DI/1GD3/LP (RTL) D-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	41.0	</td>	<td align="center">	58	</td>	</tr>
+<tr id="fing_463">	<td>	464	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT430> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	40.9	</td>	<td align="center">	46	</td>	</tr>
+<tr id="fing_464">	<td>	465	</td>	<td>	1Gb  DDR-3 Inno3D <N430-2DDV-D3CX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	39.0	</td>	<td align="center">	54	</td>	</tr>
+<tr id="fing_465">	<td>	466	</td>	<td>	2Gb  DDR-3 Inno3D <N430-2DDV-E3CX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	38.9	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_466">	<td>	467	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT430> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	38.9	</td>	<td align="center">	60	</td>	</tr>
+<tr id="fing_467">	<td>	468	</td>	<td>	2Gb  DDR-3 Gainward &lt;GeForce GT430> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	38.9	</td>	<td align="center">	66	</td>	</tr>
+<tr id="fing_468">	<td>	469	</td>	<td>	4Gb  DDR-3 MSI V809 N630GT-MD4GD3 (OEM) D-Sub+DVI+HDMI &lt;GeForce GT630>	</td>	<td align="center">	35.6	</td>	<td align="center">	75	</td>	</tr>
+<tr id="fing_469">	<td>	470	</td>	<td>	512Mb  DDR-3 Sapphire &lt;RADEON HD5550> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	34.3	</td>	<td align="center">	53	</td>	</tr>
+<tr id="fing_470">	<td>	471	</td>	<td>	1Gb  DDR-3 Inno3D <N430-2DDV-D3BX> (OEM) 64bitD-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	33.6	</td>	<td align="center">	46	</td>	</tr>
+<tr id="fing_471">	<td>	472	</td>	<td>	1Gb  DDR-3 Leadtek GT620-Fan (RTL) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	33.0	</td>	<td align="center">	53	</td>	</tr>
+<tr id="fing_472">	<td>	473	</td>	<td>	1Gb  DDR-3 XFX <HD-657X-ZDF2> (RTL) D-Sub+DVI+HDMI&lt;RADEON HD6570>	</td>	<td align="center">	32.3	</td>	<td align="center">	55	</td>	</tr>
+<tr id="fing_473">	<td>	474	</td>	<td>	1Gb  DDR-3 ASUS GT620-1GD3-L-V2 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	31.8	</td>	<td align="center">	54	</td>	</tr>
+<tr id="fing_474">	<td>	475	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N620D3-1GL (OEM) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	31.8	</td>	<td align="center">	48	</td>	</tr>
+<tr id="fing_475">	<td>	476	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N620D3-1GL (RTL) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	31.7	</td>	<td align="center">	49	</td>	</tr>
+<tr id="fing_476">	<td>	477	</td>	<td>	1Gb  DDR-3 ASUS GT620-1GD3-L (RTL) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	31.7	</td>	<td align="center">	57	</td>	</tr>
+<tr id="fing_477">	<td>	478	</td>	<td>	1Gb  DDR-3 ASUS ENGT430 DI/1GD3/MG(LP) (RTL) 64bitD-Sub+DVI+HDMI &lt;GeForce GT430>	</td>	<td align="center">	31.1	</td>	<td align="center">	42	</td>	</tr>
+<tr id="fing_478">	<td>	479	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT620> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	30.6	</td>	<td align="center">	54	</td>	</tr>
+<tr id="fing_479">	<td>	480	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT620> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	30.6	</td>	<td align="center">	55	</td>	</tr>
+<tr id="fing_480">	<td>	481	</td>	<td>	2Gb  DDR-3 Gainward &lt;GeForce GT620> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	30.6	</td>	<td align="center">	62	</td>	</tr>
+<tr id="fing_481">	<td>	482	</td>	<td>	2Gb  DDR-3 Gainward &lt;GeForce GT620> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	30.5	</td>	<td align="center">	59	</td>	</tr>
+<tr id="fing_482">	<td>	483	</td>	<td>	2Gb  DDR-3 Inno3D <N620-3DDV-E3BX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	30.5	</td>	<td align="center">	61	</td>	</tr>
+<tr id="fing_483">	<td>	484	</td>	<td>	1Gb  DDR-3 Inno3D <N620-3DDV-D3BX> (RTL) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	30.1	</td>	<td align="center">	56	</td>	</tr>
+<tr id="fing_484">	<td>	485	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GT620 Synergy Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	30.1	</td>	<td align="center">	67	</td>	</tr>
+<tr id="fing_485">	<td>	486	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT620 Synergy Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	30.1	</td>	<td align="center">	59	</td>	</tr>
+<tr id="fing_486">	<td>	487	</td>	<td>	1Gb  DDR-3 MSI MS-V809 N620GT-MD1GD3-LP (OEM) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	30.0	</td>	<td align="center">	52	</td>	</tr>
+<tr id="fing_487">	<td>	488	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT620> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	30.0	</td>	<td align="center">	49	</td>	</tr>
+<tr id="fing_488">	<td>	489	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT620> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	30.0	</td>	<td align="center">	59	</td>	</tr>
+<tr id="fing_489">	<td>	490	</td>	<td>	2Gb  DDR-3 Inno3D <N620-2DDV-E3BX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	29.5	</td>	<td align="center">	57	</td>	</tr>
+<tr id="fing_490">	<td>	491	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N610D3-1GI (OEM) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	28.2	</td>	<td align="center">	40	</td>	</tr>
+<tr id="fing_491">	<td>	492	</td>	<td>	1Gb  DDR-3 Leadtek GT 610 (RTL) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	28.2	</td>	<td align="center">	42	</td>	</tr>
+<tr id="fing_492">	<td>	493	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT610 Zone Edit.> (RTL) DualDVI+miniHDMI	</td>	<td align="center">	28.2	</td>	<td align="center">	47	</td>	</tr>
+<tr id="fing_493">	<td>	494	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N610D3-1GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	28.1	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_494">	<td>	495	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N520D3-1GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	28.1	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_495">	<td>	496	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N610SL-1GI (OEM) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	27.7	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_496">	<td>	497	</td>	<td>	1Gb  DDR-3 ASUS GT610-1GD3-L (RTL) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	27.6	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_497">	<td>	498	</td>	<td>	2Gb  DDR-3 MSI V263 N520GT-MD2GD3/LP (RTL) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	27.6	</td>	<td align="center">	48	</td>	</tr>
+<tr id="fing_498">	<td>	499	</td>	<td>	1Gb  DDR-3 ASUS GT610-SL-1GD3-L (RTL) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	27.6	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_499">	<td>	500	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT520 Zone Edit.> (RTL) D-Sub+DualDVI+miniHDMI	</td>	<td align="center">	27.5	</td>	<td align="center">	54	</td>	</tr>
+<tr id="fing_500">	<td>	501	</td>	<td>	2Gb  DDR-3 ASUS GT610-SL-2GD3-L (RTL) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	27.1	</td>	<td align="center">	52	</td>	</tr>
+<tr id="fing_501">	<td>	502	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N610SL-1GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	27.0	</td>	<td align="center">	42	</td>	</tr>
+<tr id="fing_502">	<td>	503	</td>	<td>	1Gb  DDR-3 ASUS ENGT520 SL/DI/1GD3/V2/LP (RTL) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	27.0	</td>	<td align="center">	45	</td>	</tr>
+<tr id="fing_503">	<td>	504	</td>	<td>	1Gb  DDR-3 ASUS ENGT520 DI/1GD3/V2/LP (RTL) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	27.0	</td>	<td align="center">	43	</td>	</tr>
+<tr id="fing_504">	<td>	505	</td>	<td>	1Gb  DDR-3 Inno3D <N620-3DDV-D3BX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT620>	</td>	<td align="center">	26.7	</td>	<td align="center">	53	</td>	</tr>
+<tr id="fing_505">	<td>	506	</td>	<td>	2Gb  DDR-3 Inno3D <N610-1DDV-E3BX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	26.7	</td>	<td align="center">	46	</td>	</tr>
+<tr id="fing_506">	<td>	507	</td>	<td>	1Gb  DDR-3 Inno3D <N610-1DDV-D3BX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT610>	</td>	<td align="center">	26.6	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_507">	<td>	508	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT610> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	26.6	</td>	<td align="center">	38	</td>	</tr>
+<tr id="fing_508">	<td>	509	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT610> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	26.6	</td>	<td align="center">	39	</td>	</tr>
+<tr id="fing_509">	<td>	510	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT610> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	26.5	</td>	<td align="center">	47	</td>	</tr>
+<tr id="fing_510">	<td>	511	</td>	<td>	2Gb  DDR-3 Gainward &lt;GeForce GT610> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	26.5	</td>	<td align="center">	48	</td>	</tr>
+<tr id="fing_511">	<td>	512	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT520> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	26.5	</td>	<td align="center">	44	</td>	</tr>
+<tr id="fing_512">	<td>	513	</td>	<td>	1Gb  DDR-3 Gigabyte GV-N520SL-1GI (RTL) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	26.4	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_513">	<td>	514	</td>	<td>	1Gb  DDR-3 ASUS ENGT520 DI/1GD3/LP (RTL) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	26.4	</td>	<td align="center">	45	</td>	</tr>
+<tr id="fing_514">	<td>	515	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT520> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	26.4	</td>	<td align="center">	46	</td>	</tr>
+<tr id="fing_515">	<td>	516	</td>	<td>	2Gb  DDR-3 ASUS ENGT520 SL/DI/2GD3/LP (RTL) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	26.2	</td>	<td align="center">	48	</td>	</tr>
+<tr id="fing_516">	<td>	517	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GT520 Synergy Edit.> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	26.1	</td>	<td align="center">	49	</td>	</tr>
+<tr id="fing_517">	<td>	518	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT520 Synergy Edit.> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	26.1	</td>	<td align="center">	44	</td>	</tr>
+<tr id="fing_518">	<td>	519	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT520> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	26.1	</td>	<td align="center">	40	</td>	</tr>
+<tr id="fing_519">	<td>	520	</td>	<td>	1Gb  DDR-3 Gainward &lt;GeForce GT520> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	26.0	</td>	<td align="center">	40	</td>	</tr>
+<tr id="fing_520">	<td>	521	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT520> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	26.0	</td>	<td align="center">	39	</td>	</tr>
+<tr id="fing_521">	<td>	522	</td>	<td>	1Gb  DDR-3 Palit &lt;GeForce GT520> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	26.0	</td>	<td align="center">	38	</td>	</tr>
+<tr id="fing_522">	<td>	523	</td>	<td>	2Gb  DDR-3 ZOTAC &lt;GeForce GT610 Synergy Edit.> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	25.6	</td>	<td align="center">	47	</td>	</tr>
+<tr id="fing_523">	<td>	524	</td>	<td>	1Gb  DDR-3 ZOTAC &lt;GeForce GT610 Synergy Edit.> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	25.5	</td>	<td align="center">	43	</td>	</tr>
+<tr id="fing_524">	<td>	525	</td>	<td>	2Gb  DDR-3 Inno3D <N520-3DDV-E3BX> (OEM) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	25.5	</td>	<td align="center">	46	</td>	</tr>
+<tr id="fing_525">	<td>	526	</td>	<td>	2Gb  DDR-3 Palit &lt;GeForce GT610> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	25.5	</td>	<td align="center">	45	</td>	</tr>
+<tr id="fing_526">	<td>	527	</td>	<td>	2Gb  DDR-3 MSI V809 N520GT-MD2GD3-LP (RTL) D-Sub+DVI+HDMI &lt;GeForce GT520>	</td>	<td align="center">	25.5	</td>	<td align="center">	47	</td>	</tr>
+<tr id="fing_527">	<td>	528	</td>	<td>	1Gb  DDR-3 Gigabyte GV-R645SC-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6450>	</td>	<td align="center">	24.9	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_528">	<td>	529	</td>	<td>	512Mb  DDR-3 Gigabyte GV-R645D3-512I (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6450>	</td>	<td align="center">	24.9	</td>	<td align="center">	34	</td>	</tr>
+<tr id="fing_529">	<td>	530	</td>	<td>	1Gb  DDR-3 MSI V212 R6450-MD1GD3-LP (OEM) D-Sub+DVI+HDMI &lt;RADEON HD6450>	</td>	<td align="center">	23.6	</td>	<td align="center">	40	</td>	</tr>
+<tr id="fing_530">	<td>	531	</td>	<td>	2Gb  DDR-3 MSI V811 R6450-MD2GD3-LP (OEM) D-Sub+DVI+HDMI &lt;RADEONHD6450>	</td>	<td align="center">	23.6	</td>	<td align="center">	48	</td>	</tr>
+<tr id="fing_531">	<td>	532	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD6450> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	23.6	</td>	<td align="center">	48	</td>	</tr>
+<tr id="fing_532">	<td>	533	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD6450> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	23.5	</td>	<td align="center">	54	</td>	</tr>
+<tr id="fing_533">	<td>	534	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD6450> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	23.5	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_534">	<td>	535	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD6450> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	23.5	</td>	<td align="center">	39	</td>	</tr>
+<tr id="fing_535">	<td>	536	</td>	<td>	512Mb  DDR-3 Sapphire &lt;RADEON HD6450> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	23.5	</td>	<td align="center">	37	</td>	</tr>
+<tr id="fing_536">	<td>	537	</td>	<td>	1Gb  DDR-3 MSI V212 R6450-MD1GD3-LP V2 (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6450>	</td>	<td align="center">	22.9	</td>	<td align="center">	44	</td>	</tr>
+<tr id="fing_537">	<td>	538	</td>	<td>	512Mb  DDR-3 Sapphire &lt;RADEON HD6450HM> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	22.9	</td>	<td align="center">	43	</td>	</tr>
+<tr id="fing_538">	<td>	539	</td>	<td>	1Gb  DDR-3 ASUS EAH6450 SILENT DI/1GD3/LP (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6450>	</td>	<td align="center">	22.9	</td>	<td align="center">	40	</td>	</tr>
+<tr id="fing_539">	<td>	540	</td>	<td>	2Gb  DDR-3 ASUS HD6450-SL-2GD3-L (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6450>	</td>	<td align="center">	22.2	</td>	<td align="center">	49	</td>	</tr>
+<tr id="fing_540">	<td>	541	</td>	<td>	1Gb  DDR-3 Gigabyte GV-R645-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6450>	</td>	<td align="center">	22.2	</td>	<td align="center">	39	</td>	</tr>
+<tr id="fing_541">	<td>	542	</td>	<td>	512Mb  DDR-3 Sapphire &lt;RADEON HD5450HM> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	20.1	</td>	<td align="center">	30	</td>	</tr>
+<tr id="fing_542">	<td>	543	</td>	<td>	512Mb  DDR-3 Sapphire &lt;RADEON HD5450> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	20.0	</td>	<td align="center">	33	</td>	</tr>
+<tr id="fing_543">	<td>	544	</td>	<td>	512Mb  DDR-3 ASUS EAH5450 SL/DI/512MD3/V2/LP (RTL) D-Sub+DVI+HDMI &lt;RADEON HD5450>	</td>	<td align="center">	19.4	</td>	<td align="center">	31	</td>	</tr>
+<tr id="fing_544">	<td>	545	</td>	<td>	1Gb  DDR-3 Gigabyte GV-R545D3-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD5450>	</td>	<td align="center">	19.4	</td>	<td align="center">	36	</td>	</tr>
+<tr id="fing_545">	<td>	546	</td>	<td>	1Gb  DDR-3 ASUS EAH5450 SILENT DI/1GD3/LP (RTL) D-Sub+DVI+HDMI &lt;RADEON HD5450>	</td>	<td align="center">	19.4	</td>	<td align="center">	34	</td>	</tr>
+<tr id="fing_546">	<td>	547	</td>	<td>	512Mb  DDR-3 Sapphire &lt;RADEON HD5450> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	19.3	</td>	<td align="center">	28	</td>	</tr>
+<tr id="fing_547">	<td>	548	</td>	<td>	1Gb  DDR-3 ASUS EAH5450 SILENT DS/1GD3/LP (RTL) D-Sub+DVI+DP &lt;RADEON HD5450>	</td>	<td align="center">	18.7	</td>	<td align="center">	41	</td>	</tr>
+<tr id="fing_548">	<td>	549	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD5450> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	18.7	</td>	<td align="center">	34	</td>	</tr>
+<tr id="fing_549">	<td>	550	</td>	<td>	1Gb  DDR-3 Sapphire &lt;RADEON HD5450> (RTL) D-Sub+DVI+HDMI	</td>	<td align="center">	18.7	</td>	<td align="center">	36	</td>	</tr>
+<tr id="fing_550">	<td>	551	</td>	<td>	1Gb  DDR-3 Gigabyte GV-R545-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD5450>	</td>	<td align="center">	18.0	</td>	<td align="center">	36	</td>	</tr>
+<tr id="fing_551">	<td>	552	</td>	<td>	1Gb  DDR-3 Gigabyte GV-R545SL-1GI (RTL) D-Sub+DVI+HDMI &lt;RADEON HD5450>	</td>	<td align="center">	18.0	</td>	<td align="center">	36	</td>	</tr>
+<tr id="fing_552">	<td>	553	</td>	<td>	2Gb  DDR-3 Sapphire &lt;RADEON HD5450> (OEM) D-Sub+DVI+HDMI	</td>	<td align="center">	18.0	</td>	<td align="center">	42	</td>	</tr>
+<tr id="fing_553">	<td>	554	</td>	<td>	512Mb  DDR-3 ASUS EAH6450 SILENT DI/512MD3/LP (RTL) D-Sub+DVI+HDMI &lt;RADEON HD6450>	</td>	<td align="center">	16.5	</td>	<td align="center">	39	</td>	</tr>
+<tr id="fing_554">	<td>	555	</td>	<td>	512Mb  DDR-3 HIS <H545HO512> (RTL) 32bitD-Sub+DVI+HDMI &lt;RADEON HD5450 Silence>	</td>	<td align="center">	12.8	</td>	<td align="center">	27	</td>	</tr>
+
+
+
+
+     </table>
+
+<br><br><b>Читайте также статьи:</b>
+ <br><a href="http://cooler.by/parametrji_videokart.html">Параметры, имеющие особое значение при покупке видеокарт.</a>
+ <br><a href="http://cooler.by/videokarty-GeForce.html">Новые видеокарты: GeForce GTX 660 и GTX 650.</a>
+ <br><a href="http://cooler.by/nvidia-gtx-690.html">NVIDIA GeForce GTX 690.</a>
+
+                     </div>					
+
+           					 
+					 
+					 <div id="text_footer">
+
+					 </div>
+		</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<hr />
+	<!-- start footer -->
+<?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika.txt"); ?>
+</body>
+</html>

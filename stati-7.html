@@ -1,0 +1,94 @@
+﻿<?
+$url = $_SERVER['REQUEST_URI'];
+if($url == "/novosti_i_stati.html")
+{$url1 = "hover";}
+elseif($url == "/stati_srt2.html")
+{$url2 = "hover";}
+elseif($url == "/stati-3.html")
+{$url3 = "hover";}
+elseif($url == "/stati-4.html")
+{$url4 = "hover";}
+elseif($url == "/stati-5.html")
+{$url5 = "hover";}
+elseif($url == "/stati-6.html")
+{$url6 = "hover";}
+elseif($url == "/stati-7.html")
+{$url7 = "hover";}
+else
+{$index = "hover";}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Темы статей: планшеты, 3D-принтеры, флешки</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="stati-6/stati-6.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+<?php include ("index/header.txt"); ?>
+
+	<!-- start page -->
+	<div id="page">
+		<div id="bgtop"></div>
+		<div id="bgbottom">
+			<!-- start menu -->
+
+<?php include ("index/menu-stati.txt"); ?>
+			
+			<!-- начало Right -->
+			<div id="right">
+			     <h1>Статьи о компьютере</h1>
+<?php include ("novosti_i_stati/nomer.php"); ?>
+
+       <div id="text_stati">
+			<img id="img_1" src="stati-7/planshet1.jpg" alt="Как выбрать планшет?" title="Как выбрать планшет?"/>
+<div id="text_kusok"> <h3><a href="stati-7/planshet.html">Как выбрать планшет?</a></h3>
+Когда начинаем вспоминать историю входа компьютеров в нашу жизнь, то начинаем улыбаться. Теперь, когда наш компьютер может поместится чуть ли не в карман, а если не в карман, то в женскую сумку, 
+смешным и нереальным кажется тот факт, что совсем недавно компьютер был размером с жилую комнату. 
+
+<br> <a href="stati-7/planshet.html">подробнее >></a></div>
+					 </div>	
+					 
+					 
+ <div id="text_stati">
+			<img id="img_1" src="stati-7/3d-printery.jpg" alt="3D-принтеры" title="3D-принтеры"/>
+<div id="text_kusok"> <h3><a href="stati-7/3d-printery.html">3D-принтеры.</a></h3>
+Казалось бы, данное словосочетание звучит немного неординарно, однако, с точки зрения технического процесса все вполне объяснимо и довольно просто – полимеры,
+ то есть печатающий материал ложится не одним слоем на плоскость, а постепенно, накладываясь друг на друга.
+
+<br> <a href="stati-7/3d-printery.html">подробнее >></a></div>
+					 </div>	
+					 
+					  <div id="text_stati">
+			<img id="img_1" src="stati-7/fleshka1.jpg" alt="Флешка" title="Флешка"/>
+<div id="text_kusok"> <h3><a href="stati-7/fleshka.html">Как обстоят дела на "фронте флешек"?</a></h3>
+С уходом привычных и «родных» дискет было сломано много копий: тогда казалось, что немыслимо оставлять новые спецификации PC без такого устройства для передачи данных. 
+
+<br> <a href="stati-7/fleshka.html">подробнее >></a></div>
+					 </div>	
+
+					 
+					 
+					 
+						
+<?php include ("novosti_i_stati/nomer.php"); ?>
+				 
+		</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<hr />
+	<!-- start footer -->
+<?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika.txt"); ?>
+</body>
+</html>

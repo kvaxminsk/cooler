@@ -1,0 +1,48 @@
+                    <div id='komp'>
+                        <h3>Cooler Офис-старт</h3>
+                        <span class="img-slide"><img  src='/system_block_images/delux-dlc-mv875.jpg ' alt='Системный блок' title='Системный блок'/></span>
+                        <div class='cena-sist-bl'>Системный блок <span class="cenagl">237 </span> у.е.</div>
+                        <span class="comlekt" >
+                         <ul class="opisanie-left">
+                         <li>Процессор - <b>Intel Celeron G530 (2x2.4GHz)</b></li>
+                         <li>Оперативная память - <b> 2GB DDR3</b></li>
+                         <li>Материнская плата - <b>Socket1155 </b></li>
+                         <li>Видеокарта - <b>Встроенная 0GB </b></li>
+                         </ul>
+                         <ul class="opisanie-right">
+                         <li>Жёсткий диск - <b>HDD 500GB </b></li>
+                         <li></b></li>
+                         <li>Корпус - <b>Delux DLC-MV875 *</b></li>
+                         <li>Блок питания - <b> 400Вт </b></li>
+                         </ul>  
+                            <br/>
+                            *картинка может не соответствовать конфигурации
+                            <br/>
+                         </span>
+                    </div>
+
+
+
+                
+                    <div id='komp'>
+                        <h3>Cooler Unique</h3>
+                        <span class="img-slide"><img  src='/system_block_images/delux-dlc-mv875.jpg ' alt='Системный блок' title='Системный блок'/></span>
+                        <div class='cena-sist-bl'>Системный блок <span class="cenagl">249 </span> у.е.</div>
+                        <span class="comlekt" >
+                         <ul class="opisanie-left">
+                         <li>Процессор - <b>Intel Celeron G530 (2x2.4GHz)</b></li>
+                         <li>Оперативная память - <b> 2GB DDR3</b></li>
+                         <li>Материнская плата - <b>Socket1155 </b></li>
+                         <li>Видеокарта - <b>Встроенная 0GB </b></li>
+                         </ul>
+                         <ul class="opisanie-right">
+                         <li>Жёсткий диск - <b>HDD 500GB </b></li>
+                         <li></b></li>
+                         <li>Корпус - <b>Delux DLC-MV875 *</b></li>
+                         <li>Блок питания - <b> 400Вт </b></li>
+                         </ul>  
+                            <br/>
+                            *картинка может не соответствовать конфигурации
+                            <br/>
+                         </span>
+                    </div>

@@ -1,0 +1,58 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	text-align: justify;
+	padding: 20px 30px 0 20px;
+	margin: 4px 0 0 0;
+	font-size: 12px;
+}
+#text p{
+    margin: 10px 0 5px 0;
+    color: #f43939;
+    font: bold 15px "trebuchet ms";
+}
+#text #im_1 {
+    margin-left: -10px;
+}
+#text #im_2 {
+    margin-left: 0px;
+}
+#text #im_3 {
+    margin-left: -12px;
+}
+#text #im_4 {
+    margin-left: 0px;
+}
+#kr_1 {
+    float: left;
+	margin: 0px 0 0 20px;
+}
+#kr_2 {
+ 	margin: 0px 0 0 320px;
+}
+#kr_3 {
+    float: left;
+	margin: 15px 0 0 60px;
+}
+#kr_4 {
+    float: left;
+	margin: 15px 0 0 140px;
+}
+
+#text_footer {
+    text-align: justify;
+	font-size: 12px;
+    margin: 50px 22px 5px 14px;
+}

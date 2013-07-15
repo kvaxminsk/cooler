@@ -1,0 +1,25 @@
+  <!-- начало меню -->
+	<div id="menu">
+		<ul>
+			<li><a href="http://cooler.by/novosti_i_stati.html">Надо знать</a></li>
+			<li><a href="http://remont.cooler.by">Ремонт компьютеров</a></li>
+			<li><a href="http://cooler.by/dostavka_rb.html">Доставка по РБ</a></li>
+			<li><a href="http://cooler.by/otzyvy.html">Отзывы</a></li>
+			<li><a href="http://cooler.by/o_magazine.html">О магазине</a></li>
+		</ul>
+	</div>
+	<!-- start header -->
+	<div id="header" itemscope itemtype="http://schema.org/Organization">
+	            <div id="dostavka">
+				     Бесплатная доставка* 
+					 <br>по <span itemprop="address">Минск</span>у: 14.00-22.00
+			         <br>Звоните ежедневно: 9:00-20:00
+			    </div>
+			    <div id="tel">
+				     VEL: <span itemprop="telephone"><font size="1">(029)</font> 198-70-77</span> &nbsp;&nbsp;&nbsp;Skype: <a href="skype:cooler.by?add"><span itemprop="name">cooler.by</span></a>
+			         <br>MTS: <span itemprop="telephone"><font size="1">(029)</font> 758-00-77</span> &nbsp;&nbsp; ICQ: 610853976
+				     <br>MTS: <span itemprop="telephone"><font size="1">(029)</font> 738-80-77</span> &nbsp;&nbsp;&nbsp;Гор: 284-76-14
+			    </div>
+				<img id="glv_komp" src="http://cooler.by/images/glv_komp.png" alt="компьютеры в минске" title="компьютеры в минске"/>
+                <a href="http://cooler.by/index.html"><img id="logo" itemprop="logo" src="http://cooler.by/images/logo.png" alt="купить компьютер в минске" title="купить компьютер в минске"/></a>
+	</div>

@@ -1,0 +1,136 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 725px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid #474848;
+    border-bottom: 1px solid #474848;
+	text-align: justify;
+	padding: 25px 30px 10px 16px;
+	margin-top: 4px;
+    height: 255px;
+}
+#ceny {
+    margin-top: -5px;
+    margin-left: 60px;
+}
+#text ul li {
+    padding: 0 0 3px 33px; 
+	margin-top: 6px;
+	line-height: 18px;
+	background: url(fl.gif) no-repeat 0 1px;
+}
+#img_1 {    
+    float: left;
+	padding: 6px 15px 15px 8px;
+}
+#text_footer {
+    float:right;
+	width: 660px;
+	padding-top: 10px;
+    text-align: justify;
+    font-size: 12px;
+    font-family: "Verdana", "Geneva", "Arial", "Helvetica", sans-serif;
+    padding-right: 35px;
+}
+#text_footer h2 {
+    color: #f43939;
+    margin: -3px 0 0 -12px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms"
+}
+#imy {
+    color: #1D62B3;
+    font-weight: bold;
+    margin-top: 14px;
+}
+#data {
+    color: #A0A0A0;
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+.cherta {
+    width: 660px;
+    border-bottom: 1px dashed #7A7A7A;
+    padding-bottom: 10px;
+}
+/*vopros*/
+#vopros-text {
+    float: left;
+    width: 655px;
+    text-align: justify;
+    margin: 10px 22px 5px 14px;
+}
+#wb_Form2 {
+    position:relative;
+    bottom: 30px;
+    right: 35px;
+    float: right;
+    height:190px;
+    width: 420px;
+}
+#wb_Text1 {
+    position:relative;
+    top: 27px;
+}
+#wb_Text2 {
+    position:relative;
+    position: relative;
+    left: 188px;
+    bottom: 9px;
+}
+#wb_Text3 {
+    position:relative;
+    bottom: 1px;
+}
+#Editbox1 {
+    position:relative;
+    top: 28px;
+    width:150px;
+    height:18px;
+    border:1px #C0C0C0 solid;
+    font-family:Courier New;
+    font-size:13px;
+}
+#Editbox2 {
+    position:relative;
+    bottom: 8px;
+    margin-left: 38px;
+    width:212px;
+    height:18px;
+    border:1px #C0C0C0 solid;
+    font-family:Courier New;
+    font-size:13px;
+    left: 150px;
+}
+#Editbox3 {
+    position:relative;
+    width:400px;
+    height:85px;
+    border:1px #C0C0C0 solid;
+    font-family:Courier New;
+    font-size:13px;
+}
+#Button1 {
+    position:relative;
+	left:265px;
+	top:12px;
+	width:135px;
+	height:26px;
+	background-color:#E62A2A;
+	font-family:Arial;
+    color: #fff;
+    font-weight: bold;
+	font-size:13px;
+    cursor: pointer;
+}
+/*----------*/

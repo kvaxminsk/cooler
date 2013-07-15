@@ -1,0 +1,13 @@
+			<div id="sidebar">
+				<ul>
+						<h4>Компьютеры</h4>
+							<li><a href="ofisnyj_kompjuter.html">Офисный компьютер</a></li>
+							<li><a href="kompjuter_shkolniku.html">Школьнику компьютер</a></li>
+							<li><a href="domashnij_kompjuter.html">Домашний компьютер</a></li>
+							<li><a href="igrovoj_kompjuter.html">Игровой компьютер</a></li>
+							<li><a href="multimedijnyj_kompjuter.html">Мультимедийный компьютер</a></li>
+							<li><a href="sobrat_kompjuter_onlajn.php">Собрать компьютер онлайн</a></li>
+						<h4></h4>
+						    <br><li><a href="stati-4.html"><<<  К списку статей</a></li>
+				</ul>
+			</div>

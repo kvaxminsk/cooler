@@ -1,0 +1,526 @@
+
+
+.intaro-modules-button {
+    border: 1px solid #BFBFBF;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    clear: both;
+    color: #3D3D3D;
+    display: block;
+    font-family: Arial,Tahoma,Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding: 5px 14px 5px 4px;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.intaro-modules-button.disabled, .intaro-modules-button.disabled:hover, .intaro-modules-button.disabled:active {
+    background: url("../images/order_btn.gif") repeat-x scroll 0 3px transparent;
+    color: #999999;
+    opacity: 0.8;
+}
+div.intaro-modules-button {
+    float: left;
+}
+.intaro-modules-button:hover {
+    background: url("../images/order_btn.gif") repeat-x scroll 0 -25px transparent;
+		cursor: pointer;
+}
+.intaro-modules-button:active {
+    background: url("../images/order_btn.gif") repeat-x scroll 0 -54px transparent;
+    box-shadow: none;
+}
+.intaro-modules-button input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    display: inline-block;
+    font-family: Arial,Tahoma,Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    height: 18px;
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.intaro-modules-button i {
+    display: inline-block;
+    font-style: normal;
+    height: 15px;
+    padding: 0 0 0 26px;
+}
+.intaro-modules-button.basket {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.intaro-modules-button.basket i {
+    background: url("../images/basket.png") no-repeat scroll -3px -2px transparent;
+}
+.intaro-modules-button.ptichka {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 220px;
+    padding-bottom: 4px;
+}
+.intaro-modules-button.ptichka input {
+    background: url("../images/ptichka.png") no-repeat scroll 0 -1px transparent;
+}
+.ocb-form {
+    background-color: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 10px 25px 0 #262626;
+    display: none;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -200px;
+    position: fixed;
+    top: 50%;
+    width: 380px;
+    z-index: 1500;
+}
+.ocb-form form > div {
+    padding: 0 20px 0;
+}
+* html .ocb-form {
+    position: absolute;
+}
+.ocb-form-header {
+    background: url("../images/form_header_bg.jpg") repeat-x scroll 0 0 transparent;
+    height: 40px;
+    margin: 2px 2px 18px;
+    width: 376px;
+}
+.ocb-form-header-caption {
+    color: #FFFFFF;
+    float: left;
+    font: 400 15px Arial;
+    height: 20px;
+    padding: 11px 0 0 20px;
+    width: 130px;
+}
+.ocb-form-header-close {
+    background: url("../images/close.png") no-repeat scroll -54px -4px transparent;
+    cursor: pointer;
+    float: right;
+    height: 13px;
+    margin: 13px 20px 0 0;
+    width: 12px;
+}
+.ocb-form-header-close:hover {
+    background: url("../images/close.png") no-repeat scroll -30px -4px transparent;
+}
+.ocb-form-header-close:active {
+    background: url("../images/close.png") no-repeat scroll -6px -4px transparent;
+}
+.ocb-form-field {
+    margin: 17px 17px 17px;
+}
+.ocb-form-field label {
+    clear: both;
+    color: #1A1A1A;
+    display: block;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    text-align: left;
+}
+.ocb-form-field ins {
+    color: #FF1154;
+    text-decoration: none;
+}
+.ocb-form-field input, .ocb-form-field select {
+    font: 12px Arial;
+    padding: 3px 2px;
+}
+.ocb-form-field input {
+    width: 96%;
+    text-align: left;
+}
+.ocb-form-field select {
+    width: 100%;
+}
+.ocb-error-msg {
+    clear: both;
+    color: #DD2424;
+    display: none;
+    font: 11px Arial;
+    margin-top: 2px;
+}
+.ocb-form-loader {
+    background: url("../images/ajax-loader.gif?2") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: right;
+    height: 16px;
+    margin: 15px 5px 0;
+    width: 16px;
+}
+.ocb-form-result {
+    clear: both;
+    display: none;
+    height: 120px;
+    margin: 80px 20px 40px;
+    width: 340px;
+}
+.ocb-result-icon-success, .ocb-result-icon-fail {
+    display: none;
+    font: 16px Arial;
+    height: 25px;
+    margin: 0 auto;
+    padding: 3px 0;
+    text-indent: 40px;
+    width: 300px;
+}
+.ocb-result-icon-success {
+    background: url("../images/order_success.png") no-repeat scroll 0 0 transparent;
+    color: #1F760B;
+}
+.ocb-result-icon-fail {
+    background: url("../images/order_error.png") no-repeat scroll 0 0 transparent;
+    color: #DC1D1D;
+}
+.ocb-result-text {
+    color: #000000;
+    font: 14px/20px Arial;
+    margin: 0 30px 0 60px;
+    width: 250px;
+}
+.ocb-debug-messages {
+    display: none;
+    visibility: hidden;
+}
+#ocb_intaro {
+    bottom: 15px;
+    position: relative;
+}
+
+
+
+
+.ocb-form1 {
+    background-color: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 10px 25px 0 #262626;
+    display: none;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -200px;
+    position: fixed;
+    top: 50%;
+    width: 380px;
+    z-index: 1500;
+}
+.ocb-form1 form > div {
+    padding: 0 20px 0;
+}
+* html .ocb-form1 {
+    position: absolute;
+}
+.ocb-form-header1 {
+    background: url("../images/form_header_bg.jpg") repeat-x scroll 0 0 transparent;
+    height: 40px;
+    margin: 2px 2px 18px;
+    width: 376px;
+}
+.ocb-form-header-caption1 {
+    color: #FFFFFF;
+    float: left;
+    font: 600 14px Arial;
+    height: 20px;
+    padding: 13px 0 0 20px;
+    text-shadow: 0 -1px 1px #000000;
+    width: 130px;
+}
+.ocb-form-header-close1 {
+    background: url("../images/close.png") no-repeat scroll -54px -4px transparent;
+    cursor: pointer;
+    float: right;
+    height: 13px;
+    margin: 13px 20px 0 0;
+    width: 12px;
+}
+.ocb-form-header-close1:hover {
+    background: url("../images/close.png") no-repeat scroll -30px -4px transparent;
+}
+.ocb-form-header-close1:active {
+    background: url("../images/close.png") no-repeat scroll -6px -4px transparent;
+}
+.ocb-form-field1 {
+    margin: 17px 17px 17px;
+}
+.ocb-form-field1 label {
+    clear: both;
+    color: #1A1A1A;
+    display: block;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    text-align: left;
+}
+.ocb-form-field1 ins {
+    color: #FF1154;
+    text-decoration: none;
+}
+.ocb-form-field1 input, .ocb-form-field1 select {
+    font: 12px Arial;
+    padding: 3px 2px;
+}
+.ocb-form-field1 input {
+    width: 97%;
+    text-align: left;
+}
+.ocb-form-field1 select {
+    width: 100%;
+}
+.ocb-error-msg1 {
+    clear: both;
+    color: #DD2424;
+    display: none;
+    font: 11px Arial;
+    margin-top: 2px;
+}
+.ocb-form-loader1 {
+    background: url("../images/ajax-loader.gif?2") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: right;
+    height: 16px;
+    margin: 15px 5px 0;
+    width: 16px;
+}
+.ocb-form-result1 {
+    clear: both;
+    display: none;
+    height: 120px;
+    margin: 80px 20px 40px;
+    width: 340px;
+}
+.ocb-result-icon-success1, .ocb-result-icon-fail1 {
+    display: none;
+    font: 16px Arial;
+    height: 25px;
+    margin: 0 auto;
+    padding: 3px 0;
+    text-indent: 40px;
+    width: 300px;
+}
+.ocb-result-icon-success1 {
+    background: url("../images/order_success.png") no-repeat scroll 0 0 transparent;
+    color: #1F760B;
+}
+.ocb-result-icon-fail1 {
+    background: url("../images/order_error.png") no-repeat scroll 0 0 transparent;
+    color: #DC1D1D;
+}
+.ocb-result-text1 {
+    color: #000000;
+    font: 14px/20px Arial;
+    margin: 0 30px 0 60px;
+    width: 250px;
+}
+.ocb-debug-messages1 {
+    display: none;
+    visibility: hidden;
+}
+#ocb_intaro1 {
+    bottom: 15px;
+    position: relative;
+}
+
+
+
+
+.ocb-form2 {
+    background-color: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 10px 25px 0 #262626;
+    display: none;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -200px;
+    position: fixed;
+    top: 50%;
+    width: 380px;
+    z-index: 1500;
+}
+.ocb-form2 form > div {
+    padding: 0 20px 0;
+}
+* html .ocb-form2 {
+    position: absolute;
+}
+.ocb-form-header2 {
+    background: url("../images/form_header_bg.jpg") repeat-x scroll 0 0 transparent;
+    height: 40px;
+    margin: 2px 2px 18px;
+    width: 376px;
+}
+.ocb-form-header-caption2 {
+    color: #FFFFFF;
+    float: left;
+    font: 600 14px Arial;
+    height: 20px;
+    padding: 13px 0 0 20px;
+    text-shadow: 0 -1px 1px #000000;
+    width: 130px;
+}
+.ocb-form-header-close2 {
+    background: url("../images/close.png") no-repeat scroll -54px -4px transparent;
+    cursor: pointer;
+    float: right;
+    height: 13px;
+    margin: 13px 20px 0 0;
+    width: 12px;
+}
+.ocb-form-header-close2:hover {
+    background: url("../images/close.png") no-repeat scroll -30px -4px transparent;
+}
+.ocb-form-header-close2:active {
+    background: url("../images/close.png") no-repeat scroll -6px -4px transparent;
+}
+.ocb-form-field2 {
+    margin: 17px 17px 17px;
+}
+.ocb-form-field2 label {
+    clear: both;
+    color: #1A1A1A;
+    display: block;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    text-align: left;
+}
+.ocb-form-field2 ins {
+    color: #FF1154;
+    text-decoration: none;
+}
+.ocb-form-field2 input, .ocb-form-field2 select {
+    font: 12px Arial;
+    padding: 3px 2px;
+}
+.ocb-form-field2 input {
+    width: 97%;
+    text-align: left;
+}
+.ocb-form-field2 select {
+    width: 100%;
+}
+.ocb-error-msg2 {
+    clear: both;
+    color: #DD2424;
+    display: none;
+    font: 11px Arial;
+    margin-top: 2px;
+}
+.ocb-form-loader2 {
+    background: url("../images/ajax-loader.gif?2") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: right;
+    height: 16px;
+    margin: 15px 5px 0;
+    width: 16px;
+}
+.ocb-form-result2 {
+    clear: both;
+    display: none;
+    height: 120px;
+    margin: 80px 20px 40px;
+    width: 340px;
+}
+.ocb-result-icon-success2, .ocb-result-icon-fail2 {
+    display: none;
+    font: 16px Arial;
+    height: 25px;
+    margin: 0 auto;
+    padding: 3px 0;
+    text-indent: 40px;
+    width: 300px;
+}
+.ocb-result-icon-success2 {
+    background: url("../images/order_success.png") no-repeat scroll 0 0 transparent;
+    color: #1F760B;
+}
+.ocb-result-icon-fail2 {
+    background: url("../images/order_error.png") no-repeat scroll 0 0 transparent;
+    color: #DC1D1D;
+}
+.ocb-result-text2 {
+    color: #000000;
+    font: 14px/20px Arial;
+    margin: 0 30px 0 60px;
+    width: 250px;
+}
+.ocb-debug-messages2 {
+    display: none;
+    visibility: hidden;
+}
+#ocb_intaro2 {
+    bottom: 15px;
+    position: relative;
+}
+
+.new_pc_btn{    
+    width: 380px;
+    height: 80px;
+    padding: 15px 0 0 110px;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.1, #f5f5f5), color-stop(1.0, #e0e0e0));
+    background-image: -webkit-linear-gradient(#f5f5f5 top, #e0e0e0 bottom);
+    background-image: -moz-linear-gradient(#f5f5f5 top, #e0e0e0 bottom);
+    background-image: -o-linear-gradient(#f5f5f5 top, #e0e0e0 bottom);
+    background-image: linear-gradient(#f5f5f5 top, #e0e0e0 bottom);
+    cursor: pointer;
+    box-shadow: 0 0 6px 0px rgba(0, 0, 0, .3) inset;
+    position: relative;
+    font-family: arial, helvetica, sans-serif;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.new_pc_btn:hover{
+    background-color: #fafafa;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.1, #fafafa), color-stop(1.0, #e5e5e5));
+    background-image: -webkit-linear-gradient(#fafafa top, #e5e5e5 bottom);
+    background-image: -moz-linear-gradient(#fafafa top, #e5e5e5 bottom);
+    background-image: -o-linear-gradient(#fafafa top, #e5e5e5 bottom);
+    background-image: linear-gradient(#fafafa top, #e0e0e0 bottom);
+}
+
+.new_pc_btn:active{
+    background-color: #e3e3e3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.1, #e3e3e3), color-stop(1.0, #fafafa));
+    background-image: -webkit-linear-gradient(#e3e3e3 top, #fafafa bottom);
+    background-image: -moz-linear-gradient(#e3e3e3 top, #fafafa bottom);
+    background-image: -o-linear-gradient(#e3e3e3 top, #fafafa bottom);
+    background-image: linear-gradient(#e3e3e3 top, #fafafa bottom);
+    box-shadow: 0 3px 9px 1px rgba(0,0,0,.3) inset;
+}
+
+.new_pc_btn .img{
+    background: transparent url('../images/frontend/pc.png') center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 10px;
+    left: 25px;
+}
+
+.new_pc_btn .big{
+    color: #4F8100;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.new_pc_btn .small{
+    color: #323232;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#pc_link:hover {
+	text-decoration: none;
+}

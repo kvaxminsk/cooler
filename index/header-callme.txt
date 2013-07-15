@@ -1,0 +1,45 @@
+  <!-- начало меню -->
+  <link rel="stylesheet" href="/callme/callme.css" type="text/css" />
+  <script type="text/javascript" src="/callme/jquery.storage.js"></script>
+  <script type="text/javascript" src="/callme/callme.js"></script>
+	<div id="menu"><!--
+
+<div id="callme"><input type="button" id="viewform" title="Заказать обратный звонок" /></div>
+<div id="callmeform" class="hide-off"><div id="cme_cls"></div><h6>Напишите ваш номер, мы перезвоним.</h6>
+<table cellpadding="0" cellspacing="0">
+<tr><td>Ваше имя</td></tr>
+<tr><td><input class="txt" type="text" maxlength="45" id="cname" value="" /></td></tr>
+<tr><td>Телефон</td></tr>
+<tr><td><input class="txt" type="text" maxlength="35" value="+375-" id="cphone" /></td></tr>
+<tr><td>Вопрос или комментарий (необязательно)</td></tr>
+<tr><td><input class="txt" type="text" maxlength="70" id="ccmnt" /></td></tr>
+<tr><td>
+<input class="btn" type="button" value="Перезвоните мне"></td>
+</tr>
+</table>
+<div id="callme_result"></div>
+</div>-->	
+	
+		<ul>
+			<li><a href="novosti_i_stati.html">Надо знать</a></li>
+			<li><a href="http://remont.cooler.by">Ремонт компьютеров</a></li>
+			<li><a href="dostavka_rb.html">Доставка по РБ</a></li>
+			<li><a href="otzyvy.html">Отзывы</a></li>
+			<li><a href="o_magazine.html">О магазине</a></li>
+		</ul>
+	</div>
+	<!-- start header -->
+	<div id="header" itemscope itemtype="http://schema.org/Organization">
+	            <div id="dostavka">
+				     Бесплатная доставка* 
+					 <br>по <span itemprop="address">Минск</span>у: 14.00-22.00
+			         <br>Звоните ежедневно: 9:00-20:00
+			    </div>
+			    <div id="tel">
+				     VEL: <span itemprop="telephone"><font size="1">(029)</font> 198-70-77</span> &nbsp;&nbsp;&nbsp;Skype: <a href="skype:cooler.by?add"><span itemprop="name">cooler.by</span></a>
+			         <br>MTS: <span itemprop="telephone"><font size="1">(029)</font> 758-00-77</span> &nbsp;&nbsp; ICQ: 610853976
+				     <br>MTS: <span itemprop="telephone"><font size="1">(029)</font> 738-80-77</span> &nbsp;&nbsp;&nbsp;Гор: 284-76-14
+			    </div>
+				<img id="glv_komp" src="http://cooler.by/images/glv_komp.png" alt="компьютеры в минске" title="компьютеры в минске"/>
+                <a href="http://cooler.by/index.html"><img id="logo" itemprop="logo" src="http://cooler.by/images/logo.png" alt="купить компьютер в минске" title="купить компьютер в минске"/></a>
+	</div>

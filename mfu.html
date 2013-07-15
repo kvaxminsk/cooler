@@ -1,0 +1,134 @@
+﻿<?php
+include ("blocks/bd.php");/*Connecting to BD!*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Продажа МФУ по безналичному расчету</title>
+    <meta name="keywords" content="МФУ купить в комплекте с компьютером"/>
+    <meta name="description" content="МФУ (многофункциональные устройства) продажа МФУ по безналичному расчету в Минске, у нас можно купить МФУ за безнал"/>
+    <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="mfu/mfu.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!--Подключаем highslide-->
+    <script type="text/javascript" src="/highslide/highslide-with-gallery.js"></script>
+    <script type="text/javascript" src="/scripts/config_highslide.js"></script>
+    <link rel="stylesheet" type="text/css" href="./highslide/highslide.css"/>
+    <!----------------------------->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+    <?php include ("index/header-callme.txt"); ?>
+
+    <!-- start page -->
+    <div id="page">
+        <div id="bgtop"></div>
+        <div id="bgbottom">
+            <!-- start menu -->
+
+            <?php include ("index/menu.txt"); ?>
+
+            <!-- начало Right -->
+            <div id="right"><?php include ("index/soc-seti.txt"); ?> 
+                <h1>МФУ (многофункциональные устройства)</h1>
+
+                <div id="text_laser">
+				Купить МФУ можно как за наличный так и за безналичный расчет в Минске.
+                    <?php
+$result = mysql_query("SELECT image_big,image_small,model,color_print,functions,format,resolution_max,kol_color,bez_pc,wi_fi,ethernet,bluetooth,fax,card,lcd,photo_print,weight,height,width,depth,information,cost FROM printer WHERE type='mfu' ORDER BY cost", $db);
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br/><strong>Код ошибки:</strong></p>";
+                    exit (mysql_error());
+                    }
+
+                    if (mysql_num_rows($result) > 0)
+                    {
+                    $myrow = mysql_fetch_array($result);
+                    }
+                    else
+                    {
+                    echo "<p>Нет записей!</p>";
+                    exit ();
+                    }
+
+                    echo "
+                    <TABLE BORDER='0px' ALIGN='center' CELLSPACING='2px' bgcolor='#ffffff'>";
+                        $cols = 2; // desired count of columns
+                        $col = 0;
+
+                        do
+                        {
+
+                        if( !$col ) echo "
+                        <TR ALIGN='left' VALIGN='top' height='140px'>";
+                            printf("
+                            <TD width='150px'><a href='%s' class='highslide' onclick='return hs.expand(this)'>
+                                <img src='%s' width='150px'/></a></TD>
+                            <TD id='td_laser' width='210px'><u><b>%s</b></u><font size='1'>
+                                <br>Печать: %s
+                                <br>Функции: %s
+                                <br>Формат: %s
+                                <br>Разрешение макс: %s
+                                <br>Кол-во цветов: %s
+                                <br>Печать без компьютера: %s
+                                <br>Wi-Fi: %s
+                                <br>Ethernet: %s
+                                <br>Bluetooth: %s
+                                <br>Факс: %s
+                                <br>Картридер: %s
+                                <br>ЖК-дисплей: %s
+                                <br>Фотопечать: %s
+                                <br/>Прочее: %s
+                                <br>Вес, кг: %s
+                                <br>Высота, мм: %s
+                                <br>Ширина, мм: %s
+                                <br>Глубина, мм: %s</font>
+                                <br><font color='#ff0000' size='2'><b>%s у.е.</b></font></TD>
+                            ", $myrow["image_big"], $myrow["image_small"], $myrow["model"], $myrow["color_print"],
+                            $myrow["functions"], $myrow["format"], $myrow["resolution_max"], $myrow["kol_color"],
+                            $myrow["bez_pc"], $myrow["wi_fi"], $myrow["ethernet"], $myrow["bluetooth"], $myrow["fax"],
+                            $myrow["card"], $myrow["lcd"], $myrow["photo_print"], $myrow["information"],
+                            $myrow["weight"], $myrow["height"], $myrow["width"], $myrow["depth"], $myrow["cost"]);
+
+                            $col++;
+                            if($col == $cols) {
+                            echo "
+                        </TR>
+                        ";
+                        $col = 0;
+
+                        }
+
+                        }
+                        while($myrow = mysql_fetch_array($result));
+                        echo "
+                    </TABLE>
+                    ";
+                    ?>
+
+                    <br><br><br>картинка может не соответствовать конфигурации
+
+                </div>
+
+
+                <div id="text_footer">
+
+                </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+    </div>
+    <hr/>
+    <!-- start footer -->
+    <?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika_jivo.txt"); ?>
+</body>
+</html>

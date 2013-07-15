@@ -1,0 +1,42 @@
+			<div id="sidebar">
+				<ul>
+						<h4>Компьютеры</h4>
+                        <li class="triangle"></li>
+							<li class="line"><a href="http://cooler.by/ofisnyj_kompjuter.html">Офисный компьютер</a></li>
+							<li><a href="http://cooler.by/kompjuter_shkolniku.html">Школьнику компьютер</a></li>
+							<li><a href="http://cooler.by/domashnij_kompjuter.html">Домашний компьютер</a></li>
+							<li><a href="http://cooler.by/igrovoj_kompjuter.html">Игровой компьютер GeForce</a></li>
+                            <li><a href="http://cooler.by/igrovoj_kompjuter_radeon.html">Игровой компьютер Radeon</a></li>
+							<li><a href="http://cooler.by/multimedijnyj_kompjuter.html">Суперигровой компьютер</a></li>
+                            <li class="block-top"><a href="http://cooler.by/kompjutery-po-beznalichnomu-raschetu.html">Компьютеры по безналу</a></li>
+                            <li><a href="http://cooler.by/kompjuter_v_kredit_v_minske.html">Компьютеры в кредит</a></li>
+                        <h4><b>Подбор компьютера</b></h4>    
+                        <li class="triangle"></li>
+                            <li class="line"><a href="http://cooler.by/sistemnyj-blok.php">Системные блоки</a></li>
+							<li><a href="http://cooler.by/sobrat_kompjuter_onlajn.php">Собрать компьютер онлайн</a></li>
+                            <li><a href="http://cooler.by/igry/sistemnye-trebovanija.html">Компьютерные игры</a></li>
+						<h4>Мониторы</h4>
+                        <li class="triangle"></li>
+							<li class="line"><a href="http://cooler.by/acer_monitor.html">Acer и Asus мониторы</a></li>
+							<li><a href="http://cooler.by/benq__monitor.html">Benq мониторы</a></li>
+							<li><a href="http://cooler.by/lg_monitor.html">LG мониторы</a></li>
+							<li><a href="http://cooler.by/philips__monitor.html">Philips мониторы</a></li>
+							<li><a href="http://cooler.by/samsung_monitor.html">Samsung мониторы</a></li>
+							<li><a href="http://cooler.by/viewsonic_monitor.html">Viewsonic мониторы</a></li>
+						<h4>Периферия</h4>
+                        <li class="triangle"></li>
+							<li class="line"><a href="http://cooler.by/usb_pamjat.html">USB память</a></li>
+							<li><a href="http://cooler.by/tv_tjunery.html">ТВ тюнеры</a></li>
+							<li><a href="http://cooler.by/veb-kamera-tovar.html">Веб-камеры</a></li>
+							<li><a href="http://cooler.by/kolonki.html">Колонки</a></li>
+							<li><a href="http://cooler.by/naushniki.html">Наушники</a></li>
+							<li><a href="http://cooler.by/klaviaturji.html">Клавиатуры</a></li>
+							<li><a href="http://cooler.by/mjishji.html">Мыши</a></li>
+							<li><a href="http://cooler.by/igrovye-manipuljatory.html">Игровые манипуляторы</a></li>
+							<li><a href="http://cooler.by/ibp.html">ИБП</a></li>
+							<li><a href="http://cooler.by/stabilizatory-naprjazhenija.html">Стабилизаторы напряжения</a></li>
+							<li><a href="http://cooler.by/snpch.html">Принтеры Epson с СНПЧ</a></li>
+							<li><a href="http://cooler.by/printerji.html">Принтеры</a></li>
+							<li><a href="http://cooler.by/mfu.html">МФУ</a></li>
+				</ul>
+			</div>

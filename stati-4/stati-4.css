@@ -1,0 +1,76 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#nomer {
+    margin: 9px 0 8px 28px;
+}
+#nomer li{
+    color: #1D62B3;
+	font-weight: 400;
+	font-size: 16px;
+    text-decoration: underline;
+	list-style: none;
+	display: inline;
+}
+#nomer li a {
+    padding: 3px 6px;   
+}
+#hover a {
+    color:#000;
+	background: #E8E9EC;
+}
+#img_1 {    
+    float: left;
+	padding: 25px 0 5px 10px;
+}
+#img_2{    
+    float: left;
+	padding: 5px 0 5px 20px;
+}
+#img_3 {    
+    float: left;
+	padding: 10px 0 5px 40px;
+}
+#text_stati {
+    width: 700px;
+    float: right;
+    text-align: justify;
+	border-top: 1px solid;
+    margin: 0 0 0px 32px;
+}
+#text_kusok {
+    float:right;
+    width: 485px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+}
+#text_stati  h3{
+    float: left;
+	width: 485px;
+    margin: 20px 0 15px 0;
+	color: #f43939;
+}
+#text_stati  h3 a{
+	color: #f43939;
+}
+#text_stati  h3 a:hover{
+    text-decoration: underline;
+	color: #f43939;
+}
+#text_footer {
+    float:right;
+	color: #1D62B3;
+    border-top: 1px solid #474848;
+	width: 700px;
+	padding-top: 10px;
+}

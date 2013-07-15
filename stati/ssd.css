@@ -1,0 +1,30 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+#right h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "trebuchet ms";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	text-align: justify;
+	padding: 10px 30px 10px 16px;
+	margin-top: 4px
+}
+#text  h3{
+    margin: 10px 0 15px 0;
+	color: #f43939;
+}
+#img_centr {
+    margin: 0 0 15px 100px;
+}
+#text_footer {
+    text-align: justify;
+    margin: 18px 22px 5px 14px;
+}

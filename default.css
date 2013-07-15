@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #F5F5F5 url(images/img01.gif) repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #474848;
+}
+h3 {
+    text-shadow: 1px 2px 2px #E1E1E1;
+}
+p, ul, ol {
+	line-height: 170%;
+}
+a {
+	text-decoration: none;
+	color: #1D62B3;
+}
+a:hover {
+	background: none;
+	color: #E43C15;
+}
+hr {
+	display: none;
+}
+img {border: none;}
+/* стр */
+
+#wrapper {
+	background: url(images/img08.gif) repeat-x left bottom;
+}
+
+/* меню */
+
+#menu {
+	height: 42px;
+	width: 960px;
+	margin: 0 auto;
+}
+#menu ul {
+	margin: 0 0 0 350px;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+#menu li {
+	display: inline;
+}
+#menu a {
+	float: left;
+	height: 26px;
+	padding: 13px 12px 0px 13px;
+    font-family: "Arial", "Helvetica";
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+    background: #333333;
+    border-top: 1px solid  #F43939;
+    border-bottom: 1px solid  #F43939;
+}
+#menu a:hover {
+	background: #333333;
+	color: #fafcc3;
+}
+
+/* Header */
+
+#header {
+    margin: 0 auto;
+	height: 107px;
+	width: 960px;
+}
+
+#tel {
+    float: right;
+	margin: 12px 0px 0 0px;
+	font: normal 15px "trebuchet ms";
+}
+#dostavka {
+    float: right;
+	margin: 12px 0px 0 15px;
+	font: normal 15px "trebuchet ms";
+}
+#glv_komp {
+    float: right;
+	margin-right: 20px;
+    margin-top: 7px;
+}
+#logo {
+    margin: -37px 0 0 0px;
+	border: none;
+}
+
+/* Page */
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+	background: #FFFFFF url(images/img06.gif);
+}
+#bgtop {
+	height: 20px;
+	background: url(images/img07.gif);
+}
+#bgbottom {
+	padding-bottom: 20px;
+	background: url(images/img09.gif) no-repeat left bottom;
+}
+#page ul {
+	list-style: none;
+}
+.sidebar a {
+	background: none;
+}
+
+/* Sidebar2*/
+
+#sidebar {
+	float: left;
+	width: 212px;
+	margin: -11px 0 200px 8px;
+}
+#sidebar ul {
+	line-height: normal;
+}
+#sidebar ul h4 {
+    height: 18px;
+	width: 211px;
+	background-image: url('http://cooler.by/images/fon.gif');
+	margin: 12px 0 0 -15px;
+	padding: 2px 0 0 15px;
+	letter-spacing: 1px;
+	/*text-transform: uppercase;*/
+	color: #fff;
+	font-size: 13px;
+    font-weight: bold;
+    z-index: 10;
+}
+#sidebar li {
+	padding: 4px 0 2px 17px;
+	background: url(images/img11.gif) no-repeat 10px 10px;
+    border-top: 1px solid #e0e0e0;
+}
+.line {
+    border-top: 0px solid #e0e0e0 !important;
+}
+.block-top {
+    padding-top: 10px !important;
+}
+.triangle {
+    background: url(http://internet-magazin.cooler.by/triangle.png) no-repeat 0px -1px !important;
+    margin: 0px 0 0 -15px !important;
+    z-index: -10 !important;
+    border-top: 0px solid #e0e0e0 !important;
+}
+
+/* Footer */
+
+#footer {
+	width: 960px;
+	height: 73px;
+	margin: 0 auto;
+	background: url(images/img10.gif) no-repeat;
+}
+
+#footer p {
+	padding-top: 20px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+}
+#acer_mon {max-width:212px; min-width:212px; width:212px; word-wrap:break-word;}
+#td_laser {max-width:205px; min-width:205px; width:205px; word-wrap:break-word; padding: 15px 0;}
+
+/* Soc seti */
+
+  #share42 {display: inline-block; padding: 4px 0 0 4px; background: #FFF; border: 1px solid #E9E9E9; border-radius: 2px; float: right; margin: -10px 20px 0px 0;}
+  #share42:hover {background: #F6F6F6; border: 1px solid #D4D4D4; box-shadow: 0 0 5px #DDD;}
+  #share42 a {opacity: 0.6;}
+  #share42:hover a {opacity: 0.8}
+  #share42 a:hover {opacity: 1}
