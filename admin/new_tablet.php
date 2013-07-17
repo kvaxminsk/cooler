@@ -953,6 +953,552 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                         </script>
                                     </td>
                                 </tr>
+
+                                <!-- Материал корпуса   : (case_material)-->
+                                <tr>
+                                    <td>
+                                        <label for="case_material" style="color:black;font-size:20px ;">Материал корпуса:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="case_material" id="case_material" ><!--style="font-size:11px;width:500px;"-->
+                                            <option value="0" selected="selected">Материал корпуса</option>
+                                            <?php
+                                            $result = mysql_query("SELECT case_material_tablet.* FROM  case_material_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_case_material'].'">' . $row['name_case_material'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_case_material"  name="delete_case_material"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_case_material">Добавить Материал корпуса</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_case_material" style="display:none">
+
+                                        <label>Материал корпуса:</label>
+                                        <input type="text" id="name_case_material" name="name_case_material">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_case_material" name="add_case_material" value="Добавить Материал корпуса">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_case_material").click(function() {
+                                                        deleteCaseMaterial();
+                                                    });
+
+                                                    $("#add_case_material").click(function() {
+                                                        addCaseMaterial();
+                                                    });
+
+                                                    $("#div_add_case_material").click(function() {
+                                                        showFormAddCaseMaterial();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteCaseMaterial()
+                                            {
+                                                var area = $("#case_material");
+                                                var caseMaterialValue = $("#case_material option:selected").val();
+                                                area.load('tablet/delete_case_material.php',{id_case_material : caseMaterialValue});
+                                            }
+
+                                            function addCaseMaterial()
+                                            {
+                                                var area = $("#case_material");
+                                                var nameOperatingSystem = $("#name_case_material").val();
+                                                area.load('tablet/add_case_material.php',{name_case_material : nameOperatingSystem});
+                                            }
+
+                                            function showFormAddCaseMaterial()
+                                            {
+                                                if (   $("#div_add_case_material").text() == 'Добавить Материал корпуса')
+                                                {
+                                                    $("#div_add_case_material").text('Скрыть форму');
+                                                    $("#td_add_case_material").css("display","");
+                                                    $("#div_add_case_material").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_case_material").text('Добавить Материал корпуса');
+                                                    $("#td_add_case_material").css("display","none");
+                                                    $("#div_add_case_material").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Емкость аккумулятора   : (battery_capacity)-->
+                                <tr>
+                                    <td>
+                                        <label for="battery_capacity" style="color:black;font-size:20px ;">Емкость аккумулятора:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="battery_capacity" id="battery_capacity" ><!--style="font-size:11px;width:500px;"-->
+                                            <option value="0" selected="selected">Емкость аккумулятора</option>
+                                            <?php
+                                            $result = mysql_query("SELECT battery_capacity_tablet.* FROM  battery_capacity_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_battery_capacity'].'">' . $row['name_battery_capacity'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_battery_capacity"  name="delete_battery_capacity"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_battery_capacity">Добавить Емкость аккумулятора</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_battery_capacity" style="display:none">
+
+                                        <label>Емкость аккумулятора:</label>
+                                        <input type="text" id="name_battery_capacity" name="name_battery_capacity">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_battery_capacity" name="add_battery_capacity" value="Добавить Емкость аккумулятора">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_battery_capacity").click(function() {
+                                                        deleteBatteryCapacity();
+                                                    });
+
+                                                    $("#add_battery_capacity").click(function() {
+                                                        addBatteryCapacity();
+                                                    });
+
+                                                    $("#div_add_battery_capacity").click(function() {
+                                                        showFormAddBatteryCapacity();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteBatteryCapacity()
+                                            {
+                                                var area = $("#battery_capacity");
+                                                var batteryCapacityValue = $("#battery_capacity option:selected").val();
+                                                area.load('tablet/delete_battery_capacity.php',{id_battery_capacity : batteryCapacityValue});
+                                            }
+
+                                            function addBatteryCapacity()
+                                            {
+                                                var area = $("#battery_capacity");
+                                                var batteryCapacitySystem = $("#name_battery_capacity").val();
+                                                area.load('tablet/add_battery_capacity.php',{name_battery_capacity : batteryCapacitySystem});
+                                            }
+
+                                            function showFormAddBatteryCapacity()
+                                            {
+                                                if (   $("#div_add_battery_capacity").text() == 'Добавить Емкость аккумулятора')
+                                                {
+                                                    $("#div_add_battery_capacity").text('Скрыть форму');
+                                                    $("#td_add_battery_capacity").css("display","");
+                                                    $("#div_add_battery_capacity").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_battery_capacity").text('Добавить Емкость аккумулятора');
+                                                    $("#td_add_battery_capacity").css("display","none");
+                                                    $("#div_add_battery_capacity").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Длина   : (length)-->
+                                <tr>
+                                    <td>
+                                        <label for="length" style="color:black;font-size:20px ;">Длина:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="length" id="length" ><!--style="font-size:11px;width:500px;"-->
+                                            <option value="0" selected="selected">Длина</option>
+                                            <?php
+                                            $result = mysql_query("SELECT length_tablet.* FROM  length_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_length'].'">' . $row['name_length'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_length"  name="delete_length"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_length">Добавить Длина</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_length" style="display:none">
+
+                                        <label>Длина:</label>
+                                        <input type="text" id="name_length" name="name_length">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_length" name="add_length" value="Добавить Длина">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_length").click(function() {
+                                                        deleteLength();
+                                                    });
+
+                                                    $("#add_length").click(function() {
+                                                        addLength();
+                                                    });
+
+                                                    $("#div_add_length").click(function() {
+                                                        showFormAddLength();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteLength()
+                                            {
+                                                var area = $("#length");
+                                                var batteryCapacityValue = $("#length option:selected").val();
+                                                area.load('tablet/delete_length.php',{id_length : batteryCapacityValue});
+                                            }
+
+                                            function addLength()
+                                            {
+                                                var area = $("#length");
+                                                var batteryCapacitySystem = $("#name_length").val();
+                                                area.load('tablet/add_length.php',{name_length : batteryCapacitySystem});
+                                            }
+
+                                            function showFormAddLength()
+                                            {
+                                                if (   $("#div_add_length").text() == 'Добавить Длина')
+                                                {
+                                                    $("#div_add_length").text('Скрыть форму');
+                                                    $("#td_add_length").css("display","");
+                                                    $("#div_add_length").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_length").text('Добавить Длина');
+                                                    $("#td_add_length").css("display","none");
+                                                    $("#div_add_length").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Ширина    : (width)-->
+                                <tr>
+                                    <td>
+                                        <label for="width" style="color:black;font-size:20px ;">Ширина:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="width" id="width" ><!--style="font-size:11px;width:500px;"-->
+                                            <option value="0" selected="selected">Ширина</option>
+                                            <?php
+                                            $result = mysql_query("SELECT width_tablet.* FROM  width_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_width'].'">' . $row['name_width'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_width"  name="delete_width"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_width">Добавить Ширина</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_width" style="display:none">
+
+                                        <label>Ширина:</label>
+                                        <input type="text" id="name_width" name="name_width">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_width" name="add_width" value="Добавить Ширина">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_width").click(function() {
+                                                        deleteWidth();
+                                                    });
+
+                                                    $("#add_width").click(function() {
+                                                        addWidth();
+                                                    });
+
+                                                    $("#div_add_width").click(function() {
+                                                        showFormAddWidth();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteWidth()
+                                            {
+                                                var area = $("#width");
+                                                var batteryCapacityValue = $("#width option:selected").val();
+                                                area.load('tablet/delete_width.php',{id_width : batteryCapacityValue});
+                                            }
+
+                                            function addWidth()
+                                            {
+                                                var area = $("#width");
+                                                var batteryCapacitySystem = $("#name_width").val();
+                                                area.load('tablet/add_width.php',{name_width : batteryCapacitySystem});
+                                            }
+
+                                            function showFormAddWidth()
+                                            {
+                                                if (   $("#div_add_width").text() == 'Добавить Ширина')
+                                                {
+                                                    $("#div_add_width").text('Скрыть форму');
+                                                    $("#td_add_width").css("display","");
+                                                    $("#div_add_width").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_width").text('Добавить Ширина');
+                                                    $("#td_add_width").css("display","none");
+                                                    $("#div_add_width").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Толщина    : (thickness)-->
+                                <tr>
+                                    <td>
+                                        <label for="thickness" style="color:black;font-size:20px ;">Толщина:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="thickness" id="thickness" ><!--style="font-size:11px;thickness:500px;"-->
+                                            <option value="0" selected="selected">Толщина</option>
+                                            <?php
+                                            $result = mysql_query("SELECT thickness_tablet.* FROM  thickness_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_thickness'].'">' . $row['name_thickness'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_thickness"  name="delete_thickness"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_thickness">Добавить Толщина</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_thickness" style="display:none">
+
+                                        <label>Толщина:</label>
+                                        <input type="text" id="name_thickness" name="name_thickness">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_thickness" name="add_thickness" value="Добавить Толщина">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_thickness").click(function() {
+                                                        deleteThickness();
+                                                    });
+
+                                                    $("#add_thickness").click(function() {
+                                                        addThickness();
+                                                    });
+
+                                                    $("#div_add_thickness").click(function() {
+                                                        showFormAddThickness();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteThickness()
+                                            {
+                                                var area = $("#thickness");
+                                                var batteryCapacityValue = $("#thickness option:selected").val();
+                                                area.load('tablet/delete_thickness.php',{id_thickness : batteryCapacityValue});
+                                            }
+
+                                            function addThickness()
+                                            {
+                                                var area = $("#thickness");
+                                                var batteryCapacitySystem = $("#name_thickness").val();
+                                                area.load('tablet/add_thickness.php',{name_thickness : batteryCapacitySystem});
+                                            }
+
+                                            function showFormAddThickness()
+                                            {
+                                                if (   $("#div_add_thickness").text() == 'Добавить Толщина')
+                                                {
+                                                    $("#div_add_thickness").text('Скрыть форму');
+                                                    $("#td_add_thickness").css("display","");
+                                                    $("#div_add_thickness").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_thickness").text('Добавить Толщина');
+                                                    $("#td_add_thickness").css("display","none");
+                                                    $("#div_add_thickness").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Вес    : (weight)-->
+                                <tr>
+                                    <td>
+                                        <label for="weight" style="color:black;font-size:20px ;">Вес:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="weight" id="weight" ><!--style="font-size:11px;weight:500px;"-->
+                                            <option value="0" selected="selected">Вес</option>
+                                            <?php
+                                            $result = mysql_query("SELECT weight_tablet.* FROM  weight_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_weight'].'">' . $row['name_weight'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_weight"  name="delete_weight"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_weight">Добавить Вес</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_weight" style="display:none">
+
+                                        <label>Вес:</label>
+                                        <input type="text" id="name_weight" name="name_weight">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_weight" name="add_weight" value="Добавить Вес">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_weight").click(function() {
+                                                        deleteThickness();
+                                                    });
+
+                                                    $("#add_weight").click(function() {
+                                                        addThickness();
+                                                    });
+
+                                                    $("#div_add_weight").click(function() {
+                                                        showFormAddThickness();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteThickness()
+                                            {
+                                                var area = $("#weight");
+                                                var batteryCapacityValue = $("#weight option:selected").val();
+                                                area.load('tablet/delete_weight.php',{id_weight : batteryCapacityValue});
+                                            }
+
+                                            function addThickness()
+                                            {
+                                                var area = $("#weight");
+                                                var batteryCapacitySystem = $("#name_weight").val();
+                                                area.load('tablet/add_weight.php',{name_weight : batteryCapacitySystem});
+                                            }
+
+                                            function showFormAddThickness()
+                                            {
+                                                if (   $("#div_add_weight").text() == 'Добавить Вес')
+                                                {
+                                                    $("#div_add_weight").text('Скрыть форму');
+                                                    $("#td_add_weight").css("display","");
+                                                    $("#div_add_weight").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_weight").text('Добавить Вес');
+                                                    $("#td_add_weight").css("display","none");
+                                                    $("#div_add_weight").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
                             </table>
                         </form>
                     </div>

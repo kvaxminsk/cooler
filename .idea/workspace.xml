@@ -2,32 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_cpu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_design.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_graphics_accelerator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_internal_memory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_number_of_cores.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_operating_system.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_operating_system_version.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_ram.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_screen_size.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_cpu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_design.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_graphics_accelerator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_internal_memory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_number_of_cores.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_operating_system.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_operating_system_version.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_ram.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_screen_size.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_battery_capacity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_case_material.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_length.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_thickness.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_weight.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_width.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_battery_capacity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_case_material.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_length.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_thickness.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_weight.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_width.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/new_tablet.php" afterPath="$PROJECT_DIR$/admin/new_tablet.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cooler.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374004310132" ignored="false" />
+    <file path="/Dummy.txt" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374058166309" ignored="false" />
     <file path="/new_system_block.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374007074913" ignored="false" />
-    <file path="/new_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374015898278" ignored="false" />
+    <file path="/new_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374072106754" ignored="false" />
     <file path="/delete_design.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374008887666" ignored="false" />
     <file path="/add_design.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374009394776" ignored="false" />
     <file path="/delete_screen_size.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374010729315" ignored="false" />
@@ -35,6 +29,10 @@
     <file path="/delete_graphics_accelerator.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374016547112" ignored="false" />
     <file path="/delete_internal_memory.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374017425420" ignored="false" />
     <file path="/a.dummy" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374018567005" ignored="false" />
+    <file path="/delete_battery_capacity.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374059037461" ignored="false" />
+    <file path="/delete_width.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374072161451" ignored="false" />
+    <file path="/delete_thickness.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374072462185" ignored="false" />
+    <file path="/delete_weight.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374072622186" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +52,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new_tablet.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new_tablet.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="853" column="41" selection-start="53263" selection-end="53263" vertical-scroll-proportion="-1.2533333">
+            <state line="1501" column="36" selection-start="93248" selection-end="93248" vertical-scroll-proportion="0.32748538">
               <folding>
                 <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -78,28 +76,7 @@
                 <element signature="n#style#0;n#label#0;n#td#0;n#tr#16;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#17;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#18;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#td#0;n#tr#19;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#20;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#21;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#td#0;n#tr#22;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#23;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#24;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#td#0;n#tr#25;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#26;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#27;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#td#0;n#tr#28;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#29;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#30;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/index/menu.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.096858636">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -107,7 +84,7 @@
       <file leaf-file-name="delete_cpu.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/delete_cpu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="307" selection-end="307" vertical-scroll-proportion="-5.0">
+            <state line="14" column="0" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,15 +93,8 @@
       <file leaf-file-name="new_system_block.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/new_system_block.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="92" selection-start="6296" selection-end="6296" vertical-scroll-proportion="-4.3061223">
-              <folding>
-                <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#1;n#tr#2;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="119" column="92" selection-start="6296" selection-end="6296" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +102,7 @@
       <file leaf-file-name="bd.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/blocks/bd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-3.125">
+            <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,22 +126,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/admin/tablet/delete_design.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/delete_operating_system_version.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_operating_system_version.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/delete_cpu.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_design.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_operating_system.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_cpu.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_graphics_accelerator.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/delete_graphics_accelerator.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_ram.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/delete_ram.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_internal_memory.php" />
         <option value="$PROJECT_DIR$/admin/tablet/delete_internal_memory.php" />
         <option value="$PROJECT_DIR$/admin/tablet/delete_number_of_cores.php" />
         <option value="$PROJECT_DIR$/admin/tablet/add_number_of_cores.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_case_material.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_case_material.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_battery_capacity.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_battery_capacity.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_length.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_length.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_width.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_width.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_thickness.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_thickness.php" />
         <option value="$PROJECT_DIR$/admin/new_tablet.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_weight.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_weight.php" />
       </list>
     </option>
   </component>
@@ -265,9 +235,9 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -299,7 +269,11 @@
       <created>1373931292819</created>
       <updated>1373931292819</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="second commit">
+      <created>1374045553217</created>
+      <updated>1374045553217</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -308,10 +282,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16363636" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1659091" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -320,7 +293,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -389,111 +363,120 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_operating_system_version.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="291" selection-end="319" vertical-scroll-proportion="0.12280702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/add_design.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="648" selection-end="654" vertical-scroll-proportion="0.28070176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/add_operating_system_version.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="258" selection-end="269" vertical-scroll-proportion="0.24861878">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/add_operating_system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="657" selection-end="663" vertical-scroll-proportion="0.18902439">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/add_cpu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="996" selection-end="996" vertical-scroll-proportion="0.44512194">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/add_graphics_accelerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="1" selection-start="2363" selection-end="2363" vertical-scroll-proportion="1.097561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_graphics_accelerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="66" selection-start="313" selection-end="313" vertical-scroll-proportion="0.085365854">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_cpu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="50" selection-start="365" selection-end="365" vertical-scroll-proportion="0.2631579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/add_ram.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="51" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.83625734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_ram.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="661" selection-end="664" vertical-scroll-proportion="0.3859649">
-          <folding>
-            <element signature="e#6#167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/add_internal_memory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="62" selection-start="2010" selection-end="2024" vertical-scroll-proportion="-5.72">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_internal_memory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.41520467">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/tablet/add_number_of_cores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.39766082">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/tablet/delete_number_of_cores.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="283" selection-end="283" vertical-scroll-proportion="0.12280702">
+        <state line="12" column="36" selection-start="283" selection-end="283" vertical-scroll-proportion="0.12280702" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index/menu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.22959183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/blocks/bd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_case_material.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="52" selection-start="1825" selection-end="1838" vertical-scroll-proportion="0.7777778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_case_material.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="60" selection-start="307" selection-end="307" vertical-scroll-proportion="0.12280702">
           <folding>
             <element signature="e#6#167#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_battery_capacity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="75" selection-start="862" selection-end="862" vertical-scroll-proportion="0.30994153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_battery_capacity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="341" selection-end="341" vertical-scroll-proportion="0.21052632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_length.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="51" selection-start="1456" selection-end="1469" vertical-scroll-proportion="0.748538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_length.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="0.32163742">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_width.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="-1.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_width.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="61" selection-start="308" selection-end="308" vertical-scroll-proportion="0.1754386">
+          <folding>
+            <element signature="e#6#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_thickness.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="58" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.6315789">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_thickness.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="51" selection-start="298" selection-end="298" vertical-scroll-proportion="0.1754386">
+          <folding>
+            <element signature="e#6#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_weight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="58" selection-start="305" selection-end="305" vertical-scroll-proportion="0.1754386">
+          <folding>
+            <element signature="e#6#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_weight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="76" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.8947368">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="853" column="41" selection-start="53263" selection-end="53263" vertical-scroll-proportion="-1.2533333">
+        <state line="1501" column="36" selection-start="93248" selection-end="93248" vertical-scroll-proportion="0.32748538">
           <folding>
             <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -514,26 +497,7 @@
             <element signature="n#style#0;n#label#0;n#td#0;n#tr#16;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#17;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#18;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#td#0;n#tr#19;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#20;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#21;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#td#0;n#tr#22;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#23;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#24;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#td#0;n#tr#25;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#26;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#27;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#td#0;n#tr#28;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#29;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#30;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index/menu.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.096858636">
-          <folding />
         </state>
       </provider>
     </entry>
