@@ -2,158 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/price1k-cooler-by.csv" afterPath="$PROJECT_DIR$/price1k-cooler-by.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/AMD_ili_Intel.css" afterPath="$PROJECT_DIR$/stati/AMD_ili_Intel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AMD_ili_Intel.html" afterPath="$PROJECT_DIR$/AMD_ili_Intel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/akustika_2.0_i_2.1.css" afterPath="$PROJECT_DIR$/stati/akustika_2.0_i_2.1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/akustika_2.0_i_2.1.html" afterPath="$PROJECT_DIR$/akustika_2.0_i_2.1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/o_magazine/beznal.css" afterPath="$PROJECT_DIR$/o_magazine/beznal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sko/beznal.css" afterPath="$PROJECT_DIR$/sko/beznal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dostavka_rb/dostavka_rb.css" afterPath="$PROJECT_DIR$/dostavka_rb/dostavka_rb.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dostavka_rb.html" afterPath="$PROJECT_DIR$/dostavka_rb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acer_monitor/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/acer_monitor/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acer_monitor/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/acer_monitor/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/admin/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/blocks/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/admin/blocks/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/admin/css/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/images/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/admin/images/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/admin/index/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index/img/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/admin/index/img/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/benq__monitor/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/benq__monitor/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/benq__monitor/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/benq__monitor/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/blocks/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callme/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/callme/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/colorbox/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/colorbox/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/colorbox/images/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/colorbox/images/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/css/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domashnij_kompjuter/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/domashnij_kompjuter/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/highslide/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/highslide/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/highslide/graphics/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/highslide/graphics/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ibp/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/ibp/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovoj_kompjuter/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/igrovoj_kompjuter/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/images/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/index/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index/img/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/index/img/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQuery/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/jQuery/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/js/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js_index/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/js_index/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js_index/images/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/js_index/images/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klaviaturji/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/klaviaturji/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/kolonki/2.1/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/5.1/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/kolonki/5.1/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/kolonki/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/kolonki/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kompjuter_shkolniku/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/kompjuter_shkolniku/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lg_monitor/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/lg_monitor/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lg_monitor/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/lg_monitor/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfu/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/mfu/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjishji/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/mjishji/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multimedijnyj_kompjuter/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/multimedijnyj_kompjuter/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/naushniki/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/naushniki/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/o_magazine/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/o_magazine/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ofisnyj_kompjuter/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/ofisnyj_kompjuter/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/philips__monitor/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/philips__monitor/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/philips__monitor/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/philips__monitor/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/printerji/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/printerji/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samsung_monitor/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/samsung_monitor/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samsung_monitor/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/samsung_monitor/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/scripts/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sko/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/sko/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snpch/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/snpch/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stabilizatory-naprjazhenija/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/stabilizatory-naprjazhenija/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv_tjunery/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/tv_tjunery/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usb_pamjat/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/usb_pamjat/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/veb-kamera/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewsonic_monitor/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/viewsonic_monitor/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewsonic_monitor/small/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/viewsonic_monitor/small/_notes/dwsync.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/garantija/garantija.css" afterPath="$PROJECT_DIR$/garantija/garantija.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/garantija.html" afterPath="$PROJECT_DIR$/garantija.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igry/highslide/highslide-full.js" afterPath="$PROJECT_DIR$/igry/highslide/highslide-full.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igry/highslide/highslide-ie6.css" afterPath="$PROJECT_DIR$/igry/highslide/highslide-ie6.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igry/highslide/highslide-with-gallery.js" afterPath="$PROJECT_DIR$/igry/highslide/highslide-with-gallery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igry/highslide/highslide-with-gallery.packed.js" afterPath="$PROJECT_DIR$/igry/highslide/highslide-with-gallery.packed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igry/highslide/highslide.css" afterPath="$PROJECT_DIR$/igry/highslide/highslide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovoj_kompjuter_radeon.html" afterPath="$PROJECT_DIR$/igrovoj_kompjuter_radeon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/istochnik_bespereboynogo_pitanija.css" afterPath="$PROJECT_DIR$/stati/istochnik_bespereboynogo_pitanija.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/istochnik_bespereboynogo_pitanija.html" afterPath="$PROJECT_DIR$/istochnik_bespereboynogo_pitanija.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jquery.lightbox-0.5.css" afterPath="$PROJECT_DIR$/css/jquery.lightbox-0.5.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.lightbox-0.5.js" afterPath="$PROJECT_DIR$/js/jquery.lightbox-0.5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jquery.treeview.css" afterPath="$PROJECT_DIR$/css/jquery.treeview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/kak_vjibrat_monitor.css" afterPath="$PROJECT_DIR$/stati/kak_vjibrat_monitor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kak_vjibrat_monitor.html" afterPath="$PROJECT_DIR$/kak_vjibrat_monitor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/kak_vjibrat_printer_domoj.css" afterPath="$PROJECT_DIR$/stati/kak_vjibrat_printer_domoj.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kak_vjibrat_printer_domoj.html" afterPath="$PROJECT_DIR$/kak_vjibrat_printer_domoj.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/kak_vybrat_ofisnyj_kompjuter.css" afterPath="$PROJECT_DIR$/stati/kak_vybrat_ofisnyj_kompjuter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kak_vybrat_ofisnyj_kompjuter.html" afterPath="$PROJECT_DIR$/kak_vybrat_ofisnyj_kompjuter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kompjuter_v_kredit_v_minske.html" afterPath="$PROJECT_DIR$/kompjuter_v_kredit_v_minske.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/kopjuter_rebenku.css" afterPath="$PROJECT_DIR$/stati/kopjuter_rebenku.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kopjuter_rebenku.html" afterPath="$PROJECT_DIR$/kopjuter_rebenku.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/korpusy/korpusy.css" afterPath="$PROJECT_DIR$/korpusy/korpusy.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index/menu_stati_5.txt" afterPath="$PROJECT_DIR$/index/menu_stati_5.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index/menu_stati_6.txt" afterPath="$PROJECT_DIR$/index/menu_stati_6.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index/menu_stati_7.txt" afterPath="$PROJECT_DIR$/index/menu_stati_7.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modding.html" afterPath="$PROJECT_DIR$/modding.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monobloki.html" afterPath="$PROJECT_DIR$/monobloki.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nam-doverie.html" afterPath="$PROJECT_DIR$/nam-doverie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nam-doverie/nam.css" afterPath="$PROJECT_DIR$/nam-doverie/nam.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/naushniki_dlja_kompjutera.html" afterPath="$PROJECT_DIR$/naushniki_dlja_kompjutera.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novosti_i_stati/nomer.php" afterPath="$PROJECT_DIR$/novosti_i_stati/nomer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novosti_i_stati/novosti_i_stati.css" afterPath="$PROJECT_DIR$/novosti_i_stati/novosti_i_stati.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novosti_i_stati.html" afterPath="$PROJECT_DIR$/novosti_i_stati.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/o_magazine/o_magazine.css" afterPath="$PROJECT_DIR$/o_magazine/o_magazine.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/o_magazine.html" afterPath="$PROJECT_DIR$/o_magazine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/operativnaja_pamjat.css" afterPath="$PROJECT_DIR$/stati/operativnaja_pamjat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operativnaja_pamjat.html" afterPath="$PROJECT_DIR$/operativnaja_pamjat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/otzyvy.html" afterPath="$PROJECT_DIR$/otzyvy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/parametrji_videokart.css" afterPath="$PROJECT_DIR$/stati/parametrji_videokart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parametrji_videokart.html" afterPath="$PROJECT_DIR$/parametrji_videokart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/pochemu-intel-luchshe.css" afterPath="$PROJECT_DIR$/stati/pochemu-intel-luchshe.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/razblokirovanie_processorov_AMD.css" afterPath="$PROJECT_DIR$/stati/razblokirovanie_processorov_AMD.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/razblokirovanie_processorov_AMD.html" afterPath="$PROJECT_DIR$/razblokirovanie_processorov_AMD.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robots.txt" afterPath="$PROJECT_DIR$/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servisnjie_centrji.html" afterPath="$PROJECT_DIR$/servisnjie_centrji.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igry/sistemnye-trebovanija.html" afterPath="$PROJECT_DIR$/igry/sistemnye-trebovanija.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igry/sistemnye-trebovanija1.html" afterPath="$PROJECT_DIR$/igry/sistemnye-trebovanija1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sko/sko-style.css" afterPath="$PROJECT_DIR$/sko/sko-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snpch-printer.html" afterPath="$PROJECT_DIR$/snpch-printer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sobrat_kompjuter_onlajn/sobrat_kompjuter_onlajn.css" afterPath="$PROJECT_DIR$/sobrat_kompjuter_onlajn/sobrat_kompjuter_onlajn.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/sostovljaychie_pk_korpus.css" afterPath="$PROJECT_DIR$/stati/sostovljaychie_pk_korpus.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sostovljaychie_pk_korpus.html" afterPath="$PROJECT_DIR$/sostovljaychie_pk_korpus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssd-nakopitel.html" afterPath="$PROJECT_DIR$/ssd-nakopitel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/ssd.css" afterPath="$PROJECT_DIR$/stati/ssd.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati-3/stati-3.css" afterPath="$PROJECT_DIR$/stati-3/stati-3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati-4/stati-4.css" afterPath="$PROJECT_DIR$/stati-4/stati-4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati-5/stati-5.css" afterPath="$PROJECT_DIR$/stati-5/stati-5.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati-6/stati-6.css" afterPath="$PROJECT_DIR$/stati-6/stati-6.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/stati_blok_pitanija.css" afterPath="$PROJECT_DIR$/stati/stati_blok_pitanija.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati_blok_pitanija.html" afterPath="$PROJECT_DIR$/stati_blok_pitanija.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati_srt2/stati_srt2.css" afterPath="$PROJECT_DIR$/stati_srt2/stati_srt2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati_srt2.html" afterPath="$PROJECT_DIR$/stati_srt2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera.html" afterPath="$PROJECT_DIR$/veb-kamera.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/vjibiraem_klaviaturu.css" afterPath="$PROJECT_DIR$/stati/vjibiraem_klaviaturu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vjibiraem_klaviaturu.html" afterPath="$PROJECT_DIR$/vjibiraem_klaviaturu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/vjibor_processora.css" afterPath="$PROJECT_DIR$/stati/vjibor_processora.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vjibor_processora.html" afterPath="$PROJECT_DIR$/vjibor_processora.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vlijanie-monitora-na-zrenie.html" afterPath="$PROJECT_DIR$/vlijanie-monitora-na-zrenie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/vodjanaja_sistema_ohlazhdenija.css" afterPath="$PROJECT_DIR$/stati/vodjanaja_sistema_ohlazhdenija.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vodjanaja_sistema_ohlazhdenija.html" afterPath="$PROJECT_DIR$/vodjanaja_sistema_ohlazhdenija.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/vse.css" afterPath="$PROJECT_DIR$/stati/vse.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/vybiraem_zhestkij_disk.css" afterPath="$PROJECT_DIR$/stati/vybiraem_zhestkij_disk.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vybiraem_zhestkij_disk.html" afterPath="$PROJECT_DIR$/vybiraem_zhestkij_disk.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/windows_xp_ili_windows_7.css" afterPath="$PROJECT_DIR$/stati/windows_xp_ili_windows_7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/windows_xp_ili_windows_7.html" afterPath="$PROJECT_DIR$/windows_xp_ili_windows_7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_cpu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_design.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_graphics_accelerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_internal_memory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_number_of_cores.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_operating_system.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_operating_system_version.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_ram.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/add_screen_size.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_cpu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_design.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_graphics_accelerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_internal_memory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_number_of_cores.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_operating_system.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_operating_system_version.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_ram.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/tablet/delete_screen_size.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/new_tablet.php" afterPath="$PROJECT_DIR$/admin/new_tablet.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stati/zapravit_strujnyj_kartridzh.css" afterPath="$PROJECT_DIR$/stati/zapravit_strujnyj_kartridzh.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zapravit_strujnyj_kartridzh.html" afterPath="$PROJECT_DIR$/zapravit_strujnyj_kartridzh.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/znat-o-mijishah.html" afterPath="$PROJECT_DIR$/znat-o-mijishah.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zvukovaja-karta.html" afterPath="$PROJECT_DIR$/zvukovaja-karta.html" />
     </list>
     <ignored path="cooler.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1373931392790" ignored="false" />
+    <file path="/Dummy.txt" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374004310132" ignored="false" />
+    <file path="/new_system_block.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374007074913" ignored="false" />
+    <file path="/new_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374015898278" ignored="false" />
+    <file path="/delete_design.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374008887666" ignored="false" />
+    <file path="/add_design.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374009394776" ignored="false" />
+    <file path="/delete_screen_size.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374010729315" ignored="false" />
+    <file path="/delete_cpu.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374016137380" ignored="false" />
+    <file path="/delete_graphics_accelerator.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374016547112" ignored="false" />
+    <file path="/delete_internal_memory.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374017425420" ignored="false" />
+    <file path="/a.dummy" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374018567005" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,10 +54,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dwsync.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_notes/dwsync.xml">
+      <file leaf-file-name="new_tablet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="853" column="41" selection-start="53263" selection-end="53263" vertical-scroll-proportion="-1.2533333">
+              <folding>
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#6;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#7;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#8;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#10;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#11;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#12;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#13;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#14;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#15;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#16;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#17;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#18;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#19;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#20;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#21;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#22;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#23;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#24;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#25;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#26;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#27;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#28;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#29;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#30;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/index/menu.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.096858636">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_cpu.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/delete_cpu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="307" selection-end="307" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_system_block.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/new_system_block.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="92" selection-start="6296" selection-end="6296" vertical-scroll-proportion="-4.3061223">
+              <folding>
+                <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#1;n#tr#2;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bd.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/blocks/bd.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -197,12 +153,33 @@
       <MyDateState />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/admin/tablet/delete_design.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_operating_system_version.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_operating_system_version.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_cpu.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_design.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_operating_system.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_cpu.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_graphics_accelerator.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_graphics_accelerator.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_ram.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_ram.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_internal_memory.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_internal_memory.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/delete_number_of_cores.php" />
+        <option value="$PROJECT_DIR$/admin/tablet/add_number_of_cores.php" />
+        <option value="$PROJECT_DIR$/admin/new_tablet.php" />
+      </list>
+    </option>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="773" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -272,21 +249,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="acer_monitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cooler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cooler" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_notes" />
+              <option name="myItemId" value="tablet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,8 +265,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/tablet" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -330,27 +303,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16363636" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -416,14 +389,150 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/acer_monitor/acer_1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_operating_system_version.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="44" selection-start="291" selection-end="319" vertical-scroll-proportion="0.12280702">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_notes/dwsync.xml">
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_design.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="14" column="30" selection-start="648" selection-end="654" vertical-scroll-proportion="0.28070176">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_operating_system_version.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="258" selection-end="269" vertical-scroll-proportion="0.24861878">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_operating_system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="657" selection-end="663" vertical-scroll-proportion="0.18902439">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_cpu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="28" selection-start="996" selection-end="996" vertical-scroll-proportion="0.44512194">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_graphics_accelerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="1" selection-start="2363" selection-end="2363" vertical-scroll-proportion="1.097561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_graphics_accelerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="66" selection-start="313" selection-end="313" vertical-scroll-proportion="0.085365854">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_cpu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="50" selection-start="365" selection-end="365" vertical-scroll-proportion="0.2631579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_ram.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="51" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.83625734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_ram.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="661" selection-end="664" vertical-scroll-proportion="0.3859649">
+          <folding>
+            <element signature="e#6#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_internal_memory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="62" selection-start="2010" selection-end="2024" vertical-scroll-proportion="-5.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_internal_memory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.41520467">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/add_number_of_cores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.39766082">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/tablet/delete_number_of_cores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="283" selection-end="283" vertical-scroll-proportion="0.12280702">
+          <folding>
+            <element signature="e#6#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="853" column="41" selection-start="53263" selection-end="53263" vertical-scroll-proportion="-1.2533333">
+          <folding>
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#6;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#7;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#8;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#9;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#10;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#11;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#12;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#13;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#14;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#15;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#16;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#17;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#18;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#19;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#20;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#21;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#22;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#23;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#24;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#25;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#26;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#27;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#td#0;n#tr#28;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#29;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#30;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index/menu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.096858636">
           <folding />
         </state>
       </provider>
