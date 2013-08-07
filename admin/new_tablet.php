@@ -35,7 +35,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                 <div id="text"><br/>
                     <?php $row=array();?>
                     <div id="forma">
-                        <form id="form1" method="post" action="add_system_block.php">
+                        <form id="form1" method="post" action="add_tablet.php">
                             <table border="0" cellspacing="10" cellpadding="340">
                                 <tr>
                                     <td>
@@ -48,7 +48,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Конструкция: (design)-->
                                 <tr>
                                     <td>
-                                        <label for="design" style="color:black;font-size:20px ;">Конструкция:</label>
+                                        <label for="design" style="font-size:15px">Конструкция:</label>
                                     </td>
                                     <td>
 <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -138,7 +138,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Диагональ экрана : (screen_size)-->
                                 <tr>
                                     <td>
-                                        <label for="screen_size" style="color:black;font-size:20px ;">Диагональ экрана:</label>
+                                        <label for="screen_size" style="font-size:15px">Диагональ экрана:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -229,7 +229,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Операционная система  : (operating_system)-->
                                 <tr>
                                     <td>
-                                        <label for="operating_system" style="color:black;font-size:20px ;">Операционная система:</label>
+                                        <label for="operating_system" style="font-size:15px">Операционная система:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -320,7 +320,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Версия операционной системы   : (operating_system_version)-->
                                 <tr>
                                     <td>
-                                        <label for="operating_system_version" style="color:black;font-size:20px ;">Версия операционной системы:</label>
+                                        <label for="operating_system_version" style="font-size:15px">Версия операционной системы:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -411,7 +411,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Процессоры   : (cpu)-->
                                 <tr>
                                     <td>
-                                        <label for="cpu" style="color:black;font-size:20px ;">Процессоры:</label>
+                                        <label for="cpu" style="font-size:15px">Процессоры:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -502,7 +502,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Графический ускоритель   : (graphics_accelerator)-->
                                 <tr>
                                     <td>
-                                        <label for="graphics_accelerator" style="color:black;font-size:20px ;">Графический ускоритель:</label>
+                                        <label for="graphics_accelerator" style="font-size:15px">Графический ускоритель:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -593,7 +593,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Оперативная память   : (ram)-->
                                 <tr>
                                     <td>
-                                        <label for="ram" style="color:black;font-size:20px ;">Оперативная память:</label>
+                                        <label for="ram" style="font-size:15px">Оперативная память:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -684,7 +684,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Внутренняя память   : (internal_memory)-->
                                 <tr>
                                     <td>
-                                        <label for="internal_memory" style="color:black;font-size:20px ;">Внутренняя память:</label>
+                                        <label for="internal_memory" style="font-size:15px">Внутренняя память:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -775,7 +775,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Количество ядер   : (number_of_cores)-->
                                 <tr>
                                     <td>
-                                        <label for="number_of_cores" style="color:black;font-size:20px ;">Количество ядер:</label>
+                                        <label for="number_of_cores" style="font-size:15px">Количество ядер:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -863,90 +863,90 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                     </td>
                                 </tr>
 
-                                <!-- Тактовая частота   : (number_of_cores)-->
+                                <!-- Тактовая частота   : (clock_speed)-->
                                 <tr>
                                     <td>
-                                        <label for="number_of_cores" style="color:black;font-size:20px ;">Тактовая частота:</label>
+                                        <label for="clock_speed" style="font-size:15px">Тактовая частота:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
-                                        <select  name="number_of_cores" id="number_of_cores" ><!--style="font-size:11px;width:500px;"-->
+                                        <select  name="clock_speed" id="clock_speed" ><!--style="font-size:11px;width:500px;"-->
                                             <option value="0" selected="selected">Тактовая частота</option>
                                             <?php
-                                            $result = mysql_query("SELECT number_of_cores_tablet.* FROM  number_of_cores_tablet", $db);
+                                            $result = mysql_query("SELECT clock_speed_tablet.* FROM  clock_speed_tablet", $db);
                                             while($row = mysql_fetch_assoc($result))
                                             {
-                                                echo  '<option value="'.  $row['id_number_of_cores'].'">' . $row['name_number_of_cores'] .  '</option>';
+                                                echo  '<option value="'.  $row['id_clock_speed'].'">' . $row['name_clock_speed'] .  '</option>';
                                             }
 
                                             ?>
                                             <td>
-                                                <input type="button" id="delete_number_of_cores"  name="delete_number_of_cores"  value="Удалить"/>
+                                                <input type="button" id="delete_clock_speed"  name="delete_clock_speed"  value="Удалить"/>
                                             </td>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div style="color:red" id="div_add_number_of_cores">Добавить Тактовая частота</div>
+                                        <div style="color:red" id="div_add_clock_speed">Добавить Тактовая частота</div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="td_add_number_of_cores" style="display:none">
+                                    <td id="td_add_clock_speed" style="display:none">
 
                                         <label>Тактовая частота:</label>
-                                        <input type="text" id="name_number_of_cores" name="name_number_of_cores">
+                                        <input type="text" id="name_clock_speed" name="name_clock_speed">
 
                                         </br>
                                         </br>
-                                        <input type="button" id="add_number_of_cores" name="add_number_of_cores" value="Добавить Тактовая частота">
+                                        <input type="button" id="add_clock_speed" name="add_clock_speed" value="Добавить Тактовая частота">
 
 
                                         <script type="text/javascript">
                                             $(document).ready(function() {
 
-                                                    $("#delete_number_of_cores").click(function() {
-                                                        deleteNumberOfCores();
+                                                    $("#delete_clock_speed").click(function() {
+                                                        deleteClockSpeed();
                                                     });
 
-                                                    $("#add_number_of_cores").click(function() {
-                                                        addNumberOfCores();
+                                                    $("#add_clock_speed").click(function() {
+                                                        addClockSpeed();
                                                     });
 
-                                                    $("#div_add_number_of_cores").click(function() {
-                                                        showFormAddNumberOfCores();
+                                                    $("#div_add_clock_speed").click(function() {
+                                                        showFormAddClockSpeed();
                                                     });
                                                 }
 
                                             );
 
-                                            function deleteNumberOfCores()
+                                            function deleteClockSpeed()
                                             {
-                                                var area = $("#number_of_cores");
-                                                var operatingSystemValue = $("#number_of_cores option:selected").val();
-                                                area.load('tablet/delete_number_of_cores.php',{id_number_of_cores : operatingSystemValue});
+                                                var area = $("#clock_speed");
+                                                var operatingSystemValue = $("#clock_speed option:selected").val();
+                                                area.load('tablet/delete_clock_speed.php',{id_clock_speed : operatingSystemValue});
                                             }
 
-                                            function addNumberOfCores()
+                                            function addClockSpeed()
                                             {
-                                                var area = $("#number_of_cores");
-                                                var nameOperatingSystem = $("#name_number_of_cores").val();
-                                                area.load('tablet/add_number_of_cores.php',{name_number_of_cores : nameOperatingSystem});
+                                                var area = $("#clock_speed");
+                                                var nameOperatingSystem = $("#name_clock_speed").val();
+                                                area.load('tablet/add_clock_speed.php',{name_clock_speed : nameOperatingSystem});
                                             }
 
-                                            function showFormAddNumberOfCores()
+                                            function showFormAddClockSpeed()
                                             {
-                                                if (   $("#div_add_number_of_cores").text() == 'Добавить Тактовая частота')
+                                                if (   $("#div_add_clock_speed").text() == 'Добавить Тактовая частота')
                                                 {
-                                                    $("#div_add_number_of_cores").text('Скрыть форму');
-                                                    $("#td_add_number_of_cores").css("display","");
-                                                    $("#div_add_number_of_cores").css("color",'blue');
+                                                    $("#div_add_clock_speed").text('Скрыть форму');
+                                                    $("#td_add_clock_speed").css("display","");
+                                                    $("#div_add_clock_speed").css("color",'blue');
                                                 }
                                                 else
                                                 {
-                                                    $("#div_add_number_of_cores").text('Добавить Тактовая частота');
-                                                    $("#td_add_number_of_cores").css("display","none");
-                                                    $("#div_add_number_of_cores").css("color",'red');
+                                                    $("#div_add_clock_speed").text('Добавить Тактовая частота');
+                                                    $("#td_add_clock_speed").css("display","none");
+                                                    $("#div_add_clock_speed").css("color",'red');
                                                 }
 
                                             }
@@ -957,7 +957,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Материал корпуса   : (case_material)-->
                                 <tr>
                                     <td>
-                                        <label for="case_material" style="color:black;font-size:20px ;">Материал корпуса:</label>
+                                        <label for="case_material" style="font-size:15px">Материал корпуса:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1048,7 +1048,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Емкость аккумулятора   : (battery_capacity)-->
                                 <tr>
                                     <td>
-                                        <label for="battery_capacity" style="color:black;font-size:20px ;">Емкость аккумулятора:</label>
+                                        <label for="battery_capacity" style="font-size:15px">Емкость аккумулятора:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1139,7 +1139,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Длина   : (length)-->
                                 <tr>
                                     <td>
-                                        <label for="length" style="color:black;font-size:20px ;">Длина:</label>
+                                        <label for="length" style="font-size:15px">Длина:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1230,7 +1230,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Ширина    : (width)-->
                                 <tr>
                                     <td>
-                                        <label for="width" style="color:black;font-size:20px ;">Ширина:</label>
+                                        <label for="width" style="font-size:15px">Ширина:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1321,7 +1321,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Толщина    : (thickness)-->
                                 <tr>
                                     <td>
-                                        <label for="thickness" style="color:black;font-size:20px ;">Толщина:</label>
+                                        <label for="thickness" style="font-size:15px">Толщина:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1412,7 +1412,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <!-- Вес    : (weight)-->
                                 <tr>
                                     <td>
-                                        <label for="weight" style="color:black;font-size:20px ;">Вес:</label>
+                                        <label for="weight" style="font-size:15px">Вес:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1452,35 +1452,35 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                             $(document).ready(function() {
 
                                                     $("#delete_weight").click(function() {
-                                                        deleteThickness();
+                                                        deleteWeight();
                                                     });
 
                                                     $("#add_weight").click(function() {
-                                                        addThickness();
+                                                        addWeight();
                                                     });
 
                                                     $("#div_add_weight").click(function() {
-                                                        showFormAddThickness();
+                                                        showFormAddWeight();
                                                     });
                                                 }
 
                                             );
 
-                                            function deleteThickness()
+                                            function deleteWeight()
                                             {
                                                 var area = $("#weight");
                                                 var batteryCapacityValue = $("#weight option:selected").val();
                                                 area.load('tablet/delete_weight.php',{id_weight : batteryCapacityValue});
                                             }
 
-                                            function addThickness()
+                                            function addWeight()
                                             {
                                                 var area = $("#weight");
                                                 var batteryCapacitySystem = $("#name_weight").val();
                                                 area.load('tablet/add_weight.php',{name_weight : batteryCapacitySystem});
                                             }
 
-                                            function showFormAddThickness()
+                                            function showFormAddWeight()
                                             {
                                                 if (   $("#div_add_weight").text() == 'Добавить Вес')
                                                 {
@@ -1498,6 +1498,782 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                             }
                                         </script>
                                     </td>
+                                </tr>
+
+                                <!-- Акселерометр     : (accelerometer)-->
+                                <tr>
+                                    <td>
+                                        <label for="accelerometer" style="font-size:15px">Акселерометр:</label>
+                                    </td>
+                                    <td>
+                                       <input type="checkbox" name="accelerometer" id="accelerometer"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Гироскоп      : (gyroscope)-->
+                                <tr>
+                                    <td>
+                                        <label for="gyroscope" style="font-size:15px">Гироскоп:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="gyroscope" id="gyroscope"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Датчик приближения       : (proximity_sensor)-->
+                                <tr>
+                                    <td>
+                                        <label for="proximity_sensor" style="font-size:15px">Датчик приближения:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="proximity_sensor" id="proximity_sensor"/>
+                                    </td>
+                                </tr>
+
+
+                                <!-- Разрешение экрана    : (screen_resolution)-->
+                                <tr>
+                                    <td>
+                                        <label for="screen_resolution" style="font-size:15px">Разрешение экрана:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="screen_resolution" id="screen_resolution" ><!--style="font-size:11px;screen_resolution:500px;"-->
+                                            <option value="0" selected="selected">Разрешение экрана</option>
+                                            <?php
+                                            $result = mysql_query("SELECT screen_resolution_tablet.* FROM  screen_resolution_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_screen_resolution'].'">' . $row['name_screen_resolution'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_screen_resolution"  name="delete_screen_resolution"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_screen_resolution">Добавить Разрешение экрана</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_screen_resolution" style="display:none">
+
+                                        <label>Разрешение экрана:</label>
+                                        <input type="text" id="name_screen_resolution" name="name_screen_resolution">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_screen_resolution" name="add_screen_resolution" value="Добавить Разрешение экрана">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_screen_resolution").click(function() {
+                                                        deleteScreenResolution();
+                                                    });
+
+                                                    $("#add_screen_resolution").click(function() {
+                                                        addScreenResolution();
+                                                    });
+
+                                                    $("#div_add_screen_resolution").click(function() {
+                                                        showFormAddScreenResolution();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteScreenResolution()
+                                            {
+                                                var area = $("#screen_resolution");
+                                                var screenResolutionValue = $("#screen_resolution option:selected").val();
+                                                area.load('tablet/delete_screen_resolution.php',{id_screen_resolution : screenResolutionValue});
+                                            }
+
+                                            function addScreenResolution()
+                                            {
+                                                var area = $("#screen_resolution");
+                                                var screenResolutionSystem = $("#name_screen_resolution").val();
+                                                area.load('tablet/add_screen_resolution.php',{name_screen_resolution : screenResolutionSystem});
+                                            }
+
+                                            function showFormAddScreenResolution()
+                                            {
+                                                if (   $("#div_add_screen_resolution").text() == 'Добавить Разрешение экрана')
+                                                {
+                                                    $("#div_add_screen_resolution").text('Скрыть форму');
+                                                    $("#td_add_screen_resolution").css("display","");
+                                                    $("#div_add_screen_resolution").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_screen_resolution").text('Добавить Разрешение экрана');
+                                                    $("#td_add_screen_resolution").css("display","none");
+                                                    $("#div_add_screen_resolution").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Тип матрицы экрана    : (type_of_matrix_screen)-->
+                                <tr>
+                                    <td>
+                                        <label for="type_of_matrix_screen" style="font-size:15px">Тип матрицы экрана:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="type_of_matrix_screen" id="type_of_matrix_screen" ><!--style="font-size:11px;type_of_matrix_screen:500px;"-->
+                                            <option value="0" selected="selected">Тип матрицы экрана</option>
+                                            <?php
+                                            $result = mysql_query("SELECT type_of_matrix_screen_tablet.* FROM  type_of_matrix_screen_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_type_of_matrix_screen'].'">' . $row['name_type_of_matrix_screen'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_type_of_matrix_screen"  name="delete_type_of_matrix_screen"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_type_of_matrix_screen">Добавить Тип матрицы экрана</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_type_of_matrix_screen" style="display:none">
+
+                                        <label>Тип матрицы экрана:</label>
+                                        <input type="text" id="name_type_of_matrix_screen" name="name_type_of_matrix_screen">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_type_of_matrix_screen" name="add_type_of_matrix_screen" value="Добавить Тип матрицы экрана">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_type_of_matrix_screen").click(function() {
+                                                        deleteTypeOfMatrixScreen();
+                                                    });
+
+                                                    $("#add_type_of_matrix_screen").click(function() {
+                                                        addTypeOfMatrixScreen();
+                                                    });
+
+                                                    $("#div_add_type_of_matrix_screen").click(function() {
+                                                        showFormAddTypeOfMatrixScreen();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteTypeOfMatrixScreen()
+                                            {
+                                                var area = $("#type_of_matrix_screen");
+                                                var typeOfMatrixScreenValue = $("#type_of_matrix_screen option:selected").val();
+                                                area.load('tablet/delete_type_of_matrix_screen.php',{id_type_of_matrix_screen : typeOfMatrixScreenValue});
+                                            }
+
+                                            function addTypeOfMatrixScreen()
+                                            {
+                                                var area = $("#type_of_matrix_screen");
+                                                var typeOfMatrixScreenSystem = $("#name_type_of_matrix_screen").val();
+                                                area.load('tablet/add_type_of_matrix_screen.php',{name_type_of_matrix_screen : typeOfMatrixScreenSystem});
+                                            }
+
+                                            function showFormAddTypeOfMatrixScreen()
+                                            {
+                                                if (   $("#div_add_type_of_matrix_screen").text() == 'Добавить Тип матрицы экрана')
+                                                {
+                                                    $("#div_add_type_of_matrix_screen").text('Скрыть форму');
+                                                    $("#td_add_type_of_matrix_screen").css("display","");
+                                                    $("#div_add_type_of_matrix_screen").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_type_of_matrix_screen").text('Добавить Тип матрицы экрана');
+                                                    $("#td_add_type_of_matrix_screen").css("display","none");
+                                                    $("#div_add_type_of_matrix_screen").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Мультитач      : (multi_touch)-->
+                                <tr>
+                                    <td>
+                                        <label for="multi_touch" style="font-size:15px">Мультитач:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="multi_touch" id="multi_touch"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text_multi_touch" id="text_multi_touch"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Защита от царапин      : (protection_from_scratches)-->
+                                <tr>
+                                    <td>
+                                        <label for="protection_from_scratches" style="font-size:15px">Защита от царапин:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="protection_from_scratches" id="protection_from_scratches"/>
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Карты памяти      : (memory_cards)-->
+                                <tr>
+                                    <td>
+                                        <label for="memory_cards" style="font-size:15px">Карты памяти:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="memory_cards" id="memory_cards"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text_memory_cards" id="text_memory_cards"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Встроенная камера      : (built-in_camera)-->
+                                <tr>
+                                    <td>
+                                        <label for="built-in_camera" style="font-size:15px">Датчик освещенности:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="built-in_camera" id="built-in_camera"/>
+                                    </td>
+
+                                </tr>
+
+                                <!-- Количество активных пикселей    : (number_of_active_pixels)-->
+                                <tr>
+                                    <td>
+                                        <label for="number_of_active_pixels" style="font-size:15px">Количество активных пикселей:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="number_of_active_pixels" id="number_of_active_pixels" ><!--style="font-size:11px;number_of_active_pixels:500px;"-->
+                                            <option value="0" selected="selected">Количество активных пикселей</option>
+                                            <?php
+                                            $result = mysql_query("SELECT number_of_active_pixels_tablet.* FROM  number_of_active_pixels_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_number_of_active_pixels'].'">' . $row['name_number_of_active_pixels'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_number_of_active_pixels"  name="delete_number_of_active_pixels"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_number_of_active_pixels">Добавить Количество активных пикселей</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_number_of_active_pixels" style="display:none">
+
+                                        <label>Количество активных пикселей:</label>
+                                        <input type="text" id="name_number_of_active_pixels" name="name_number_of_active_pixels">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_number_of_active_pixels" name="add_number_of_active_pixels" value="Добавить Количество активных пикселей">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_number_of_active_pixels").click(function() {
+                                                        deleteNumberOfActivePixels();
+                                                    });
+
+                                                    $("#add_number_of_active_pixels").click(function() {
+                                                        addNumberOfActivePixels();
+                                                    });
+
+                                                    $("#div_add_number_of_active_pixels").click(function() {
+                                                        showFormAddNumberOfActivePixels();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteNumberOfActivePixels()
+                                            {
+                                                var area = $("#number_of_active_pixels");
+                                                var numberOfActivePixelsValue = $("#number_of_active_pixels option:selected").val();
+                                                area.load('tablet/delete_number_of_active_pixels.php',{id_number_of_active_pixels : numberOfActivePixelsValue});
+                                            }
+
+                                            function addNumberOfActivePixels()
+                                            {
+                                                var area = $("#number_of_active_pixels");
+                                                var numberOfActivePixelsSystem = $("#name_number_of_active_pixels").val();
+                                                area.load('tablet/add_number_of_active_pixels.php',{name_number_of_active_pixels : numberOfActivePixelsSystem});
+                                            }
+
+                                            function showFormAddNumberOfActivePixels()
+                                            {
+                                                if (   $("#div_add_number_of_active_pixels").text() == 'Добавить Количество активных пикселей')
+                                                {
+                                                    $("#div_add_number_of_active_pixels").text('Скрыть форму');
+                                                    $("#td_add_number_of_active_pixels").css("display","");
+                                                    $("#div_add_number_of_active_pixels").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_number_of_active_pixels").text('Добавить Количество активных пикселей');
+                                                    $("#td_add_number_of_active_pixels").css("display","none");
+                                                    $("#div_add_number_of_active_pixels").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Количество активных пикселей фронтальной камеры    : (number_of_active_pixels_front_camera)-->
+                                <tr>
+                                    <td>
+                                        <label for="number_of_active_pixels_front_camera" style="font-size:15px">Количество активных пикселей фронтальной камеры:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="number_of_active_pixels_front_camera" id="number_of_active_pixels_front_camera" ><!--style="font-size:11px;number_of_active_pixels_front_camera:500px;"-->
+                                            <option value="0" selected="selected">Количество активных пикселей фронтальной камеры</option>
+                                            <?php
+                                            $result = mysql_query("SELECT number_of_active_pixels_front_camera_tablet.* FROM  number_of_active_pixels_front_camera_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_number_of_active_pixels_front_camera'].'">' . $row['name_number_of_active_pixels_front_camera'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_number_of_active_pixels_front_camera"  name="delete_number_of_active_pixels_front_camera"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_number_of_active_pixels_front_camera">Добавить Количество активных пикселей фронтальной камеры</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_number_of_active_pixels_front_camera" style="display:none">
+
+                                        <label>Количество активных пикселей фронтальной камеры:</label>
+                                        <input type="text" id="name_number_of_active_pixels_front_camera" name="name_number_of_active_pixels_front_camera">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_number_of_active_pixels_front_camera" name="add_number_of_active_pixels_front_camera" value="Добавить Количество активных пикселей фронтальной камеры">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_number_of_active_pixels_front_camera").click(function() {
+                                                        deleteNumberOfActivePixelsFrontCamera();
+                                                    });
+
+                                                    $("#add_number_of_active_pixels_front_camera").click(function() {
+                                                        addNumberOfActivePixelsFrontCamera();
+                                                    });
+
+                                                    $("#div_add_number_of_active_pixels_front_camera").click(function() {
+                                                        showFormAddNumberOfActivePixelsFrontCamera();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteNumberOfActivePixelsFrontCamera()
+                                            {
+                                                var area = $("#number_of_active_pixels_front_camera");
+                                                var numberOfActivePixelsFrontCameraValue = $("#number_of_active_pixels_front_camera option:selected").val();
+                                                area.load('tablet/delete_number_of_active_pixels_front_camera.php',{id_number_of_active_pixels_front_camera : numberOfActivePixelsFrontCameraValue});
+                                            }
+
+                                            function addNumberOfActivePixelsFrontCamera()
+                                            {
+                                                var area = $("#number_of_active_pixels_front_camera");
+                                                var numberOfActivePixelsFrontCameraSystem = $("#name_number_of_active_pixels_front_camera").val();
+                                                area.load('tablet/add_number_of_active_pixels_front_camera.php',{name_number_of_active_pixels_front_camera : numberOfActivePixelsFrontCameraSystem});
+                                            }
+
+                                            function showFormAddNumberOfActivePixelsFrontCamera()
+                                            {
+                                                if (   $("#div_add_number_of_active_pixels_front_camera").text() == 'Добавить Количество активных пикселей фронтальной камеры')
+                                                {
+                                                    $("#div_add_number_of_active_pixels_front_camera").text('Скрыть форму');
+                                                    $("#td_add_number_of_active_pixels_front_camera").css("display","");
+                                                    $("#div_add_number_of_active_pixels_front_camera").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_number_of_active_pixels_front_camera").text('Добавить Количество активных пикселей фронтальной камеры');
+                                                    $("#td_add_number_of_active_pixels_front_camera").css("display","none");
+                                                    $("#div_add_number_of_active_pixels_front_camera").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Встроенный микрофон     : (built-in_microphone)-->
+                                <tr>
+                                    <td>
+                                        <label for="built-in_microphone" style="font-size:15px">Встроенный микрофон:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="built-in_microphone" id="built-in_microphone"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Встроенные динамики    : (built_in_speakers)-->
+                                <tr>
+                                    <td>
+                                        <label for="built_in_speakers" style="font-size:15px">Встроенные динамики:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="built_in_speakers" id="built_in_speakers" ><!--style="font-size:11px;built_in_speakers:500px;"-->
+                                            <option value="0" selected="selected">Встроенные динамики</option>
+                                            <?php
+                                            $result = mysql_query("SELECT built_in_speakers_tablet.* FROM  built_in_speakers_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_built_in_speakers'].'">' . $row['name_built_in_speakers'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_built_in_speakers"  name="delete_built_in_speakers"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_built_in_speakers">Добавить Встроенные динамики</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_built_in_speakers" style="display:none">
+
+                                        <label>Встроенные динамики:</label>
+                                        <input type="text" id="name_built_in_speakers" name="name_built_in_speakers">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_built_in_speakers" name="add_built_in_speakers" value="Добавить Встроенные динамики">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_built_in_speakers").click(function() {
+                                                        deleteBuiltInSpeakers();
+                                                    });
+
+                                                    $("#add_built_in_speakers").click(function() {
+                                                        addBuiltInSpeakers();
+                                                    });
+
+                                                    $("#div_add_built_in_speakers").click(function() {
+                                                        showFormAddBuiltInSpeakers();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteBuiltInSpeakers()
+                                            {
+                                                var area = $("#built_in_speakers");
+                                                var numberOfActivePixelsFrontCameraValue = $("#built_in_speakers option:selected").val();
+                                                area.load('tablet/delete_built_in_speakers.php',{id_built_in_speakers : numberOfActivePixelsFrontCameraValue});
+                                            }
+
+                                            function addBuiltInSpeakers()
+                                            {
+                                                var area = $("#built_in_speakers");
+                                                var numberOfActivePixelsFrontCameraSystem = $("#name_built_in_speakers").val();
+                                                area.load('tablet/add_built_in_speakers.php',{name_built_in_speakers : numberOfActivePixelsFrontCameraSystem});
+                                            }
+
+                                            function showFormAddBuiltInSpeakers()
+                                            {
+                                                if (   $("#div_add_built_in_speakers").text() == 'Добавить Встроенные динамики')
+                                                {
+                                                    $("#div_add_built_in_speakers").text('Скрыть форму');
+                                                    $("#td_add_built_in_speakers").css("display","");
+                                                    $("#div_add_built_in_speakers").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_built_in_speakers").text('Добавить Встроенные динамики');
+                                                    $("#td_add_built_in_speakers").css("display","none");
+                                                    $("#div_add_built_in_speakers").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+
+                                <!-- Bluetooth      : (bluetooth)-->
+                                <tr>
+                                    <td>
+                                        <label for="bluetooth" style="font-size:15px">Bluetooth:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="bluetooth" id="bluetooth"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text_bluetooth" id="text_bluetooth"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Lan      : (lan)-->
+                                <tr>
+                                    <td>
+                                        <label for="lan" style="font-size:15px">Lan:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="lan" id="lan"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Wifi      : (wifi)-->
+                                <tr>
+                                    <td>
+                                        <label for="wifi" style="font-size:15px">Wifi:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="wifi" id="wifi"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text_wifi" id="text_wifi"/>
+                                    </td>
+                                </tr>
+
+                                <!-- 3G_modem     : (3g_modem)-->
+                                <tr>
+                                    <td>
+                                        <label for="3g_modem" style="font-size:15px">3G_modem:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="3g_modem" id="3g_modem"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text_3g_modem" id="text_3g_modem"/>
+                                    </td>
+                                </tr>
+
+                                <!-- USB 2.0     : (usb_2)-->
+                                <tr>
+                                    <td>
+                                        <label for="usb_2" style="font-size:15px">USB 2.0:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="usb_2" id="usb_2"/>
+                                    </td>
+                                </tr>
+
+                                <!-- USB 3.0     : (usb_3)-->
+                                <tr>
+                                    <td>
+                                        <label for="usb_3" style="font-size:15px">USB 3.0:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="usb_3" id="usb_3"/>
+                                    </td>
+                                </tr>
+
+                                <!-- HDMI    : (hdmi)-->
+                                <tr>
+                                    <td>
+                                        <label for="hdmi" style="font-size:15px">HDMI:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="hdmi" id="hdmi"/>
+                                    </td>
+                                </tr>
+
+                                <!-- DisplayPort    : (display_port)-->
+                                <tr>
+                                    <td>
+                                        <label for="display_port" style="font-size:15px">DisplayPort:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="display_port" id="display_port"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Аудио выходы (3.5 мм jack)    : (audio_outputs)-->
+                                <tr>
+                                    <td>
+                                        <label for="audio_outputs" style="font-size:15px">Аудио выходы (3.5 мм jack):</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="audio_outputs" id="audio_outputs"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Док-порт    : (docking_port)-->
+                                <tr>
+                                    <td>
+                                        <label for="docking_port" style="font-size:15px">Док-порт:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="docking_port" id="docking_port"/>
+                                    </td>
+                                </tr>
+
+                                <!-- GPS/A-GPS    : (gps)-->
+                                <tr>
+                                    <td>
+                                        <label for="gps" style="font-size:15px">GPS/A-GPS:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="gps" id="gps"/>
+                                    </td>
+                                </tr>
+
+                                <!-- Электронный компас    : (electronic_compass)-->
+                                <tr>
+                                    <td>
+                                        <label for="electronic_compass" style="font-size:15px">GPS/A-GPS:</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="electronic_compass" id="electronic_compass"/>
+                                    </td>
+                                </tr>
+
+
+
+                                <!-- Загрузка картинок    : (image_name)-->
+                                <tr>
+                                    <td>
+                                        <label for="image_name" style="font-size:15px">Выбор Изображения:</label>
+                                        <label for="image_name" style="font-size:10px">(изображение загружаются в папку images/tablet_images. Первое изображение разрешения 330px*177px,
+                                            второе изображение без изменений. Пример имени: 1-ая картинка - panasoniс_small.jpeg, 2-ая картинка - panasoniс_full.jpeg. _small и _full в имени изображений обязательны.):</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="image_name" id="image_name" ><!--style="font-size:11px;image_name:500px;"-->
+                                            <option value="0" selected="selected">Выбор Изображения</option>
+                                            <?php
+                                            $result = mysql_query("SELECT image_name_tablet.* FROM  image_name_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_image_name'].'">' . $row['name_image_name'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_image_name"  name="delete_image_name"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_image_name">Добавить Изображение</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_image_name" style="display:none">
+
+                                        <label>Изображение:</label>
+                                        <input type="text" id="name_image_name" name="name_image_name">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_image_name" name="add_image_name" value="Добавить Изображение">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_image_name").click(function() {
+                                                        deleteImageName();
+                                                    });
+
+                                                    $("#add_image_name").click(function() {
+                                                        addImageName();
+                                                    });
+
+                                                    $("#div_add_image_name").click(function() {
+                                                        showFormAddImageName();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteImageName()
+                                            {
+                                                var area = $("#image_name");
+                                                var numberOfActivePixelsFrontCameraValue = $("#image_name option:selected").val();
+                                                area.load('tablet/delete_image_name.php',{id_image_name : numberOfActivePixelsFrontCameraValue});
+                                            }
+
+                                            function addImageName()
+                                            {
+                                                var area = $("#image_name");
+                                                var numberOfActivePixelsFrontCameraSystem = $("#name_image_name").val();
+                                                area.load('tablet/add_image_name.php',{name_image_name : numberOfActivePixelsFrontCameraSystem});
+                                            }
+
+                                            function showFormAddImageName()
+                                            {
+                                                if (   $("#div_add_image_name").text() == 'Добавить Изображение')
+                                                {
+                                                    $("#div_add_image_name").text('Скрыть форму');
+                                                    $("#td_add_image_name").css("display","");
+                                                    $("#div_add_image_name").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_image_name").text('Добавить Изображение');
+                                                    $("#td_add_image_name").css("display","none");
+                                                    $("#div_add_image_name").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="submit" name="submit" id="submit" value="Добавить планшет" />
+                                    </td>
+                                    <td></td>
                                 </tr>
                             </table>
                         </form>
