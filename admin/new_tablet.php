@@ -2182,7 +2182,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                     <td>
                                         <label for="image_name" style="font-size:15px">Выбор Изображения:</label>
                                         <label for="image_name" style="font-size:10px">(изображение загружаются в папку images/tablet_images. Первое изображение разрешения 330px*177px,
-                                            второе изображение без изменений. Пример имени: 1-ая картинка - panasoniс_small.jpeg, 2-ая картинка - panasoniс_full.jpeg. _small и _full в имени изображений обязательны.):</label>
+                                            второе изображение без изменений. Пример имени: 1-ая картинка - panasoniс_small.jpeg, 2-ая картинка - panasoniс_full.jpeg. _small и _full в имени изображений обязательны.), а пишем в строке только panasonic:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
