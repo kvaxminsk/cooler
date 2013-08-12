@@ -137,12 +137,656 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     Выход в интернет, чтение книг, просмотр фильмов, функции GPS-навигатора и многое другое всегда под рукой. Если и Вы решили присоединиться к той части населения,
                     которая идёт в ногу со временем, то Вы  попали по адресу. На нашем сайте можно купить планшет в Минске недорого и с гарантией. Обратившись к нам, Вы сможете подобрать в Минске недорогой и очень производительный планшет.
                 </div>
+<!--            *-->
+            <link rel="stylesheet" type="text/css" href="css/slider-style/style.css" />
+            <link rel="stylesheet" type="text/css" href="css/slider-style/jquery.jscrollpane.css" media="all" />
+                     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<!--            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+            <script type="text/javascript" src="js/slider/jquery.easing.1.3.js"></script>
+            <!-- the jScrollPane script -->
+            <script type="text/javascript" src="js/slider/jquery.mousewheel.js"></script>
+            <script type="text/javascript" src="js/slider/jquery.contentcarousel.js"></script>
 
-
-
-                <div id="text_footer">
-
+            <div id="ca-container" class="ca-container">
+                <div class="ca-wrapper">
+                    <div class="ca-item ca-item-1">
+                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                    </div>
+                    <div class="ca-item ca-item-2">
+                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                    </div>
+                    <div class="ca-item ca-item-3">
+                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                    </div>
+                    <div class="ca-item ca-item-4">
+                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                    </div>
+                    <div class="ca-item ca-item-5">
+                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                    </div>
+                    <div class="ca-item ca-item-6">
+                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                    </div>
+                    <div class="ca-item ca-item-7">
+                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                    </div>
+                    <div class="ca-item ca-item-8">
+                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                    </div>
                 </div>
+            </div>
+            <script type="text/javascript">
+                $('#ca-container').contentcarousel();
+            </script>
+<!--            *-->
+            <!--                ********************************************************************************************************-->
+            <style>
+
+                .pdtable td {
+                    padding: 7px 10px;
+                }
+
+                .pdtable td.pline {
+                    padding: 0;
+                }
+
+                .pdtable tr {
+                    font-size: 11px;
+                }
+
+                .pdtable tr.pdsection {
+                    background-color: #EEEEEE;
+                    color: #000000;
+                    font: bold 14px Arial, Helvetica, sans-serif;
+                }
+
+                .pdtable tr.pdsection td {
+                    border-bottom: 1px solid #CCCCCC;
+                    border-top: 1px solid #CCCCCC;
+                    vertical-align: top;
+                }
+
+                .phed tr td {
+                    background-color: #4E91DC;
+                    color: #FFFFFF;
+                    font: 9px Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+                    height: 20px;
+                    padding: 0px 9px;
+                }
+
+                .phed tr td a:link, .phed tr td a:visited {
+                    color: #FFFFFF;
+                    text-decoration: underline;
+                }
+
+                .pline2 td {
+                    border-bottom: 1px solid #CCCCCC;
+                }
+
+                .pline3 td {
+                    border-bottom: 1px solid #EEEEEE;
+                }
+
+                .pline {
+                    background: url(/pic/grey1.gif) repeat-x;
+                }
+
+                .pline2 td {
+                    border-bottom: 1px solid #CCCCCC;
+                }
+
+                .pline3 td {
+                    border-bottom: 1px solid #EEEEEE;
+                }
+
+                .pltable th {
+                    text-align: left;
+                    font-weight: normal;
+                    padding: 15px 10px 5px 10px;
+                    /*border-bottom: 1px solid #CCCCCC;*/
+                }
+
+                .pltable td {
+                    text-align: left;
+                    vertical-align: top;
+                    width: 33%;
+                    padding: 5px 10px;
+                }
+
+                .pline2 td {
+                    border-bottom: 1px solid #CCCCCC;
+                }
+
+                .pline3 td {
+                    border-bottom: 1px solid #EEEEEE;
+                }
+
+                .pltable th {
+                    text-align: left;
+                    font-weight: normal;
+                    padding: 15px 10px 5px 10px;
+                    /*border-bottom: 1px solid #CCCCCC;*/
+                }
+
+                .pltable td {
+                    text-align: left;
+                    vertical-align: top;
+                    width: 33%;
+                    padding: 5px 10px;
+                }
+
+            </style>
+            <!--                ********************************************************************************************************-->
+            <br/>
+            <table width="70%" cellspacing="0" cellpadding="0" border="0" class="pdtable">
+            <tbody>
+            <tr class="pdsection">
+                <td colspan="2">Основные</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <div class="par-name">
+                        <p class="">Конструкция</p>
+                    </div>
+                </td>
+                <td>
+                    моноблок&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <div class="par-name">
+                        <p class="">Диагональ экрана</p>
+                    </div>
+                </td>
+                <td>
+                    10.1"&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Операционная система
+                    </p>
+                </td>
+                <td>
+                    Android&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Версия операционной системы
+                    </p>
+                </td>
+                <td>
+                    Android 4.0&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Процессор
+                    </p>
+                </td>
+                <td>
+                    Exynos 4412&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Графический ускоритель
+                    </p>
+                </td>
+                <td>
+                    ARM Mali-400 MP&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Оперативная память
+                    </p>
+                </td>
+                <td>
+                    2 ГБ&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Внутренняя память
+                    </p>
+
+                </td>
+                <td>
+                    16 ГБ&nbsp;
+                </td>
+            </tr>
+
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Количество ядер
+                    </p>
+                </td>
+                <td>
+                    4&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Тактовая частота
+                    </p>
+                </td>
+                <td>
+                    1 400&nbsp;МГц&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Материал корпуса
+                    </p>
+                </td>
+                <td>
+                    пластик&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Емкость аккумулятора
+                    </p>
+                </td>
+                <td>
+                    чёрный, серебристый&nbsp;
+                </td>
+            </tr>
+
+            <tr class="pdsection">
+                <td colspan="2">Габариты и вес</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Длина
+                    </p>
+                </td>
+                <td>
+                    257.8&nbsp;мм&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Ширина
+                    </p>
+                </td>
+                <td>
+                    175.3&nbsp;мм&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Толщина
+                    </p>
+
+                </td>
+                <td>
+                    8.9&nbsp;мм&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Вес
+                    </p>
+
+                </td>
+                <td>
+                    583&nbsp;г&nbsp;
+                </td>
+            </tr>
+            <tr class="pdsection">
+                <td colspan="2">Датчики</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Акселерометр
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Гироскоп
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Датчик приближения
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет"> &nbsp;
+                </td>
+            </tr>
+
+            <tr class="pdsection">
+                <td colspan="2">Экран</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Разрешение экрана
+                    </p>
+                </td>
+                <td>
+                    1280x800&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Тип матрицы экрана
+                    </p>
+                </td>
+                <td>
+                    LCD PLS&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Мультитач
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> 345425342&nbsp;
+                </td>
+            </tr>
+
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Защита от царапин
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Датчик освещенности
+                    </p>
+
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pdsection">
+                <td colspan="2">Хранение данных</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            Карты памяти
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> microSD, microSDHC&nbsp;
+                </td>
+            </tr>
+            <tr class="pdsection">
+                <td colspan="2">Камера и звук</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Встроенная камера
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Количество активных пикселей
+                    </p>
+
+                </td>
+                <td>
+                    5&nbsp;Мп&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Количество активных пикселей фронтальной камеры
+                    </p>
+                </td>
+                <td>
+                    1.9&nbsp;Мп&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Встроенный микрофон
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            Встроенные динамики
+                    </p>
+
+                </td>
+                <td>
+                    2 динамика&nbsp;
+                </td>
+            </tr>
+            <tr class="pdsection">
+                <td colspan="2">Интерфейсы и коммуникации</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            Bluetooth
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> 4.0&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            LAN
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            WiFi
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> 802.11a, 802.11b, 802.11g, 802.11n&nbsp;
+                </td>
+            </tr>
+                       <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            3G-модем
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> EDGE, HSDPA, HSUPA&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            USB 2.0
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            USB 3.0</a>
+
+</p>
+                    </div>
+
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            HDMI
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            DisplayPort
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            Аудио выходы (3.5 мм jack)
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> 1&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            Док-порт
+                    </p>
+
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pdsection">
+                <td colspan="2">Навигация</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            GPS/A-GPS
+                    </p>
+
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да"> &nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                            Электронный компас</a>
+                    </p>
+                </td>
+                <td>
+                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет"> &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td class="pdinfohead">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <script>
+//                &lt;
+//                !--
+//                var on_cap = 1;
+//                function on_capt() {
+//                    if (on_cap == 1) {
+//                        document.getElementById("cap_img").src = "/kcaptcha/?rand=448";
+//                        document.getElementById("cap_tr1").style.display = "none";
+//                        document.getElementById("cap_tr").style.display = "";
+//                    }
+//                    on_cap = 0;
+//                }
+//                -- &gt;
+            </script>
+
+            </tbody>
+            </table>
+            <!--                ********************************************************************************************************-->
+
+
+            <div id="text_footer">
+
+            </div>
             </div>
             <div style="clear: both;">&nbsp;</div>
         </div>
