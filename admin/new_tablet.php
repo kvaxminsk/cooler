@@ -2270,6 +2270,14 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td>
+                                        <label for="cost" style="color:black;font-size:15px;">Стоимость:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="cost" id="cost" <?php echo $rowTablet['cost'] ? 'checked="checked"' : '';?>/>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td colspan="2">
                                         <input type="submit" name="submit" id="submit" value="Добавить планшет" />
                                     </td>

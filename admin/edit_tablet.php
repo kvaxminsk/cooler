@@ -92,10 +92,11 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                             ?>
                          <form id="form1" method="post" action="add_tablet.php">
+                         <input type="hidden" name="id_tablet" id="id_tablet" value="<?php echo $idTablet;?>">
                          <table border="0" cellspacing="10" cellpadding="340">
                          <tr>
                              <td>
-                                 <label for="name_tablet" style="color:black;font-size:20px ;">Название:</label>
+                                 <label for="name_tablet" style="color:black;font-size:15px;">Название:</label>
                              </td>
                              <td>
                                  <input type="text" id="name_tablet" name="name_tablet" value="<?php echo $rowTablet['name_tablet'];?>"/><br/>
@@ -104,7 +105,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Конструкция: (design)-->
                          <tr>
                              <td>
-                                 <label for="design" style="color:black;font-size:20px ;">Конструкция:</label>
+                                 <label for="design" style="color:black;font-size:15px;">Конструкция:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -202,7 +203,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Диагональ экрана : (screen_size)-->
                          <tr>
                              <td>
-                                 <label for="screen_size" style="color:black;font-size:20px ;">Диагональ экрана:</label>
+                                 <label for="screen_size" style="color:black;font-size:15px;">Диагональ экрана:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -301,7 +302,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Операционная система  : (operating_system)-->
                          <tr>
                              <td>
-                                 <label for="operating_system" style="color:black;font-size:20px ;">Операционная система:</label>
+                                 <label for="operating_system" style="color:black;font-size:15px;">Операционная система:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -400,7 +401,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Версия операционной системы   : (operating_system_version)-->
                          <tr>
                              <td>
-                                 <label for="operating_system_version" style="color:black;font-size:20px ;">Версия операционной системы:</label>
+                                 <label for="operating_system_version" style="color:black;font-size:15px;">Версия операционной системы:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -499,7 +500,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Процессоры   : (cpu)-->
                          <tr>
                              <td>
-                                 <label for="cpu" style="color:black;font-size:20px ;">Процессоры:</label>
+                                 <label for="cpu" style="color:black;font-size:15px;">Процессоры:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -598,7 +599,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Графический ускоритель   : (graphics_accelerator)-->
                          <tr>
                              <td>
-                                 <label for="graphics_accelerator" style="color:black;font-size:20px ;">Графический ускоритель:</label>
+                                 <label for="graphics_accelerator" style="color:black;font-size:15px;">Графический ускоритель:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -697,7 +698,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Оперативная память   : (ram)-->
                          <tr>
                              <td>
-                                 <label for="ram" style="color:black;font-size:20px ;">Оперативная память:</label>
+                                 <label for="ram" style="color:black;font-size:15px;">Оперативная память:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -796,7 +797,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Внутренняя память   : (internal_memory)-->
                          <tr>
                              <td>
-                                 <label for="internal_memory" style="color:black;font-size:20px ;">Внутренняя память:</label>
+                                 <label for="internal_memory" style="color:black;font-size:15px;">Внутренняя память:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -895,7 +896,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Количество ядер   : (number_of_cores)-->
                          <tr>
                              <td>
-                                 <label for="number_of_cores" style="color:black;font-size:20px ;">Количество ядер:</label>
+                                 <label for="number_of_cores" style="color:black;font-size:15px;">Количество ядер:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -994,7 +995,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Тактовая частота   : (clock_speed)-->
                          <tr>
                              <td>
-                                 <label for="clock_speed" style="color:black;font-size:20px ;">Тактовая частота:</label>
+                                 <label for="clock_speed" style="color:black;font-size:15px;">Тактовая частота:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1093,7 +1094,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Материал корпуса   : (case_material)-->
                          <tr>
                              <td>
-                                 <label for="case_material" style="color:black;font-size:20px ;">Материал корпуса:</label>
+                                 <label for="case_material" style="color:black;font-size:15px;">Материал корпуса:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1192,7 +1193,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Емкость аккумулятора   : (battery_capacity)-->
                          <tr>
                              <td>
-                                 <label for="battery_capacity" style="color:black;font-size:20px ;">Емкость аккумулятора:</label>
+                                 <label for="battery_capacity" style="color:black;font-size:15px;">Емкость аккумулятора:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1291,7 +1292,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Длина   : (length)-->
                          <tr>
                              <td>
-                                 <label for="length" style="color:black;font-size:20px ;">Длина:</label>
+                                 <label for="length" style="color:black;font-size:15px;">Длина:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1390,7 +1391,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Ширина    : (width)-->
                          <tr>
                              <td>
-                                 <label for="width" style="color:black;font-size:20px ;">Ширина:</label>
+                                 <label for="width" style="color:black;font-size:15px;">Ширина:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1489,7 +1490,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Толщина    : (thickness)-->
                          <tr>
                              <td>
-                                 <label for="thickness" style="color:black;font-size:20px ;">Толщина:</label>
+                                 <label for="thickness" style="color:black;font-size:15px;">Толщина:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1588,7 +1589,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Вес    : (weight)-->
                          <tr>
                              <td>
-                                 <label for="weight" style="color:black;font-size:20px ;">Вес:</label>
+                                 <label for="weight" style="color:black;font-size:15px;">Вес:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1687,7 +1688,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Акселерометр     : (accelerometer)-->
                          <tr>
                              <td>
-                                 <label for="accelerometer" style="color:black;font-size:20px ;">Акселерометр:</label>
+                                 <label for="accelerometer" style="color:black;font-size:15px;">Акселерометр:</label>
                              </td>
                              <td>
                                  <input type="checkbox"  name="accelerometer" id="accelerometer" <?php echo $rowTablet['accelerometer'] ? 'checked="checked"' : '';?>/>
@@ -1697,7 +1698,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Гироскоп      : (gyroscope)-->
                          <tr>
                              <td>
-                                 <label for="gyroscope" style="color:black;font-size:20px ;">Гироскоп:</label>
+                                 <label for="gyroscope" style="color:black;font-size:15px;">Гироскоп:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="gyroscope" id="gyroscope" <?php echo $rowTablet['gyroscope'] ? 'checked="checked"' : '';?>/>
@@ -1707,7 +1708,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Датчик приближения       : (proximity_sensor)-->
                          <tr>
                              <td>
-                                 <label for="proximity_sensor" style="color:black;font-size:20px ;">Датчик приближения:</label>
+                                 <label for="proximity_sensor" style="color:black;font-size:15px;">Датчик приближения:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="proximity_sensor" id="proximity_sensor" <?php echo $rowTablet['proximity_sensor'] ? 'checked="checked"' : '';?>/>
@@ -1718,7 +1719,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Разрешение экрана    : (screen_resolution)-->
                          <tr>
                              <td>
-                                 <label for="screen_resolution" style="color:black;font-size:20px ;">Разрешение экрана:</label>
+                                 <label for="screen_resolution" style="color:black;font-size:15px;">Разрешение экрана:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1817,7 +1818,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Тип матрицы экрана    : (type_of_matrix_screen)-->
                          <tr>
                              <td>
-                                 <label for="type_of_matrix_screen" style="color:black;font-size:20px ;">Тип матрицы экрана:</label>
+                                 <label for="type_of_matrix_screen" style="color:black;font-size:15px;">Тип матрицы экрана:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -1916,7 +1917,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Мультитач      : (multi_touch)-->
                          <tr>
                              <td>
-                                 <label for="multi_touch" style="color:black;font-size:20px ;">Мультитач:</label>
+                                 <label for="multi_touch" style="color:black;font-size:15px;">Мультитач:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="multi_touch" id="multi_touch" <?php echo $rowTablet['multi_touch'] ? 'checked="checked"' : '';?>/>
@@ -1929,7 +1930,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Защита от царапин      : (protection_from_scratches)-->
                          <tr>
                              <td>
-                                 <label for="protection_from_scratches" style="color:black;font-size:20px ;">Защита от царапин:</label>
+                                 <label for="protection_from_scratches" style="color:black;font-size:15px;">Защита от царапин:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="protection_from_scratches" id="protection_from_scratches" <?php echo $rowTablet['protection_from_scratches'] ? 'checked="checked"' : '';?>/>
@@ -1941,7 +1942,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Карты памяти      : (memory_cards)-->
                          <tr>
                              <td>
-                                 <label for="memory_cards" style="color:black;font-size:20px ;">Карты памяти:</label>
+                                 <label for="memory_cards" style="color:black;font-size:15px;">Карты памяти:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="memory_cards" id="memory_cards" <?php echo $rowTablet['memory_cards'] ? 'checked="checked"' : '';?>/>
@@ -1954,7 +1955,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Встроенная камера      : (built-in_camera)-->
                          <tr>
                              <td>
-                                 <label for="built-in_camera" style="color:black;font-size:20px ;">Датчик освещенности:</label>
+                                 <label for="built-in_camera" style="color:black;font-size:15px;">Датчик освещенности:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="built-in_camera" id="built-in_camera" <?php echo $rowTablet['built-in_camera'] ? 'checked="checked"' : '';?>/>
@@ -1965,7 +1966,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Количество активных пикселей    : (number_of_active_pixels)-->
                          <tr>
                              <td>
-                                 <label for="number_of_active_pixels" style="color:black;font-size:20px ;">Количество активных пикселей:</label>
+                                 <label for="number_of_active_pixels" style="color:black;font-size:15px;">Количество активных пикселей:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -2063,7 +2064,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Количество активных пикселей фронтальной камеры    : (number_of_active_pixels_front_camera)-->
                          <tr>
                              <td>
-                                 <label for="number_of_active_pixels_front_camera" style="color:black;font-size:20px ;">Количество активных пикселей фронтальной камеры:</label>
+                                 <label for="number_of_active_pixels_front_camera" style="color:black;font-size:15px;">Количество активных пикселей фронтальной камеры:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -2162,7 +2163,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Встроенный микрофон     : (built-in_microphone)-->
                          <tr>
                              <td>
-                                 <label for="built-in_microphone" style="color:black;font-size:20px ;">Встроенный микрофон:</label>
+                                 <label for="built-in_microphone" style="color:black;font-size:15px;">Встроенный микрофон:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="built-in_microphone" id="built-in_microphone" <?php echo $rowTablet['built-in_microphone'] ? 'checked="checked"' : '';?>/>
@@ -2172,7 +2173,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Встроенные динамики    : (built_in_speakers)-->
                          <tr>
                              <td>
-                                 <label for="built_in_speakers" style="color:black;font-size:20px ;">Встроенные динамики:</label>
+                                 <label for="built_in_speakers" style="color:black;font-size:15px;">Встроенные динамики:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -2272,7 +2273,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Bluetooth      : (bluetooth)-->
                          <tr>
                              <td>
-                                 <label for="bluetooth" style="color:black;font-size:20px ;">Bluetooth:</label>
+                                 <label for="bluetooth" style="color:black;font-size:15px;">Bluetooth:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="bluetooth" id="bluetooth" <?php echo $rowTablet['bluetooth'] ? 'checked="checked"' : '';?>/>
@@ -2285,7 +2286,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Lan      : (lan)-->
                          <tr>
                              <td>
-                                 <label for="lan" style="color:black;font-size:20px ;">Lan:</label>
+                                 <label for="lan" style="color:black;font-size:15px;">Lan:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="lan" id="lan" <?php echo $rowTablet['lan'] ? 'checked="checked"' : '';?>/>
@@ -2295,7 +2296,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Wifi      : (wifi)-->
                          <tr>
                              <td>
-                                 <label for="wifi" style="color:black;font-size:20px ;">Wifi:</label>
+                                 <label for="wifi" style="color:black;font-size:15px;">Wifi:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="wifi" id="wifi" <?php echo $rowTablet['wifi'] ? 'checked="checked"' : '';?>/>
@@ -2308,7 +2309,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- 3G_modem     : (3g_modem)-->
                          <tr>
                              <td>
-                                 <label for="3g_modem" style="color:black;font-size:20px ;">3G_modem:</label>
+                                 <label for="3g_modem" style="color:black;font-size:15px;">3G_modem:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="3g_modem" id="3g_modem" <?php echo $rowTablet['3g_modem'] ? 'checked="checked"' : '';?>/>
@@ -2321,7 +2322,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- USB 2.0     : (usb_2)-->
                          <tr>
                              <td>
-                                 <label for="usb_2" style="color:black;font-size:20px ;">USB 2.0:</label>
+                                 <label for="usb_2" style="color:black;font-size:15px;">USB 2.0:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="usb_2" id="usb_2" <?php echo $rowTablet['usb_2'] ? 'checked="checked"' : '';?>/>
@@ -2331,7 +2332,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- USB 3.0     : (usb_3)-->
                          <tr>
                              <td>
-                                 <label for="usb_3" style="color:black;font-size:20px ;">USB 3.0:</label>
+                                 <label for="usb_3" style="color:black;font-size:15px;">USB 3.0:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="usb_3" id="usb_3" <?php echo $rowTablet['usb_3'] ? 'checked="checked"' : '';?>/>
@@ -2341,7 +2342,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- HDMI    : (hdmi)-->
                          <tr>
                              <td>
-                                 <label for="hdmi" style="color:black;font-size:20px ;">HDMI:</label>
+                                 <label for="hdmi" style="color:black;font-size:15px;">HDMI:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="hdmi" id="hdmi"/>
@@ -2351,7 +2352,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- DisplayPort    : (display_port)-->
                          <tr>
                              <td>
-                                 <label for="display_port" style="color:black;font-size:20px ;">DisplayPort:</label>
+                                 <label for="display_port" style="color:black;font-size:15px;">DisplayPort:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="display_port" id="display_port" <?php echo $rowTablet['display_port'] ? 'checked="checked"' : '';?>/>
@@ -2361,7 +2362,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Аудио выходы (3.5 мм jack)    : (audio_outputs)-->
                          <tr>
                              <td>
-                                 <label for="audio_outputs" style="color:black;font-size:20px ;">Аудио выходы (3.5 мм jack):</label>
+                                 <label for="audio_outputs" style="color:black;font-size:15px;">Аудио выходы (3.5 мм jack):</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="audio_outputs" id="audio_outputs" <?php echo $rowTablet['audio_outputs'] ? 'checked="checked"' : '';?>/>
@@ -2371,7 +2372,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Док-порт    : (docking_port)-->
                          <tr>
                              <td>
-                                 <label for="docking_port" style="color:black;font-size:20px ;">Док-порт:</label>
+                                 <label for="docking_port" style="color:black;font-size:15px;">Док-порт:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="docking_port" id="docking_port" <?php echo $rowTablet['docking_port'] ? 'checked="checked"' : '';?>/>
@@ -2381,7 +2382,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- GPS/A-GPS    : (gps)-->
                          <tr>
                              <td>
-                                 <label for="gps" style="color:black;font-size:20px ;">GPS/A-GPS:</label>
+                                 <label for="gps" style="color:black;font-size:15px;">GPS/A-GPS:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="gps" id="gps" <?php echo $rowTablet['gps'] ? 'checked="checked"' : '';?>/>
@@ -2391,7 +2392,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Электронный компас    : (electronic_compass)-->
                          <tr>
                              <td>
-                                 <label for="electronic_compass" style="color:black;font-size:20px ;">GPS/A-GPS:</label>
+                                 <label for="electronic_compass" style="color:black;font-size:15px;">GPS/A-GPS:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="electronic_compass" id="electronic_compass" <?php echo $rowTablet['electronic_compass'] ? 'checked="checked"' : '';?>/>
@@ -2495,6 +2496,14 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                                      }
                                  </script>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <label for="cost" style="color:black;font-size:15px;">Стоимость:</label>
+                             </td>
+                             <td>
+                                 <input type="text" name="cost" id="cost" value="<?php echo $rowTablet['cost'];?>"/>
                              </td>
                          </tr>
                          <tr>

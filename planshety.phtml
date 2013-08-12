@@ -1,0 +1,433 @@
+﻿<?php
+include ("blocks/bd.php");/*Connecting to BD!*/
+
+if (!empty($_GET))
+{
+    foreach($_GET as $key => $value)
+    {
+        $searchParams[$key] = htmlspecialchars(trim($value));
+    }
+    $strSgl = "SELECT * FROM  tablet
+                           LEFT JOIN number_of_cores_tablet ON number_of_cores_tablet.id_number_of_cores = tablet.number_of_cores
+                           LEFT JOIN manufacture_tablet ON manufacture_tablet.id_manufacture = tablet.manufacture
+                           LEFT JOIN clock_speed_tablet ON clock_speed_tablet.id_clock_speed = tablet.clock_speed
+                           LEFT JOIN screen_size_tablet ON screen_size_tablet.id_screen_size = tablet.screen_size
+                           LEFT JOIN ram_tablet ON ram_tablet.id_ram = tablet.ram
+                           LEFT JOIN image_name_tablet ON image_name_tablet.id_image_name = tablet.image_name
+                           LEFT JOIN operating_system_tablet ON operating_system_tablet.id_operating_system = tablet.operating_system
+                           LEFT JOIN internal_memory_tablet ON internal_memory_tablet.id_internal_memory = tablet.internal_memory
+                           WHERE";
+
+    if((!empty($searchParams["min_cost"])) && ($searchParams["min_cost"] != 'Не важно'))
+    {
+        $strSgl .= " tablet.cost >= " .  $searchParams["min_cost"] . '   AND ';
+    }
+
+    if((!empty($searchParams["max_cost"])) && ($searchParams["max_cost"] != 'Не важно'))
+    {
+        $strSgl .= "   tablet.cost <= " .  $searchParams["max_cost"]. '   AND ';
+    }
+
+    if((!empty($searchParams["select_min_number_of_cores"])) && ($searchParams["select_min_number_of_cores"] != 'Не важно'))
+    {
+        $strSgl .= " number_of_cores_tablet.name_number_of_cores >= " .  $searchParams["select_min_number_of_cores"] . '   AND ';
+    }
+    if((!empty($searchParams["select_max_number_of_cores"])) && ($searchParams["select_max_number_of_cores"] != 'Не важно'))
+    {
+        $strSgl .= " number_of_cores_tablet.name_number_of_cores <= " .  $searchParams["select_max_number_of_cores"]. '   AND ';
+    }
+
+    if((!empty($searchParams["select_manufacture"])) && ($searchParams["select_manufacture"] != 'Не важно'))
+    {
+        $strSgl .= " manufacture_tablet.name_manufacture = " .  $searchParams["select_manufacture"]. '   AND ';
+    }
+    if((!empty($searchParams["min_clock_speed"])) && ($searchParams["min_clock_speed"] != 'Не важно'))
+    {
+        $strSgl .= " clock_speed_tablet.name_clock_speed >= " .  $searchParams["min_clock_speed"]. '   AND ';
+    }
+
+    if((!empty($searchParams["select_min_screen_size"])) && ($searchParams["select_min_screen_size"] != 'Не важно'))
+    {
+        $strSgl .= " screen_size_tablet.name_screen_size >= " .  $searchParams["select_min_screen_size"] . '   AND ';
+    }
+    if((!empty($searchParams["select_max_screen_size"])) && ($searchParams["select_max_screen_size"] != 'Не важно'))
+    {
+        $strSgl .= " screen_size_tablet.name_screen_size <= " .  $searchParams["select_max_screen_size"] . '   AND ';
+    }
+    if((!empty($searchParams["select_min_ram"])) && ($searchParams["select_min_ram"] != 'Не важно'))
+    {
+        $strSgl .= " ram_tablet.name_ram >= " .  $searchParams["select_min_ram"] . '   AND ';
+    }
+    if((!empty($searchParams["select_max_ram"])) && ($searchParams["select_max_ram"] != 'Не важно'))
+    {
+        $strSgl .= " ram_tablet.name_ram <= " .  $searchParams["select_max_ram"] . '   AND ';
+    }
+    if((!empty($searchParams["select_operating_system"])) && ($searchParams["select_operating_system"] != 'Не важно'))
+    {
+        $strSgl .= " operating_system_tablet.name_operating_system = " .  $searchParams["select_operating_system"] . '   AND ';
+    }
+    if((!empty($searchParams["select_min_internal_memory"])) && ($searchParams["select_min_internal_memory"] != 'Не важно'))
+    {
+        $strSgl .= " internal_memory_tablet.name_internal_memory >= " .  $searchParams["select_min_internal_memory"] . '   AND ';
+    }
+    if((!empty($searchParams["select_max_internal_memory"])) && ($searchParams["select_max_internal_memory"] != 'Не важно'))
+    {
+        $strSgl .= " internal_memory_tablet.name_internal_memory <= " .  $searchParams["select_max_internal_memory"] . '   AND ';
+    }
+    if((!empty($searchParams["3g_modem"]))&& ($searchParams["3g_modem"] != 'Не важно'))
+    {
+        $strSgl .= " tablet.3g_modem = 1 ". '   AND ';
+    }
+    $strSgl =  substr($strSgl,0,-5);
+    $strSgl .=  " ORDER BY tablet.cost ASC";
+//    echo $strSgl;die();
+    /*var_dump($_GET);echo "<br/>";
+    var_dump($strSgl);die();  */
+}
+else
+{
+    $strSgl  = "SELECT * FROM  tablet
+                           LEFT JOIN number_of_cores_tablet ON number_of_cores_tablet.id_number_of_cores = tablet.number_of_cores
+                           LEFT JOIN manufacture_tablet ON manufacture_tablet.id_manufacture = tablet.manufacture
+                           LEFT JOIN clock_speed_tablet ON clock_speed_tablet.id_clock_speed = tablet.clock_speed
+                           LEFT JOIN screen_size_tablet ON screen_size_tablet.id_screen_size = tablet.screen_size
+                           LEFT JOIN ram_tablet ON ram_tablet.id_ram = tablet.ram
+                           LEFT JOIN image_name_tablet ON image_name_tablet.id_image_name = tablet.image_name
+                           LEFT JOIN operating_system_tablet ON operating_system_tablet.id_operating_system = tablet.operating_system
+                           LEFT JOIN internal_memory_tablet ON internal_memory_tablet.id_internal_memory = tablet.internal_memory
+                           ORDER BY tablet.cost ASC";
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Планшеты в Минске, купить планшет недорого ^Cooler.by</title>
+    <meta name="keywords" content="Планшеты в Минске, купить планшет недорого"/>
+    <meta name="description" content=""/>
+    <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="planshety/planshety.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/system_block.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+    <?php include ("index/header-callme.txt"); error_reporting(E_ALL ^ E_NOTICE);?>
+
+    <!-- start page -->
+    <div id="page">
+        <div id="bgtop"></div>
+        <div id="bgbottom">
+            <!-- start menu -->
+
+            <?php include ("index/menu.txt"); ?>
+
+            <!-- начало Right -->
+            <div id="right"><?php include ("index/soc-seti.txt"); ?>
+                <h1>Планшеты</h1>
+
+                <div id="text">
+                    Планшеты стали в наши дни очень популярными. Это сочетание телефона и нетбука плотно вошло в жизнь
+                    современно человека из-за своей функциональности и компактности.
+                    Выход в интернет, чтение книг, просмотр фильмов, функции GPS-навигатора и многое другое всегда под
+                    рукой. Если и Вы решили присоединиться к той части населения,
+                    которая идёт в ногу со временем, то Вы попали по адресу. На нашем сайте можно купить планшет в
+                    Минске недорого и с гарантией. Обратившись к нам, Вы сможете подобрать в Минске недорогой и очень
+                    производительный планшет.
+                </div>
+
+                <div id='podbor'>
+                    <h3>Характеристики Планшета</h3>
+
+                    <form id="search_with_parameters" name="search_with_parameters" action="planshety.phtml"
+                          method="get">
+                        <table cellpadding="10" cellspacing="10">
+                            <tr align="left">
+                                <td width="340px">
+                                    Цена от <input type="text" size="4" id="min_cost" name="min_cost" size="1"
+                                                   maxlength="5" value=<?php echo $searchParams["min_cost"];?>>
+                                    до <input type="text" size="4" id="max_cost" name="max_cost" size="1" maxlength="5"
+                                              value=<?php echo $searchParams["max_cost"];?>>
+                                    у.е.
+                                </td>
+                                <td>
+                                    Количество ядер
+                                    от
+                                    <select class="punkt" id="proc" name="select_min_number_of_cores">
+                                        <option value="0" <?php (empty($searchParams['select_min_number_of_cores']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                            $resultNumberOfCoresTabletSelect = mysql_query("SELECT * FROM  number_of_cores_tablet", $db);
+                                            while ($rowNumberOfCoresTabletSelect = mysql_fetch_assoc($resultNumberOfCoresTabletSelect)) {
+                                                echo "<option value='" . $rowNumberOfCoresTabletSelect['name_number_of_cores'] . "'" . (($searchParams['select_min_number_of_cores'] == $rowNumberOfCoresTabletSelect['name_number_of_cores']) ? "selected='selected'" : '') . ">" . $rowNumberOfCoresTabletSelect['name_number_of_cores'] . "</option>";
+                                            }
+                                        ?>
+                                    </select>
+                                    до
+                                    <select class="punkt" id="proc" name="select_max_number_of_cores">
+                                        <option value="0" <?php (empty($searchParams['select_max_number_of_cores']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultNumberOfCoresTabletSelect = mysql_query("SELECT * FROM  number_of_cores_tablet", $db);
+                                        while ($rowNumberOfCoresTabletSelect = mysql_fetch_assoc($resultNumberOfCoresTabletSelect)) {
+                                            echo "<option value='" . $rowNumberOfCoresTabletSelect['name_number_of_cores'] . "'" . (($searchParams['select_max_number_of_cores'] == $rowNumberOfCoresTabletSelect['name_number_of_cores']) ? "selected='selected'" : '') . ">" . $rowNumberOfCoresTabletSelect['name_number_of_cores'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                </td>
+
+                            </tr>
+                            <tr align="left">
+                                <td width="330px">
+                                    Производитель
+                                    <select class="punkt" id="proc" name="select_manufacture">
+                                        <option value="0" <?php (empty($searchParams['select_manufacture']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultManufactureSelect = mysql_query("SELECT * FROM  manufacture_tablet", $db);
+                                        while ($rowManufactureSelect = mysql_fetch_assoc($resultManufactureSelect)) {
+                                            echo "<option value='" . $rowManufactureSelect['name_manufacture'] . "'" . (($searchParams['select_manufacture'] == $rowManufactureSelect['name_manufacture']) ? "selected='selected'" : '') . ">" . $rowManufactureSelect['name_manufacture'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                </td>
+                                <td>
+                                    Тактовая частота не менее <input type="text" size="3" id="min_clock_speed" name="min_clock_speed"
+                                                            size="1" maxlength="5"
+                                                            value="<?php echo $searchParams['min_clock_speed'] ?>">GHz
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td>
+                                    Диагональ экрана от
+                                    <select class="punkt" id="proc" name="select_min_screen_size">
+                                        <option value="0" <?php (empty($searchParams['select_min_screen_size']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultScreenSizeSelect = mysql_query("SELECT * FROM  screen_size_tablet", $db);
+                                        while ($rowScreenSizeSelect = mysql_fetch_assoc($resultScreenSizeSelect)) {
+                                            echo "<option value='" . $rowScreenSizeSelect['name_screen_size'] . "'" . (($searchParams['select_min_screen_size'] == $rowScreenSizeSelect['name_screen_size']) ? "selected='selected'" : '') . ">" . $rowScreenSizeSelect['name_screen_size'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                    до
+                                    <select class="punkt" id="proc" name="select_max_screen_size">
+                                        <option value="0" <?php (empty($searchParams['select_max_screen_size']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultScreenSizeSelect = mysql_query("SELECT * FROM  screen_size_tablet", $db);
+                                        while ($rowScreenSizeSelect = mysql_fetch_assoc($resultScreenSizeSelect)) {
+                                            echo "<option value='" . $rowScreenSizeSelect['name_screen_size'] . "'" . (($searchParams['select_max_screen_size'] == $rowScreenSizeSelect['name_screen_size']) ? "selected='selected'" : '') . ">" . $rowScreenSizeSelect['name_screen_size'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                </td>
+                                <td>
+                                    Оперативная память от
+                                    <select class="punkt" id="proc" id="select_min_ram" name="select_min_ram">
+                                        <option value="0" <?php (empty($searchParams['select_min_ram']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultRamSelect = mysql_query("SELECT * FROM  ram_tablet", $db);
+                                        while ($rowRamSelect = mysql_fetch_assoc($resultRamSelect)) {
+                                            echo "<option value='" . $rowRamSelect['name_ram'] . "'" . (($searchParams['select_min_ram'] == $rowRamSelect['name_ram']) ? "selected='selected'" : '') . ">" . $rowRamSelect['name_ram'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                    до
+                                    <select class="punkt" id="proc" id="select_max_ram" name="select_max_ram">
+                                        <option value="0" <?php (empty($searchParams['select_max_ram']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultRamSelect = mysql_query("SELECT * FROM  ram_tablet", $db);
+                                        while ($rowRamSelect = mysql_fetch_assoc($resultRamSelect)) {
+                                            echo "<option value='" . $rowRamSelect['name_ram'] . "'" . (($searchParams['select_max_ram'] == $rowRamSelect['name_ram']) ? "selected='selected'" : '') . ">" . $rowRamSelect['name_ram'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td>
+                                    Операционная система
+                                    <select class="punkt" id="proc" id="select_operating_system" name="select_operating_system">
+                                        <option value="0" <?php (empty($searchParams['select_operating_system']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultOperationSystemSelect = mysql_query("SELECT * FROM  operating_system_tablet", $db);
+                                        while ($rowOperationSystemSelect = mysql_fetch_assoc($resultOperationSystemSelect)) {
+                                            echo "<option value='" . $rowOperationSystemSelect['name_operating_system'] . "'" . (($searchParams['select_operating_system'] == $rowOperationSystemSelect['name_operating_system']) ? "selected='selected'" : '') . ">" . $rowOperationSystemSelect['name_operating_system'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                </td>
+                                <td>
+                                    Внутренняя память
+                                    от
+                                    <select class="punkt" id="proc" id="select_min_internal_memory" name="select_min_internal_memory">
+                                        <option value="0" <?php (empty($searchParams['select_min_internal_memory']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultInternalMemorySelect = mysql_query("SELECT * FROM  internal_memory_tablet", $db);
+                                        while ($rowInternalMemorySelect = mysql_fetch_assoc($resultInternalMemorySelect)) {
+                                            echo "<option value='" . $rowInternalMemorySelect['name_internal_memory'] . "'" . (($searchParams['select_min_internal_memory'] == $rowInternalMemorySelect['name_internal_memory']) ? "selected='selected'" : '') . ">" . $rowInternalMemorySelect['name_internal_memory'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                    до
+                                    <select class="punkt" id="proc" id="select_max_internal_memory" name="select_max_internal_memory">
+                                        <option value="0" <?php (empty($searchParams['select_max_internal_memory']))?"selected='selected'" :'' ?>>Не важно</option>
+                                        <?php
+                                        $resultInternalMemorySelect = mysql_query("SELECT * FROM  internal_memory_tablet", $db);
+                                        while ($rowInternalMemorySelect = mysql_fetch_assoc($resultInternalMemorySelect)) {
+                                            echo "<option value='" . $rowInternalMemorySelect['name_internal_memory'] . "'" . (($searchParams['select_max_internal_memory'] == $rowInternalMemorySelect['name_internal_memory']) ? "selected='selected'" : '') . ">" . $rowInternalMemorySelect['name_internal_memory'] . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td>
+                                    <label>3G модем </label>
+                                    <?php if (!isset($searchParams)) { ?>
+                                        <input type="checkbox" id="3g_modem" name="3g_modem" checked="checked"  value="1">
+                                    <?php
+                                    } else {
+                                        ?>
+                                        <input type="checkbox" id="3g_modem"
+                                               name="3g_modem" <?php  echo ($searchParams['3g_modem'] == 1) ? "checked='checked'" : '';?>
+                                               value="1">
+                                    <?php }?>
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td class="lineoranz" colspan="2">
+                                    <a id="knopka-2" href="http://cooler.by/planshety.phtml">Новый подбор</a>
+                                    <input id="knopka-1" type="submit" value="Подобрать">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            <?php
+            $result = mysql_query($strSgl, $db);//"SELECT title,image,cost,cost_sb,cost_monitor,cost_keyboard,cost_mouse,cost_loudspeakers,processor,hdd,ram,optical_drive,motherboard,housing,vga,monitor,loudspeakers,information FROM kompjuter WHERE type='igrovoj'", $db);
+            $myrow = mysql_fetch_array($result)  ;
+            if (!$myrow)
+            {
+                echo "<br/><h1>нет конфигураций соответствующих подбору</h1><br/><br/><br/><br/><br/><br/><br/>";
+            }
+            $result = mysql_query($strSgl, $db);
+            $i=0;
+            while($myrow = mysql_fetch_array($result))
+            {
+                ?>
+<!--                <br/><br/>-->
+                <div id='komp'>
+                    <h3><?php echo $myrow["name_tablet"];?></h3>
+
+                    <span class="img-slide"><img  src='images/tablet_images/<?php echo $myrow["name_image_name"];?>_small.jpg' alt='Планшет' title='Планшет'/></span>
+                    <form method='post'>
+                        <table style="float:right;margin-top: 24px;margin-right: 100px;margin-bottom: -5px">
+                            <tr>
+                                <td>
+                                    <button id='show-ocb-form<?=$i;?>' class='kupi-sist-bl' >Купить</button>
+
+
+                                    <div class='ocb-form' id='ocb-form-wrap<?=$i;?>' style='display: none'>
+                                        <div class='ocb-form-header'>
+
+                                            <div class='ocb-form-header-caption'>Быстрый заказ</div>
+                                            <div class='ocb-form-header-close'></div>
+                                        </div>
+                                        <div id='ocb-form<?=$i;?>'>
+                                            <div id='ocb-params<?=$i;?>'>
+                                                <input type='hidden' id='titleSystemBlock<?=$i;?>' value='<?=$myrow['name_tablet'];?>'/>
+                                                <input type='hidden' id='itemCost<?=$i;?>' value='<?=$myrow['cost'];?>'/>
+                                                <div class='ocb-form-field'>
+                                                    <label>Ваше имя
+                                                        <ins>*</ins>
+                                                    </label>
+                                                    <input type='text' name='new_order<?=$i;?>[FIO]' value='' id='ocb-id-FIO<?=$i;?>'/>
+
+                                                    <div id='ocb-id-FIO<?=$i;?>-error<?=$i;?>' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                                    </div>
+
+                                                </div>
+                                                <div class='ocb-form-field'>
+                                                    <label>Контактный телефон
+                                                        <ins>*</ins>
+                                                    </label>
+                                                    <select name='operator<?=$i;?>'
+                                                            style='width: 70px; text-align: left; margin-right: 10px' id='operator<?=$i;?>'>
+                                                        <option value='velcom'>Velcom</option>
+                                                        <option value='mts'>МТС</option>
+                                                        <option value='life'>life</option>
+                                                    </select><input type='text' name='new_order<?=$i;?>[PHONE]' value='' id='ocb-id-PHONE<?=$i;?>'
+                                                                    style='width: 250px'/>
+
+                                                    <div id='ocb-id-PHONE<?=$i;?>-error<?=$i;?>' class='ocb-error-msg'>Обязательно укажите
+                                                        контактный телефон
+                                                    </div>
+
+                                                </div>
+
+                                                <div class='intaro-modules-button ptichka'>
+                                                    <input type='submit' value='Отправить заказ' id='ocb-form-button<?=$i;?>'
+                                                           name='ocb_form_button<?=$i;?>'/>
+                                                </div>
+                                                <div class='ocb-form-loader'></div>
+                                            </div>
+                                        </div>
+                                        <div class='ocb-form-result' id='ocb-form-result<?=$i;?>'>
+                                            <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
+                                            <div class='ocb-result-icon-fail'>Ошибка!</div>
+
+                                            <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div class='cena-sist-bl'>Системный блок <span class="cenagl"><?php echo $myrow['cost'] .  ' '; ?></span> у.е.</div>
+
+                        <span class="comlekt" >
+                         <ul class="opisanie-left">
+                             <li>Производитель - <b><?php  echo $myrow['name_manufacture'];?></b></li>
+                             <li>Диагональ экрана - <b><?php  echo ' ' . $myrow['name_screen_size'] . '"'  ; ?></b></li>
+                             <li>Операционная система - <b><?php   echo $myrow['name_operating_system'] . ' ';?></b></li>
+                             <li>Тактовая частота - <b><?php echo $myrow['name_clock_speed'] . ' GHz';?></b></li>
+                         </ul>
+                         <ul class="opisanie-right">
+                             <li>Количество ядер - <b><?php echo $myrow['name_number_of_cores']; ?></b></li>
+                             <li>Оперативная память - <b><?php echo $myrow['name_ram'] . ' GB'; ?></b></li>
+                             <li>Внутренняя память - <b><?php  echo $myrow['name_internal_memory'] . ' GB';?></b></li>
+                             <li><?php if(!empty($myrow['3g_modem'])) { ?>3G модем - <b><?php echo $myrow['text_3g_modem'];}?></b></li>
+                         </ul>
+                            <br>— Гарантийное обслуживание, бесплатная доставка.
+                            <br>— Соответствие картинки уточняйте у менеджера.
+                            <br>
+                         </span>
+                </div>
+
+
+
+                <?php
+                $i++;
+            }
+            ?>
+
+                <div id="text_footer">
+
+                </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+    </div>
+    <hr/>
+    <!-- start footer -->
+    <?php include ("index/footer.txt"); ?>
+
+</div>
+<?php include ("index/metrika_jivo.txt"); ?>
+
+</body>
+</html>
