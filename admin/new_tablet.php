@@ -2181,8 +2181,8 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                 <tr>
                                     <td>
                                         <label for="image_name" style="font-size:15px">Выбор Изображения:</label>
-                                        <label for="image_name" style="font-size:10px">(изображение загружаются в папку images/tablet_images. Первое изображение разрешения 330px*177px,
-                                            второе изображение без изменений. Пример имени: 1-ая картинка - panasoniс_small.jpeg, 2-ая картинка - panasoniс_full.jpeg. _small и _full в имени изображений обязательны.), а пишем в строке только panasonic:</label>
+                                        <label for="image_name" style="font-size:10px">(изображение загружаются в папку images/tablet_images. Первое изображение разрешения 260px*177px,
+                                            второе изображение без изменений. Пример имени: 1-ая картинка - panasoniс_small.jpg, 2-ая картинка - panasoniс_full.jpg. _small и _full в имени изображений обязательны.), а пишем в строке только panasonic:</label>
                                     </td>
                                     <td>
                                         <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -2263,6 +2263,97 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                                     $("#div_add_image_name").text('Добавить Изображение');
                                                     $("#td_add_image_name").css("display","none");
                                                     $("#div_add_image_name").css("color",'red');
+                                                }
+
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+
+                                <!-- Производитель    : (manufacture)-->
+                                <tr>
+                                    <td>
+                                        <label for="manufacture" style="font-size:15px">Производитель:</label>
+                                    </td>
+                                    <td>
+                                        <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                        <select  name="manufacture" id="manufacture" ><!--style="font-size:11px;image_name:500px;"-->
+                                            <option value="0" selected="selected">Производитель</option>
+                                            <?php
+                                            $result = mysql_query("SELECT manufacture_tablet.* FROM  manufacture_tablet", $db);
+                                            while($row = mysql_fetch_assoc($result))
+                                            {
+                                                echo  '<option value="'.  $row['id_manufacture'].'">' . $row['name_manufacture'] .  '</option>';
+                                            }
+
+                                            ?>
+                                            <td>
+                                                <input type="button" id="delete_manufacture"  name="delete_manufacture"  value="Удалить"/>
+                                            </td>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="color:red" id="div_add_manufacture">Добавить Производителя</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="td_add_manufacture" style="display:none">
+
+                                        <label>Производителя:</label>
+                                        <input type="text" id="name_manufacture" name="name_manufacture">
+
+                                        </br>
+                                        </br>
+                                        <input type="button" id="add_manufacture" name="add_manufacture" value="Добавить Производителя">
+
+
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+
+                                                    $("#delete_manufacture").click(function() {
+                                                        deleteManufacture();
+                                                    });
+
+                                                    $("#add_manufacture").click(function() {
+                                                        addManufacture();
+                                                    });
+
+                                                    $("#div_add_manufacture").click(function() {
+                                                        showFormAddManufacture();
+                                                    });
+                                                }
+
+                                            );
+
+                                            function deleteManufacture()
+                                            {
+                                                var area = $("#manufacture");
+                                                var manufactureValue = $("#manufacture option:selected").val();
+                                                area.load('tablet/delete_manufacture.php',{id_manufacture : manufactureValue});
+                                            }
+
+                                            function addManufacture()
+                                            {
+                                                var area = $("#manufacture");
+                                                var manufactureSystem = $("#name_manufacture").val();
+                                                area.load('tablet/add_manufacture.php',{name_manufacture : manufactureSystem});
+                                            }
+
+                                            function showFormAddManufacture()
+                                            {
+                                                if (   $("#div_add_manufacture").text() == 'Добавить Производителя')
+                                                {
+                                                    $("#div_add_manufacture").text('Скрыть форму');
+                                                    $("#td_add_manufacture").css("display","");
+                                                    $("#div_add_manufacture").css("color",'blue');
+                                                }
+                                                else
+                                                {
+                                                    $("#div_add_manufacture").text('Добавить Производителя');
+                                                    $("#td_add_manufacture").css("display","none");
+                                                    $("#div_add_manufacture").css("color",'red');
                                                 }
 
                                             }

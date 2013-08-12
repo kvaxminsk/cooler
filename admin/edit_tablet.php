@@ -1923,7 +1923,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                  <input type="checkbox" name="multi_touch" id="multi_touch" <?php echo $rowTablet['multi_touch'] ? 'checked="checked"' : '';?>/>
                              </td>
                              <td>
-                                 <input type="text" name="text_multi_touch" id="text_multi_touch" value='<?php echo $rowTablet['text_multi_touch'];?>'/>
+                                 <input type="text" name="text_multi_touch" id="text_multi_touch" value="<?php echo $rowTablet['multi_touch'] ? $rowTablet['text_multi_touch']: '';?>"/>
                              </td>
                          </tr>
 
@@ -1948,7 +1948,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                  <input type="checkbox" name="memory_cards" id="memory_cards" <?php echo $rowTablet['memory_cards'] ? 'checked="checked"' : '';?>/>
                              </td>
                              <td>
-                                 <input type="text" name="text_memory_cards" id="text_memory_cards"/>
+                                 <input type="text" name="text_memory_cards" id="text_memory_cards" value="<?php echo $rowTablet['memory_cards'] ? $rowTablet['text_memory_cards']: '';?>"/>
                              </td>
                          </tr>
 
@@ -2279,7 +2279,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                  <input type="checkbox" name="bluetooth" id="bluetooth" <?php echo $rowTablet['bluetooth'] ? 'checked="checked"' : '';?>/>
                              </td>
                              <td>
-                                 <input type="text" name="text_bluetooth" id="text_bluetooth"/>
+                                 <input type="text" name="text_bluetooth" id="text_bluetooth" value="<?php echo $rowTablet['bluetooth'] ? $rowTablet['text_bluetooth']: '';?>"/>
                              </td>
                          </tr>
 
@@ -2302,7 +2302,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                  <input type="checkbox" name="wifi" id="wifi" <?php echo $rowTablet['wifi'] ? 'checked="checked"' : '';?>/>
                              </td>
                              <td>
-                                 <input type="text" name="text_wifi" id="text_wifi"/>
+                                 <input type="text" name="text_wifi" id="text_wifi" value="<?php echo $rowTablet['wifi'] ? $rowTablet['text_wifi']: '';?>"/>
                              </td>
                          </tr>
 
@@ -2315,7 +2315,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                  <input type="checkbox" name="3g_modem" id="3g_modem" <?php echo $rowTablet['3g_modem'] ? 'checked="checked"' : '';?>/>
                              </td>
                              <td>
-                                 <input type="text" name="text_3g_modem" id="text_3g_modem"/>
+                                 <input type="text" name="text_3g_modem" id="text_3g_modem" value="<?php echo $rowTablet['3g_modem'] ? $rowTablet['text_3g_modem']: '';?>"/>
                              </td>
                          </tr>
 
@@ -2345,7 +2345,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                  <label for="hdmi" style="color:black;font-size:15px;">HDMI:</label>
                              </td>
                              <td>
-                                 <input type="checkbox" name="hdmi" id="hdmi"/>
+                                 <input type="checkbox" name="hdmi" id="hdmi"<?php echo $rowTablet['hdmi'] ? 'checked="checked"' : '';?> />
                              </td>
                          </tr>
 
@@ -2402,8 +2402,8 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <tr>
                              <td>
                                  <label for="image_name" style="font-size:15px">Выбор Изображения:</label>
-                                 <label for="image_name" style="font-size:10px">(изображение загружаются в папку images/tablet_images. Первое изображение разрешения 330px*177px,
-                                     второе изображение без изменений. Пример имени: 1-ая картинка - panasoniс_small.jpeg, 2-ая картинка - panasoniс_full.jpeg. _small и _full в имени изображений обязательны.), а пишем в строке только panasonic:</label>
+                                 <label for="image_name" style="font-size:10px">(изображение загружаются в папку images/tablet_images. Первое изображение разрешения 260px*177px,
+                                     второе изображение без изменений. Пример имени: 1-ая картинка - panasoniс_small.jpg, 2-ая картинка - panasoniс_full.jpg. _small и _full в имени изображений обязательны.), а пишем в строке только panasonic:</label>
                              </td>
                              <td>
                                  <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
@@ -2492,6 +2492,105 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                              $("#div_add_image_name").text('Добавить Изображение');
                                              $("#td_add_image_name").css("display","none");
                                              $("#div_add_image_name").css("color",'red');
+                                         }
+
+                                     }
+                                 </script>
+                             </td>
+                         </tr>
+
+                         <!-- Производитель    : (manufacture)-->
+                         <tr>
+                             <td>
+                                 <label for="manufacture" style="font-size:15px">Производитель:</label>
+                             </td>
+                             <td>
+                                 <!--                                        <input type="text" id="design" name="design" value="--><?php //echo $row['design'];?><!--"/><br/>-->
+                                 <select  name="manufacture" id="manufacture" ><!--style="font-size:11px;image_name:500px;"-->
+                                     <option value="0" selected="selected">Производитель</option>
+                                     <?php
+                                     $result = mysql_query("SELECT manufacture_tablet.* FROM  manufacture_tablet", $db);
+                                     while($row = mysql_fetch_assoc($result))
+                                     {
+                                         if ($rowTablet['manufacture'] == $row['id_manufacture'])
+                                         {
+                                             echo  '<option selected="selected"value="'.  $row['id_manufacture'].'">' . $row['name_manufacture'] .  '</option>';
+                                         }
+                                         else
+                                         {
+                                             echo  '<option value="'.  $row['id_manufacture'].'">' . $row['name_manufacture'] .  '</option>';
+                                         }
+
+                                     }
+
+                                     ?>
+                                     <td>
+                                         <input type="button" id="delete_manufacture"  name="delete_manufacture"  value="Удалить"/>
+                                     </td>
+                                 </select>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <div style="color:red" id="div_add_manufacture">Добавить Производителя</div>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td id="td_add_manufacture" style="display:none">
+
+                                 <label>Производителя:</label>
+                                 <input type="text" id="name_manufacture" name="name_manufacture">
+
+                                 </br>
+                                 </br>
+                                 <input type="button" id="add_manufacture" name="add_manufacture" value="Добавить Производителя">
+
+
+                                 <script type="text/javascript">
+                                     $(document).ready(function() {
+
+                                             $("#delete_manufacture").click(function() {
+                                                 deleteManufacture();
+                                             });
+
+                                             $("#add_manufacture").click(function() {
+                                                 addManufacture();
+                                             });
+
+                                             $("#div_add_manufacture").click(function() {
+                                                 showFormAddManufacture();
+                                             });
+                                         }
+
+                                     );
+
+                                     function deleteManufacture()
+                                     {
+                                         var area = $("#manufacture");
+                                         var manufactureValue = $("#manufacture option:selected").val();
+                                         area.load('tablet/delete_manufacture.php',{id_manufacture : manufactureValue});
+                                     }
+
+                                     function addManufacture()
+                                     {
+                                         var area = $("#manufacture");
+                                         var manufactureSystem = $("#name_manufacture").val();
+                                         area.load('tablet/add_manufacture.php',{name_manufacture : manufactureSystem});
+                                     }
+
+                                     function showFormAddManufacture()
+                                     {
+                                         if (   $("#div_add_manufacture").text() == 'Добавить Производителя')
+                                         {
+                                             $("#div_add_manufacture").text('Скрыть форму');
+                                             $("#td_add_manufacture").css("display","");
+                                             $("#div_add_manufacture").css("color",'blue');
+                                         }
+                                         else
+                                         {
+                                             $("#div_add_manufacture").text('Добавить Производителя');
+                                             $("#td_add_manufacture").css("display","none");
+                                             $("#div_add_manufacture").css("color",'red');
                                          }
 
                                      }

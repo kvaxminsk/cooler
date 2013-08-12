@@ -1,0 +1,147 @@
+/* Right */
+
+#right {
+    float: left;
+    width: 729px;
+	margin-left: 10px;
+}
+h1{
+    margin: -7px 0 0 15px;
+    letter-spacing: 0px;
+	font: normal 19px "Arial";
+	color: #f43939;
+}
+#text {
+    border-top: 1px solid;
+	border-bottom: 1px solid;
+	text-align: justify;
+	padding: 10px 30px 10px 16px;
+	margin-top: 4px
+}
+
+/* komp_office */
+#komp {
+    height: 190px;
+    border-bottom: 1px solid #bcbbbb;
+}
+#komp h3{
+    margin: 12px 0 -14px 271px;
+    font-size: 14px ;
+	color: #E43C15;
+    line-height: 25px;
+}
+.img-slide img{
+    float: left;
+    margin: -15px 0 5px 12px;
+}
+.cena-sist-bl {
+    float: left;
+    width: auto;
+	height: 22px;
+	padding: 2px 9px 0 6px;
+	margin: 26px 6px 0 0;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: url(http://cooler.by/index/cena_akcia.png) repeat-x;
+    border: 1px solid #82acdd;
+    border-radius: 2px;
+}
+.cena-sist-bl .cenagl {
+    font: bold 16px "Century Gothic";
+    padding-left: 5px;
+}
+.belrub {
+    float: left;
+}
+.comlekt {
+    font: normal 11px "trebuchet ms";
+    padding-top: 40px;
+    display: block;
+    line-height: 15px;
+}
+.comlekt b {
+    font-size: 12px;
+}
+.opisanie-left {
+    float: left;
+    line-height: 16px;
+    width: 255px;
+    margin-top: 17px;
+}
+.opisanie-right {
+    margin-top: 17px;
+    line-height: 16px;
+    float: right;
+    width: 195px;
+    float: left;
+}
+/** Подбор **/
+#podbor {
+    border-bottom: 1px solid;
+    margin: 0 0 0 9px;
+    font: 12px "Verdana", "Tahoma", "Geneva";
+    color: #000;
+}
+#podbor h3{
+    margin: 10px 0 0 10px;
+    font: bold 14px "Arial";
+	color: #E43C15;
+}
+.punkt {
+    font: 11px "Verdana", "Geneva", "Arial", "Helvetica", sans-serif;;
+    margin-left: 8px;
+}
+#proc {
+    width: 80px;
+}
+#kolcpu {
+    width: 90px;
+}
+#video {
+    width: 203px;
+}
+#oppam {
+    width: 145px;
+}
+#zdisk {
+    width: 191px;
+}
+#blpit {
+    width: 146px;
+}
+#korp {
+    width: 189px;
+}
+#knopka-1 { 
+    border: 2px none #fff;
+    background: #E62A2A;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: 700 13px "Arial";
+    height: 24px;
+    margin-left: 35px;
+    text-align: center;
+    width: 125px;
+}
+#knopka-2 { 
+    background-color: #fff;
+    color: #2c65a7;
+    cursor: pointer;
+    font: 800 12px "Arial";
+    padding-top: 3px;
+    text-align: center;
+    width: 140px;
+    text-decoration: underline;
+}
+.lineoranz {
+    height: 38px;
+}
+
+.vibor-left {
+    width: 325px;
+}
+
+#text_footer {
+    text-align: justify;
+    margin: 18px 20px 0 10px;
+}

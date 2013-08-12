@@ -46,7 +46,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                             exit ();
                         }
                     ?>
-                    <table id='table_edit' ALIGN='center' CELLSPACING='2px'  bgcolor='#ffffff'>
+                    <table id='table_edit' ALIGN='center' CELLSPACING='2px'  bgcolor='#ffffff' width="100%">
                         <form action='drop_tablet.php' method='post'>
                             <?php
                             while($row = mysql_fetch_assoc($result))
@@ -64,11 +64,16 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                     <td id="td_edit">
                                         <input id="go" type="submit" name="submit">
                                     </td>
-                                    <td id="td_edit1">
+                                    <td id="td_edit1" >
                                         <strong>
                                             <?php
-                                                echo $row['name_tablet'] .  ', ';
+                                                echo $row['name_tablet'] .  ' ';
                                             ?>
+                                        </strong>
+                                    </td>
+                                    <td  id="td_edit" width="10%" align="right" >
+                                        <strong>
+                                            <a href="copy_tablet.php?id=<?php echo $row['id_tablet']?>" target="_blank">дублировать</a>
                                         </strong>
                                     </td>
                                 </tr>
