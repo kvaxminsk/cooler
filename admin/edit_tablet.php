@@ -1955,7 +1955,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <!-- Встроенная камера      : (built-in_camera)-->
                          <tr>
                              <td>
-                                 <label for="built-in_camera" style="color:black;font-size:15px;">Датчик освещенности:</label>
+                                 <label for="built-in_camera" style="color:black;font-size:15px;">Встроенная камера:</label>
                              </td>
                              <td>
                                  <input type="checkbox" name="built-in_camera" id="built-in_camera" <?php echo $rowTablet['built-in_camera'] ? 'checked="checked"' : '';?>/>

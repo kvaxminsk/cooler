@@ -107,13 +107,25 @@ ORDER BY tablet.cost ASC";
     <meta name="description" content=""/>
     <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="planshety/planshety.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="css/system_block.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/tablet.css" rel="stylesheet" type="text/css" media="screen" />
     <link rel="shortcut icon" href="favicon.ico"/>
     <script type="text/javascript" src="js/prototype.js"></script>
     <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
     <script type="text/javascript" src="js/lightbox.js"></script>
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen"/>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/global.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.lightbox-0.5.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.treeview.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript" src="js/jquery.treeview.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/flyshit.js"></script>
 </head>
 <body>
 <!-- начало стр -->
@@ -323,7 +335,7 @@ while($myrow = mysql_fetch_array($result))
 <div id='komp'>
     <h3><?php echo $myrow["name_tablet"];?></h3>
 
-    <span class="img-slide"><img  src='images/tablet_images/<?php echo $myrow["name_image_name"];?>_small.jpg' alt='Планшет' title='Планшет'/></span>
+    <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/<?php echo $myrow["name_image_name"];?>_small.jpg' alt='Планшет' title='Планшет'/></a></span>
     <form method='post'>
         <table style="float:right;margin-top: 24px;margin-right: 100px;margin-bottom: -5px">
             <tr>
@@ -387,7 +399,7 @@ while($myrow = mysql_fetch_array($result))
             </tr>
         </table>
     </form>
-    <div class='cena-sist-bl'>Системный блок <span class="cenagl"><?php echo $myrow['cost'] .  ' '; ?></span> у.е.</div>
+    <div class='cena-sist-bl' style="margin: 26px 70px 0 0;">Планшет  <span class="cenagl"><?php echo $myrow['cost'] .  ' '; ?></span> у.е.   </div>
 
                         <span class="comlekt" >
                          <ul class="opisanie-left">
@@ -428,6 +440,81 @@ while($myrow = mysql_fetch_array($result))
 
 </div>
 <?php include ("index/metrika_jivo.txt"); ?>
+<?php
 
+for($j=0;$j<=$i;$j++)
+{
+    printf(" <script type='text/javascript'>
+$(document).ready(function() {
+$('#show-ocb-form{$j}').live('click', function() {
+$('#ocb-form-wrap{$j}').show();
+$('#ocb-form{$j}').show();
+$('#ocb-form-result{$j}').hide();
+return !1;
+});
+
+$('.ocb-form-header-close').live('click', function() {
+$('.ocb-error-msg').each(function(index) { $(this).hide(); });
+$('.ocb-result-icon-success').hide();
+$('.ocb-result-icon-fail').hide();
+$('#ocb-form-wrap{$j}').fadeOut();
+return !1;
+});
+
+$('button.intaro-modules-button.disabled, .intaro-modules-button.disabled input').live('click', function() {
+return false;
+});
+
+$('#ocb-form-button{$j}').live('click', function() {
+$('.ocb-error-msg').each(function(index) { $(this).hide(); });
+var fieldId, fieldVal, checked = !0, self = $(this);
+$('input[name^=\"new_order{$j}\"]').each(function() {
+fieldId = $(this).attr('id');
+fieldVal = $(this).val();
+if (fieldVal=='') {
+$('#' + fieldId + '-error{$j}').show();
+checked = !1;
+}
+});
+if (!checked) return !1;
+$('.intaro-modules-button', $(this)).addClass('disabled');
+$('.ocb-form-loader').show();
+
+if(!$('#ocb-antispam{$j}').length) {
+$('#ocb-params{$j}').prepend(\"<input id='ocb-antispam' type='hidden' name='antispam' value=''>\");
+}
+
+$.ajax({
+url: \"/send_mail.php\",
+data: \"firstname=\" + $(\"#ocb-id-FIO{$j}\").val() + \"&mobile_phone=\" + $(\"#ocb-id-PHONE{$j}\").val() + \"&title=\" + $(\"#titleSystemBlock{$j}\").val() + \"&price=\" + $(\"#itemCost{$j}\").val() + \"&mobile_operator=\" + $(\"#operator{$j}\").val(),
+type: 'POST',
+dataType: 'json',
+error: function(obj, text, err) {
+},
+success: function(data) {
+if(data.ok!='Y') {
+$('.ocb-result-icon-fail').show();
+$('.ocb-result-text').text(data.msg);
+} else {
+$('.ocb-result-icon-success').show();
+if ($('#cart_line{$j}').length > 0)
+$('#cart_line{$j}').html(data.msg);
+}
+$('.ocb-form-loader').hide();
+$('.intaro-modules-button', self).removeClass('disabled');
+$('#ocb-form{$j}').hide();
+$('#ocb-form-result{$j}').show();
+window.setTimeout(function() { $('.ocb-form-header-close').click(); }, 3000);
+}
+});
+return !1;
+});
+});
+
+</script>
+");
+}
+
+?>
 </body>
 </html>

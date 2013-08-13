@@ -338,6 +338,15 @@
         {
 
         }
+        if(isset($insert['number_of_active_pixels']))
+        {
+            $strSql .= "`number_of_active_pixels`='" . $insert['number_of_active_pixels'] . "', " ;
+
+        }
+        else
+        {
+
+        }
         if(isset($insert['number_of_active_pixels_front_camera']))
         {
             $strSql .= "`number_of_active_pixels_front_camera`='" . $insert['number_of_active_pixels_front_camera'] . "', " ;

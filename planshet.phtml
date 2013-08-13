@@ -16,7 +16,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
     <script type="text/javascript" src="js/lightbox.js"></script>
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
+    <link href="css/tablet.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/global.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="css/jquery.lightbox-0.5.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,31 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                 {
                     $idTablet = htmlspecialchars(trim($_GET['id']));
                 }
-                $result = mysql_query("SELECT * FROM  tablet WHERE id_tablet =" . $idTablet , $db);
+                $result = mysql_query("SELECT * FROM  tablet
+                                       LEFT JOIN number_of_cores_tablet ON number_of_cores_tablet.id_number_of_cores = tablet.number_of_cores
+                                       LEFT JOIN design_tablet ON design_tablet.id_design = tablet.design
+                                       LEFT JOIN manufacture_tablet ON manufacture_tablet.id_manufacture = tablet.manufacture
+                                       LEFT JOIN clock_speed_tablet ON clock_speed_tablet.id_clock_speed = tablet.clock_speed
+                                       LEFT JOIN screen_size_tablet ON screen_size_tablet.id_screen_size = tablet.screen_size
+                                       LEFT JOIN ram_tablet ON ram_tablet.id_ram = tablet.ram
+                                       LEFT JOIN image_name_tablet ON image_name_tablet.id_image_name = tablet.image_name
+                                       LEFT JOIN operating_system_tablet ON operating_system_tablet.id_operating_system = tablet.operating_system
+                                       LEFT JOIN battery_capacity_tablet ON battery_capacity_tablet.id_battery_capacity = tablet.battery_capacity
+                                       LEFT JOIN built_in_speakers_tablet ON built_in_speakers_tablet.id_built_in_speakers = tablet.built_in_speakers
+                                       LEFT JOIN case_material_tablet ON case_material_tablet.id_case_material = tablet.case_material
+                                       LEFT JOIN cpu_tablet ON cpu_tablet.id_cpu = tablet.cpu
+                                       LEFT JOIN graphics_accelerator_tablet ON graphics_accelerator_tablet.id_graphics_accelerator = tablet.graphics_accelerator
+                                       LEFT JOIN internal_memory_tablet ON internal_memory_tablet.id_internal_memory = tablet.internal_memory
+                                       LEFT JOIN length_tablet ON length_tablet.id_length = tablet.length
+                                       LEFT JOIN number_of_active_pixels_front_camera_tablet ON number_of_active_pixels_front_camera_tablet.id_number_of_active_pixels_front_camera = tablet.number_of_active_pixels_front_camera
+                                       LEFT JOIN number_of_active_pixels_tablet ON number_of_active_pixels_tablet.id_number_of_active_pixels = tablet.number_of_active_pixels
+                                       LEFT JOIN operating_system_version_tablet ON operating_system_version_tablet.id_operating_system_version = tablet.operating_system_version
+                                       LEFT JOIN screen_resolution_tablet ON screen_resolution_tablet.id_screen_resolution = tablet.screen_resolution
+                                       LEFT JOIN thickness_tablet ON thickness_tablet.id_thickness = tablet.thickness
+                                       LEFT JOIN type_of_matrix_screen_tablet ON type_of_matrix_screen_tablet.id_type_of_matrix_screen = tablet.type_of_matrix_screen
+                                       LEFT JOIN weight_tablet ON weight_tablet.id_weight = tablet.weight
+                                       LEFT JOIN width_tablet ON width_tablet.id_width = tablet.width
+                                       WHERE id_tablet =" . $idTablet , $db);
 
                 if (!$result)
                 {
@@ -65,74 +89,78 @@ include ("blocks/bd.php");/*Connecting to BD!*/
             ?>
             <!-- начало Right -->
             <div id="right"><?php include ("index/soc-seti.txt"); ?>
-                <h1>Планшеты</h1>
-                <div id='podbor'>
+                <h1>Планшет</h1>
+
+                <div id="text">
                     <h1><?php echo $rowTablet['name_tablet'];?></h1>
-                    <form method='post'>
-                        <table style="float:right;margin-top: 24px;margin-right: 100px;margin-bottom: -5px">
-                            <tr>
-                                <td>
-                                    <button id='show-ocb-form<?=$i;?>' class='kupi-sist-bl' >Купить</button>
+                    <div class='cena-sist-bl' style="margin: 26px 70px 0 0;">Планшет  <span class="cenagl"><?php echo $rowTablet['cost'] .  ' '; ?></span> у.е.   </div>
+                    <div id='podbor' style="border:none;">
+
+                        <form method='post'>
+                            <table style="float:right;margin-top: 24px;margin-right: 100px;margin-bottom: -5px">
+                                <tr>
+                                    <td>
+                                        <button id='show-ocb-form<?=$i;?>' class='kupi-sist-bl' >Купить</button>
 
 
-                                    <div class='ocb-form' id='ocb-form-wrap<?=$i;?>' style='display: none'>
-                                        <div class='ocb-form-header'>
+                                        <div class='ocb-form' id='ocb-form-wrap<?=$i;?>' style='display: none'>
+                                            <div class='ocb-form-header'>
 
-                                            <div class='ocb-form-header-caption'>Быстрый заказ</div>
-                                            <div class='ocb-form-header-close'></div>
-                                        </div>
-                                        <div id='ocb-form<?=$i;?>'>
-                                            <div id='ocb-params<?=$i;?>'>
-                                                <input type='hidden' id='titleSystemBlock<?=$i;?>' value='<?=$myrow['name_tablet'];?>'/>
-                                                <input type='hidden' id='itemCost<?=$i;?>' value='<?=$myrow['cost'];?>'/>
-                                                <div class='ocb-form-field'>
-                                                    <label>Ваше имя
-                                                        <ins>*</ins>
-                                                    </label>
-                                                    <input type='text' name='new_order<?=$i;?>[FIO]' value='' id='ocb-id-FIO<?=$i;?>'/>
+                                                <div class='ocb-form-header-caption'>Быстрый заказ</div>
+                                                <div class='ocb-form-header-close'></div>
+                                            </div>
+                                            <div id='ocb-form<?=$i;?>'>
+                                                <div id='ocb-params<?=$i;?>'>
+                                                    <input type='hidden' id='titleSystemBlock<?=$i;?>' value='<?=$myrow['name_tablet'];?>'/>
+                                                    <input type='hidden' id='itemCost<?=$i;?>' value='<?=$myrow['cost'];?>'/>
+                                                    <div class='ocb-form-field'>
+                                                        <label>Ваше имя
+                                                            <ins>*</ins>
+                                                        </label>
+                                                        <input type='text' name='new_order<?=$i;?>[FIO]' value='' id='ocb-id-FIO<?=$i;?>'/>
 
-                                                    <div id='ocb-id-FIO<?=$i;?>-error<?=$i;?>' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                                        <div id='ocb-id-FIO<?=$i;?>-error<?=$i;?>' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                                        </div>
+
+                                                    </div>
+                                                    <div class='ocb-form-field'>
+                                                        <label>Контактный телефон
+                                                            <ins>*</ins>
+                                                        </label>
+                                                        <select name='operator<?=$i;?>'
+                                                                style='width: 70px; text-align: left; margin-right: 10px' id='operator<?=$i;?>'>
+                                                            <option value='velcom'>Velcom</option>
+                                                            <option value='mts'>МТС</option>
+                                                            <option value='life'>life</option>
+                                                        </select><input type='text' name='new_order<?=$i;?>[PHONE]' value='' id='ocb-id-PHONE<?=$i;?>'
+                                                                        style='width: 250px'/>
+
+                                                        <div id='ocb-id-PHONE<?=$i;?>-error<?=$i;?>' class='ocb-error-msg'>Обязательно укажите
+                                                            контактный телефон
+                                                        </div>
+
                                                     </div>
 
-                                                </div>
-                                                <div class='ocb-form-field'>
-                                                    <label>Контактный телефон
-                                                        <ins>*</ins>
-                                                    </label>
-                                                    <select name='operator<?=$i;?>'
-                                                            style='width: 70px; text-align: left; margin-right: 10px' id='operator<?=$i;?>'>
-                                                        <option value='velcom'>Velcom</option>
-                                                        <option value='mts'>МТС</option>
-                                                        <option value='life'>life</option>
-                                                    </select><input type='text' name='new_order<?=$i;?>[PHONE]' value='' id='ocb-id-PHONE<?=$i;?>'
-                                                                    style='width: 250px'/>
-
-                                                    <div id='ocb-id-PHONE<?=$i;?>-error<?=$i;?>' class='ocb-error-msg'>Обязательно укажите
-                                                        контактный телефон
+                                                    <div class='intaro-modules-button ptichka'>
+                                                        <input type='submit' value='Отправить заказ' id='ocb-form-button<?=$i;?>'
+                                                               name='ocb_form_button<?=$i;?>'/>
                                                     </div>
-
+                                                    <div class='ocb-form-loader'></div>
                                                 </div>
+                                            </div>
+                                            <div class='ocb-form-result' id='ocb-form-result<?=$i;?>'>
+                                                <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
+                                                <div class='ocb-result-icon-fail'>Ошибка!</div>
 
-                                                <div class='intaro-modules-button ptichka'>
-                                                    <input type='submit' value='Отправить заказ' id='ocb-form-button<?=$i;?>'
-                                                           name='ocb_form_button<?=$i;?>'/>
-                                                </div>
-                                                <div class='ocb-form-loader'></div>
+                                                <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
                                             </div>
                                         </div>
-                                        <div class='ocb-form-result' id='ocb-form-result<?=$i;?>'>
-                                            <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
-                                            <div class='ocb-result-icon-fail'>Ошибка!</div>
-
-                                            <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-                <div id="text">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <br/><br/><br/><br/>
                     Планшеты стали в наши дни очень популярными. Это сочетание телефона и нетбука плотно вошло в жизнь современно человека из-за своей функциональности и компактности.
                     Выход в интернет, чтение книг, просмотр фильмов, функции GPS-навигатора и многое другое всегда под рукой. Если и Вы решили присоединиться к той части населения,
                     которая идёт в ногу со временем, то Вы  попали по адресу. На нашем сайте можно купить планшет в Минске недорого и с гарантией. Обратившись к нам, Вы сможете подобрать в Минске недорогой и очень производительный планшет.
@@ -150,28 +178,28 @@ include ("blocks/bd.php");/*Connecting to BD!*/
             <div id="ca-container" class="ca-container">
                 <div class="ca-wrapper">
                     <div class="ca-item ca-item-1">
-                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
                     <div class="ca-item ca-item-2">
-                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
                     <div class="ca-item ca-item-3">
-                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
                     <div class="ca-item ca-item-4">
-                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
                     <div class="ca-item ca-item-5">
-                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
                     <div class="ca-item ca-item-6">
-                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
                     <div class="ca-item ca-item-7">
-                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
                     <div class="ca-item ca-item-8">
-                        <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
                 </div>
             </div>
@@ -290,7 +318,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </div>
                 </td>
                 <td>
-                    моноблок&nbsp;
+                    <?php echo $rowTablet['name_design'];?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -300,7 +328,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </div>
                 </td>
                 <td>
-                    10.1"&nbsp;
+                    <?php echo $rowTablet['name_screen_size'];?>"&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -310,7 +338,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    Android&nbsp;
+                    <?php echo $rowTablet['name_operating_system'];?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -320,7 +348,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    Android 4.0&nbsp;
+                    <?php echo $rowTablet['name_operating_system_version'];?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -330,7 +358,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    Exynos 4412&nbsp;
+                    <?php echo $rowTablet['name_cpu'];?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -340,7 +368,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    ARM Mali-400 MP&nbsp;
+                    <?php echo $rowTablet['name_graphics_accelerator'];?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -350,7 +378,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    2 ГБ&nbsp;
+                    <?php echo $rowTablet['name_ram'];?> ГБ&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -361,7 +389,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    16 ГБ&nbsp;
+                    <?php echo $rowTablet['name_internal_memory'];?> ГБ&nbsp;
                 </td>
             </tr>
 
@@ -372,7 +400,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    4&nbsp;
+                    <?php echo $rowTablet['name_number_of_cores'];?>4&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -382,7 +410,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    1 400&nbsp;МГц&nbsp;
+                    <?php echo $rowTablet['name_clock_speed'];?>&nbsp;МГц&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -392,7 +420,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    пластик&nbsp;
+                    <?php echo $rowTablet['name_case_material'];?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -402,7 +430,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    чёрный, серебристый&nbsp;
+                    <?php echo $rowTablet['name_battery_capacity'];?>&nbsp;
                 </td>
             </tr>
 
@@ -416,7 +444,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    257.8&nbsp;мм&nbsp;
+                    <?php echo $rowTablet['name_length'];?>&nbsp;мм&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -426,7 +454,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    175.3&nbsp;мм&nbsp;
+                    <?php echo $rowTablet['name_width'];?>&nbsp;мм&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -437,7 +465,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    8.9&nbsp;мм&nbsp;
+                    <?php echo $rowTablet['name_thickness'];?>&nbsp;мм&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -448,7 +476,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    583&nbsp;г&nbsp;
+                    <?php echo $rowTablet['name_weight'];?>&nbsp;г&nbsp;
                 </td>
             </tr>
             <tr class="pdsection">
@@ -461,8 +489,10 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да">
+                    <?php echo ($rowTablet['accelerometer']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>
+
                 </td>
             </tr>
             <tr class="pline2">
@@ -472,8 +502,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> &nbsp;
+                    <?php echo ($rowTablet['gyroscope']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>
                 </td>
             </tr>
             <tr class="pline2">
@@ -483,8 +514,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет"> &nbsp;
+                    <?php echo ($rowTablet['proximity_sensor']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>
                 </td>
             </tr>
 
@@ -498,7 +530,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    1280x800&nbsp;
+                    <?php echo $rowTablet['name_screen_resolution'];?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -508,7 +540,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    LCD PLS&nbsp;
+                    <?php echo $rowTablet['name_type_of_matrix_screen'];?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -518,8 +550,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> 345425342&nbsp;
+                    <?php echo ($rowTablet['multi_touch']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>
                 </td>
             </tr>
 
@@ -530,8 +563,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> &nbsp;
+                    <?php echo ($rowTablet['protection_from_scratches']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -542,8 +576,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> &nbsp;
+                    <?php echo ($rowTablet['the_light_sensor']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>&nbsp;
                 </td>
             </tr>
             <tr class="pdsection">
@@ -556,8 +591,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> microSD, microSDHC&nbsp;
+                    <?php echo ($rowTablet['memory_cards']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' . $rowTablet['text_memory_cards'] :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pdsection">
@@ -570,8 +606,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> &nbsp;
+                    <?php echo ($rowTablet['built-in_camera']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -582,7 +619,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    5&nbsp;Мп&nbsp;
+                <?php echo ($rowTablet['name_number_of_active_pixels'])?>&nbsp;Мп&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -592,7 +629,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    1.9&nbsp;Мп&nbsp;
+                    <?php echo ($rowTablet['number_of_active_pixels_front_camera'])?>&nbsp;Мп&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -602,8 +639,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> &nbsp;
+                    <?php echo ($rowTablet['built-in_microphone']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -614,7 +652,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    2 динамика&nbsp;
+                    <?php echo ($rowTablet['built_in_speakers'])?>&nbsp;
                 </td>
             </tr>
             <tr class="pdsection">
@@ -627,8 +665,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> 4.0&nbsp;
+                    <?php echo ($rowTablet['bluetooth']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' . $rowTablet['text_bluetooth'] :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -638,8 +677,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет"> &nbsp;
+                    <?php echo ($rowTablet['lan']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -649,8 +689,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> 802.11a, 802.11b, 802.11g, 802.11n&nbsp;
+                    <?php echo ($rowTablet['wifi']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' . $rowTablet['text_wifi'] :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>&nbsp;
                 </td>
             </tr>
                        <tr class="pline2">
@@ -660,8 +701,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> EDGE, HSDPA, HSUPA&nbsp;
+                    <?php echo ($rowTablet['3g_modem']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' . $rowTablet['text_3g_modem'] :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -671,22 +713,21 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет"> &nbsp;
+                    <?php echo ($rowTablet['usb_2']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
                 <td class="pdinfohead">
                     <p class="">
-                            USB 3.0</a>
-
+                            USB 3.0
 </p>
-                    </div>
-
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет"> &nbsp;
+                    <?php echo ($rowTablet['usb_3']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -696,8 +737,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет"> &nbsp;
+                    <?php echo ($rowTablet['hdmi']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -707,8 +749,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет"> &nbsp;
+                    <?php echo ($rowTablet['display_port']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                           alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                                             alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -718,8 +761,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> 1&nbsp;
+                    <?php echo ($rowTablet['audio_outputs']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                           alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                                             alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -730,8 +774,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> &nbsp;
+                    <?php echo ($rowTablet['docking_port']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                           alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>  &nbsp;
                 </td>
             </tr>
             <tr class="pdsection">
@@ -745,8 +790,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да"> &nbsp;
+                    <?php echo ($rowTablet['gps']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                           alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -756,8 +802,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет"> &nbsp;
+                    <?php echo ($rowTablet['electronic_compass']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                           alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?> &nbsp;
                 </td>
             </tr>
             <tr>
