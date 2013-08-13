@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" name="Default" comment="adminka gotova">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/add_tablet.php" afterPath="$PROJECT_DIR$/admin/add_tablet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/edit_tablet.php" afterPath="$PROJECT_DIR$/admin/edit_tablet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planshet.phtml" afterPath="$PROJECT_DIR$/planshet.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planshety.html" afterPath="$PROJECT_DIR$/planshety.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planshety.phtml" afterPath="$PROJECT_DIR$/planshety.phtml" />
+    <list default="true" id="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/new_tablet.php" afterPath="$PROJECT_DIR$/admin/new_tablet.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cooler.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1376367205065" ignored="false" />
+    <file path="/Dummy.txt" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1376371105245" ignored="false" />
     <file path="/new_system_block.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374007074913" ignored="false" />
     <file path="/new_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1375853852983" ignored="false" />
     <file path="/delete_design.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374008887666" ignored="false" />
@@ -52,34 +47,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new_tablet.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
+      <file leaf-file-name="pattern.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/images_slider/pattern.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.contentcarousel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/slider/jquery.contentcarousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2369" column="37" selection-start="147894" selection-end="147894" vertical-scroll-proportion="-3.875">
+            <state line="15" column="111" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_tablet.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/add_tablet.php">
+      <file leaf-file-name="jquery.easing.1.3.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/slider/jquery.easing.1.3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="523" column="58" selection-start="10503" selection-end="10503" vertical-scroll-proportion="-2.9795918">
+            <state line="10" column="7" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_tablet.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/edit_tablet.php">
+      <file leaf-file-name="jquery.mousewheel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/slider/jquery.mousewheel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2391" column="73" selection-start="137554" selection-end="137572" vertical-scroll-proportion="-7.3265305">
+            <state line="12" column="14" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1376368220998" expanded="false" signature="2717:2727" placeholder="..." />
-                <marker date="1376368220998" expanded="false" signature="2975:2985" placeholder="..." />
-                <marker date="1376368220998" expanded="false" signature="3389:3399" placeholder="..." />
-                <marker date="1376368220998" expanded="false" signature="3646:3656" placeholder="..." />
-                <marker date="1376368220998" expanded="false" signature="3939:3949" placeholder="..." />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,15 +86,8 @@
       <file leaf-file-name="planshet.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/planshet.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="797" column="31" selection-start="37889" selection-end="37889" vertical-scroll-proportion="-1.5866667">
+            <state line="810" column="50" selection-start="38540" selection-end="38540" vertical-scroll-proportion="-8.75">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1376371037782" expanded="true" signature="23961:23995" placeholder="..." />
                 <marker date="1376371037782" expanded="true" signature="24097:24132" placeholder="..." />
                 <marker date="1376371037782" expanded="true" signature="24541:24575" placeholder="..." />
@@ -154,10 +145,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="planshety.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/planshety.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="106" column="41" selection-start="6067" selection-end="6067" vertical-scroll-proportion="-0.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="planshety.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/planshety.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="494" column="18" selection-start="27513" selection-end="27513" vertical-scroll-proportion="0.1891892">
+            <state line="494" column="18" selection-start="27513" selection-end="27513" vertical-scroll-proportion="0.044510387">
               <folding>
                 <element signature="n#style#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -170,44 +170,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planshety.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/planshety.phtml">
+      <file leaf-file-name="add_tablet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/add_tablet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="41" selection-start="0" selection-end="32257" vertical-scroll-proportion="-2.5918367">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1376329842748" expanded="true" signature="30194:32229" placeholder="..." />
-                <marker date="1376329842748" expanded="true" signature="30225:32217" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="30276:30383" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="30440:30625" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="30736:30753" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="30808:32213" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="30978:31113" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="31054:31111" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="31266:31369" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="31378:32198" placeholder="{&quot;url&quot;: \&quot;/send_mail.php\&quot;...}" />
-                <marker date="1376329842748" expanded="true" signature="31723:31726" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="31752:32196" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="31771:31847" placeholder="{...}" />
-                <marker date="1376329842748" expanded="true" signature="31853:31966" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tablet.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/tablet.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="53" selection-start="776" selection-end="786" vertical-scroll-proportion="0.0">
+            <state line="531" column="5" selection-start="10861" selection-end="10861" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_system_block.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/edit_system_block.php">
+      <file leaf-file-name="edit_tablet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/edit_tablet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="47" selection-start="1520" selection-end="1535" vertical-scroll-proportion="0.0">
+            <state line="1957" column="98" selection-start="110868" selection-end="110885" vertical-scroll-proportion="-3.0408163">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_tablet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1752" column="0" selection-start="108514" selection-end="108514" vertical-scroll-proportion="-1.8163265">
               <folding />
             </state>
           </provider>
@@ -239,7 +223,6 @@
         <option value="$PROJECT_DIR$/admin/tablet/delete_number_of_active_pixels2.php" />
         <option value="$PROJECT_DIR$/admin/list_tablet.php" />
         <option value="$PROJECT_DIR$/admin/drop_tablet.php" />
-        <option value="$PROJECT_DIR$/admin/new_tablet.php" />
         <option value="$PROJECT_DIR$/css/system_block.css" />
         <option value="$PROJECT_DIR$/update.sql" />
         <option value="$PROJECT_DIR$/planshety.phtml" />
@@ -247,6 +230,7 @@
         <option value="$PROJECT_DIR$/admin/add_tablet.php" />
         <option value="$PROJECT_DIR$/planshet.phtml" />
         <option value="$PROJECT_DIR$/planshety.html" />
+        <option value="$PROJECT_DIR$/admin/new_tablet.php" />
       </list>
     </option>
   </component>
@@ -306,11 +290,27 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="118" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="119" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="118" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="123" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="917" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="917" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="123" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="119" />
     <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -384,13 +384,18 @@
       <created>1376292136195</created>
       <updated>1376292136195</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="front">
+      <created>1376371116769</created>
+      <updated>1376371116769</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -400,12 +405,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -453,7 +457,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adminka gotova" />
+    <option name="LAST_COMMIT_MESSAGE" value="front" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -471,90 +475,12 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="to datchik" />
     <MESSAGE value="adminka gotova" />
+    <MESSAGE value="front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/drop_system_block.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/drop_tablet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="21" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/edit_system_block.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="47" selection-start="1520" selection-end="1535" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/update.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="65" selection-start="315" selection-end="315" vertical-scroll-proportion="0.08490566">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/system_block.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="13" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.02586207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stati-7/planshet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="9" selection-start="6535" selection-end="6535" vertical-scroll-proportion="0.027624309">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2369" column="37" selection-start="147894" selection-end="147894" vertical-scroll-proportion="-3.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/blocks/bd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="74" selection-end="82" vertical-scroll-proportion="0.080935255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sistemnyj-blok.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="2917" selection-end="3096" vertical-scroll-proportion="0.027624309">
-          <folding>
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: \&quot;/send_mail.php\&quot;...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1374003209577" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index/cena_akcia.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/tablet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="53" selection-start="776" selection-end="786" vertical-scroll-proportion="0.0">
@@ -562,60 +488,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add_tablet.php">
+    <entry file="file://$PROJECT_DIR$/css/slider-style/jquery.jscrollpane.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="523" column="58" selection-start="10503" selection-end="10503" vertical-scroll-proportion="-2.9795918">
+        <state line="11" column="1" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planshety.phtml">
+    <entry file="file://$PROJECT_DIR$/css/slider-style/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="41" selection-start="0" selection-end="32257" vertical-scroll-proportion="-2.5918367">
+        <state line="7" column="14" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/slider-style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/images_slider/arrows.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/images_slider/cross.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/images_slider/pattern.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/slider/jquery.contentcarousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="111" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/slider/jquery.easing.1.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="7" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/slider/jquery.mousewheel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1376329842748" expanded="true" signature="30194:32229" placeholder="..." />
-            <marker date="1376329842748" expanded="true" signature="30225:32217" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="30276:30383" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="30440:30625" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="30736:30753" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="30808:32213" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="30978:31113" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="31054:31111" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="31266:31369" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="31378:32198" placeholder="{&quot;url&quot;: \&quot;/send_mail.php\&quot;...}" />
-            <marker date="1376329842748" expanded="true" signature="31723:31726" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="31752:32196" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="31771:31847" placeholder="{...}" />
-            <marker date="1376329842748" expanded="true" signature="31853:31966" placeholder="{...}" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add_tablet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="531" column="5" selection-start="10861" selection-end="10861" vertical-scroll-proportion="-5.625">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/edit_tablet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2391" column="73" selection-start="137554" selection-end="137572" vertical-scroll-proportion="-7.3265305">
-          <folding>
-            <marker date="1376368220998" expanded="false" signature="2717:2727" placeholder="..." />
-            <marker date="1376368220998" expanded="false" signature="2975:2985" placeholder="..." />
-            <marker date="1376368220998" expanded="false" signature="3389:3399" placeholder="..." />
-            <marker date="1376368220998" expanded="false" signature="3646:3656" placeholder="..." />
-            <marker date="1376368220998" expanded="false" signature="3939:3949" placeholder="..." />
-          </folding>
+        <state line="1957" column="98" selection-start="110868" selection-end="110885" vertical-scroll-proportion="-3.0408163">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1752" column="0" selection-start="108514" selection-end="108514" vertical-scroll-proportion="-1.8163265">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/planshet.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="797" column="31" selection-start="37889" selection-end="37889" vertical-scroll-proportion="-1.5866667">
+        <state line="810" column="50" selection-start="38540" selection-end="38540" vertical-scroll-proportion="-8.75">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1376371037782" expanded="true" signature="23961:23995" placeholder="..." />
             <marker date="1376371037782" expanded="true" signature="24097:24132" placeholder="..." />
             <marker date="1376371037782" expanded="true" signature="24541:24575" placeholder="..." />
@@ -672,9 +628,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/planshety.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="41" selection-start="6067" selection-end="6067" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/planshety.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="494" column="18" selection-start="27513" selection-end="27513" vertical-scroll-proportion="0.1891892">
+        <state line="494" column="18" selection-start="27513" selection-end="27513" vertical-scroll-proportion="0.044510387">
           <folding>
             <element signature="n#style#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
