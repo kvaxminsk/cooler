@@ -960,9 +960,11 @@
 //        echo $strSql;        die();
         $result = mysql_query($strSql);
 
-        $idInsertSystemBlock = mysql_insert_id();
+        $idInsertTablet = mysql_insert_id();
+//        var_dump("UPDATE `image_name_tablet` SET id_tablet=" . $idInsertTablet . " WHERE id_tablet=0");die();
+        mysql_query("UPDATE `image_name_tablet` SET id_tablet=" . $idInsertTablet . " WHERE id_tablet=0");
         //echo $idInsertSystemBlock;        die();
-        header("Location:/admin/edit_tablet.php?id=" . $idInsertSystemBlock ."&successfully=" . $result ."&change=add");
+        header("Location:/admin/edit_tablet.php?id=" . $idInsertTablet ."&successfully=" . $result ."&change=add");
     }
 
 

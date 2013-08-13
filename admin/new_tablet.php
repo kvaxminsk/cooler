@@ -2189,11 +2189,11 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                                         <select  name="image_name" id="image_name" ><!--style="font-size:11px;image_name:500px;"-->
                                             <option value="0" selected="selected">Выбор Изображения</option>
                                             <?php
-                                            $result = mysql_query("SELECT image_name_tablet.* FROM  image_name_tablet", $db);
-                                            while($row = mysql_fetch_assoc($result))
-                                            {
-                                                echo  '<option value="'.  $row['id_image_name'].'">' . $row['name_image_name'] .  '</option>';
-                                            }
+//                                            $result = mysql_query("SELECT image_name_tablet.* FROM  image_name_tablet", $db);
+//                                            while($row = mysql_fetch_assoc($result))
+//                                            {
+//                                                echo  '<option value="'.  $row['id_image_name'].'">' . $row['name_image_name'] .  '</option>';
+//                                            }
 
                                             ?>
                                             <td>

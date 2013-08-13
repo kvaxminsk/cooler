@@ -2410,7 +2410,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                  <select  name="image_name" id="image_name" ><!--style="font-size:11px;image_name:500px;"-->
                                      <option value="0" >Выбор Изображения</option>
                                      <?php
-                                     $result = mysql_query("SELECT image_name_tablet.* FROM  image_name_tablet", $db);
+                                     $result = mysql_query("SELECT image_name_tablet.* FROM  image_name_tablet WHERE id_tablet=".$rowTablet['id_tablet'], $db);
                                      while($row = mysql_fetch_assoc($result))
                                      {
                                          if ($rowTablet['image_name'] == $row['id_image_name'])
@@ -2469,14 +2469,14 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                      {
                                          var area = $("#image_name");
                                          var numberOfActivePixelsFrontCameraValue = $("#image_name option:selected").val();
-                                         area.load('tablet/delete_image_name.php',{id_image_name : numberOfActivePixelsFrontCameraValue});
+                                         area.load('tablet/delete_image_name.php',{id_image_name : numberOfActivePixelsFrontCameraValue, id_tablet:<?php echo $rowTablet['id_tablet']?> });
                                      }
 
                                      function addImageName()
                                      {
                                          var area = $("#image_name");
                                          var numberOfActivePixelsFrontCameraSystem = $("#name_image_name").val();
-                                         area.load('tablet/add_image_name.php',{name_image_name : numberOfActivePixelsFrontCameraSystem});
+                                         area.load('tablet/add_image_name.php',{name_image_name : numberOfActivePixelsFrontCameraSystem, id_tablet:<?php echo $rowTablet['id_tablet']?> });
                                      }
 
                                      function showFormAddImageName()

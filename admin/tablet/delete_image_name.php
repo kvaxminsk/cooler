@@ -18,14 +18,14 @@ $idTablet = htmlspecialchars(trim($_POST['id_tablet']));
 
 if (isset($_POST['id_tablet']))
 {
-    $resultDeleteTypeOfMatrixScreenTablet = mysql_query("DELETE FROM image_name_system_block WHERE image_name_system_block.id_system_block = " . $idTablet . " AND image_name_system_block.id_image_name = " . $image_nameId, $db);
-    $resultSelectTypeOfMatrixScreen = mysql_query("SELECT image_name.* FROM  image_name, image_name_system_block WHERE image_name.id= image_name_system_block.id_image_name  AND image_name_system_block.id_system_block = " . $idTablet, $db);
+    $resultDeleteTypeOfMatrixScreenTablet = mysql_query("DELETE FROM image_name_tablet WHERE image_name_tablet.id_image_name = " . $image_nameId, $db);
+    $resultSelectTypeOfMatrixScreen = mysql_query("SELECT image_name_tablet.* FROM image_name_tablet WHERE id_tablet=" . $idTablet , $db);
 }
 else
 {
 
     $resultDeleteTypeOfMatrixScreenTablet = mysql_query("DELETE FROM image_name_tablet WHERE image_name_tablet.id_image_name = " . $image_nameId, $db);
-    $resultSelectTypeOfMatrixScreen = mysql_query("SELECT image_name_tablet.* FROM image_name_tablet" , $db);
+    $resultSelectTypeOfMatrixScreen = mysql_query("SELECT image_name_tablet.* FROM image_name_tablet WHERE id_tablet=0" , $db);
 }
 
 
