@@ -7,7 +7,7 @@ if (!empty($_GET))
     {
         $searchParams[$key] = htmlspecialchars(trim($value));
     }
-    $strSgl = "SELECT * FROM  tablet
+    $strSgl = "SELECT *,image_name_tablet.id_tablet as id_tablet_image FROM  tablet
                            LEFT JOIN number_of_cores_tablet ON number_of_cores_tablet.id_number_of_cores = tablet.number_of_cores
                            LEFT JOIN manufacture_tablet ON manufacture_tablet.id_manufacture = tablet.manufacture
                            LEFT JOIN clock_speed_tablet ON clock_speed_tablet.id_clock_speed = tablet.clock_speed
@@ -86,7 +86,9 @@ if (!empty($_GET))
 }
 else
 {
-    $strSgl  = "SELECT * FROM  tablet
+    $strSgl  = "SELECT tablet.*,number_of_cores_tablet.*,manufacture_tablet.*,clock_speed_tablet.*,screen_size_tablet.*, ram_tablet.*,internal_memory_tablet.*,
+                    operating_system_tablet.*,image_name_tablet.id_tablet as id_tablet_image,image_name_tablet.name_image_name
+                    FROM  tablet
                            LEFT JOIN number_of_cores_tablet ON number_of_cores_tablet.id_number_of_cores = tablet.number_of_cores
                            LEFT JOIN manufacture_tablet ON manufacture_tablet.id_manufacture = tablet.manufacture
                            LEFT JOIN clock_speed_tablet ON clock_speed_tablet.id_clock_speed = tablet.clock_speed

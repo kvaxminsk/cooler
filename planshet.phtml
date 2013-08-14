@@ -47,7 +47,12 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                 {
                     $idTablet = htmlspecialchars(trim($_GET['id']));
                 }
-                $result = mysql_query("SELECT * FROM  tablet
+                $result = mysql_query("SELECT tablet.*,number_of_cores_tablet.*,design_tablet.*,manufacture_tablet.*,clock_speed_tablet.*,screen_size_tablet.*,ram_tablet.*,operating_system_tablet.*,
+                                        battery_capacity_tablet.*,built_in_speakers_tablet.*,case_material_tablet.*,cpu_tablet.*,graphics_accelerator_tablet.*,internal_memory_tablet.*,
+                                        length_tablet.*,number_of_active_pixels_front_camera_tablet.*,number_of_active_pixels_tablet.*,operating_system_version_tablet.*,
+                                        screen_resolution_tablet.*,thickness_tablet.*,type_of_matrix_screen_tablet.*,weight_tablet.*,
+                                        width_tablet.*, image_name_tablet.id_tablet as id_tablet_image,image_name_tablet.name_image_name
+                                       FROM  tablet
                                        LEFT JOIN number_of_cores_tablet ON number_of_cores_tablet.id_number_of_cores = tablet.number_of_cores
                                        LEFT JOIN design_tablet ON design_tablet.id_design = tablet.design
                                        LEFT JOIN manufacture_tablet ON manufacture_tablet.id_manufacture = tablet.manufacture
@@ -71,7 +76,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                        LEFT JOIN type_of_matrix_screen_tablet ON type_of_matrix_screen_tablet.id_type_of_matrix_screen = tablet.type_of_matrix_screen
                                        LEFT JOIN weight_tablet ON weight_tablet.id_weight = tablet.weight
                                        LEFT JOIN width_tablet ON width_tablet.id_width = tablet.width
-                                       WHERE id_tablet =" . $idTablet , $db);
+                                       WHERE tablet.id_tablet =" . $idTablet , $db);
 
                 if (!$result)
                 {
@@ -177,30 +182,45 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
             <div id="ca-container" class="ca-container">
                 <div class="ca-wrapper">
-                    <div class="ca-item ca-item-1">
-                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
+                    <div class="ca-item ca-item-<?php echo $i;?>">
+                        <span class="img-slide"><img  src='images/tablet_images/<?php echo $rowImageNameTabletSelect['name_image_name']?>_small.jpg' alt='Планшет' title='Планшет'/></span>
                     </div>
-                    <div class="ca-item ca-item-2">
-                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
-                    </div>
-                    <div class="ca-item ca-item-3">
-                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
-                    </div>
-                    <div class="ca-item ca-item-4">
-                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
-                    </div>
-                    <div class="ca-item ca-item-5">
-                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
-                    </div>
-                    <div class="ca-item ca-item-6">
-                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
-                    </div>
-                    <div class="ca-item ca-item-7">
-                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
-                    </div>
-                    <div class="ca-item ca-item-8">
-                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>
-                    </div>
+                    <?php
+                    $resultImageNameTabletSelect = mysql_query("SELECT * FROM image_name_tablet WHERE image_name_tablet.id_tablet=".$idTablet, $db);
+                    $i=1;
+                    while ($rowImageNameTabletSelect = mysql_fetch_assoc($resultImageNameTabletSelect))
+                    {?>
+                        <div class="ca-item ca-item-<?php echo $i;?>">
+                            <span class="img-slide"><img  src='images/tablet_images/<?php echo $rowImageNameTabletSelect['name_image_name']?>_small.jpg' alt='Планшет' title='Планшет'/></span>
+                        </div>
+                    <?php
+
+                    }
+                    ?>
+<!--                    <div class="ca-item ca-item-1">-->
+<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
+<!--                    </div>-->
+<!--                    <div class="ca-item ca-item-2">-->
+<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
+<!--                    </div>-->
+<!--                    <div class="ca-item ca-item-3">-->
+<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
+<!--                    </div>-->
+<!--                    <div class="ca-item ca-item-4">-->
+<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
+<!--                    </div>-->
+<!--                    <div class="ca-item ca-item-5">-->
+<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
+<!--                    </div>-->
+<!--                    <div class="ca-item ca-item-6">-->
+<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
+<!--                    </div>-->
+<!--                    <div class="ca-item ca-item-7">-->
+<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
+<!--                    </div>-->
+<!--                    <div class="ca-item ca-item-8">-->
+<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
+<!--                    </div>-->
                 </div>
             </div>
             <script type="text/javascript">
