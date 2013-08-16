@@ -34,15 +34,16 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                 <div id="text">
                     <br>
                     <?php
-                    echo "<div align='center'><table width='666' border='0'>
+                    echo "<div align='center'><table id='table_top' border='1' cellspacing='0px' width='710px'>
   <tr>
     <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=ofisnyj'>Офисный</a></td>
     <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=shkolniku'>Школьнику</a></td>
     <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=domashnij'>Домашний</a></td>
     <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=igrovoj'>Игровой</a></td>
-    <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=multimedijnyj'>Мультимедийный</a></td>
+    <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=igrovoj_radeon'>Игровой Rad-n</a></td>
+    <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=multimedijnyj'>Суперигр</a></td>
     <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=beznal'>Безнал</a></td>
-    <td id='td_tabl_sbor'><a href='edit_build_computer.php?type=igrovoj_radeon'>Игровой Radeon</a></td>
+    
   </tr>
 </table></div><br />";
                     ?>
@@ -77,7 +78,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
                         do {
 
                             if (!$col) echo "<TR ALIGN='left' VALIGN='top'>";
-                            printf("<TD id='td_edit'><a href='edit_build_computer.php?id=%s' title='Редактировать'><img id='table_icon' src='images/form_edit.png' /></a></TD><TD id='td_radio'><input name='id' type='radio' value='%s' id='radio' /></TD><TD id='td_edit'><input name='submit' type='submit' id='go' /></TD><TD id='td_edit'>%s</TD><TD id='td_edit1'><strong>%s</strong></TD>", $myrow["id"], $myrow["id"], $myrow["number"], $myrow["processor"]);
+                            printf("<TD id='td_edit'><a href='edit_build_computer.php?id=%s' title='Редактировать'><img id='table_icon' src='images/form_edit.png' /></a></TD><TD id='td_radio'><input name='id' type='radio' value='%s' id='radio' /></TD><TD id='td_edit'><input name='submit' type='submit' id='go' /></TD><TD id='td_edit' width='20px'>%s</TD><TD id='td_edit1'><strong>%s</strong></TD>", $myrow["id"], $myrow["id"], $myrow["number"], $myrow["processor"]);
 
                             $col++;
                             if ($col == $cols) {

@@ -27,9 +27,9 @@
 
 			<!-- начало Right -->
 			<div id="right">
-             <div id="text"><h1>Добро пожаловать в админку!</h1><br /></div> 
+             <div id="text"><h1>Добро пожаловать в админку! Пора действовать!</h1><br /></div> 
              <div id="text">
-             
+             <img src="images/kot.jpg"/>
              </div>  
             <div id="text_footer"></div>
 			</div>

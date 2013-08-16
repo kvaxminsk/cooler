@@ -34,14 +34,14 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
 <div id="text">
 <br>
 <?php
-echo "<div align='center'><table border='1' width='710px'>
+echo "<div align='center'><table id='table_top' border='1' cellspacing='0px' width='710px'>
   <tr>
-    <td id='td_tabl_sbor'><a href='edit_monitor.php?brand=acer'>Acer</a></td>
-	<td id='td_tabl_sbor'><a href='edit_monitor.php?brand=benq'>BenQ</a></td>
+    <td id='td_tabl_sbor'><a href='edit_monitor.php?brand=acer'>Acer и AOC</a></td>
+	<td id='td_tabl_sbor'><a href='edit_monitor.php?brand=benq'>Benq и Dell</a></td>
 	<td id='td_tabl_sbor'><a href='edit_monitor.php?brand=lg&series=19'>LG</a></td>
 	<td id='td_tabl_sbor'><a href='edit_monitor.php?brand=philips&series=19'>PHILIPS</a></td>
 	<td id='td_tabl_sbor'><a href='edit_monitor.php?brand=samsung&series=19'>Samsung</a></td>
-	<td id='td_tabl_sbor'><a href='edit_monitor.php?brand=viewsonic'>Viewsonic</a></td>
+	<td id='td_tabl_sbor'><a href='edit_monitor.php?brand=viewsonic'>Viewsonic и Asus</a></td>
   </tr>
 </table></div><br />";
 ?>

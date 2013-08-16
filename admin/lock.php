@@ -1,8 +1,8 @@
 <?php
 /*include ("blocks/bd.php");*/
 $host = "localhost";
-$login = "root";//"varetis";
-$pass = "root";//"ecoleds5";
+$login = "varetis";
+$pass = "ecoleds5";
 $database = "varetis_cooler";
 $db = mysql_connect($host, $login, $pass);
 $pb = mysql_select_db($database, $db);

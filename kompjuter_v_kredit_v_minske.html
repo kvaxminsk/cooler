@@ -14,7 +14,7 @@
       $error_url = './kompjuter_v_kredit_v_minske.html';
       $error = '';
       $eol = "\n";
-      $max_filesize = isset($_POST['filesize']) ? $_POST['filesize'] * 1024 : 1024000;
+      $max_filesize = isset($_POST['filesize']) ? $_POST['filesize'] * 1024 : 1024000000;
       $boundary = md5(uniqid(time()));
 	  
       $header  = 'From: '.$mailfrom.$eol;
@@ -99,14 +99,14 @@
   <script type="text/javascript" src="/kompjuter_v_kredit_v_minske/3.js"></script>
 <script type="text/javascript">
 <!--
-function ValidateForm1(theForm)
-{
-var strFilter = /^[A-Za-zѓЉЊЋљњћџАБВГДЕЖЗИЙКЛМНОПРСТУФХЦШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцшщъыьэюя \t\r\n\f]*$/;
-var chkVal = theForm.Editbox1.value;
+function ValidateForm1(theForm)  {
+    
+var strFilter = /^[ѓЉЊЋљњћџАБВГДЕЖЗИЙКЛМНОПРСТУФХЦШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцшщъыьэюя \t\r\n\f]*$/;
+var chkVal = theForm.Editbox2.value;
 if (!strFilter.test(chkVal))
 {
-   alert("Please enter only letter and whitespace characters in the \"Editbox1\" field.");
-   theForm.Editbox1.focus();
+   alert("Только русский язык в поле \"Населенный пункт\"");
+   theForm.Editbox2.focus();
    return false;
 }
 if (theForm.Editbox2.value.length < 1)
@@ -159,7 +159,7 @@ return true;
 <!-------- Подсчет --------->
 <p><br> 
             <script type="text/javascript">
-__FC_FORMULA = ['price={price1}*10200','cena=price-{vznos}-{vznos_2}',
+__FC_FORMULA = ['price={price1}*10350','cena=price-{vznos}-{vznos_2}',
 
 'prior_pr_komis=0.05','prior_pr_god=0.6',    'prior_6=cena*Math.pow(1+prior_pr_god/12,6)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,6)-1)',
                                              'prior_12=cena*Math.pow(1+prior_pr_god/12,12)*prior_pr_god/12/(Math.pow(1+prior_pr_god/12,12)-1)',
@@ -249,21 +249,21 @@ function show(nodeId)
     <td class="rez"><span id="prior_36_disp">&nbsp;</span><input type="hidden" id="prior_36" name="prior_36" value> бел.р.</td>
   </tr>
   <tr>
-    <td class="rez" id="leftbank"><span>Idea Bank</span> «Праздничный»</td>
+    <td class="rez" id="leftbank"><span>Idea Bank</span> «Большой»</td>
     <td class="rez"><span id="sombe_6_disp">&nbsp;</span><input type="hidden" id="sombe_6" name="sombe_6" value> бел.р.</td>
     <td class="rez"><span id="sombe_12_disp">&nbsp;</span><input type="hidden" id="sombe_12" name="sombe_12" value> бел.р.</td>
     <td class="rez"><span id="sombe_24_disp">&nbsp;</span><input type="hidden" id="sombe_24" name="sombe_24" value> бел.р.</td>
     <td class="rez"><span id="sombe_36_disp">&nbsp;</span><input type="hidden" id="sombe_36" name="sombe_36" value> бел.р.</td>
   </tr>
   <tr>
-    <td class="rez" id="leftbank"><span>Idea Bank</span> «Весенний»</td>
+    <td class="rez" id="leftbank"><span>Idea Bank</span> «Хитовый»</td>
     <td class="rez"><span id="som_6_disp">&nbsp;</span><input type="hidden" id="som_6" name="som_6" value> бел.р.</td>
     <td class="rez"><span id="som_12_disp">&nbsp;</span><input type="hidden" id="som_12" name="som_12" value> бел.р.</td>
     <td class="rez">-</td>
     <td class="rez">-</td>
   </tr>
   <tr>
-    <td class="rez" id="leftbank"><span>Idea Bank</span> «Святочны»</td>
+    <td class="rez" id="leftbank"><span>Idea Bank</span> «Каникулы»</td>
     <td class="rez"><span id="so_6_disp">&nbsp;</span><input type="hidden" id="so_6" name="so_6" value> бел.р.</td>
     <td class="rez"><span id="so_12_disp">&nbsp;</span><input type="hidden" id="so_12" name="so_12" value> бел.р.</td>
     <td class="rez">-</td>
@@ -316,9 +316,9 @@ function show(nodeId)
 </tr>
 <tr>
 <td width="100"><span>«Лучшие покупки»<span></td>
-<td width="100"><span>«Праздничный»<span></td>
-<td width="100"><span>«Весенний»<span></td>
-<td width="100"><span>«Святочны»<span></td>
+<td width="100"><span>«Большой»<span></td>
+<td width="100"><span>«Хитовый»<span></td>
+<td width="100"><span>«Каникулы»<span></td>
 <td width="100"><span>ВТБ «Интернет»<span></td>
 </tr>
 <tr>
@@ -326,10 +326,10 @@ function show(nodeId)
 </tr>
 <tr>
 <td><span>5,0%</span> мес.</td>
-<td><span>6,9%</span> мес.</td>
-<td><span>6,5%</span> мес.</td>
+<td><span>6,2%</span> мес.</td>
+<td><span>6,4%</span> мес.</td>
+<td><span>6,0%</span> мес.</td>
 <td><span>5,0%</span> мес.</td>
-<td><span>7,08%</span> мес.</td>
 </tr>
 <tr>
 <td class="credit" colspan="6">ПЕРВОНАЧАЛЬНЫЙ ВЗНОС</td>
@@ -338,8 +338,8 @@ function show(nodeId)
 <td>от <span>10%</span></td>
 <td>от <span>0%</span></td>
 <td>от <span>0%</span></td>
+<td>от <span>0%</span></td>
 <td>от <span>10%</span></td>
-<td>от <span>20%</span></td>
 </tr>
 <tr>
 <td class="credit" colspan="6">СРОК КРЕДИТОВАНИЯ</td>
@@ -347,7 +347,7 @@ function show(nodeId)
 <tr>
 <td>от <span>3</span> до <span>48</span> месяцев</td>
 <td>от <span>3</span> до <span>36</span> месяцев</td>
-<td>от <span>3</span> до <span>18</span> месяцев</td>
+<td>от <span>3</span> до <span>24</span> месяцев</td>
 <td>от <span>3</span> до <span>12</span> месяцев</td>
 <td>от <span>12</span> до <span>12</span> месяцев</td>
 </tr>

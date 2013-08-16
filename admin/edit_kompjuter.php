@@ -7,7 +7,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=7"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Редактирование</title>
+    <title>Редактирование компьютеров</title>
     <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="index/index.css" rel="stylesheet" type="text/css" media="screen"/>
     <link rel="shortcut icon" href="favicon.ico"/>
@@ -30,26 +30,25 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
 
 <!-- начало Right -->
 <div id="right">
-<div id="text"><h1>Редактирование</h1><br/></div>
+<div id="text"><h1>Редактирование компьютеров</h1><br/></div>
 <div id="text">
 <br>
 <?php
-echo "<div align='center'><table border='1' width='710px'>
-  <tr>
+echo "<div align='center'><table id='table_top' border='1' cellspacing='0px' width='710px'>
+  <tr height='40px' bgcolor='#f0f0f0'>
     <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=ofisnyj'>Офисный</a></td>
     <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=shkolniku'>Школьнику</a></td>
     <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=domashnij'>Домашний</a></td>
     <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=igrovoj'>Игровой</a></td>
-    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_radeon'>Акция &quot;Radeon&quot;</a></td>
-    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_main_page'>Акция  &quot;Главная стр&quot;</a></td>
+    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=igrovoj_radeon'>Игровой Radeon</a></td>
+    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=multimedijnyj'>Суперигровой</a></td>
   </tr>
-  <tr>
-    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=multimedijnyj'>Мультимедийный</a></td>
-	<td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_domashnij'>Акция &quot;Домашний&quot;</a></td>
-	<td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_igrovoj'>Акция &quot;Игровой&quot;</a></td>
-	<td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_multimedijnyj'>Акция &quot;Мультимедийный&quot;</a></td>
-	<td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=igrovoj_radeon'>Игровой &quot;Radeon&quot;</a></td>
-
+  <tr height='50px' >
+    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_main_page'>Акция  Главная стр</a></td>
+    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_domashnij'>Акция Домашний</a></td>
+    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_igrovoj'>Акция Игровой</a></td>
+    <td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_radeon'>Акция Radeon</a></td>
+	<td id='td_tabl_sbor'><a href='edit_kompjuter.php?type=akciya_multimedijnyj'>Акция Суперигровой</a></td>
   </tr>
 </table></div><br />";
 ?>

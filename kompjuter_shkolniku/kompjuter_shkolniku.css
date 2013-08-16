@@ -75,6 +75,7 @@
 	background: url(http://cooler.by/index/cena_komp1.png) repeat-x;
     border: 1px solid #da5353;
     border-radius: 2px;
+    cursor: pointer;
 }
 .cena_sist {
     float: right;

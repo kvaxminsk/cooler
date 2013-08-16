@@ -95,7 +95,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
     $body .= '--' . $boundary . '--' . $eol;
-    mail($mailto, $subject, $body, $header);
+    if(empty($_POST['e-mail']))
+      {
+          mail($mailto, $subject, $body, $header);
+      }
     //header('Location: '.$success_url);
     //exit;
 }
@@ -238,51 +241,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </script>
 
     <script type="text/javascript">
-        <!--
         function ValidateForm1(theForm) {
-
-var strFilter = /^[ѓЉЊЋљњћџАБВГДЕЖЗИЙКЛМНОПРСТУФХЦШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцшщъыьэюя \t\r\n\f]*$/;
-var chkVal = theForm.Editbox1.value;
-if (!strFilter.test(chkVal))
-{
-   alert("Только русский язык в поле \"Ваше имя\"");
-   theForm.Editbox1.focus();
-   return false;
-}
-if (theForm.Editbox1.value == "")
-{
-   alert("Вы не заполнили поле \"Ваше имя\"");
-   theForm.Editbox1.focus();
-   return false;
-}
-if (theForm.Editbox1.value.length < 2)
-{
-   alert("Слишком короткий \"Ваше имя\"");
-   theForm.Editbox1.focus();
-   return false;
-}
-if (theForm.Editbox1.value.length > 70)
-{
-   alert("Вы не заполнили поле \"Ваше имя\"");
-   theForm.Editbox1.focus();
-   return false;
-}
-
-            
-            if (theForm.Editbox2.value == "") {
-                alert("Вы не заполнили поле \"Ваш телефон\"");
-                theForm.Editbox2.focus();
+           var chkVal = theForm.Editbox1.value;
+           if (theForm.Editbox1.value == "")
+           {
+           alert("Вы не заполнили поле \"Ваше имя\"");
+           theForm.Editbox1.focus();
                 return false;
             }
-            if (theForm.Editbox2.value.length < 1) {
+            if (theForm.Editbox2.value == "") {
                 alert("Вы не заполнили поле \"Ваш телефон\"");
                 theForm.Editbox2.focus();
                 return false;
             }
             return true;
         }
-        //-->
     </script>
+    
     <script type="text/javascript" src="./js_index/jquery-1.4.2.min.js"></script>
 </head>
 <body>
@@ -5365,14 +5340,14 @@ if (theForm.Editbox1.value.length > 70)
        name="Телефон" value="" maxlength="20">
 <input type="text" id="Editbox3"
        style="position:relative;left:100px;top:24px;width:400px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;z-index:40"
-       name="Email" value="" maxlength="50">
+       name="Мыло" value="" maxlength="50">
 <textarea name="Адрес доставки" id="TextArea2"
           style="position:relative;left:100px;top:33px;width:400px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;z-index:41"
           rows="1" cols="26"></textarea>
 <input type="text" id="Editbox4"
        style="position:relative;left:100px;top:43px;width:400px;height:18px;border:1px #C0C0C0 solid;font-family:Courier New;font-size:13px;z-index:40"
        name="Комментарии" value="" maxlength="140">
-
+       
 <div id="wb_Text27"
      style="margin:0;padding:0;position:relative;left:10px;top:-94px;width:93px;height:15px;text-align:left;z-index:34;">
     <font style="font-size:12px" color="#000000" face="Arial">Ваше имя*</font></div>
@@ -5390,6 +5365,7 @@ if (theForm.Editbox1.value.length > 70)
     <font style="font-size:12px" color="#000000" face="Arial">Комментарии</font></div>
 <input type="submit" id="Button1" name="" value="Отправить">
 <a href="http://cooler.by/sobrat_kompjuter_onlajn.php"><input type="reset" id="Button2" name="" value="Очистить"></a>
+
 <input type="hidden" id="tov1Input" name='tov1Input' value=""/>
 <input type="hidden" id="tov2Input" name='tov2Input' value=""/>
 <input type="hidden" id="tov3Input" name='tov3Input' value=""/>
@@ -5409,6 +5385,8 @@ if (theForm.Editbox1.value.length > 70)
 <input type="hidden" id="tov17Input" name='tov17Input' value=""/>
 <input type="hidden" id="tov18Input" name='tov18Input' value=""/>
 <input type="hidden" id="tov19Input" name='tov19Input' value=""/>
+
+<input type="text" style="display: none;" name="e-mail" value="" maxlength="70">
 
 </form>
 </div>

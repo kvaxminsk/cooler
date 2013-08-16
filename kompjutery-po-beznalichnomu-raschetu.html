@@ -729,13 +729,13 @@ echo "<TABLE BORDER='1px' CELLSPACING='0px'  bgcolor='#ffffff'>
 <TD ALIGN='left' width='22px'>№</TD><TD width='127px'>Процессор<br>(ядер X такт.частота)</TD><TD width='93px'>RAM</TD><TD width='60px'>HDD</TD><TD width='140px'>Видеокарта</TD><TD width='170px'>
 Материнская плата</TD><TD width='35px'>DVD-RW</TD><TD width='120px'>Корпус (блок питания)</TD><TD width='80px'>Цена системного<br>блока по безнал.расч<br>в бел.руб.</TD>
 </TR>";
-do
+while($myrow = mysql_fetch_array($result))
 {
 	printf("<TR  ALIGN='center' height='42px'>
 <TD>%s.</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD>
 </TR>", $myrow["number"], $myrow["processor"], $myrow["ram"], $myrow["hdd"], $myrow["vga"], $myrow["motherboard"], $myrow["dvd_rw"], $myrow["housing"], $myrow["cost_clearing"]);	
 }
-while($myrow = mysql_fetch_array($result));
+
 echo "</TR></TABLE>";
 ?>
      </div>

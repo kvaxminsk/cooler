@@ -66,10 +66,13 @@ echo "<p>Запрос на выборку не прошел!<br /><strong>Код
 exit (mysql_error());	
 }
 
-if (mysql_num_rows($result) <= 0)
+if (mysql_num_rows($result) > 0)
 {
-
-echo "<p>Нет записей!</p>";
+$myrow = mysql_fetch_array($result);
+}
+else
+{
+echo "<p>Нет записей!</p>";	
 exit ();
 }
 $i=0;

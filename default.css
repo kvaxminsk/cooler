@@ -22,6 +22,9 @@ a:hover {
 	background: none;
 	color: #E43C15;
 }
+#hover a{
+    color: #E43C15 !important;
+}
 hr {
 	display: none;
 }

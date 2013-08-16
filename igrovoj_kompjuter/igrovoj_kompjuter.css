@@ -18,7 +18,75 @@ h1{
 	padding: 10px 30px 10px 16px;
 	margin-top: 4px
 }
-
+/* akciya */
+/* akciya */
+#komp2 {
+    height: 330px;
+    border-bottom: 1px solid #474848;
+    margin-right: 25px;
+}
+#komp2 h3{
+    padding: 10px 0 0px 10px;
+    font-size: 14px ;
+	color: #E43C15;
+}
+.img-slide {
+    width: 330px;
+    display: block;
+    float: left;
+}
+.img-slide img{
+    float: left;
+    margin: 15px 0px 60px 5px;   
+}
+.cena-sist-bl {
+    float: left;
+    width: auto;
+	height: 22px;
+	padding: 2px 9px 0 6px;
+	margin: 2px 6px 0 0;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: url(http://cooler.by/index/cena_akcia.png) repeat-x;
+    border: 1px solid #82acdd;
+    border-radius: 2px;
+}
+.kupi-sist-bl {
+    float: left;
+    width: auto;
+	height: 22px;
+	padding: 3px 7px 21px 6px;
+	margin: 0px 6px 0 5px;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: #da2626 no-repeat;
+    border: 1px solid #ec9b9b;
+    border-radius: 2px;
+    cursor:pointer;
+}
+.cena-sist-bl .cenagl {
+    font: bold 16px "Century Gothic";
+    padding-left: 5px;
+}
+.comlekt {
+    font: normal 11px "trebuchet ms";
+    padding-top: 15px;
+    width: auto;
+    display: block;
+    line-height: 15px;
+}
+.comlekt p {
+    padding: ;
+    text-align: justify;
+    line-height: 14px;
+}
+.comlekt b {
+    font-size: 12px;
+}
+.opisanie-left {
+    line-height: 16px;
+    margin-top:4px;
+}
 /* komp_office */
 #komp {
     height: 212px;
@@ -29,12 +97,8 @@ h1{
     font-size: 14px ;
 	color: #E43C15;
 }
-.akciya {
-    height: 270px !important;
-}
-.img-slide img{
-    margin: 15px 0 0 10px;
-}
+
+
 #img_komp {
     float: left;
     margin: 6px 0 15px 5px;
@@ -64,7 +128,7 @@ h1{
 	background: url(http://cooler.by/index/cena_komp1.png) repeat-x;
     border: 1px solid #da5353;
     border-radius: 2px;
-}z
+}
 .cena_komp .cena_komp_gl {
     font: bold 16px "Century Gothic";
     padding-left: 5px;
@@ -86,36 +150,8 @@ h1{
 	font: normal 11px "Helvetica";
 	line-height: 14px;
 }
-.cena-sist-bl {
-    float: right;
-    width: auto;
-	height: 22px;
-	padding: 2px 9px 0 6px;
-	margin: -5px 193px 30px 0;
-	font: bold 14px "Century Gothic"; 
-	color: #fff;
-	background: url(http://cooler.by/index/cena_akcia.png) repeat-x;
-    border: 1px solid #82acdd;
-    border-radius: 2px;
-}
-.cena-sist-bl .cenagl {
-    font: bold 16px "Century Gothic";
-    padding-left: 5px;
-}
-.comlekt {
-    width: 365px;
-    font: normal 11px "Helvetica";
-    position: relative;
-    left: 336px;
-    bottom: 210px;
-    display: block;
-    padding-top: 12px;
-    line-height: 14px;
-}
-.comlekt p {
-    text-align: justify;
-    line-height: 14px;
-}
+
+
 .cena-slide {
     color: #E43C15;
     font-size: 13px;
@@ -199,7 +235,7 @@ h1{
    margin: 0 0 -6px 7px;
 }
 
-/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ_пїЅпїЅпїЅпїЅпїЅпїЅ */
+/* популярные_товары */
 #popul_tov {
     margin: 8px 0 0 -210px;
 	font-size: 12px;

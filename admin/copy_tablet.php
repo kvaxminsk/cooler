@@ -29,7 +29,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
         $result1 = mysql_query($strSql);
 
     }
-die();
+
 
 
     $idInsertTablet = mysql_insert_id();

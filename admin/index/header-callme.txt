@@ -1,12 +1,10 @@
   <!-- начало меню -->
 	<div id="menu">
-		<!--<ul>
-			<li><a href="novosti_i_stati.html">Надо знать</a></li>
-			<li><a href="kompjuter_v_kredit_v_minske.html">В кредит</a></li>
-			<li><a href="dostavka_rb.html">Доставка РБ</a></li>
-			<li><a href="kompjutery-po-beznalichnomu-raschetu.html">Безнал</a></li>
-			<li><a href="o_magazine.html">О магазине</a></li>
-		</ul>-->
+            <ul>
+			<li><a href="http://cooler.by/admin/index.php">Главная админки -->></a></li>
+			<li><a href="http://cooler.by" target="_blank">Главная Cooler.by -->></a></li>
+
+		</ul>
 	</div>
 	<!-- start header -->
 	<div id="header">

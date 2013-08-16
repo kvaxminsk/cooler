@@ -79,84 +79,90 @@ exit ();
 $i=0;
 while($myrow = mysql_fetch_array($result))
 {
-printf("<div id='komp' class='akciya' itemscope itemtype='http://schema.org/Product'>
-    <h3 itemprop='name'>%s</h3>
-    <span class='img-slide'><img itemprop='image' src='%s' alt='компьютер'/></span>
-    <div class='cena-sist-bl' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>Системный блок <span class='cenagl' itemprop='price'>%s</span> у.е.</div>
-    <form method='post'>
-        <table>
-            <tr>
-                <td>
-                    <button id='show-ocb-form%s' class='kupi-sist-bl' >Купить</button>
+printf("<div id='komp2' class='akciya'>
+ <h3>%s</h3>
+                                                                       <span class='img-slide'><img src='http://cooler.by/%s' alt='компьютер'/></span>
+                                                                         <div class='cena-sist-bl'>Системный блок <span class='cenagl'>%s</span> у.е.</div>
+                                                     <form method='post'>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>
 
 
-                    <div class='ocb-form' id='ocb-form-wrap%s' style='display: none'>
-                        <div class='ocb-form-header'>
 
-                            <div class='ocb-form-header-caption'>Быстрый заказ</div>
-                            <div class='ocb-form-header-close'></div>
-                        </div>
-                        <div id='ocb-form%s'>
-                            <div id='ocb-params%s'>
-                                <input type='hidden' id='titleSystemBlock%s' value='%s'/>
-                                <input type='hidden' id='itemCost%s' value='%s'/>
-                                <div class='ocb-form-field'>
-                                    <label>Ваше имя
-                                        <ins>*</ins>
-                                    </label>
-                                    <input type='text' name='new_order%s[FIO]' value='' id='ocb-id-FIO%s'/>
+                                                                    <button id='show-ocb-form%s' class='kupi-sist-bl'>Купить</button>
 
-                                    <div id='ocb-id-FIO%s-error%s' class='ocb-error-msg'>Обязательно укажите ваше имя
-                                    </div>
 
-                                </div>
-                                <div class='ocb-form-field'>
-                                    <label>Контактный телефон
-                                        <ins>*</ins>
-                                    </label>
-                                    <select name='operator%s'
-                                            style='width: 70px; text-align: left; margin-right: 10px' id='operator%s'>
-                                        <option value='velcom'>Velcom</option>
-                                        <option value='mts'>МТС</option>
-                                        <option value='life'>life</option>
-                                    </select><input type='text' name='new_order%s[PHONE]' value='' id='ocb-id-PHONE%s'
-                                                    style='width: 250px'/>
+                                                                    <div class='ocb-form' id='ocb-form-wrap%s' style='display: none'>
+                                                                        <div class='ocb-form-header'>
 
-                                    <div id='ocb-id-PHONE%s-error%s' class='ocb-error-msg'>Обязательно укажите
-                                        контактный телефон
-                                    </div>
+                                                                            <div class='ocb-form-header-caption'>Быстрый заказ</div>
+                                                                            <div class='ocb-form-header-close'></div>
+                                                                        </div>
+                                                                        <div id='ocb-form%s'>
+                                                                            <div id='ocb-params%s'>
+                                                                                <input type='hidden' id='titleSystemBlock%s' value='%s'/>
+                                                                                <input type='hidden' id='itemCost%s' value='%s'/>
+                                                                                <div class='ocb-form-field'>
+                                                                                    <label>Ваше имя
+                                                                                        <ins>*</ins>
+                                                                                    </label>
+                                                                                    <input type='text' name='new_order%s[FIO]' value='' id='ocb-id-FIO%s'/>
 
-                                </div>
+                                                                                    <div id='ocb-id-FIO%s-error%s' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                                                                    </div>
 
-                                <div class='intaro-modules-button ptichka'>
-                                    <input type='submit' value='Отправить заказ' id='ocb-form-button%s'
-                                           name='ocb_form_button%s'/>
-                                </div>
-                                <div class='ocb-form-loader'></div>
-                            </div>
-                        </div>
-                        <div class='ocb-form-result' id='ocb-form-result%s'>
-                            <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
-                            <div class='ocb-result-icon-fail'>Ошибка!</div>
+                                                                                </div>
+                                                                                <div class='ocb-form-field'>
+                                                                                    <label>Контактный телефон
+                                                                                        <ins>*</ins>
+                                                                                    </label>
+                                                                                    <select name='operator%s'
+                                                                                    style='width: 70px; text-align: left; margin-right: 10px' id='operator%s'>
+                                                                                        <option value='velcom'>Velcom</option>
+                                                                                        <option value='mts'>МТС</option>
+                                                                                        <option value='life'>life</option>
+                                                                                    </select><input type='text' name='new_order%s[PHONE]' value='' id='ocb-id-PHONE%s'
+                                                                                style='width: 250px'/>
 
-                            <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </form>
+                                                                                    <div id='ocb-id-PHONE%s-error%s' class='ocb-error-msg'>Обязательно укажите
+                                                                                    контактный телефон
+                                                                                    </div>
 
-                                     <span class='comlekt' itemprop='description'>
+                                                                                </div>
 
-                                     <p>%s</p>
-                                     <b>Комплектация:</b>
-                                     <br>Процессор - <b>%s</b> Жёсткий диск - <b>%s</b>
-			                         <br>Оперативная память - <b>%s</b> Оптический привод - <b>%s</b>
-                                     <br>Материнская плата - <b>%s</b> Корпус - <b>%s</b> 
-                                     <br>Видеокарта - <b>%s</b></span>
-</div>
-", $myrow["title"], $myrow["image"], $myrow["cost"],$i,$i,$i,$i,$i, $myrow["title"],$i,$myrow["cost"],$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$myrow["information"], $myrow["processor"], $myrow["hdd"], $myrow["ram"], $myrow["optical_drive"], $myrow["motherboard"], $myrow["housing"], $myrow["vga"]);
+                                                                                <div class='intaro-modules-button ptichka'>
+                                                                                    <input type='submit' value='Отправить заказ' id='ocb-form-button%s'
+                                                                                    name='ocb_form_button%s'/>
+                                                                                </div>
+                                                                                <div class='ocb-form-loader'></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class='ocb-form-result' id='ocb-form-result%s'>
+                                                                            <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
+                                                                            <div class='ocb-result-icon-fail'>Ошибка!</div>
+
+                                                                            <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </form>
+                                                           <span class='comlekt'>
+                                                           <p>%s</p>
+                                                           <ul class='opisanie-left'> 
+                                                           <b>Комплектация:</b>                                                        
+                                                           <li>Процессор - <b>%s</b></li>
+                                                           <li>Материнская плата - <b>%s</b></li> 
+                                                           <li>Оперативная память - <b>%s</b></li> 
+                                                           <li>Жёсткий диск - <b>%s</b></li>
+                                                           <li>Видеокарта - <b>%s</b></li>
+                                                           <li>Корпус - <b>%s</b></li>
+                                                           <li>Оптический привод - <b>%s</b></li>
+                                                           </ul></span>
+                                                                 </div>
+                       ", $myrow["title"], $myrow["image"], $myrow["cost"],$i,$i,$i,$i,$i, $myrow["title"],$i,$myrow["cost"],$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i, $myrow["information"], $myrow["processor"], $myrow["motherboard"], $myrow["ram"], $myrow["hdd"], $myrow["vga"], $myrow["housing"], $myrow["optical_drive"]);
 $i++;
 }
 

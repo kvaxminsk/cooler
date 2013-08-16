@@ -18,81 +18,88 @@
 	margin-top: 4px
 }
 
-/* komp_office */
-.akciya {
-    height: 270px !important;
+/* akciya */
+#komp2 {
+    height: 330px;
+    border-bottom: 1px solid #474848;
+    margin-right: 25px;
+}
+#komp2 h3{
+    padding: 10px 0 0px 10px;
+    font-size: 14px ;
+	color: #E43C15;
+}
+.img-slide {
+    width: 330px;
+    display: block;
+    float: left;
 }
 .img-slide img{
-    margin: 15px 0 0 10px;
+    float: left;
+    margin: 15px 0px 60px 5px;   
 }
 .cena-sist-bl {
-    float: right;
+    float: left;
     width: auto;
 	height: 22px;
 	padding: 2px 9px 0 6px;
-	margin: -5px 183px 30px 0;
+	margin: 2px 6px 0 0;
 	font: bold 14px "Century Gothic"; 
 	color: #fff;
 	background: url(http://cooler.by/index/cena_akcia.png) repeat-x;
     border: 1px solid #82acdd;
     border-radius: 2px;
 }
+.kupi-sist-bl {
+    float: left;
+    width: auto;
+	height: 22px;
+	padding: 3px 7px 21px 6px;
+	margin: 0px 6px 0 5px;
+	font: bold 14px "Century Gothic"; 
+	color: #fff;
+	background: #da2626 no-repeat;
+    border: 1px solid #ec9b9b;
+    border-radius: 2px;
+    cursor:pointer;
+}
 .cena-sist-bl .cenagl {
     font: bold 16px "Century Gothic";
     padding-left: 5px;
 }
 .comlekt {
-    width: 365px;
-    font: normal 11px "Helvetica";
-    position: relative;
-    left: 336px;
-    bottom: 210px;
+    font: normal 11px "trebuchet ms";
+    padding-top: 15px;
+    width: auto;
     display: block;
-    padding-top: 12px;
-    line-height: 14px;
+    line-height: 15px;
 }
 .comlekt p {
+    padding: ;
     text-align: justify;
     line-height: 14px;
 }
-.cena-slide {
-    color: #E43C15;
-    font-size: 13px;
+.comlekt b {
+    font-size: 12px;
 }
-
+.opisanie-left {
+    line-height: 16px;
+    margin-top:4px;
+}
+/* komp_office */
 #komp {
-    height: 220px;
+    height: 212px;
     border-bottom: 1px solid;
 }
 #komp h3{
-    margin: 15px 0 0 10px;
-    font: bold 14px ;
+    margin: 20px 0 0 10px;
+    font-size: 14px ;
 	color: #E43C15;
 }
+
 #img_komp {
     float: left;
     margin: 6px 0 15px 5px;
-	border: none;
-}
-#cena_komp {
-    float: right;
-    width: 83px;
-	height: 21px;
-	padding: 23px 0 0 32px;
-	margin: -11px 147px 0 0;
-	font: bold 16px "arial"; 
-	color: #fff;
-	background: url(cena_kompjuter.png) no-repeat;
-}
-#cena_sist {
-    float: right;
-    width: 368px;
-	height: 17px;
-	padding: 17px 0 0 10px;
-	margin: 13px 10px 0 0;
-	font: bold 12px "Helvetica"; 
-	color: #fff;
-	background: url(cena_sistemnyj_blok.png) no-repeat;
 }
 .komp {
     height: 220px;
@@ -141,6 +148,21 @@
 	font: normal 11px "Helvetica";
 	line-height: 14px;
 }
+
+.cena-slide {
+    color: #E43C15;
+    font-size: 13px;
+}
+#cena_sist {
+    float: right;
+    width: 368px;
+	height: 17px;
+	padding: 17px 0 0 10px;
+	margin: 13px 15px 0 0;
+	font: bold 12px "Helvetica"; 
+	color: #fff;
+	background: url(../index/cena_sistemnyj_blok.png) no-repeat;
+}
 .sb {
     float: left;
 	width: 92px;	
@@ -170,14 +192,19 @@
     margin-left: 15px;		
     text-align: center;
 }
-
 #spisok {
     float: left;
 	width: 370px;
-    padding: 10px 0 0 7px;
+    padding: 10px 0 0 2px;
 	font: normal 11px "Helvetica";
 	line-height: 14px;
 }
+#spisok a{
+    float: right;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
 
 #text_footer {
     text-align: justify;

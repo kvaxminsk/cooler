@@ -1,42 +1,107 @@
+<?php
+$url = $_SERVER['REQUEST_URI'];
+if($url == "/ofisnyj_kompjuter.html")
+{$url1 = "hover";}
+elseif($url == "/kompjuter_shkolniku.html")
+{$url2 = "hover";}
+elseif($url == "/domashnij_kompjuter.html")
+{$url3 = "hover";}
+elseif($url == "/igrovoj_kompjuter.html")
+{$url4 = "hover";}
+elseif($url == "/igrovoj_kompjuter_radeon.html")
+{$url5 = "hover";}
+elseif($url == "/multimedijnyj_kompjuter.html")
+{$url6 = "hover";}
+elseif($url == "/kompjutery-po-beznalichnomu-raschetu.html")
+{$url7 = "hover";}
+elseif($url == "/kompjuter_v_kredit_v_minske.html")
+{$url8 = "hover";}
+elseif($url == "/sistemnyj-blok.php")
+{$url9 = "hover";}
+elseif($url == "/sobrat_kompjuter_onlajn.php")
+{$url10 = "hover";}
+elseif($url == "/igry/sistemnye-trebovanija.html")
+{$url11 = "hover";}
+elseif($url == "/acer_monitor.html")
+{$url12 = "hover";}
+elseif($url == "/benq__monitor.html")
+{$url13 = "hover";}
+elseif($url == "/lg_monitor.html")
+{$url14 = "hover";}
+elseif($url == "/philips__monitor.html")
+{$url15 = "hover";}
+elseif($url == "/samsung_monitor.html")
+{$url16 = "hover";}
+elseif($url == "/viewsonic_monitor.html")
+{$url17 = "hover";}
+
+elseif($url == "/usb_pamjat.html")
+{$url18 = "hover";}
+elseif($url == "/tv_tjunery.html")
+{$url19 = "hover";}
+elseif($url == "/veb-kamera-tovar.html")
+{$url20 = "hover";}
+elseif($url == "/kolonki.html")
+{$url21 = "hover";}
+elseif($url == "/naushniki.html")
+{$url22 = "hover";}
+elseif($url == "/klaviaturji.html")
+{$url23 = "hover";}
+elseif($url == "/mjishji.html")
+{$url24 = "hover";}
+elseif($url == "/igrovye-manipuljatory.html")
+{$url25 = "hover";}
+elseif($url == "/ibp.html")
+{$url26 = "hover";}
+elseif($url == "/stabilizatory-naprjazhenija.html")
+{$url27 = "hover";}
+elseif($url == "/snpch.html")
+{$url28 = "hover";}
+elseif($url == "/printerji.html")
+{$url29 = "hover";}
+elseif($url == "/mfu.html")
+{$url30 = "hover";}
+else
+{$index = "hover";}?>
 			<div id="sidebar">
 				<ul>
 						<h4>Компьютеры</h4>
                         <li class="triangle"></li>
-							<li class="line"><a href="http://cooler.by/ofisnyj_kompjuter.html">Офисный компьютер</a></li>
-							<li><a href="http://cooler.by/kompjuter_shkolniku.html">Школьнику компьютер</a></li>
-							<li><a href="http://cooler.by/domashnij_kompjuter.html">Домашний компьютер</a></li>
-							<li><a href="http://cooler.by/igrovoj_kompjuter.html">Игровой компьютер GeForce</a></li>
-                            <li><a href="http://cooler.by/igrovoj_kompjuter_radeon.html">Игровой компьютер Radeon</a></li>
-							<li><a href="http://cooler.by/multimedijnyj_kompjuter.html">Суперигровой компьютер</a></li>
-                            <li class="block-top"><a href="http://cooler.by/kompjutery-po-beznalichnomu-raschetu.html">Компьютеры по безналу</a></li>
-                            <li><a href="http://cooler.by/kompjuter_v_kredit_v_minske.html">Компьютеры в кредит</a></li>
+							<li class="line" id="<?=$url1?>"><a  href="http://cooler.by/ofisnyj_kompjuter.html">Офисный компьютер</a></li>
+							<li id="<?=$url2?>"><a  href="http://cooler.by/kompjuter_shkolniku.html">Школьнику компьютер</a></li>
+							<li id="<?=$url3?>"><a  href="http://cooler.by/domashnij_kompjuter.html">Домашний компьютер</a></li>
+							<li id="<?=$url4?>"><a href="http://cooler.by/igrovoj_kompjuter.html">Игровой компьютер GeForce</a></li>
+                            <li id="<?=$url5?>"><a href="http://cooler.by/igrovoj_kompjuter_radeon.html">Игровой компьютер Radeon</a></li>
+							<li id="<?=$url6?>"><a href="http://cooler.by/multimedijnyj_kompjuter.html">Суперигровой компьютер</a></li>
+                            <li id="<?=$url7?>" class="block-top"><a href="http://cooler.by/kompjutery-po-beznalichnomu-raschetu.html">Компьютеры по безналу</a></li>
+                            <li id="<?=$url8?>"><a href="http://cooler.by/kompjuter_v_kredit_v_minske.html">Компьютеры в кредит</a></li>
                         <h4><b>Подбор компьютера</b></h4>    
                         <li class="triangle"></li>
-                            <li class="line"><a href="http://cooler.by/sistemnyj-blok.php">Системные блоки</a></li>
-							<li><a href="http://cooler.by/sobrat_kompjuter_onlajn.php">Собрать компьютер онлайн</a></li>
-                            <li><a href="http://cooler.by/igry/sistemnye-trebovanija.html">Компьютерные игры</a></li>
+                            <li id="<?=$url9?>" class="line"><a href="http://cooler.by/sistemnyj-blok.php">Системные блоки</a></li>
+							<li id="<?=$url10?>" ><a href="http://cooler.by/sobrat_kompjuter_onlajn.php">Собрать компьютер онлайн</a></li>
+                            <li id="<?=$url11?>" ><a href="http://cooler.by/igry/sistemnye-trebovanija.html">Компьютерные игры</a></li>
 						<h4>Мониторы</h4>
                         <li class="triangle"></li>
-							<li class="line"><a href="http://cooler.by/acer_monitor.html">Acer и Asus мониторы</a></li>
-							<li><a href="http://cooler.by/benq__monitor.html">Benq мониторы</a></li>
-							<li><a href="http://cooler.by/lg_monitor.html">LG мониторы</a></li>
-							<li><a href="http://cooler.by/philips__monitor.html">Philips мониторы</a></li>
-							<li><a href="http://cooler.by/samsung_monitor.html">Samsung мониторы</a></li>
-							<li><a href="http://cooler.by/viewsonic_monitor.html">Viewsonic мониторы</a></li>
+							<li id="<?=$url12?>" class="line"><a href="http://cooler.by/acer_monitor.html">Acer и AOC мониторы</a></li>
+							<li id="<?=$url13?>" ><a href="http://cooler.by/benq__monitor.html">Benq и Dell мониторы</a></li>
+							<li id="<?=$url14?>" ><a href="http://cooler.by/lg_monitor.html">LG мониторы</a></li>
+							<li id="<?=$url15?>" ><a href="http://cooler.by/philips__monitor.html">Philips мониторы</a></li>
+							<li id="<?=$url16?>" ><a href="http://cooler.by/samsung_monitor.html">Samsung мониторы</a></li>
+							<li id="<?=$url17?>" ><a href="http://cooler.by/viewsonic_monitor.html">Viewsonic и Asus мониторы</a></li>
 						<h4>Периферия</h4>
                         <li class="triangle"></li>
-							<li class="line"><a href="http://cooler.by/usb_pamjat.html">USB память</a></li>
-							<li><a href="http://cooler.by/tv_tjunery.html">ТВ тюнеры</a></li>
-							<li><a href="http://cooler.by/veb-kamera-tovar.html">Веб-камеры</a></li>
-							<li><a href="http://cooler.by/kolonki.html">Колонки</a></li>
-							<li><a href="http://cooler.by/naushniki.html">Наушники</a></li>
-							<li><a href="http://cooler.by/klaviaturji.html">Клавиатуры</a></li>
-							<li><a href="http://cooler.by/mjishji.html">Мыши</a></li>
-							<li><a href="http://cooler.by/igrovye-manipuljatory.html">Игровые манипуляторы</a></li>
-							<li><a href="http://cooler.by/ibp.html">ИБП</a></li>
-							<li><a href="http://cooler.by/stabilizatory-naprjazhenija.html">Стабилизаторы напряжения</a></li>
-							<li><a href="http://cooler.by/snpch.html">Принтеры Epson с СНПЧ</a></li>
-							<li><a href="http://cooler.by/printerji.html">Принтеры</a></li>
-							<li><a href="http://cooler.by/mfu.html">МФУ</a></li>
+							<li id="<?=$url18?>" class="line"><a href="http://cooler.by/usb_pamjat.html">USB память</a></li>
+							<li id="<?=$url19?>" ><a href="http://cooler.by/tv_tjunery.html">ТВ тюнеры</a></li>
+							<li id="<?=$url20?>" ><a href="http://cooler.by/veb-kamera-tovar.html">Веб-камеры</a></li>
+							<li id="<?=$url21?>" ><a href="http://cooler.by/kolonki.html">Колонки</a></li>
+							<li id="<?=$url22?>" ><a href="http://cooler.by/naushniki.html">Наушники</a></li>
+							<li id="<?=$url23?>" ><a href="http://cooler.by/klaviaturji.html">Клавиатуры</a></li>
+							<li id="<?=$url24?>" ><a href="http://cooler.by/mjishji.html">Мыши</a></li>
+							<li id="<?=$url25?>" ><a href="http://cooler.by/igrovye-manipuljatory.html">Игровые манипуляторы</a></li>
+							<li id="<?=$url26?>" ><a href="http://cooler.by/ibp.html">ИБП</a></li>
+							<li id="<?=$url27?>" ><a href="http://cooler.by/stabilizatory-naprjazhenija.html">Стабилизаторы напряжения</a></li>
+							<li id="<?=$url28?>" ><a href="http://cooler.by/snpch.html">Принтеры Epson с СНПЧ</a></li>
+							<li id="<?=$url29?>" ><a href="http://cooler.by/printerji.html">Принтеры</a></li>
+							<li id="<?=$url30?>" ><a href="http://cooler.by/mfu.html">МФУ</a></li>
 				</ul>
 			</div>

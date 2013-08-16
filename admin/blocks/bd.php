@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$login = "root";//"varetis";
-$pass = "root";//"ecoleds5";
+$login ="varetis";
+$pass = "ecoleds5";
 $database = "varetis_cooler";
 $db = mysql_connect($host, $login, $pass);
 if (!$db)

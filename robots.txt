@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /blocks/
+Disallow: /send_mail.php
