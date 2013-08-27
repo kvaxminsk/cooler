@@ -2,21 +2,157 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/123" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/images/gl-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/images/gl-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/images/gl-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/images/gl-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/images/gl-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/images/gl-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/images/img01.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/index/dostavka.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/index/menu_stati_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/index/menu_stati_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/index/menu_stati_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/index/menu_stati_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/index/pop_tov.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/callme/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/images_slider/animal1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/images_slider/animal2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/images_slider/animal3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/images_slider/animal4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/images_slider/animal5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/images_slider/animal6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/images_slider/animal7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/images_slider/animal8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/planshety.phtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plashets.phtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remont.cooler.by.tar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/update.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/varetis_cooler(2).sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/small/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/small/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/small/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/small/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/small/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/veb-kamera/small/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/задание.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/1.jpg" afterPath="$PROJECT_DIR$/veb-kamera/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/1.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/10.jpg" afterPath="$PROJECT_DIR$/veb-kamera/10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/10.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/11.jpg" afterPath="$PROJECT_DIR$/veb-kamera/11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/11.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/12.jpg" afterPath="$PROJECT_DIR$/veb-kamera/12.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/12.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/12.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/13.jpg" afterPath="$PROJECT_DIR$/veb-kamera/13.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/13.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/13.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/18.jpg" afterPath="$PROJECT_DIR$/veb-kamera/18.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/18.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/18.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/2.jpg" afterPath="$PROJECT_DIR$/veb-kamera/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/2.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/4.jpg" afterPath="$PROJECT_DIR$/veb-kamera/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/4.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/5.jpg" afterPath="$PROJECT_DIR$/veb-kamera/5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/5.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/6.jpg" afterPath="$PROJECT_DIR$/veb-kamera/6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/6.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/7.jpg" afterPath="$PROJECT_DIR$/veb-kamera/7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/7.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/9.jpg" afterPath="$PROJECT_DIR$/veb-kamera/9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veb-kamera/small/9.jpg" afterPath="$PROJECT_DIR$/veb-kamera/small/9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-1.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/im-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-1.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-2.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/im-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-2.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-3.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/im-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-3.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-4.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/im-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-4.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/im-5.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/im-5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-5.jpg" afterPath="$PROJECT_DIR$/igrovye-manipuljatory/small/im-5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/st2_15.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/st2_15.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/small/st2_15.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/small/st2_15.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/st2_17.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/st2_17.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/small/st2_17.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/small/st2_17.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/st2_18.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/st2_18.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/small/st2_18.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/small/st2_18.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/st2_4.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/st2_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/small/st2_4.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/small/st2_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/st2_5.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/st2_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/2.1/small/st2_5.jpg" afterPath="$PROJECT_DIR$/kolonki/2.1/small/st2_5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/5.1/st5_1.jpg" afterPath="$PROJECT_DIR$/kolonki/5.1/st5_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/5.1/small/st5_1.jpg" afterPath="$PROJECT_DIR$/kolonki/5.1/small/st5_1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/5.1/st5_3.jpg" afterPath="$PROJECT_DIR$/kolonki/5.1/st5_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/5.1/small/st5_3.jpg" afterPath="$PROJECT_DIR$/kolonki/5.1/small/st5_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/5.1/st5_4.jpg" afterPath="$PROJECT_DIR$/kolonki/5.1/st5_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/5.1/small/st5_4.jpg" afterPath="$PROJECT_DIR$/kolonki/5.1/small/st5_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/st_14.jpg" afterPath="$PROJECT_DIR$/kolonki/st_14.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/small/st_14.jpg" afterPath="$PROJECT_DIR$/kolonki/small/st_14.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/st_18.jpg" afterPath="$PROJECT_DIR$/kolonki/st_18.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/small/st_18.jpg" afterPath="$PROJECT_DIR$/kolonki/small/st_18.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/st_23.jpg" afterPath="$PROJECT_DIR$/kolonki/st_23.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/small/st_23.jpg" afterPath="$PROJECT_DIR$/kolonki/small/st_23.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/st_27.jpg" afterPath="$PROJECT_DIR$/kolonki/st_27.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/small/st_27.jpg" afterPath="$PROJECT_DIR$/kolonki/small/st_27.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/st_9.jpg" afterPath="$PROJECT_DIR$/kolonki/st_9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kolonki/small/st_9.jpg" afterPath="$PROJECT_DIR$/kolonki/small/st_9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/add_tablet.php" afterPath="$PROJECT_DIR$/admin/add_tablet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/blocks/bd.php" afterPath="$PROJECT_DIR$/admin/blocks/bd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/bd.php" afterPath="$PROJECT_DIR$/blocks/bd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/copy_tablet.php" afterPath="$PROJECT_DIR$/admin/copy_tablet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/edit_tablet.php" afterPath="$PROJECT_DIR$/admin/edit_tablet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/slider/jquery.contentcarousel.js" afterPath="$PROJECT_DIR$/js/slider/jquery.contentcarousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kompjuter_v_kredit_v_minske.html" afterPath="$PROJECT_DIR$/kompjuter_v_kredit_v_minske.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/lock.php" afterPath="$PROJECT_DIR$/admin/lock.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/new_tablet.php" afterPath="$PROJECT_DIR$/admin/new_tablet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planshet.phtml" afterPath="$PROJECT_DIR$/planshet.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planshety.html" afterPath="$PROJECT_DIR$/planshety.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sobrat_kompjuter_onlajn.php" afterPath="$PROJECT_DIR$/sobrat_kompjuter_onlajn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/slider-style/style.css" afterPath="$PROJECT_DIR$/css/slider-style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cooler.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1376371105245" ignored="false" />
+    <file path="/Dummy.txt" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377580433254" ignored="false" />
     <file path="/new_system_block.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374007074913" ignored="false" />
-    <file path="/new_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1375853852983" ignored="false" />
+    <file path="/new_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377583987355" ignored="false" />
     <file path="/delete_design.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374008887666" ignored="false" />
     <file path="/add_design.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374009394776" ignored="false" />
     <file path="/delete_screen_size.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374010729315" ignored="false" />
     <file path="/delete_cpu.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374016137380" ignored="false" />
     <file path="/delete_graphics_accelerator.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374016547112" ignored="false" />
     <file path="/delete_internal_memory.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374017425420" ignored="false" />
-    <file path="/a.dummy" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1376329834256" ignored="false" />
+    <file path="/a.dummy" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377583623552" ignored="false" />
     <file path="/delete_battery_capacity.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374059037461" ignored="false" />
     <file path="/delete_width.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374072161451" ignored="false" />
     <file path="/delete_thickness.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1374072462185" ignored="false" />
@@ -27,7 +163,13 @@
     <file path="/list_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1375852237161" ignored="false" />
     <file path="/drop_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1375852362053" ignored="false" />
     <file path="/planshety.phtml" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1376263751375" ignored="false" />
-    <file path="/planshet.phtml" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1376370884780" ignored="false" />
+    <file path="/planshet.phtml" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377583232554" ignored="false" />
+    <file path="/copy_tablet.php" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377512091427" ignored="false" />
+    <file path="$USER_HOME$/Downloads/CircularContentCarousel/index.html" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377583492545" ignored="false" />
+    <file path="/index.html" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377582633421" ignored="false" />
+    <file path="/style.css" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377583294975" ignored="false" />
+    <file path="$USER_HOME$/Downloads/CircularContentCarousel/css/style.css" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377583567288" ignored="false" />
+    <file path="$USER_HOME$/Downloads/CircularContentCarousel/js/jquery.contentcarousel.js" changelist="cb8d8df4-b63c-4c8e-9ba3-24ca957dd4ff" time="1377583613090" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +189,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pattern.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/images_slider/pattern.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.contentcarousel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/slider/jquery.contentcarousel.js">
+      <file leaf-file-name="edit_tablet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/edit_tablet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="111" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="2404" column="206" selection-start="138524" selection-end="138524" vertical-scroll-proportion="-9.041667">
+              <folding>
+                <marker date="1377583995523" expanded="false" signature="2717:2727" placeholder="..." />
+                <marker date="1377583995523" expanded="false" signature="2975:2985" placeholder="..." />
+                <marker date="1377583995523" expanded="false" signature="3389:3399" placeholder="..." />
+                <marker date="1377583995523" expanded="false" signature="3646:3656" placeholder="..." />
+                <marker date="1377583995523" expanded="false" signature="3939:3949" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,117 +213,149 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.mousewheel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/slider/jquery.mousewheel.js">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/slider-style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="7" column="12" selection-start="145" selection-end="145" vertical-scroll-proportion="-4.2">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planshet.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jquery.contentcarousel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/slider/jquery.contentcarousel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="167" column="24" selection-start="5751" selection-end="5751" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrows.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/images_slider/arrows.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="planshet.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/planshet.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="810" column="50" selection-start="38540" selection-end="38540" vertical-scroll-proportion="-8.75">
+            <state line="206" column="40" selection-start="13581" selection-end="13581" vertical-scroll-proportion="0.109195404">
               <folding>
-                <marker date="1376371037782" expanded="true" signature="23961:23995" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="24097:24132" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="24541:24575" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="24677:24712" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="25137:25171" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="25273:25308" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="26485:26519" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="26621:26656" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="27090:27124" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="27226:27261" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="27695:27729" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="27831:27866" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="28567:28602" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="29136:29170" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="29272:29307" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="30483:30517" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="30619:30654" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="31692:31727" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="32134:32168" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="32270:32305" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="32877:32912" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="33506:33541" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="33954:33988" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="34090:34125" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="34518:34552" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="34654:34689" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="35099:35133" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="35235:35270" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="35695:35731" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="35833:35888" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="36329:36365" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="36467:36522" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="36945:36981" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="37083:37118" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="37634:37670" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="37772:37807" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="38248:38284" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="38386:38421" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="39695:41730" placeholder="..." />
-                <marker date="1376371037782" expanded="true" signature="39726:41718" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="39777:39884" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="39941:40126" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="40237:40254" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="40309:41714" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="40479:40614" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="40555:40612" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="40767:40870" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="40879:41699" placeholder="{&quot;url&quot;: \&quot;/send_mail.php\&quot;...}" />
-                <marker date="1376371037782" expanded="true" signature="41224:41227" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="41253:41697" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="41272:41348" placeholder="{...}" />
-                <marker date="1376371037782" expanded="true" signature="41354:41467" placeholder="{...}" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1377583233487" expanded="true" signature="23779:23813" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="23915:23950" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="24384:24418" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="24520:24555" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="24989:25023" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="25125:25160" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="27394:27428" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="27530:27565" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="27974:28008" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="28110:28145" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="28570:28604" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="28706:28741" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="29772:29807" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="30341:30375" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="30477:30512" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="31693:31727" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="31829:31864" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="32907:32942" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="33349:33383" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="33485:33520" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="34092:34127" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="34721:34756" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="35169:35203" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="35305:35340" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="35733:35767" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="35869:35904" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="36314:36348" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="36450:36485" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="36910:36946" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="37048:37103" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="37544:37580" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="37682:37737" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="38160:38196" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="38298:38333" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="38849:38885" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="38987:39022" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="39463:39499" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="39601:39636" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="40910:42945" placeholder="..." />
+                <marker date="1377583233487" expanded="true" signature="40941:42933" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="40992:41099" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="41156:41341" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="41452:41469" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="41524:42929" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="41694:41829" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="41770:41827" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="41982:42085" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="42094:42914" placeholder="{&quot;url&quot;: \&quot;/send_mail.php\&quot;...}" />
+                <marker date="1377583233487" expanded="true" signature="42439:42442" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="42468:42912" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="42487:42563" placeholder="{...}" />
+                <marker date="1377583233487" expanded="true" signature="42569:42682" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planshety.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/planshety.phtml">
+      <file leaf-file-name="jquery.jscrollpane.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/slider-style/jquery.jscrollpane.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="41" selection-start="6067" selection-end="6067" vertical-scroll-proportion="-0.625">
+            <state line="81" column="19" selection-start="985" selection-end="986" vertical-scroll-proportion="-9.24">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planshety.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bd.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/blocks/bd.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="17" selection-start="44" selection-end="44" vertical-scroll-proportion="-1.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bd.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blocks/bd.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="17" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lock.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/lock.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="17" selection-start="104" selection-end="104" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="copy_tablet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/copy_tablet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="planshety.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/planshety.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="494" column="18" selection-start="27513" selection-end="27513" vertical-scroll-proportion="0.044510387">
-              <folding>
-                <element signature="n#style#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_tablet.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/add_tablet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="531" column="5" selection-start="10861" selection-end="10861" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_tablet.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/edit_tablet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1957" column="98" selection-start="110868" selection-end="110885" vertical-scroll-proportion="-3.0408163">
+            <state line="481" column="3" selection-start="27305" selection-end="27305" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,7 +364,34 @@
       <file leaf-file-name="new_tablet.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1752" column="0" selection-start="108514" selection-end="108514" vertical-scroll-proportion="-1.8163265">
+            <state line="2176" column="0" selection-start="135599" selection-end="135599" vertical-scroll-proportion="-6.5416665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_tablet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/add_tablet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="45" selection-start="2236" selection-end="2236" vertical-scroll-proportion="-0.7346939">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sistemnye-trebovanija.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/igry/sistemnye-trebovanija.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="250" column="13" selection-start="12280" selection-end="12280" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.mousewheel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/slider/jquery.mousewheel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="14" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,30 +415,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/admin/tablet/delete_number_of_active_pixels.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_number_of_active_pixels2.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/delete_screen_resolution2.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/delete_built_in_speakers2.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/add_built_in_speakers2.php" />
-        <option value="$PROJECT_DIR$/admin/tablet/delete_number_of_active_pixels2.php" />
         <option value="$PROJECT_DIR$/admin/list_tablet.php" />
         <option value="$PROJECT_DIR$/admin/drop_tablet.php" />
         <option value="$PROJECT_DIR$/css/system_block.css" />
         <option value="$PROJECT_DIR$/update.sql" />
         <option value="$PROJECT_DIR$/planshety.phtml" />
-        <option value="$PROJECT_DIR$/admin/edit_tablet.php" />
-        <option value="$PROJECT_DIR$/admin/add_tablet.php" />
-        <option value="$PROJECT_DIR$/planshet.phtml" />
         <option value="$PROJECT_DIR$/planshety.html" />
+        <option value="$PROJECT_DIR$/admin/copy_tablet.php" />
+        <option value="$PROJECT_DIR$/admin/add_tablet.php" />
+        <option value="$PROJECT_DIR$/admin/blocks/bd.php" />
+        <option value="$PROJECT_DIR$/blocks/bd.php" />
+        <option value="$PROJECT_DIR$/admin/lock.php" />
+        <option value="$PROJECT_DIR$/planshet.phtml" />
+        <option value="$PROJECT_DIR$/css/slider-style/style.css" />
+        <option value="$PROJECT_DIR$/js/slider/jquery.contentcarousel.js" />
         <option value="$PROJECT_DIR$/admin/new_tablet.php" />
+        <option value="$PROJECT_DIR$/admin/edit_tablet.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -284,6 +484,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cooler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cooler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cooler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cooler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -291,26 +523,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="118" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="119" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="243" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="267" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="118" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="260" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="123" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="917" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="917" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="123" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="119" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/CircularContentCarousel" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="270" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1064" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1058" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="265" />
     <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="261" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -392,24 +625,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32800853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18939394" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19583778" sideWeight="0.67199147" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -441,7 +674,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -481,32 +714,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/tablet.css">
+    <entry file="file://$PROJECT_DIR$/planshety.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="53" selection-start="776" selection-end="786" vertical-scroll-proportion="0.0">
+        <state line="481" column="3" selection-start="27305" selection-end="27305" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/slider-style/jquery.jscrollpane.css">
+    <entry file="file://$PROJECT_DIR$/js/prototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/slider-style/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/slider-style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5732" column="6" selection-start="153622" selection-end="153622" vertical-scroll-proportion="0.33274958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/images_slider/arrows.png">
@@ -514,9 +731,32 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/images_slider/cross.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/admin/copy_tablet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add_tablet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="45" selection-start="2236" selection-end="2236" vertical-scroll-proportion="-0.7346939">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/bd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/lock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="104" selection-end="104" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/images_slider/pattern.png">
@@ -524,127 +764,124 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/slider/jquery.contentcarousel.js">
+    <entry file="file://$PROJECT_DIR$/igry/sistemnye-trebovanija.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="111" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+        <state line="250" column="13" selection-start="12280" selection-end="12280" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/slider/jquery.easing.1.3.js">
+    <entry file="file://$PROJECT_DIR$/admin/blocks/bd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+        <state line="2" column="17" selection-start="44" selection-end="44" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/slider/jquery.mousewheel.js">
+    <entry file="file://$PROJECT_DIR$/css/slider-style/jquery.jscrollpane.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add_tablet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="531" column="5" selection-start="10861" selection-end="10861" vertical-scroll-proportion="-5.625">
+        <state line="81" column="19" selection-start="985" selection-end="986" vertical-scroll-proportion="-9.24">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/edit_tablet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1957" column="98" selection-start="110868" selection-end="110885" vertical-scroll-proportion="-3.0408163">
-          <folding />
+        <state line="2404" column="206" selection-start="138524" selection-end="138524" vertical-scroll-proportion="-9.041667">
+          <folding>
+            <marker date="1377583995523" expanded="false" signature="2717:2727" placeholder="..." />
+            <marker date="1377583995523" expanded="false" signature="2975:2985" placeholder="..." />
+            <marker date="1377583995523" expanded="false" signature="3389:3399" placeholder="..." />
+            <marker date="1377583995523" expanded="false" signature="3646:3656" placeholder="..." />
+            <marker date="1377583995523" expanded="false" signature="3939:3949" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/new_tablet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1752" column="0" selection-start="108514" selection-end="108514" vertical-scroll-proportion="-1.8163265">
+        <state line="2176" column="0" selection-start="135599" selection-end="135599" vertical-scroll-proportion="-6.5416665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/slider-style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="145" selection-end="145" vertical-scroll-proportion="-4.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/slider/jquery.contentcarousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="24" selection-start="5751" selection-end="5751" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/planshet.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="810" column="50" selection-start="38540" selection-end="38540" vertical-scroll-proportion="-8.75">
+        <state line="206" column="40" selection-start="13581" selection-end="13581" vertical-scroll-proportion="0.109195404">
           <folding>
-            <marker date="1376371037782" expanded="true" signature="23961:23995" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="24097:24132" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="24541:24575" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="24677:24712" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="25137:25171" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="25273:25308" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="26485:26519" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="26621:26656" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="27090:27124" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="27226:27261" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="27695:27729" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="27831:27866" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="28567:28602" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="29136:29170" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="29272:29307" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="30483:30517" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="30619:30654" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="31692:31727" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="32134:32168" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="32270:32305" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="32877:32912" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="33506:33541" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="33954:33988" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="34090:34125" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="34518:34552" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="34654:34689" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="35099:35133" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="35235:35270" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="35695:35731" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="35833:35888" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="36329:36365" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="36467:36522" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="36945:36981" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="37083:37118" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="37634:37670" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="37772:37807" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="38248:38284" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="38386:38421" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="39695:41730" placeholder="..." />
-            <marker date="1376371037782" expanded="true" signature="39726:41718" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="39777:39884" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="39941:40126" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="40237:40254" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="40309:41714" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="40479:40614" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="40555:40612" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="40767:40870" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="40879:41699" placeholder="{&quot;url&quot;: \&quot;/send_mail.php\&quot;...}" />
-            <marker date="1376371037782" expanded="true" signature="41224:41227" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="41253:41697" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="41272:41348" placeholder="{...}" />
-            <marker date="1376371037782" expanded="true" signature="41354:41467" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planshety.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="41" selection-start="6067" selection-end="6067" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planshety.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="494" column="18" selection-start="27513" selection-end="27513" vertical-scroll-proportion="0.044510387">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1377583233487" expanded="true" signature="23779:23813" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="23915:23950" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="24384:24418" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="24520:24555" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="24989:25023" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="25125:25160" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="27394:27428" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="27530:27565" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="27974:28008" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="28110:28145" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="28570:28604" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="28706:28741" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="29772:29807" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="30341:30375" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="30477:30512" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="31693:31727" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="31829:31864" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="32907:32942" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="33349:33383" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="33485:33520" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="34092:34127" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="34721:34756" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="35169:35203" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="35305:35340" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="35733:35767" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="35869:35904" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="36314:36348" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="36450:36485" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="36910:36946" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="37048:37103" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="37544:37580" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="37682:37737" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="38160:38196" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="38298:38333" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="38849:38885" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="38987:39022" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="39463:39499" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="39601:39636" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="40910:42945" placeholder="..." />
+            <marker date="1377583233487" expanded="true" signature="40941:42933" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="40992:41099" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="41156:41341" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="41452:41469" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="41524:42929" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="41694:41829" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="41770:41827" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="41982:42085" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="42094:42914" placeholder="{&quot;url&quot;: \&quot;/send_mail.php\&quot;...}" />
+            <marker date="1377583233487" expanded="true" signature="42439:42442" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="42468:42912" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="42487:42563" placeholder="{...}" />
+            <marker date="1377583233487" expanded="true" signature="42569:42682" placeholder="{...}" />
           </folding>
         </state>
       </provider>

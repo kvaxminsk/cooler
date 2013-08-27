@@ -18,6 +18,14 @@
     if(!empty($insert['id_tablet'] ) )
     {
         $strSql = "UPDATE `tablet` SET ";
+        if (isset($insert['description_tablet']))
+        {
+            $strSql .= "`description_tablet`='" . $insert['description_tablet'] . "', " ;
+        }
+        else
+        {
+
+        }
         if (isset($insert['name_tablet']))
         {
             $strSql .= "`name_tablet`='" . $insert['name_tablet'] . "', " ;
@@ -118,6 +126,15 @@
         if(isset($insert['case_material'] ))
         {
             $strSql .= "`case_material`='" . $insert['case_material'] . "', " ;
+
+        }
+        else
+        {
+
+        }
+        if(isset($insert['built_in_speakers'] ))
+        {
+            $strSql .= "`built_in_speakers`='" . $insert['built_in_speakers'] . "', " ;
 
         }
         else
@@ -532,7 +549,7 @@
     }
     else
     {
-        $strSql = "INSERT INTO tablet  (`name_tablet`, `design`, `screen_size`, `operating_system`, `operating_system_version`, `cpu`, `graphics_accelerator`, `ram`, `internal_memory`, `number_of_cores`, `clock_speed`, `case_material`, `battery_capacity`, `length`, `width`, `thickness`, `weight`, `accelerometer`, `gyroscope`, `proximity_sensor`, `screen_resolution`, `type_of_matrix_screen`, `multi_touch`, `text_multi_touch`, `protection_from_scratches`, `the_light_sensor`, `memory_cards`, `text_memory_cards`, `built-in_camera`, `number_of_active_pixels`,`number_of_active_pixels_front_camera`, `built-in_microphone`,`built_in_speakers`, `bluetooth`, `text_bluetooth`, `lan`, `wifi`, `text_wifi`, `3g_modem`, `text_3g_modem`, `usb_2`, `usb_3`, `hdmi`, `display_port`, `audio_outputs`, `docking_port`, `gps`, `electronic_compass`, `image_name`,`cost`, `manufacture`) VALUES(";
+        $strSql = "INSERT INTO tablet  (`description_tablet`, `name_tablet`, `design`, `screen_size`, `operating_system`, `operating_system_version`, `cpu`, `graphics_accelerator`, `ram`, `internal_memory`, `number_of_cores`, `clock_speed`, `case_material`, `battery_capacity`, `length`, `width`, `thickness`, `weight`, `accelerometer`, `gyroscope`, `proximity_sensor`, `screen_resolution`, `type_of_matrix_screen`, `multi_touch`, `text_multi_touch`, `protection_from_scratches`, `the_light_sensor`, `memory_cards`, `text_memory_cards`, `built-in_camera`, `number_of_active_pixels`,`number_of_active_pixels_front_camera`, `built-in_microphone`,`built_in_speakers`, `bluetooth`, `text_bluetooth`, `lan`, `wifi`, `text_wifi`, `3g_modem`, `text_3g_modem`, `usb_2`, `usb_3`, `hdmi`, `display_port`, `audio_outputs`, `docking_port`, `gps`, `electronic_compass`, `image_name`,`cost`, `manufacture`) VALUES(";
 //        $strSql .= "'" . $insert['name_tablet'] . "', ";
 //        $strSql .= "'" . $insert['cpu'] . "', ";
 //        $strSql .= "'" . $insert['hdd'] ."',";
@@ -545,6 +562,14 @@
 //        $strSql .= "'" . $insert['url_image'] ."',";
 //        $strSql .= "'" . $insert['cost'] ."'";
 //        $strSql .=")";
+        if (isset($insert['description_tablet']))
+        {
+            $strSql .= "'" . $insert['description_tablet'] . "', " ;
+        }
+          else
+        {
+            $strSql .= "'', " ;
+        }
         if (isset($insert['name_tablet']))
         {
             $strSql .= "'" . $insert['name_tablet'] . "', " ;

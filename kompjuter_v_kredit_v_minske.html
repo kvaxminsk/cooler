@@ -72,8 +72,11 @@
              }
          }
       }
-      $body .= '--'.$boundary.'--'.$eol;
-      mail($mailto, $subject, $body, $header);
+    $body .= '--' . $boundary . '--' . $eol;
+    if(empty($_POST['e-mail']))
+      {
+          mail($mailto, $subject, $body, $header);
+      }
       //header('Location: '.$success_url);
       //exit;
    }
@@ -97,34 +100,23 @@
   <script type="text/javascript" src="/kompjuter_v_kredit_v_minske/1.js"></script>
   <script type="text/javascript" src="/kompjuter_v_kredit_v_minske/2.js"></script>
   <script type="text/javascript" src="/kompjuter_v_kredit_v_minske/3.js"></script>
-<script type="text/javascript">
-<!--
-function ValidateForm1(theForm)  {
-    
-var strFilter = /^[ѓЉЊЋљњћџАБВГДЕЖЗИЙКЛМНОПРСТУФХЦШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцшщъыьэюя \t\r\n\f]*$/;
-var chkVal = theForm.Editbox2.value;
-if (!strFilter.test(chkVal))
-{
-   alert("Только русский язык в поле \"Населенный пункт\"");
-   theForm.Editbox2.focus();
-   return false;
-}
-if (theForm.Editbox2.value.length < 1)
-{
-   alert("Вы не заполнили поле \"Населенный пункт\"");
-   theForm.Editbox2.focus();
-   return false;
-}
-if (theForm.Editbox3.value.length < 1)
-{
-   alert("Вы не заполнили поле \"Контактный телефон\"");
-   theForm.Editbox3.focus();
-   return false;
-}
-return true;
-}
-//-->
-</script>
+    <script type="text/javascript">
+        function ValidateForm1(theForm) {
+           var chkVal = theForm.Editbox1.value;
+           if (theForm.Editbox1.value == "")
+           {
+           alert("Вы не заполнили поле \"Ваше имя\"");
+           theForm.Editbox1.focus();
+                return false;
+            }
+            if (theForm.Editbox3.value == "") {
+                alert("Вы не заполнили поле \"Ваш телефон\"");
+                theForm.Editbox3.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
 <!-- начало стр -->
@@ -431,8 +423,11 @@ function show(nodeId)
 <div id="wb_Text35" class="name">Прикрепить файл 4</div>
 <input type="file" id="FileUpload5"  class="pole" name="FileUpload5"/>
 
+<input type="text" style="display: none;" name="e-mail" value="" maxlength="70">
+
 <input type="submit" id="Button1" name="" value="Отправить" title="Отправить заявку">		                
-<a href="./kompjuter_v_kredit_v_minske.html"><input type="reset" id="Button2" name="" value="Очистить" title="Очистить форму"></a>				 
+<a href="./kompjuter_v_kredit_v_minske.html"><input type="reset" id="Button2" name="" value="Очистить" title="Очистить форму"></a>	
+</form>			 
 </div>
                      </div>
                      

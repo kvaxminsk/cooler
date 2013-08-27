@@ -28,6 +28,45 @@ include ("blocks/bd.php");/*Connecting to BD!*/
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
     <script type="text/javascript" src="js/flyshit.js"></script>
+    <script type="text/javascript" src="./highslide/highslide-full.js"></script>
+    <link rel="stylesheet" type="text/css" href="./highslide/highslide.css" />
+    <script type="text/javascript">
+        hs.graphicsDir = '../highslide/graphics/';
+        hs.outlineType = 'rounded-white';
+        hs.outlineWhileAnimating = true;
+
+        hs.align = 'center';
+        hs.transitions = ['expand', 'crossfade'];
+
+        hs.wrapperClassName = 'controls-in-heading';
+        hs.fadeInOut = true;
+        //hs.dimmingOpacity = 0.75;
+        // Add the controlbar
+        if (hs.addSlideshow) hs.addSlideshow({
+            //slideshowGroup: 'group1',
+            interval: 5000,
+            repeat: false,
+            useControls: true,
+            fixedControls: false,
+            overlayOptions: {
+                opacity: 1,
+                position: 'top right',
+                hideOnMouseOut: false
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".panel").slideToggle("hide");
+            $(".btn-slide").click(function(){
+                var   res4 = this.href.substr(-2,2);
+                $("#panel"+res4).slideToggle("slow");
+                $(this).toggleClass("active"); return false;
+            });
+        });
+    </script>
+
 </head>
 <body>
 <!-- начало стр -->
@@ -51,7 +90,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                                         battery_capacity_tablet.*,built_in_speakers_tablet.*,case_material_tablet.*,cpu_tablet.*,graphics_accelerator_tablet.*,internal_memory_tablet.*,
                                         length_tablet.*,number_of_active_pixels_front_camera_tablet.*,number_of_active_pixels_tablet.*,operating_system_version_tablet.*,
                                         screen_resolution_tablet.*,thickness_tablet.*,type_of_matrix_screen_tablet.*,weight_tablet.*,
-                                        width_tablet.*, image_name_tablet.id_tablet as id_tablet_image,image_name_tablet.name_image_name
+                                        width_tablet.*, image_name_tablet.id_tablet as id_tablet_image,image_name_tablet.name_image_name, tablet.description_tablet
                                        FROM  tablet
                                        LEFT JOIN number_of_cores_tablet ON number_of_cores_tablet.id_number_of_cores = tablet.number_of_cores
                                        LEFT JOIN design_tablet ON design_tablet.id_design = tablet.design
@@ -166,63 +205,48 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                         </form>
                     </div>
                     <br/><br/><br/><br/>
-                    Планшеты стали в наши дни очень популярными. Это сочетание телефона и нетбука плотно вошло в жизнь современно человека из-за своей функциональности и компактности.
-                    Выход в интернет, чтение книг, просмотр фильмов, функции GPS-навигатора и многое другое всегда под рукой. Если и Вы решили присоединиться к той части населения,
-                    которая идёт в ногу со временем, то Вы  попали по адресу. На нашем сайте можно купить планшет в Минске недорого и с гарантией. Обратившись к нам, Вы сможете подобрать в Минске недорогой и очень производительный планшет.
                 </div>
 <!--            *-->
+
             <link rel="stylesheet" type="text/css" href="css/slider-style/style.css" />
             <link rel="stylesheet" type="text/css" href="css/slider-style/jquery.jscrollpane.css" media="all" />
-                     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-<!--            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+            <div id="ca-container" class="ca-container">
+                <div class="ca-wrapper">
+                    <?php
+                        $resultImageNameTabletSelect = mysql_query("SELECT * FROM image_name_tablet WHERE image_name_tablet.id_tablet=".$idTablet, $db);
+                        $i=1;
+                        while ($rowImageNameTabletSelect = mysql_fetch_assoc($resultImageNameTabletSelect))
+                        {
+                    ?>
+                            <div class="image_foto ca-item ca-item-<?php echo $i;?>">
+                                <span class="img-slide">
+                                    <a href="planshety/<?php echo $rowImageNameTabletSelect['name_image_name']?>_full.jpg" class="highslide" onclick="return hs.expand(this)">
+                                        <br/>
+                                    <img src="planshety/<?php echo $rowImageNameTabletSelect['name_image_name']?>_small.jpg" alt="скриншот игры"/></a>
+                                </span>
+                                <div class="highslide-caption"></div>
+                            </div>
+                    <?php
+                            $i++;
+                            if($i == 9)
+                            {
+                                break;
+                            }
+                        }
+                    ?>
+                </div>
+            </div>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
             <script type="text/javascript" src="js/slider/jquery.easing.1.3.js"></script>
             <!-- the jScrollPane script -->
             <script type="text/javascript" src="js/slider/jquery.mousewheel.js"></script>
             <script type="text/javascript" src="js/slider/jquery.contentcarousel.js"></script>
+            <script type="text/javascript">
+                $('#ca-container').contentcarousel();
+            </script>
 
-            <div id="ca-container" class="ca-container">
-                <div class="ca-wrapper">
-                    <div class="ca-item ca-item-<?php echo $i;?>">
-                        <span class="img-slide"><img  src='images/tablet_images/<?php echo $rowImageNameTabletSelect['name_image_name']?>_small.jpg' alt='Планшет' title='Планшет'/></span>
-                    </div>
-                    <?php
-                    $resultImageNameTabletSelect = mysql_query("SELECT * FROM image_name_tablet WHERE image_name_tablet.id_tablet=".$idTablet, $db);
-                    $i=1;
-                    while ($rowImageNameTabletSelect = mysql_fetch_assoc($resultImageNameTabletSelect))
-                    {?>
-                        <div class="ca-item ca-item-<?php echo $i;?>">
-                            <span class="img-slide"><img  src='images/tablet_images/<?php echo $rowImageNameTabletSelect['name_image_name']?>_small.jpg' alt='Планшет' title='Планшет'/></span>
-                        </div>
-                    <?php
-
-                    }
-                    ?>
-<!--                    <div class="ca-item ca-item-1">-->
-<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
-<!--                    </div>-->
-<!--                    <div class="ca-item ca-item-2">-->
-<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
-<!--                    </div>-->
-<!--                    <div class="ca-item ca-item-3">-->
-<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
-<!--                    </div>-->
-<!--                    <div class="ca-item ca-item-4">-->
-<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
-<!--                    </div>-->
-<!--                    <div class="ca-item ca-item-5">-->
-<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
-<!--                    </div>-->
-<!--                    <div class="ca-item ca-item-6">-->
-<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
-<!--                    </div>-->
-<!--                    <div class="ca-item ca-item-7">-->
-<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
-<!--                    </div>-->
-<!--                    <div class="ca-item ca-item-8">-->
-<!--                        <span class="img-slide"><img  src='images/tablet_images/panasonic_small.jpg' alt='Планшет' title='Планшет'/></span>-->
-<!--                    </div>-->
-                </div>
-            </div>
+            <div><?php echo $rowTablet['description_tablet'];?></div>
+            <br/><br/>
             <script type="text/javascript">
                 $('#ca-container').contentcarousel();
             </script>
@@ -384,6 +408,26 @@ include ("blocks/bd.php");/*Connecting to BD!*/
             <tr class="pline2">
                 <td class="pdinfohead">
                     <p class="">
+                        Количество ядер
+                    </p>
+                </td>
+                <td>
+                    <?php echo $rowTablet['name_number_of_cores'];?>&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Тактовая частота
+                    </p>
+                </td>
+                <td>
+                    <?php echo $rowTablet['name_clock_speed'];?>&nbsp;МГц&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
                         Графический ускоритель
                     </p>
                 </td>
@@ -401,38 +445,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     <?php echo $rowTablet['name_ram'];?> ГБ&nbsp;
                 </td>
             </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Внутренняя память
-                    </p>
 
-                </td>
-                <td>
-                    <?php echo $rowTablet['name_internal_memory'];?> ГБ&nbsp;
-                </td>
-            </tr>
 
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Количество ядер
-                    </p>
-                </td>
-                <td>
-                    <?php echo $rowTablet['name_number_of_cores'];?>4&nbsp;
-                </td>
-            </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Тактовая частота
-                    </p>
-                </td>
-                <td>
-                    <?php echo $rowTablet['name_clock_speed'];?>&nbsp;МГц&nbsp;
-                </td>
-            </tr>
+
             <tr class="pline2">
                 <td class="pdinfohead">
                     <p class="">
@@ -443,103 +458,6 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     <?php echo $rowTablet['name_case_material'];?>&nbsp;
                 </td>
             </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Емкость аккумулятора
-                    </p>
-                </td>
-                <td>
-                    <?php echo $rowTablet['name_battery_capacity'];?>&nbsp;
-                </td>
-            </tr>
-
-            <tr class="pdsection">
-                <td colspan="2">Габариты и вес</td>
-            </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Длина
-                    </p>
-                </td>
-                <td>
-                    <?php echo $rowTablet['name_length'];?>&nbsp;мм&nbsp;
-                </td>
-            </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Ширина
-                    </p>
-                </td>
-                <td>
-                    <?php echo $rowTablet['name_width'];?>&nbsp;мм&nbsp;
-                </td>
-            </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Толщина
-                    </p>
-
-                </td>
-                <td>
-                    <?php echo $rowTablet['name_thickness'];?>&nbsp;мм&nbsp;
-                </td>
-            </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Вес
-                    </p>
-
-                </td>
-                <td>
-                    <?php echo $rowTablet['name_weight'];?>&nbsp;г&nbsp;
-                </td>
-            </tr>
-            <tr class="pdsection">
-                <td colspan="2">Датчики</td>
-            </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Акселерометр
-                    </p>
-                </td>
-                <td>
-                    <?php echo ($rowTablet['accelerometer']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет">'?>
-
-                </td>
-            </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Гироскоп
-                    </p>
-                </td>
-                <td>
-                    <?php echo ($rowTablet['gyroscope']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет">'?>
-                </td>
-            </tr>
-            <tr class="pline2">
-                <td class="pdinfohead">
-                    <p class="">
-                        Датчик приближения
-                    </p>
-                </td>
-                <td>
-                    <?php echo ($rowTablet['proximity_sensor']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
-                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
-                         alt="Нет">'?>
-                </td>
-            </tr>
-
             <tr class="pdsection">
                 <td colspan="2">Экран</td>
             </tr>
@@ -601,8 +519,119 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          alt="Нет">'?>&nbsp;
                 </td>
             </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Емкость аккумулятора
+                    </p>
+                </td>
+                <td>
+                    <?php echo $rowTablet['name_battery_capacity'];?>&nbsp;
+                </td>
+            </tr>
+
+            <tr class="pdsection">
+                <td colspan="2">Габариты и вес</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Длина
+                    </p>
+                </td>
+                <td>
+                    <?php echo $rowTablet['name_length'];?>&nbsp;мм&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Ширина
+                    </p>
+                </td>
+                <td>
+                    <?php echo $rowTablet['name_width'];?>&nbsp;мм&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Толщина
+                    </p>
+
+                </td>
+                <td>
+                    <?php echo $rowTablet['name_thickness'];?>&nbsp;мм&nbsp;
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Вес
+                    </p>
+
+                </td>
+                <td>
+                    <?php echo $rowTablet['name_weight'];?>&nbsp;г&nbsp;
+                </td>
+            </tr>
+
+
+            <tr class="pdsection">
+                <td colspan="2">Датчики</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Акселерометр
+                    </p>
+                </td>
+                <td>
+                    <?php echo ($rowTablet['accelerometer']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>
+
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Гироскоп
+                    </p>
+                </td>
+                <td>
+                    <?php echo ($rowTablet['gyroscope']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>
+                </td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Датчик приближения
+                    </p>
+                </td>
+                <td>
+                    <?php echo ($rowTablet['proximity_sensor']) ? '<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_yes.gif" title="Да"
+                         alt="Да">' :'<img width="12" border="0" height="12" src="http://catalog.onliner.by/pic/ico_no.gif" title="Нет"
+                         alt="Нет">'?>
+                </td>
+            </tr>
+
+
             <tr class="pdsection">
                 <td colspan="2">Хранение данных</td>
+            </tr>
+            <tr class="pline2">
+                <td class="pdinfohead">
+                    <p class="">
+                        Внутренняя память
+                    </p>
+
+                </td>
+                <td>
+                    <?php echo $rowTablet['name_internal_memory'];?> ГБ&nbsp;
+                </td>
             </tr>
             <tr class="pline2">
                 <td class="pdinfohead">
@@ -649,7 +678,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     </p>
                 </td>
                 <td>
-                    <?php echo ($rowTablet['number_of_active_pixels_front_camera'])?>&nbsp;Мп&nbsp;
+                    <?php echo ($rowTablet['name_number_of_active_pixels_front_camera'])?>&nbsp;Мп&nbsp;
                 </td>
             </tr>
             <tr class="pline2">
@@ -672,7 +701,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                 </td>
                 <td>
-                    <?php echo ($rowTablet['built_in_speakers'])?>&nbsp;
+                    <?php echo ($rowTablet['name_built_in_speakers'])?>&nbsp;
                 </td>
             </tr>
             <tr class="pdsection">

@@ -2402,7 +2402,8 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                          <tr>
                              <td>
                                  <label for="image_name" style="font-size:15px">Выбор Изображения:</label>
-                                 <label for="image_name" style="font-size:10px">(изображение загружаются в папку images/tablet_images. Первое изображение разрешения 260px*177px,
+                                 <label for="image_name" style="font-size:10px">(выбранное изображение в списке будет отображаться на главной странице,можно загружать на один планшет небольше 8 изображений,
+                                     изображение загружаются в папку planshety. Первое изображение разрешения 250px(соблюдать обязательно)*177px(это значение можно от 170 до 180),
                                      второе изображение без изменений. Пример имени: 1-ая картинка - panasoniс_small.jpg, 2-ая картинка - panasoniс_full.jpg. _small и _full в имени изображений обязательны.), а пишем в строке только panasonic:</label>
                              </td>
                              <td>
@@ -2595,6 +2596,16 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
                                      }
                                  </script>
+                             </td>
+                         </tr>
+                         <!--Описание     : (description_tablet)-->
+                         <tr>
+                             <td>
+                                 <label for="wifi" style="font-size:15px">Описание:</label>
+                             </td>
+
+                             <td>
+                                 <textarea type="text" name="description_tablet" id="description_tablet"><?php echo $rowTablet['description_tablet'];?></textarea>
                              </td>
                          </tr>
                          <tr>

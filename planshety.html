@@ -104,9 +104,11 @@ ORDER BY tablet.cost ASC";
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Планшеты в Минске, купить планшет недорого ^Cooler.by</title>
+    <title>Планшеты в Минске, купить планшет недорого на Cooler.by</title>
     <meta name="keywords" content="Планшеты в Минске, купить планшет недорого"/>
-    <meta name="description" content=""/>
+    <meta name="description" content="На нашем сайте можно купить планшет в
+    Минске недорого и с гарантией. Обратившись к нам, Вы сможете подобрать в Минске недорогой и очень
+    производительный планшет."/>
     <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="planshety/planshety.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="css/tablet.css" rel="stylesheet" type="text/css" media="screen" />
@@ -337,7 +339,7 @@ while($myrow = mysql_fetch_array($result))
 <div id='komp'>
     <h3><?php echo $myrow["name_tablet"];?></h3>
 
-    <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='images/tablet_images/<?php echo $myrow["name_image_name"];?>_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+    <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='planshety/<?php echo $myrow["name_image_name"];?>_small.jpg' alt='Планшет' title='Планшет'/></a></span>
     <form method='post'>
         <table style="float:right;margin-top: 24px;margin-right: 100px;margin-bottom: -5px">
             <tr>

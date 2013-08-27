@@ -316,6 +316,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <select style="font-size:11px;width:500px;" name="Процессоры" id="tov1" onchange="addconf('1');">
 <option value="0">Процессор (cpu)</option>
 
+<optgroup label="- - LGA 1150 - -">
+<script>
+        da[110031] = new dataArray('sko/cpu/110031.html', '189');
+    </script>
+    <option value="110031">Процессор Intel Core i5-4430 LGA1150 = 189 у.е.</option>
+<script>
+        da[110032] = new dataArray('sko/cpu/110032.html', '198');
+    </script>
+    <option value="110032">Процессор Intel Core i5-4570 LGA1150 = 198 у.е.</option>
+	<script>
+        da[110033] = new dataArray('sko/cpu/110033.html', '219');
+    </script>
+    <option value="110033">Процессор Intel Core i5-4670 LGA1150 = 219 у.е.</option>
+	<script>
+        da[110034] = new dataArray('sko/cpu/110034.html', '245');
+    </script>
+    <option value="110034">Процессор Intel Core i5-4670K LGA1150 = 245 у.е.</option>
+	<script>
+        da[110035] = new dataArray('sko/cpu/110035.html', '307');
+    </script>
+    <option value="110035">Процессор Intel Core i7-4770 LGA1150 = 307 у.е.</option>
+	<script>
+        da[110036] = new dataArray('sko/cpu/110036.html', '347');
+    </script>
+    <option value="110036">Процессор Intel Core i7-4770K LGA1150 = 347 у.е.</option>
+	
+	
+	
 <optgroup label="- - LGA 1155 - -">
  <script>
         da[13] = new dataArray('sko/cpu/13.html', '44');
@@ -854,6 +882,130 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <input name="parentid[]" value="19667" type="hidden"/>
 <select style="font-size:11px;width:500px;" name="Материнская плата" id="tov3" onchange="addconf('3');">
 <option value="0">Материнская плата</option>
+
+<optgroup label="- - LGA 1150 - ATX - -">
+<script>
+        da[31139] = new dataArray('sko/matpl/31139.html', '95');
+    </script>
+    <option value="31139">Asus B85-PLUS (B85) (4xDDR3) = 95 у.е.</option>
+	<script>
+        da[31140] = new dataArray('sko/matpl/31140.html', '114');
+    </script>
+    <option value="31140">Asus H87-PLUS (H87) (4xDDR3) = 114 у.е.</option>
+	<script>
+        da[31141] = new dataArray('sko/matpl/31141.html', '125');
+    </script>
+    <option value="31141">Asus H87-PRO (H87) (4xDDR3) = 125 у.е.</option>
+	<script>
+        da[31144] = new dataArray('sko/matpl/31144.html', '145');
+    </script>
+    <option value="31144">Asus Z87-K (Z87) (4xDDR3) = 145 у.е.</option>
+	<script>
+        da[31143] = new dataArray('sko/matpl/31143.html', '156');
+    </script>
+    <option value="31143">Asus Z87-C (Z87) (4xDDR3) = 156 у.е.</option>
+	<script>
+        da[31142] = new dataArray('sko/matpl/31142.html', '163');
+    </script>
+    <option value="31142">Asus Z87-A (Z87) (4xDDR3) = 163 у.е.</option>
+	
+	
+	<script>
+        da[31145] = new dataArray('sko/matpl/31145.html', '191');
+    </script>
+    <option value="31145">Asus Z87-PLUS (Z87) (4xDDR3) = 191 у.е.</option>
+	<script>
+        da[31146] = new dataArray('sko/matpl/31146.html', '221');
+    </script>
+    <option value="31146">Asus Z87-PRO (Z87) (4xDDR3) = 221 у.е.</option>
+	<script>
+        da[31148] = new dataArray('sko/matpl/31148.html', '102');
+    </script>
+    <option value="31148">GigaByte GA-P85-D3 (B85) (4xDDR3) = 102 у.е.</option>
+	<script>
+        da[31151] = new dataArray('sko/matpl/31151.html', '127');
+    </script>
+    <option value="31151">GigaByte GA-Z87P-D3 (Z87) (4xDDR3) = 127 у.е.</option>
+	<script>
+        da[31147] = new dataArray('sko/matpl/31147.html', '130');
+    </script>
+    <option value="31147">GigaByte GA-H87-D3H (H87) (4xDDR3) = 130 у.е.</option>
+	<script>
+        da[31150] = new dataArray('sko/matpl/31150.html', '138');
+    </script>
+    <option value="31150">GigaByte GA-Z87-HD3 (Z87) (4xDDR3) = 138 у.е.</option>
+	<script>
+        da[31149] = new dataArray('sko/matpl/31149.html', '158');
+    </script>
+    <option value="31149">GigaByte GA-Z87-D3HP (Z87) (4xDDR3) = 158 у.е.</option>
+	
+	
+	<script>
+        da[31152] = new dataArray('sko/matpl/31152.html', '185');
+    </script>
+    <option value="31152">GigaByte GA-Z87X-D3H (Z87) (4xDDR3) = 185 у.е.</option>
+	<script>
+        da[31153] = new dataArray('sko/matpl/31153.html', '288');
+    </script>
+    <option value="31153">GigaByte GA-Z87X-UD5H (Z87) (4xDDR3) = 288 у.е.</option>
+	
+	<optgroup label="- - LGA 1150 - mATX - -">
+	<script>
+        da[31156] = new dataArray('sko/matpl/31156.html', '85');
+    </script>
+    <option value="31156">Asus B85M-G (B85) (4xDDR3) = 85 у.е.</option>
+	<script>
+        da[31155] = new dataArray('sko/matpl/31155.html', '92');
+    </script>
+    <option value="31155">Asus B85M-E (B85) (4xDDR3) = 92 у.е.</option>
+	<script>
+        da[31154] = new dataArray('sko/matpl/31154.html', '102');
+    </script>
+    <option value="31154">AsRock H87M (H87) (2xDDR3) = 102 у.е.</option>
+	
+	
+	<script>
+        da[31157] = new dataArray('sko/matpl/31157.html', '103');
+    </script>
+    <option value="31157">Asus H87M-E (H87) (4xDDR3) = 103 у.е.</option>
+	
+	<script>
+        da[31158] = new dataArray('sko/matpl/31158.html', '112');
+    </script>
+    <option value="31158">Asus H87M-PLUS (H87) (4xDDR3) = 112 у.е.</option>
+	<script>
+        da[31159] = new dataArray('sko/matpl/31159.html', '134');
+    </script>
+    <option value="31159">Asus H87M-PRO (H87) (4xDDR3) = 134 у.е.</option>
+	<script>
+        da[31160] = new dataArray('sko/matpl/31160.html', '91');
+    </script>
+    <option value="31160">GigaByte GA-B85M-HD3 (B85) (2xDDR3) = 91 у.е.</option>
+	<script>
+        da[31162] = new dataArray('sko/matpl/31162.html', '112');
+    </script>
+    <option value="31162">GigaByte GA-H87M-D3H (H87) (4xDDR3) = 112 у.е.</option>
+	<script>
+        da[31161] = new dataArray('sko/matpl/31161.html', '113');
+    </script>
+    <option value="31161">GigaByte GA-H87M-D3H (H87) (4xDDR3) = 113 у.е.</option>
+	
+	<script>
+        da[31163] = new dataArray('sko/matpl/31163.html', '119');
+    </script>
+    <option value="31163">GigaByte GA-Z87M-HD3 (Z87) (2xDDR3) = 119 у.е.</option>
+	<script>
+        da[31164] = new dataArray('sko/matpl/31164.html', '75');
+    </script>
+    <option value="31164">MSI B85M-P33 (B85) (2xDDR3) = 75 у.е.</option>
+	<script>
+        da[31165] = new dataArray('sko/matpl/31165.html', '94');
+    </script>
+    <option value="31165">MSI H87M-P33 (H87) (2xDDR3) = 94 у.е.</option>
+	
+	
+	
+
 <optgroup label="- - LGA 1155 - ATX - -">
 
 
@@ -2069,6 +2221,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <optgroup label="-  - ATI 2GB PCI-E -  -">
 
+
+   
     <script>
         da[51015] = new dataArray('sko/vidik/51015.html', '54');
     </script>
@@ -2106,6 +2260,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         da[51053] = new dataArray('sko/vidik/51053.html', '267');
     </script>
     <option value="51053">Sapphire HD7870 GHZ Edition OC 2Gb GDDR5 (11199-19-20G) = 267 у.е.</option>
+	
+	
+	
+
 
 </optgroup>
 
@@ -2452,10 +2610,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         da[557] = new dataArray('sko/vidik/557.html', '515');
     </script>
     <option value="557">Palit GeForce GTX680 2Gb GDDR5 JetStream = 515 у.е.</option>
+	
+	
+	<script>
+        da[51078] = new dataArray('sko/vidik/51078.html', '264');
+    </script>
+    <option value="51078">Palit GeForce GTX760 2Gb GDDR5 (NE5X76001042-1042F) = 264 у.е.</option>
+	 <script>
+        da[51079] = new dataArray('sko/vidik/51079.html', '278');
+    </script>
+    <option value="51079">Palit GeForce GTX760 2Gb GDDR5 JETSTREAM (NE5X760H1042-1042J) = 278 у.е.</option>
+	 <script>
+        da[51080] = new dataArray('sko/vidik/51080.html', '414');
+    </script>
+    <option value="51080">Palit GeForce GTX770 2Gb GDDR5  (NE5X77001042-1045F) = 414 у.е.</option>
+	 <script>
+        da[51081] = new dataArray('sko/vidik/51081.html', '429');
+    </script>
+    <option value="51081">Palit GeForce GTX770 2Gb GDDR5 JETSTREAM  (NE5X770H1042-1045J) = 429 у.е.</option>
+	
+	
 </optgroup>
 <optgroup label="-  - nVidia 3GB PCI-E - -">
 
-    <script>
+ <script>
+        da[51082] = new dataArray('sko/vidik/51082.html', '308');
+    </script>
+    <option value="51082">Asus GTX660 TI-DC2-3GD5 3GB GDDR5 = 308 у.е.</option>
+	<script>
+        da[51083] = new dataArray('sko/vidik/51083.html', '331');
+    </script>
+    <option value="51083">Asus GTX660 TI-DC2OC-3GD5 3GB GDDR5 = 331 у.е.</option>
+	 <script>
         da[51040] = new dataArray('sko/vidik/51040.html', '349');
     </script>
     <option value="51040">GigaByte GV-N66TOC-3GD 3GB GDDR5 = 349 у.е.</option>
@@ -2463,6 +2649,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         da[51041] = new dataArray('sko/vidik/51041.html', '380');
     </script>
     <option value="51041">MSI N660Ti TF 3GD5/OC 3GB GDDR5 = 380 у.е.</option>
+	<script>
+        da[51084] = new dataArray('sko/vidik/51084.html', '674');
+    </script>
+    <option value="51084">Palit GeForce GTX780 3GB GDDR5 (NE5X780010FB-P2083F) = 674 у.е.</option>
+	<script>
+        da[51085] = new dataArray('sko/vidik/51085.html', '666');
+    </script>
+    <option value="51085">Palit GeForce GTX780 JETSTREAM 3GB GDDR5(NE5X780H10FB-1100J) = 666 у.е.</option>
+	<script>
+        da[51086] = new dataArray('sko/vidik/51086.html', '684');
+    </script>
+    <option value="51086">Palit GeForce GTX780 SUPER JETSTREAM 3GB GDDR5(NE5X780T10FB-1100J) = 684 у.е.</option>
+	
+	
+
+   
 </optgroup>
 <
 <optgroup label="-  - nVidia 4GB PCI-E - -">
@@ -2471,6 +2673,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         da[51042] = new dataArray('sko/vidik/51042.html', '86');
     </script>
     <option value="51042">Asus GT630-4GD3 4Gb GDDR3 = 86 у.е.</option>
+	<script>
+        da[51089] = new dataArray('sko/vidik/51089.html', '447');
+    </script>
+    <option value="51089">Palit GeForce GTX770 4Gb GDDR5 JetStream (NE5X770010G2-1041J) = 447 у.е.</option>
 	<script>
         da[51076] = new dataArray('sko/vidik/51076.html', '467');
     </script>
@@ -2481,9 +2687,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </script>
     <option value="51043">Asus GTX670-DC2G-4GD5 4Gb GDDR5 = 524 у.е.</option>
 	<script>
+        da[51088] = new dataArray('sko/vidik/51088.html', '557');
+    </script>
+    <option value="51088">GigaByte GV-N680OC-4GD 4Gb GDDR5 = 557 у.е.</option>
+	
+	<script>
         da[51077] = new dataArray('sko/vidik/51077.html', '561');
     </script>
     <option value="51077">Palit GeForce GTX680 4Gb GDDR5 JetStream (NE5X680010G2-1041J) = 561 у.е.</option>
+	<script>
+        da[51087] = new dataArray('sko/vidik/51087.html', '598');
+    </script>
+    <option value="51087">Asus GTX680-DC2-4GD5 4Gb GDDR5 = 598 у.е.</option>
+	
+	
 
 
 </optgroup>
