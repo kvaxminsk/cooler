@@ -230,6 +230,58 @@ margin: -250px 0 0 610px;
 .overlay span {
     font-size: 12px;
 }
+/***********blok***********/
+.opisanie_text {
+    width: 430px;
+    margin: 16px 10px 22px 11px;
+    text-align: justify;
+    float: left;
+}
+.opisanie_text span{
+    font-size: 12px;
+    margin: 0 0 5px 21px;
+    display: block;
+}
+.opisanie_text img{
+    float: left;
+    margin-right: 4px;
+}
+.tabl_blok {
+    width: 240px;
+    height: 60px;
+    border: 1px solid red ;
+    float: right;
+    margin-top: -1px;
+    position: relative;
+    right: 15px;
+    top: 20px;
+}
+.tabl_blok a{
+    display: block; 
+    text-align: center;
+    height: 100%;
+    border-collapse: separate;  
+    font-size: 13px;
+    font-weight: bold;
+      
+}
+.tabl_blok a img {
+    float: left;
+    margin: 4px 3px 0 4px;
+}
+.tabl_blok a span{
+    padding: 11px 4px 0px 3px;
+    display: block;      
+}
+.tabl_blok a:hover{
+    color: #4079B2;
+    box-shadow: 0 0 10px #ff380a;
+    -webkit-box-shadow: 0 0 10px #ff380a;
+    -moz-box-shadow: 0 0 10px #ff380a;
+    zoom: 100%;
+}
+
+
 /***********slideshow***********/
 .komp-slid {
     height: 245px !important;
@@ -278,7 +330,7 @@ margin: -250px 0 0 610px;
   margin:0px 0px 0 0px;
 }
 
-/*Город*/
+/*пїЅпїЅпїЅпїЅпїЅ*/
 #tabl {
     float: left;
 	margin: 10px 0 0 10px;

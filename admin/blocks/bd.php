@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$login ="root";//"varetis";
+$login = "root";//"varetis";
 $pass = "root";//"ecoleds5";
 $database = "varetis_cooler";
 $db = mysql_connect($host, $login, $pass);

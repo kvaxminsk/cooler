@@ -107,20 +107,20 @@
 }
 .klv {
     float: left;
-	width: 67px;
+	width: 60px;
     margin-left: 15px;	
     text-align: center;
 }
 .msh {
     float: left;
-	width: 34px;
+	width: 44px;
     margin-left: 15px;		
     text-align: center;
 }
 .kln {
     float: left;
-	width: 46px;
-    margin-left: 15px;		
+	width: 45px;
+    margin-left: 8px;
     text-align: center;
 }
 #spisok {
