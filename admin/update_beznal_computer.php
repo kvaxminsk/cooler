@@ -1,6 +1,6 @@
 <?php
-include ("lock.php");
-include ("blocks/bd.php"); /*Connecting to BD!*/
+include("lock.php");
+include("blocks/bd.php"); /*Connecting to BD!*/
 if (isset($_POST['id'])) {
     $id = $_POST['id'];
 }
@@ -131,11 +131,9 @@ if (isset($_POST['date'])) {
 if (isset($title) && isset($image) && isset($image_alt) && isset($image_title) && isset($beznal) && isset($beznal_sb) && isset($beznal_monitor) && isset($beznal_keyboard) && isset($beznal_mouse) && isset($beznal_loudspeakers) && isset($processor) && isset($hdd) && isset($ram) && isset($optical_drive) && isset($motherboard) && isset($housing) && isset($vga) && isset($monitor) && isset($loudspeakers) && isset($information) && isset($date)) {
     $result = mysql_query("UPDATE beznal_computer SET title='$title', image='$image', image_alt='$image_alt', image_title='$image_title', beznal='$beznal', beznal_sb='$beznal_sb', beznal_monitor='$beznal_monitor', beznal_keyboard='$beznal_keyboard', beznal_mouse='$beznal_mouse', beznal_loudspeakers='$beznal_loudspeakers', processor='$processor', hdd='$hdd', ram='$ram', optical_drive='$optical_drive', motherboard='$motherboard', housing='$housing', vga='$vga', monitor='$monitor', loudspeakers='$loudspeakers', information='$information', date='$date' WHERE id=$id");
 
-    header("Location:/admin/edit_beznal_computer.php?id=" . $id ."&successfully=" . $result ."&change=edit");
-}
-else
-{
-    header("Location:/admin/edit_beznal_computer.php?id=" . $id ."&successfully=2"."&change=edit" );
+    header("Location:/admin/edit_beznal_computer.php?id=" . $id . "&successfully=" . $result . "&change=edit");
+} else {
+    header("Location:/admin/edit_beznal_computer.php?id=" . $id . "&successfully=2" . "&change=edit");
 }
 
 

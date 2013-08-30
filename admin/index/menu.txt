@@ -31,6 +31,8 @@
 							<li><a href="new_ibp.php">ИБП</a></li>	
 							<li><a href="new_stabilizatory_naprjazhenija.php">Стабилизаторы напряжения</a></li>	
 							<li><a href="new_printer.php">Принтеры и МФУ</a></li>						
-						<h4>Справка</h4>	
+						<h4>Справка</h4>
+						<h4>Смена курса</h4>
+                            <li><a href="change_exchange_rates.php">Редактировать</a></li>
 					<div style="margin:5px; style="text-align:justify"><em>Для принудительного переноса на новую строку используйте тег</em> <strong>&lt;br /&gt;</strong></div>
 			</div>

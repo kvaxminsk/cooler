@@ -1,6 +1,6 @@
 <?php
-include ("lock.php");
-include ("blocks/bd.php"); /*Connecting to BD!*/
+include("lock.php");
+include("blocks/bd.php"); /*Connecting to BD!*/
 if (isset($_POST['type'])) {
     $type = $_POST['type'];
 }
@@ -157,30 +157,23 @@ if ($type == 'ofisnyj') {
 } else {
     $cost_clearing = '';
 }
-if (($type == 'akciya_domashnij') || ($type == 'akciya_igrovoj') || ($type == 'akciya_main_page') || ($type == 'akciya_radeon')|| ($type == 'akciya_multimedijnyj'))
-{
-    if (isset($type)&& isset($title) && isset($image) && isset($image_alt) && isset($image_title) && isset($cost)  && isset($processor) && isset($hdd) && isset($ram) && isset($optical_drive) && isset($motherboard) && isset($housing) && isset($vga) && isset($information) && isset($date)) {
+if (($type == 'akciya_domashnij') || ($type == 'akciya_igrovoj') || ($type == 'akciya_main_page') || ($type == 'akciya_radeon') || ($type == 'akciya_multimedijnyj')) {
+    if (isset($type) && isset($title) && isset($image) && isset($image_alt) && isset($image_title) && isset($cost) && isset($processor) && isset($hdd) && isset($ram) && isset($optical_drive) && isset($motherboard) && isset($housing) && isset($vga) && isset($information) && isset($date)) {
         $result = mysql_query("INSERT INTO kompjuter (type,main_page,main_link1,main_link2,title,image,image_alt,image_title,cost,cost_clearing,cost_sb,cost_monitor,cost_keyboard,cost_mouse,cost_loudspeakers,processor,hdd,ram,optical_drive,motherboard,housing,vga,monitor,loudspeakers,information,date) VALUES ('$type','$main_page','$main_link1','$main_link2','$title','$image','$image_alt','$image_title','$cost','$cost_clearing','$cost_sb','$cost_monitor','$cost_keyboard','$cost_mouse','$cost_loudspeakers','$processor','$hdd','$ram','$optical_drive','$motherboard','$housing','$vga','$monitor','$loudspeakers','$information','$date')");
 
         $id = mysql_insert_id();
-        header("Location:/admin/edit_kompjuter.php?id=" . $id ."&successfully=" . $result ."&change=add");
+        header("Location:/admin/edit_kompjuter.php?id=" . $id . "&successfully=" . $result . "&change=add");
+    } else {
+        header("Location:/admin/new_kompjuter.php?successfully=2" . "&change=add");
     }
-    else
-    {
-        header("Location:/admin/new_kompjuter.php?successfully=2"."&change=add");
-    }
-}
-else
-{
+} else {
     if (isset($type) && isset($main_page) && isset($main_link1) && isset($main_link2) && isset($title) && isset($image) && isset($image_alt) && isset($image_title) && isset($cost) && isset($cost_clearing) && isset($cost_sb) && isset($cost_monitor) && isset($cost_keyboard) && isset($cost_mouse) && isset($cost_loudspeakers) && isset($processor) && isset($hdd) && isset($ram) && isset($optical_drive) && isset($motherboard) && isset($housing) && isset($vga) && isset($monitor) && isset($loudspeakers) && isset($information) && isset($date)) {
         $result = mysql_query("INSERT INTO kompjuter (type,main_page,main_link1,main_link2,title,image,image_alt,image_title,cost,cost_clearing,cost_sb,cost_monitor,cost_keyboard,cost_mouse,cost_loudspeakers,processor,hdd,ram,optical_drive,motherboard,housing,vga,monitor,loudspeakers,information,date) VALUES ('$type','$main_page','$main_link1','$main_link2','$title','$image','$image_alt','$image_title','$cost','$cost_clearing','$cost_sb','$cost_monitor','$cost_keyboard','$cost_mouse','$cost_loudspeakers','$processor','$hdd','$ram','$optical_drive','$motherboard','$housing','$vga','$monitor','$loudspeakers','$information','$date')");
 
         $id = mysql_insert_id();
-        header("Location:/admin/edit_kompjuter.php?id=" . $id ."&successfully=" . $result ."&change=add");
-    }
-    else
-    {
-        header("Location:/admin/new_kompjuter.php?successfully=2"."&change=add");
+        header("Location:/admin/edit_kompjuter.php?id=" . $id . "&successfully=" . $result . "&change=add");
+    } else {
+        header("Location:/admin/new_kompjuter.php?successfully=2" . "&change=add");
     }
 }
 

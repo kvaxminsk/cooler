@@ -1,4 +1,4 @@
-<?php include ("lock.php"); ?>
+<?php include("lock.php"); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
@@ -14,7 +14,7 @@
 <!-- начало стр -->
 <div id="wrapper">
 
-    <?php include ("index/header-callme.txt"); ?>
+    <?php include("index/header-callme.txt"); ?>
 
     <!-- start page -->
     <div id="page">
@@ -23,7 +23,7 @@
 
             <!-- start menu -->
 
-            <?php include ("index/menu.txt"); ?>
+            <?php include("index/menu.txt"); ?>
 
             <!-- начало Right -->
             <div id="right">
@@ -32,8 +32,7 @@
 
                     <div id="forma">
                         <?php
-                        if   ($_GET['successfully'] == '2')
-                        {
+                        if ($_GET['successfully'] == '2') {
                             echo "<h1 style='color:blue'>Вы ввели не все данные!</h1>";
                         }
                         ?>
@@ -42,25 +41,25 @@
                                 <tr>
                                     <td><label>Бренд</label></td>
                                     <td><select name="brand" id="brand">
-                                        <option value="acer">Acer</option>
-                                        <option value="benq">BenQ</option>
-                                        <option value="lg">LG</option>
-                                        <option value="philips">PHILIPS</option>
-                                        <option value="samsung">Samsung</option>
-                                        <option value="viewsonic">Viewsonic</option>
-                                    </select>
+                                            <option value="acer">Acer</option>
+                                            <option value="benq">BenQ</option>
+                                            <option value="lg">LG</option>
+                                            <option value="philips">PHILIPS</option>
+                                            <option value="samsung">Samsung</option>
+                                            <option value="viewsonic">Viewsonic</option>
+                                        </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><label>Диогональ <em>(для LG, PHILIPS, Samsung)</em></label></td>
                                     <td><select name="series" id="series">
-                                        <option value="19">19"</option>
-                                        <option value="20">20"</option>
-                                        <option value="22">22"</option>
-                                        <option value="23">23"</option>
-                                        <option value="24">24"</option>
-                                        <option value="27">27"</option>
-                                    </select>
+                                            <option value="19">19"</option>
+                                            <option value="20">20"</option>
+                                            <option value="22">22"</option>
+                                            <option value="23">23"</option>
+                                            <option value="24">24"</option>
+                                            <option value="27">27"</option>
+                                        </select>
                                     </td>
                                 </tr>
                                 <tr>
@@ -69,15 +68,16 @@
                                 </tr>
                                 <tr>
                                     <td><label>Ссылка на маленькое изображение <em>(пример:
-                                        acer_monitor/small/acer_1.jpg)</em>. Изображение предварительно загрузить по
-                                        ftp. Требование к изображению: ширина жесткая <strong>135px</strong>,
-                                        рекомендуемая высота 107-110px до 140px. </label></td>
+                                                acer_monitor/small/acer_1.jpg)</em>. Изображение предварительно
+                                            загрузить по
+                                            ftp. Требование к изображению: ширина жесткая <strong>135px</strong>,
+                                            рекомендуемая высота 107-110px до 140px. </label></td>
                                     <td><input name="image_small" type="text" id="image_small" size="60"/></td>
                                 </tr>
                                 <tr>
                                     <td><label>Ссылка на большое изображение <em>(пример: acer_monitor/acer_1.jpg)</em>.
-                                        Изображение предварительно загрузить по ftp. Требование к изображению: нет
-                                        ограничений, но рекомендуется 700*700px по большей стороне. </label></td>
+                                            Изображение предварительно загрузить по ftp. Требование к изображению: нет
+                                            ограничений, но рекомендуется 700*700px по большей стороне. </label></td>
                                     <td><input name="image_big" type="text" id="image_big" size="60"/></td>
                                 </tr>
                                 <tr>
@@ -111,7 +111,8 @@
                                 <tr>
                                     <td><label>Дата <em>(автоматический)</em></label></td>
                                     <td><input name="date" type="text" id="date" size="60"
-                                               value="<?php $date = date("Y-m-d"); echo $date;?>"/></td>
+                                               value="<?php $date = date("Y-m-d");
+                                               echo $date; ?>"/></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"><input type="submit" name="submit" id="submit"
@@ -131,7 +132,7 @@
     </div>
     <hr/>
     <!-- start footer -->
-    <?php include ("index/footer.txt"); ?>
+    <?php include("index/footer.txt"); ?>
 </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php include ("lock.php"); ?>
+<?php include("lock.php"); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
@@ -14,7 +14,7 @@
 <!-- начало стр -->
 <div id="wrapper">
 
-    <?php include ("index/header-callme.txt"); ?>
+    <?php include("index/header-callme.txt"); ?>
 
     <!-- start page -->
     <div id="page">
@@ -23,7 +23,7 @@
 
             <!-- start menu -->
 
-            <?php include ("index/menu.txt"); ?>
+            <?php include("index/menu.txt"); ?>
 
             <!-- начало Right -->
             <div id="right">
@@ -39,8 +39,7 @@
                     ?>
                     <div id="forma">
                         <?php
-                        if ($_GET['successfully'] == '2')
-                        {
+                        if ($_GET['successfully'] == '2') {
                             echo "<h1 style='color:blue'>Вы ввели не все данные!</h1>";
                         }
                         ?>
@@ -48,16 +47,19 @@
                             <table width="680" border="0" cellspacing="10" cellpadding="340">
                                 <tr>
                                     <td><label>Ссылка на маленькое изображение <em>(пример:
-                                        igrovye-manipuljatory/small/im-1.jpg)</em>. Изображение предварительно загрузить
-                                        по ftp. Требование к изображению: ширина жесткая <strong>150px</strong>.
-                                    </label></td>
+                                                igrovye-manipuljatory/small/im-1.jpg)</em>. Изображение предварительно
+                                            загрузить
+                                            по ftp. Требование к изображению: ширина жесткая <strong>150px</strong>.
+                                        </label></td>
                                     <td><input name="image_small" type="text" id="image_small" size="60"/></td>
                                 </tr>
                                 <tr>
                                     <td><label>Ссылка на большое изображение <em>(пример:
-                                        igrovye-manipuljatory/im-1.jpg)</em>. Изображение предварительно загрузить по
-                                        ftp. Требование к изображению: нет ограничений, но рекомендуется 700*700px по
-                                        большей стороне. </label></td>
+                                                igrovye-manipuljatory/im-1.jpg)</em>. Изображение предварительно
+                                            загрузить по
+                                            ftp. Требование к изображению: нет ограничений, но рекомендуется 700*700px
+                                            по
+                                            большей стороне. </label></td>
                                     <td><input name="image_big" type="text" id="image_big" size="60"/></td>
                                 </tr>
                                 <tr>
@@ -83,7 +85,8 @@
                                 <tr>
                                     <td><label>Дата <em>(автоматический)</em></label></td>
                                     <td><input name="date" type="text" id="date" size="60"
-                                               value="<?php $date = date("Y-m-d"); echo $date;?>"/></td>
+                                               value="<?php $date = date("Y-m-d");
+                                               echo $date; ?>"/></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"><input type="submit" name="submit" id="submit"
@@ -103,7 +106,7 @@
     </div>
     <hr/>
     <!-- start footer -->
-    <?php include ("index/footer.txt"); ?>
+    <?php include("index/footer.txt"); ?>
 </div>
 </body>
 </html>

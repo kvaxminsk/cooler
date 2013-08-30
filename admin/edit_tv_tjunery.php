@@ -1,6 +1,6 @@
 <?php
-include ("lock.php");
-include ("blocks/bd.php"); /*Connecting to BD!*/
+include("lock.php");
+include("blocks/bd.php"); /*Connecting to BD!*/
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
@@ -17,7 +17,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
 <!-- начало стр -->
 <div id="wrapper">
 
-    <?php include ("index/header-callme.txt"); ?>
+    <?php include("index/header-callme.txt"); ?>
 
     <!-- start page -->
     <div id="page">
@@ -26,7 +26,7 @@ include ("blocks/bd.php"); /*Connecting to BD!*/
 
             <!-- start menu -->
 
-            <?php include ("index/menu.txt"); ?>
+            <?php include("index/menu.txt"); ?>
 
             <!-- начало Right -->
             <div id="right">
@@ -166,7 +166,7 @@ HERE;
     </div>
     <hr/>
     <!-- start footer -->
-    <?php include ("index/footer.txt"); ?>
+    <?php include("index/footer.txt"); ?>
 </div>
 </body>
 </html>

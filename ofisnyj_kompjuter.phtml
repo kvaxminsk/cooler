@@ -1,0 +1,196 @@
+﻿<?php
+session_start();
+
+include("blocks/bd.php"); /*Connecting to BD!*/
+$_SESSION['current_currency']="belarus";
+var_dump(number_format(54444,0,'', ' '));
+if(empty($_SESSION['current_currency']))
+{
+    $_SESSION['current_currency']="dollar";
+}
+if($_SESSION['current_currency']=="belarus")
+{
+    $result = mysql_query("SELECT *FROM currency");
+    $myrow = mysql_fetch_array($result);
+    $factor = $myrow['exchange_rate'];
+    $string_currency =" бел.руб";
+}
+else
+{
+    $factor = 1;
+    $string_currency =" y.e";
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Офисный компьютер дешево, для офиса и дома по низкой цене</title>
+    <meta name="keywords" content="Рабочий, офисный компьютер дешево, купить недорогой компьютер."/>
+    <meta name="description" content="Офисный компьютер - это Ваш лучший помощник за рабочим местом, в офисе и дома. Сочетание невысокой цены и качества
+станет оптимальным при выборе недорогого компьютера. Дешевый системный блок купленный у нас в Минске за умеренную цену является очень тихим и не будет 
+создавать шум за рабочим местом."/>
+    <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="ofisnyj_kompjuter/ofisnyj_kompjuter.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+    <?php include("index/header-callme.txt"); ?>
+    <form method="post" action="session.php">
+        <div id="currency">
+            Стоимость в
+            <input type="radio" id="dollar" name="currency" <?php echo ($_SESSION['current_currency'] == "dollar") ? 'checked="checked"' : ''; ?>/>y.e
+            <input type="radio" id="belarus" name="currency" onclick="submit()" <?php echo ($_SESSION['current_currency'] == "belarus") ? 'checked="checked"' : ''; ?>/>бел.руб
+            <input type="hidden" id="current_currency" name="current_currency" value="<?php echo $_SESSION['current_currency']?>"/>
+        </div>
+    </form>
+    <!-- start page -->
+    <div id="page">
+
+        <div id="bgtop"></div>
+        <div id="bgbottom">
+            <!-- start menu -->
+
+            <?php include("index/menu.txt"); ?>
+
+            <!-- начало Right -->
+            <div id="right"><?php include("index/soc-seti.txt"); ?>
+                <h1>Офисный компьютер</h1>
+
+                <div id="text">
+                    Рабочий компьютер по минимальной цене.
+                    <br>Недорогой компьютер для работы в офисных приложениях, например для ведение бухгалтерии, работы с
+                    интернетом, пользованием Microsoft Office (World,
+                    Excel) и другими программами не требующими большой производительности. Офисный компьютер станет
+                    незаменимым помощником в бизнесе оставаясь недорогим
+                    рабочим компьютером при оптимальном уровне производительности. По вашему требованию мы соберем
+                    дешевый компьютер для бухгалтерии, удовлетворяющий
+                    специфике данного дела.
+                    <br>
+                    <b>Системные блоки можно приобрести без монитора и периферии!</b>
+                    <br><br>
+                    <a href="kompjutery-po-beznalichnomu-raschetu.html"><b>Компьютеры по безналичному расчету. Получить
+                            счет.</b></a>
+                </div>
+
+                <?php
+                $result = mysql_query("SELECT title,image,cost,cost_clearing,cost_sb,cost_monitor,cost_keyboard,cost_mouse,cost_loudspeakers,processor,hdd,ram,optical_drive,motherboard,housing,vga,monitor,loudspeakers,information FROM kompjuter WHERE type='ofisnyj'", $db);
+
+                if (!$result) {
+                    echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+                    exit (mysql_error());
+                }
+
+                if (mysql_num_rows($result) > 0) {
+                    $myrow = mysql_fetch_array($result);
+                } else {
+                    echo "<p>Нет записей!</p>";
+                    exit ();
+                }
+
+                do {
+                    printf("<div id='komp' itemscope itemtype='http://schema.org/Product'>
+		    <h3 itemprop='name'>%s</h3>
+			<img id='img_komp' itemprop='image' src='%s' alt='офисный компьютер' title='офисный компьютер'/>
+			<div id='cena_komp'itemprop='offers' itemscope itemtype='http://schema.org/Offer'>%s  <div class='bn' itemprop='price' >%s б.р.</div>
+			</div>
+			<div id='cena_sist'>
+			<div class='sb'>%s у.е.</div>
+			<div class='mn'>%s у.е.</div>
+			<div class='klv'>% sу.е.</div>
+			<div class='msh'>% sу.е.</div>
+			<div class='kln'>% sу.е.</div>
+			</div>
+			<div id='spisok' itemprop='description'>
+			Процессор - <b>%s</b> Жёсткий диск - <b>%s</b>
+			Оперативная память - <b>%s</b> Оптический привод - <b>%s</b>
+			Материнская плата - <b>%s</b> Корпус - <b>%s</b> 
+            Видеокарта - <b>%s</b>
+            <br>Монитор - <b>%s</b> Колонки - <b>%s</b>
+			<br>%s 
+			<br><a href='#bottom'>С этим компьютером покупают >>></a>
+			</div>
+			</div>", $myrow["title"], $myrow["image"], number_format($myrow["cost"]*$factor,0,'', ' ').$string_currency, $myrow["cost_clearing"], $myrow["cost_sb"], $myrow["cost_monitor"], $myrow["cost_keyboard"], $myrow["cost_mouse"], $myrow["cost_loudspeakers"], $myrow["processor"], $myrow["hdd"], $myrow["ram"], $myrow["optical_drive"], $myrow["motherboard"], $myrow["housing"], $myrow["vga"], $myrow["monitor"], $myrow["loudspeakers"], $myrow["information"]);
+                } while ($myrow = mysql_fetch_array($result));
+
+                ?>
+
+
+
+                <div id="fon">
+                    <div id="tabl">
+                        <p><b>Таблица вариантов сборки системных блоков для офисного компьютера:</b></p>
+                        <?php
+                        $result = mysql_query("SELECT number,processor,ram,hdd,vga,motherboard,dvd_rw,housing,cost_sb_ue,cost_clearing FROM build_computer WHERE type='ofisnyj' ORDER BY number", $db);
+
+                        if (!$result) {
+                            echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+                            exit (mysql_error());
+                        }
+
+                        if (mysql_num_rows($result) > 0) {
+                            $myrow = mysql_fetch_array($result);
+                        } else {
+                            echo "<p>Нет записей!</p>";
+                            exit ();
+                        }
+
+                        echo "<TABLE BORDER='1px' CELLSPACING='0px'  bgcolor='#ffffff'>
+<TR ALIGN='center' bgcolor='#f0f0f0'>
+<TD ALIGN='left' width='22px'>№</TD><TD width='125px'>Процессор<br>(ядер X такт.частота)</TD><TD width='93px'>RAM</TD><TD width='49px'>HDD</TD><TD width='100px'>Видеокарта</TD><TD width='110px'>
+Материнская плата</TD><TD width='30px'>DVD-RW</TD><TD width='120px'>Корпус (блок питания)</TD><TD width='50px'>Цена<br>системного<br>блока в у.е.</TD>
+<TD width='80px'>Цена системного<br>блока по безнал.расч<br>в бел.руб.</TD>
+</TR>";
+                        do {
+                            printf("<TR  ALIGN='center' height='42px'>
+<TD>%s.</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD><TD>%s</TD>
+</TR>", $myrow["number"], $myrow["processor"], $myrow["ram"], $myrow["hdd"], $myrow["vga"], $myrow["motherboard"], $myrow["dvd_rw"], $myrow["housing"], $myrow["cost_sb_ue"], $myrow["cost_clearing"]);
+                        } while ($myrow = mysql_fetch_array($result));
+                        echo "</TR></TABLE>";
+                        ?>
+                    </div>
+
+                    <div id="korp">Чтобы выбрать корпус перейдите на страницу выбора: <a href="korpusy.html"><img
+                                src="ofisnyj_kompjuter/img01.png" id="korp_img"></a></div>
+
+
+                    <?php include("index/pop_tov.txt"); ?>
+                </div>
+
+                <div id="text_footer">
+                    Офисный компьютер - это Ваш лучший помощник за рабочим местом, в офисе и дома. Сочетание невысокой
+                    цены и качества станет оптимальным при выборе недорогого компьютера.
+                    Рабочий компьютер обеспечит комфорт при работе со всеми современными приложениями и программами.
+                    Достаточно мощный процессор самого дешевого пк справиться со всеми
+                    возлагающимися на него задачами, например такими как вычисления в бухгалтерии и при видении бизнеса.
+                    Жесткий диск объемом 500 гигабайт вместит все необходимые документы,
+                    не заставляя вас думать что нужно удалять для записи нового файла. Купив рабочий компьютер у нас Вы
+                    получаете системный блок с пишущим DWD приводом, который позволяет
+                    быстро записать любую информацию на дисковый носитель. Дешевый системный блок купленный у нас в
+                    Минске за умеренную цену является очень тихим и не будет создавать шум
+                    за рабочим местом. Недорогой монитор с самым высоким разрешением и большими углами обзора позволит
+                    комфортно работать, не напрягая зрения. Работая за офисным компьютером
+                    большое значение имеет рабочее место. Стол должен быть оптимальным для роста человека, стул удобным
+                    и поддерживать позвоночник, не переутомляя мышцы спины занимаясь за
+                    рабочим компьютером.
+                </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+    </div>
+    <hr/>
+    <!-- start footer -->
+    <?php include("index/footer.txt"); ?>
+
+</div>
+<?php include("index/metrika_jivo.txt"); ?>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<?php
+include ("blocks/bd.php");/*Connecting to BD!*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Cooler - Компьютеры и системные блоки в Минске по низкой цене</title>
+<meta name="keywords" content="компьютеры, купить компьютер в минске, компьютеры в минске, компьютер, купить компьютер, системный блок купить в минске, продажа компьютеров, системный блок, продажа компьютеров в минске" />
+<meta name="description" content="Купить компьютер в Минске ( системный блок) на Cooler.by это:
+Низкая цена, от 189 у.е. за системный блок Гарантия на отдельные комплектующие 2 года. Любая конфигурация комплектующих."/>
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="index/index.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link href="css/global.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.lightbox-0.5.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.treeview.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript" src="js/jquery.treeview.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/flyshit.js"></script>
+<script type="text/javascript" src="jQuery/navigation.plug-in.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+			  jQuery("#side-nav a").vertSlider(
+								{
+								text : new Array("",
+								"",
+								"",
+								"",
+								"",
+								""),
+								
+								color : new Array("",
+								"",
+								"",
+								"",
+								"",  /*"#0dcfff",*/
+								""),
+								
+								button : new Array("Преимущества",
+								"Собрать компьютер онлайн",
+								"Доставка по РБ",
+								"Кредит, Рассрочка",
+								"Безналичный расчет",
+								"Нам доверяют"),
+								
+								image : new Array("images/gl-1.png",
+									"images/gl-2.png",
+									"images/gl-3.png",
+									"images/gl-4.png",
+									"images/gl-5.png",
+									"images/gl-6.png"),
+								
+								title : new Array("Перейдите на страницу конфигуратора",
+									"Перейдите на страницу конфигуратора",
+									"Перейдите на страницу доставки",
+									"Перейдите на страницу кредита",
+									"Перейдите на страницу безналичного расчета",
+									"Перейдите на страницу наших клиентов"),	
+
+								link : new Array("http://cooler.by/sobrat_kompjuter_onlajn.php",
+									"http://cooler.by/sobrat_kompjuter_onlajn.php",
+									"http://cooler.by/dostavka_rb.html",
+									"http://cooler.by/kompjuter_v_kredit_v_minske.html",
+									"http://cooler.by/kompjutery-po-beznalichnomu-raschetu.html",
+									"http://cooler.by/nam-doverie.html")
+								});
+	  
+							});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 710;
+  var slides = jQuery('.slide');
+  var numberOfSlides = slides.length;
+
+  // Remove scrollbar in JS
+  jQuery('#slidesContainer').css('overflow', 'hidden');
+
+  // Wrap all .slides with #slideInner div
+  slides
+    .wrapAll('<div id="slideInner"></div>')
+    // Float left to display horizontally, readjust .slides width
+	.css({
+      'float' : 'left',
+      'width' : slideWidth
+    });
+
+  // Set #slideInner width equal to total width of all slides
+  jQuery('#slideInner').css('width', slideWidth * numberOfSlides);
+
+  // Insert controls in the DOM
+  jQuery('#slideshow')
+    .prepend('<span class="control" id="leftControl">Купить компьютер в Минске</span>')
+    .append('<span class="control" id="rightControl">Купить компьютер</span>');
+
+  // Hide left arrow control on first load
+  manageControls(currentPosition);
+
+  // Create event listeners for .controls clicks
+  jQuery('.control')
+    .bind('click', function(){
+    // Determine new position
+	currentPosition = (jQuery(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
+    
+	// Hide / show controls
+    manageControls(currentPosition);
+    // Move slideInner using margin-left
+    jQuery('#slideInner').animate({
+      'marginLeft' : slideWidth*(-currentPosition)
+    });
+  });
+
+  // manageControls: Hides and Shows controls depending on currentPosition
+  function manageControls(position){
+    // Hide left arrow if position is first slide
+	if(position==0){ jQuery('#leftControl').hide() } else{ jQuery('#leftControl').show() }
+	// Hide right arrow if position is last slide
+    if(position==numberOfSlides-1){ jQuery('#rightControl').hide() } else{ jQuery('#rightControl').show() }
+  }	
+});
+</script>
+
+</head>
+<body>
+<!-- начало стр -->
+<div id="wrapper">
+
+<?php include ("index/header-callme.txt"); ?>
+
+	<!-- start page -->
+	<div id="page">
+		<div id="bgtop"></div>
+		<div id="bgbottom">
+		
+			<!-- start menu -->
+			
+<?php include ("index/menu.txt"); ?>
+
+			<!-- начало Right -->
+			<div id="right">                
+<?php include ("index/soc-seti.txt"); ?>            
+			     <h1>Купить компьютер в Минске (системный блок) на cooler.by это:</h1>
+				     <div id="text">
+<div id="wrapper-content">
+        <div id="side-nav" class="mobile-remove">
+			<div class="row-24 section-1 nav">
+				<a id="section-1" class="section"><span></span></a>
+			</div>
+			<div class="row-24 section-2 nav remuve-background-color">
+				<a id="section-2" class="section"><span></span></a>
+			</div>
+			<div class="row-24 section-3 nav remuve-background-color">
+				<a id="section-3" class="section"><span></span></a>
+			</div>
+			<div class="row-24 section-4 nav remuve-background-color">
+				<a id="section-4" class="section"><span></span></a>
+			</div>
+			<div class="row-24 section-5 nav remuve-background-color">
+				<a id="section-5" class="section"><span></span></a>
+			</div>
+			<div class="row-24 section-6 nav remuve-background-color">
+				<a id="section-6" class="section"><span></span></a>
+			</div>
+		</div>
+		<div id="main-container">
+			<div class="overlay"><b>• Низкая цена, от 189 у.е. за системный блок</b> 
+<br><span>У нас низкие цены на компьютеры от лидирующих мировых производителей.</span>
+<br><b>• Установка ПО, доставка, подключение бесплатно</b>
+<br><span>Если надо <strong>купить компьютер в Минске</strong>, то по Вашему желанию мы установим операционную систему для проверки, доставим домой или в офис, распакуем и подключим.</span>
+<br><b>• Гарантия на отдельные комплектующие до 3 лет</b>
+<br><span>Гарантия действует на каждую отдельную комплектующую, это дает Вам возможность самостоятельно вскрывать системный блок, подключать, либо добавлять другие устройства не лишаясь гарантии.</span>
+<br><b>• Любая конфигурация комплектующих</b>
+<br><span>Вы можете самостоятельно <a href="sobrat_kompjuter_onlajn.php" style="color: #1D62B3" ><b>собрать компьютер онлайн</b></a>, либо наши специалисты подберут оптимальный вариант, максимально приспособленный для Вас.</span>
+<br><b>• Предложение готовой конфигурации</b>
+<br><span><strong>При покупке компьютера</strong> предлагаем готовые решения:</span></div>
+		<div id="main-container-background">
+			<div class="row-273 s1 mobile-public">
+				<noscript style="color:#000">&nbsp;</noscript>
+			</div>
+			<div class="row-273 s2 mobile-public">
+				IMAGE
+			</div>
+			<div class="row-273 s3 mobile-public">
+				IMAGE
+			</div>
+			<div class="row-273 s4 mobile-public">	
+				IMAGE
+			</div>
+			<div class="row-273 s5 mobile-public">	
+				IMAGE
+			</div>
+			<div class="row-273 s6 mobile-public">	
+				IMAGE
+			</div>
+		</div>	
+		</div>
+	</div>
+					 </div>
+                     
+                     
+                    <div id="komp" class="komp-slid">
+                         <div id="slideshow">
+                                <div class="slide">
+					                 <a href="http://cooler.by/#super-sist"><img src="index/img/img_slide_05.jpg" alt="Суперигровой системный блок" title="Суперигровой системный блок" /></a>
+ 					            </div>
+					            <div class="slide">
+					                 <a href="http://cooler.by/igrovoj_kompjuter_radeon.html"><img src="index/img/img_slide_04.jpg" alt="компьютер" title="Подробнее о Игровом компьютере Radeon" /></a>
+ 					            </div>
+ 					            <div class="slide">
+					                 <a href="http://cooler.by/igrovoj_kompjuter.html"><img src="index/img/img_slide_01.jpg" alt="купить компьютер в Минске" title="Подробнее о Игровом компьютере" /></a>
+ 					            </div>
+ 					            <div class="slide">
+					                 <a href="http://cooler.by/multimedijnyj_kompjuter.html"><img src="index/img/img_slide_02.jpg" alt="купить компьютер" title="Подробнее о Суперигровом компьютере" /></a> 
+ 					            </div>                                
+ 					            <div class="slide">
+					                 <a href="http://cooler.by/domashnij_kompjuter.html"><img src="index/img/img_slide_03.jpg" alt="компьютеры в Минске" title="Подробнее о домашнем компьютере" /></a>
+ 					            </div>                                                                                                 					        
+                          </div>
+                           
+					 </div>
+					 
+
+					 
+<?php
+$result = mysql_query("SELECT main_link1,title,main_link2,image,image_alt,image_title,cost,cost_sb,cost_monitor,cost_keyboard,cost_mouse,cost_loudspeakers,processor,hdd,ram,optical_drive,motherboard,housing,vga,monitor,loudspeakers,information FROM kompjuter WHERE main_page='yes'", $db); 
+
+if (!$result)
+{
+echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+exit (mysql_error());	
+}
+
+if (mysql_num_rows($result) <= 0)
+{
+echo "<p>Нет записей!</p>";
+exit ();
+}
+$i=0;
+while($myrow = mysql_fetch_array($result))
+{
+	printf("<div class='komp' itemscope itemtype='http://schema.org/Product'>
+					     <a href='%s'><h3 itemprop='name'>%s</h3></a>
+						 <a href='%s'><img itemprop='image' class='img_komp' src='%s' alt='%s' title='%s'/></a>
+						     <div class='cena_komp' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>Компьютер<span class='cena_komp_gl' itemprop='price'>%s</span> у.е. </div>
+    <form method='post'>
+        <table>
+            <tr>
+                <td>
+                    <button id='show-ocb-form%s' class='kupi-sist-bl' >Купить</button>
+
+
+                    <div class='ocb-form' id='ocb-form-wrap%s' style='display: none'>
+                        <div class='ocb-form-header'>
+
+                            <div class='ocb-form-header-caption'>Быстрый заказ</div>
+                            <div class='ocb-form-header-close'></div>
+                        </div>
+                        <div id='ocb-form%s'>
+                            <div id='ocb-params%s'>
+                                <input type='hidden' id='titleSystemBlock%s' value='%s'/>
+                                <input type='hidden' id='itemCost%s' value='%s'/>
+                                <div class='ocb-form-field'>
+                                    <label>Ваше имя
+                                        <ins>*</ins>
+                                    </label>
+                                    <input type='text' name='new_order%s[FIO]' value='' id='ocb-id-FIO%s'/>
+
+                                    <div id='ocb-id-FIO%s-error%s' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                    </div>
+
+                                </div>
+                                <div class='ocb-form-field'>
+                                    <label>Контактный телефон
+                                        <ins>*</ins>
+                                    </label>
+                                    <select name='operator%s'
+                                            style='width: 70px; text-align: left; margin-right: 10px' id='operator%s'>
+                                        <option value='velcom'>Velcom</option>
+                                        <option value='mts'>МТС</option>
+                                        <option value='life'>life</option>
+                                    </select><input type='text' name='new_order%s[PHONE]' value='' id='ocb-id-PHONE%s'
+                                                    style='width: 250px'/>
+
+                                    <div id='ocb-id-PHONE%s-error%s' class='ocb-error-msg'>Обязательно укажите
+                                        контактный телефон
+                                    </div>
+
+                                </div>
+
+                                <div class='intaro-modules-button ptichka'>
+                                    <input type='submit' value='Отправить заказ' id='ocb-form-button%s'
+                                           name='ocb_form_button%s'/>
+                                </div>
+                                <div class='ocb-form-loader'></div>
+                            </div>
+                        </div>
+                        <div class='ocb-form-result' id='ocb-form-result%s'>
+                            <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
+                            <div class='ocb-result-icon-fail'>Ошибка!</div>
+
+                            <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+							  <div class='cena_sist'>
+							     	 <div class='sb'>%s у.е.</div>
+									 <div class='mn'>%s у.е.</div>
+									 <div class='klv'>%s у.е.</div>
+									 <div class='msh'>%s у.е.</div>
+									 <div class='kln'>%s у.е.</div>						     						 
+							 </div>
+							 <div class='spisok' itemprop='description'>
+			Процессор - <b>%s</b> Жёсткий диск - <b>%s</b>
+			Оперативная память - <b>%s</b> Оптический привод - <b>%s</b>
+			Материнская плата - <b>%s</b> Корпус - <b>%s</b> 
+            Видеокарта - <b>%s</b>
+            <br>Монитор - <b>%s</b> Колонки - <b>%s</b>
+			<br>%s
+							 </div>
+ 					</div>", $myrow["main_link1"], $myrow["title"], $myrow["main_link2"], $myrow["image"], $myrow["image_alt"], $myrow["image_title"], $myrow["cost"],$i,$i,$i,$i,$i, $myrow["title"],$i,$myrow["cost"],$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i, $myrow["cost_sb"], $myrow["cost_monitor"], $myrow["cost_keyboard"], $myrow["cost_mouse"], $myrow["cost_loudspeakers"], $myrow["processor"], $myrow["hdd"], $myrow["ram"], $myrow["optical_drive"], $myrow["motherboard"], $myrow["housing"], $myrow["vga"], $myrow["monitor"], $myrow["loudspeakers"], $myrow["information"]);
+$i++;
+}
+
+?>
+<?php
+    $result = mysql_query("SELECT title,image,cost,information,processor,hdd,ram,optical_drive,motherboard,housing,vga FROM kompjuter WHERE type='akciya_main_page'", $db);
+
+    if (!$result)
+    {
+    echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
+    exit (mysql_error());
+    }
+
+    if (mysql_num_rows($result) <= 0)
+    {
+      echo "<p>Нет записей!</p>";
+    exit ();
+    }
+while($myrow = mysql_fetch_array($result))
+    {
+    printf("<div id='komp2' class='akciya' itemscope itemtype='http://schema.org/Product'>
+                                               <h3 id='super-sist' itemprop='name'>%s</h3>
+                                                 <div class='img-slide'><img itemprop='image' src='http://cooler.by/%s' alt='компьютер'/></div>
+                                                   <div class='cena-sist-bl' itemprop='offers' itemscope itemtype='http://schema.org/Offer'>Системный блок <span class='cenagl' itemprop='price'>%s</span> у.е.</div>
+                                                        <form method='post'>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>
+
+
+
+                                                                    <button id='show-ocb-form%s' class='kupi-sist-bl'>Купить</button>
+
+
+                                                                    <div class='ocb-form' id='ocb-form-wrap%s' style='display: none'>
+                                                                        <div class='ocb-form-header'>
+
+                                                                            <div class='ocb-form-header-caption'>Быстрый заказ</div>
+                                                                            <div class='ocb-form-header-close'></div>
+                                                                        </div>
+                                                                        <div id='ocb-form%s'>
+                                                                            <div id='ocb-params%s'>
+                                                                                <input type='hidden' id='titleSystemBlock%s' value='%s'/>
+                                                                                <input type='hidden' id='itemCost%s' value='%s'/>
+                                                                                <div class='ocb-form-field'>
+                                                                                    <label>Ваше имя
+                                                                                        <ins>*</ins>
+                                                                                    </label>
+                                                                                    <input type='text' name='new_order%s[FIO]' value='' id='ocb-id-FIO%s'/>
+
+                                                                                    <div id='ocb-id-FIO%s-error%s' class='ocb-error-msg'>Обязательно укажите ваше имя
+                                                                                    </div>
+
+                                                                                </div>
+                                                                                <div class='ocb-form-field'>
+                                                                                    <label>Контактный телефон
+                                                                                        <ins>*</ins>
+                                                                                    </label>
+                                                                                    <select name='operator%s'
+                                                                                    style='width: 70px; text-align: left; margin-right: 10px' id='operator%s'>
+                                                                                        <option value='velcom'>Velcom</option>
+                                                                                        <option value='mts'>МТС</option>
+                                                                                        <option value='life'>life</option>
+                                                                                    </select><input type='text' name='new_order%s[PHONE]' value='' id='ocb-id-PHONE%s'
+                                                                                style='width: 250px'/>
+
+                                                                                    <div id='ocb-id-PHONE%s-error%s' class='ocb-error-msg'>Обязательно укажите
+                                                                                    контактный телефон
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                                <div class='intaro-modules-button ptichka'>
+                                                                                    <input type='submit' value='Отправить заказ' id='ocb-form-button%s'
+                                                                                    name='ocb_form_button%s'/>
+                                                                                </div>
+                                                                                <div class='ocb-form-loader'></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class='ocb-form-result' id='ocb-form-result%s'>
+                                                                            <div class='ocb-result-icon-success'>Спасибо за заказ!</div>
+                                                                            <div class='ocb-result-icon-fail'>Ошибка!</div>
+
+                                                                            <div class='ocb-result-text'>В ближайшее время наш менеджер свяжется с вами.</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </form>
+
+                                                           <span class='comlekt' itemprop='description'>
+                                                           <p>%s</p>
+                                                           <ul class='opisanie-left'> 
+                                                           <b>Комплектация:</b>                                                        
+                                                           <li>Процессор - <b>%s</b></li>
+                                                           <li>Материнская плата - <b>%s</b></li> 
+                                                           <li>Оперативная память - <b>%s</b></li> 
+                                                           <li>Жёсткий диск - <b>%s</b></li>
+                                                           <li>Видеокарта - <b>%s</b></li>
+                                                           <li>Корпус - <b>%s</b></li>
+                                                           <li>Оптический привод - <b>%s</b></li>
+                                                           </ul></span>
+
+                                                           
+                                           </div>
+                      ", $myrow["title"], $myrow["image"], $myrow["cost"],$i,$i,$i,$i,$i, $myrow["title"],$i,$myrow["cost"],$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i,$i, $myrow["information"], $myrow["processor"], $myrow["motherboard"], $myrow["ram"], $myrow["hdd"], $myrow["vga"], $myrow["housing"], $myrow["optical_drive"]);
+$i++;
+}
+
+
+?>
+ 
+					 
+					 <div id="text_footer">
+					 
+					 <p>Обучающее слайд шоу для начинающих</p>					 
+<div id="container">
+<table style="width:695px;height:340px;z-index:0;border:1px #D2D2D2 solid;background-color:#F0F0F0;" cellpadding="0" cellspacing="0" id="Table2">
+<tr>
+<td align="left" valign="top" style="border:1px #C0C0C0 solid;height:344px;">&nbsp;
+</td>
+</tr>
+</table>
+<div id="SlideShow2" style="position:absolute;z-index:1">
+<img  src="js_index/images/Mater_plata.jpg" alt="Материнская плата" title="Материнская плата">
+<img  src="js_index/images/proc.jpg" alt="Процессор" title="Процессор">
+<img  src="js_index/images/pamjat.jpg" alt="Оперативная память" title="Оперативная память">
+<img  src="js_index/images/disk.jpg" alt="Жесткий диск" title="Жесткий диск">
+<img  src="js_index/images/videokarta.jpg" alt="Видеокарта" title="Видеокарта">
+<img  src="js_index/images/PCI.jpg" alt="Разъем PCI" title="Разъем PCI">
+<img  src="js_index/images/prodazha.jpg" alt="Купить компьютер в Минске" title="Купить компьютер в Минске">
+</div>
+<div id="wb_Shape1" style="position:absolute;z-index:2;" 
+ onclick="jQuery('#SlideShow1').slideshow('previmage');jQuery('#SlideShow2').slideshow('previmage');jQuery('#SlideShow4').slideshow('previmage');return false;"><img src="js_index/images/img0109.png" id="Shape1" alt="компьютеры" title="компьютеры" style="border-width:0;width:33px;height:83px"></div>
+<div id="wb_Shape2" style="position:absolute;z-index:3;" 
+ onclick="jQuery('#SlideShow1').slideshow('nextimage');jQuery('#SlideShow2').slideshow('nextimage');jQuery('#SlideShow4').slideshow('nextimage');return false;"><img src="js_index/images/img0110.png" id="Shape2" alt="купить компьютер в минске" title="купить компьютер в минске" style="border-width:0;width:36px;height:83px"></div>
+<div id="SlideShow1" style="position:absolute;z-index:4">
+<img style="border-width:0;left:0px;top:0px;width:543px;height:65px;" src="js_index/images/1.gif" alt="" title="">
+<img style="border-width:0;left:0px;top:0px;width:543px;height:65px;display:none;" src="js_index/images/2.gif" alt="" title="">
+<img style="border-width:0;left:0px;top:0px;width:543px;height:65px;display:none;" src="js_index/images/3.gif" alt="" title="">
+<img style="border-width:0;left:0px;top:0px;width:543px;height:65px;display:none;" src="js_index/images/4.gif" alt="" title="">
+<img style="border-width:0;left:0px;top:0px;width:543px;height:65px;display:none;" src="js_index/images/5.gif" alt="" title="">
+<img style="border-width:0;left:0px;top:0px;width:543px;height:65px;display:none;" src="js_index/images/6.gif" alt="" title="">
+<img style="border-width:0;left:0px;top:0px;width:543px;height:65px;display:none;" src="js_index/images/7.gif" alt="" title="">
+</div>
+</div>              
+ <br>
+ 
+<b>О магазине Cooler.by.</b>
+<br> Основной приоритет нашей компании - это доступные цены и качественное обслуживание. Подтверждением этого являются отзывы наших клиентов. 
+Занимая лидирующее место по продаже компьютеров не только в Минске но и в других городах Беларуси мы предлагаем большой выбор конфигураций для домашнего пользования, офиса, 
+а также мощные игровые компьютеры. Покупая системный блок также можно приобрести монитор, колонки, клавиатуру, мышь и многое другое. На весь товар распространяется фирменная гарантия. 
+Для проверки работоспособности на системные блоки устанавливается операционная система Windows.
+<br><br>
+<b>Заказ и доставка.</b>
+<br> При заказе наши специалисты проконсультируют Вас. Консультация осуществляется как через онлайн приложение в правом нижнем углу, так и по телефонам, указанным в верхней части сайта. 
+Сборка и подготовка Вашего заказа осуществляется в течении дня после заявки на покупку компьютера. Доставка производится в тот же, либо на следующий день. По Минску доставляет курьер магазина Cooler.by, 
+при этом производится подключение и проверка. По Беларуси - через службу доставки. В данном случае курьера можно задержать до 10 минут и самостоятельно проверить товар, после чего произвести оплату. 
+Оставить отзыв или свое мнение о работе магазина Cooler.by можно на странице <a href="http://cooler.by/otzyvy.html" title="отзывы о магазине Cooler.by"><b>Отзывы</b></a>.
+<br>
+	 <div id="tabl">
+     <h3>Мы осуществляем доставку в следующие города (полный список <a href="dostavka_rb.html" style="color: #0000FF;">тут</a>):</h3>
+	<div id="goroda">
+     <b>Брестская <br>&nbsp;область</b>
+     <br><a href="http://baranovichi.cooler.by">Барановичи</a>
+     <br><a href="http://bereza.cooler.by">Береза</a>
+     <br><a href="http://brest.cooler.by">Брест</a>
+     <br><a href="http://ivacevichi.cooler.by">Ивацевичи</a>
+     <br><a href="http://kobrin.cooler.by">Кобрин</a>
+     <br><a href="http://luninec.cooler.by">Лунинец</a>
+     <br><a href="http://pinsk.cooler.by">Пинск</a>
+</div>	 
+<div id="goroda">
+      <b>Витебская <br>&nbsp;область</b> 
+     <br><a href="http://vitebsk.cooler.by">Витебск</a>
+     <br><a href="http://novopolock.cooler.by">Новополоцк</a>
+     <br><a href="http://orsha.cooler.by">Орша</a>
+     <br><a href="http://polock.cooler.by">Полоцк</a>
+     <br><a href="http://postavy.cooler.by">Поставы</a>
+</div>	 
+<div id="goroda">
+    <b>Гомельская <br>&nbsp;область</b>
+     <br><a href="http://gomel.cooler.by">Гомель</a>
+     <br><a href="http://zhlobin.cooler.by">Жлобин</a>
+     <br><a href="http://kalinkovichi.cooler.by">Калинковичи</a>
+     <br><a href="http://mozyr.cooler.by">Мозырь</a>
+     <br><a href="http://rechica.cooler.by">Речица</a>
+     <br><a href="http://rogachev.cooler.by">Рогачев</a>
+     <br><a href="http://svetlogorsk.cooler.by">Светлогорск</a>
+</div>
+<div id="goroda">
+     <b>Гродненская <br>&nbsp;область</b>
+     <br><a href="http://volkovysk.cooler.by">Волковыск</a>
+     <br><a href="http://grodno.cooler.by">Гродно</a>
+     <br><a href="http://lida.cooler.by">Лида</a>
+	 <br><a href="http://novogrudok.cooler.by">Новогрудок</a>
+	 <br><a href="http://smorgon.cooler.by">Сморгонь</a>
+     <br><a href="http://slonim.cooler.by">Слоним</a>
+</div>
+<div id="goroda">
+    <b>Минская <br>&nbsp;область</b>
+     <br><a href="http://borisov.cooler.by">Борисов</a>
+     <br><a href="http://vileyka.cooler.by">Вилейка</a>
+     <br><a href="http://dzerzhinsk.cooler.by">Дзержинск</a>
+     <br><a href="http://zhodino.cooler.by">Жодино</a>
+     <br><a href="http://molodechno.cooler.by">Молодечно</a>
+     <br><a href="http://sluck.cooler.by">Слуцк</a>
+     <br><a href="http://soligorsk.cooler.by">Солигорск</a>
+</div>
+<div id="goroda">
+     <b>Могилевская <br>&nbsp;область</b>
+     <br><a href="http://bobrujsk.cooler.by">Бобруйск</a>
+	 <br><a href="http://gorki.cooler.by">Горки</a>
+     <br><a href="http://krichev.cooler.by">Кричев</a>
+     <br><a href="http://mogilev.cooler.by">Могилев</a>
+     <br><a href="http://osipovichi.cooler.by">Осиповичи</a>
+</div> 
+     </div>
+     
+<br><br><br><br><br><br><br><br><br><br><br><br><br>О нас: ЧТУП "Варетис" УНП 191309139 юр.адрес 220015 г. Минск, ул. Пономаренко, д.35а, комн.224
+<br>Госрегистрация произведена Минским горисполкомом под номером 191309139 от 16.08.2010г.
+<br>Интернет-магазин зарегистрирован в Торговом реестре РБ 18.02.2011г.
+					 <br>*Бесплатная доставка по Минску при заказе от 100 у.е..</div>
+			</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<hr />
+	<!-- start footer -->
+<?php include ("index/footer.txt"); ?>
+</div>
+<?php include ("index/metrika_jivo.txt"); ?>
+</body>
+
+
+
+
+<script type="text/javascript" src="./js_index/jquery.effects.core.min.js"></script>
+<script type="text/javascript" src="./js_index/jquery.effects.blind.min.js"></script>
+<script type="text/javascript" src="./js_index/jquery.effects.bounce.min.js"></script>
+<script type="text/javascript" src="./js_index/jquery.effects.clip.min.js"></script>
+<script type="text/javascript" src="./js_index/jquery.effects.drop.min.js"></script>
+<script type="text/javascript" src="./js_index/jquery.effects.fold.min.js"></script>
+<script type="text/javascript" src="./js_index/jquery.effects.scale.min.js"></script>
+<script type="text/javascript" src="./js_index/jquery.effects.slide.min.js"></script>
+<script type="text/javascript" src="./js_index/wb.slideshow.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function()
+{
+   jQuery("#SlideShow2").slideshow(
+   {
+      interval: 0,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      effectlength: 1000
+   });
+  jQuery("#SlideShow1").slideshow(
+   {
+      interval: 0,
+      type: 'sequence',
+      effect: 'none',
+      direction: '',
+      effectlength: 1000
+   });
+});
+</script>
+<?php
+
+           for($j=0;$j<=$i;$j++)
+           {
+               printf(" <script type='text/javascript'>
+$(document).ready(function() {
+$('#show-ocb-form{$j}').live('click', function() {
+$('#ocb-form-wrap{$j}').show();
+$('#ocb-form{$j}').show();
+$('#ocb-form-result{$j}').hide();
+return !1;
+});
+
+$('.ocb-form-header-close').live('click', function() {
+$('.ocb-error-msg').each(function(index) { $(this).hide(); });
+$('.ocb-result-icon-success').hide();
+$('.ocb-result-icon-fail').hide();
+$('#ocb-form-wrap{$j}').fadeOut();
+return !1;
+});
+
+$('button.intaro-modules-button.disabled, .intaro-modules-button.disabled input').live('click', function() {
+return false;
+});
+
+$('#ocb-form-button{$j}').live('click', function() {
+$('.ocb-error-msg').each(function(index) { $(this).hide(); });
+var fieldId, fieldVal, checked = !0, self = $(this);
+$('input[name^=\"new_order{$j}\"]').each(function() {
+fieldId = $(this).attr('id');
+fieldVal = $(this).val();
+if (fieldVal=='') {
+$('#' + fieldId + '-error{$j}').show();
+checked = !1;
+}
+});
+if (!checked) return !1;
+$('.intaro-modules-button', $(this)).addClass('disabled');
+$('.ocb-form-loader').show();
+
+if(!$('#ocb-antispam{$j}').length) {
+$('#ocb-params{$j}').prepend(\"<input id='ocb-antispam' type='hidden' name='antispam' value=''>\");
+}
+
+$.ajax({
+url: \"/send_mail.php\",
+data: \"firstname=\" + $(\"#ocb-id-FIO{$j}\").val() + \"&mobile_phone=\" + $(\"#ocb-id-PHONE{$j}\").val() + \"&title=\" + $(\"#titleSystemBlock{$j}\").val() + \"&price=\" + $(\"#itemCost{$j}\").val() + \"&mobile_operator=\" + $(\"#operator{$j}\").val(),
+type: 'POST',
+dataType: 'json',
+error: function(obj, text, err) {
+},
+success: function(data) {
+if(data.ok!='Y') {
+$('.ocb-result-icon-fail').show();
+$('.ocb-result-text').text(data.msg);
+} else {
+$('.ocb-result-icon-success').show();
+if ($('#cart_line{$j}').length > 0)
+$('#cart_line{$j}').html(data.msg);
+}
+$('.ocb-form-loader').hide();
+$('.intaro-modules-button', self).removeClass('disabled');
+$('#ocb-form{$j}').hide();
+$('#ocb-form-result{$j}').show();
+window.setTimeout(function() { $('.ocb-form-header-close').click(); }, 3000);
+}
+});
+return !1;
+});
+});
+
+</script>
+");
+}
+
+?>
+</html>

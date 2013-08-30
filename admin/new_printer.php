@@ -1,4 +1,4 @@
-<?php include ("lock.php"); ?>
+<?php include("lock.php"); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
@@ -14,7 +14,7 @@
 <!-- начало стр -->
 <div id="wrapper">
 
-    <?php include ("index/header-callme.txt"); ?>
+    <?php include("index/header-callme.txt"); ?>
 
     <!-- start page -->
     <div id="page">
@@ -23,7 +23,7 @@
 
             <!-- start menu -->
 
-            <?php include ("index/menu.txt"); ?>
+            <?php include("index/menu.txt"); ?>
 
             <!-- начало Right -->
             <div id="right">
@@ -39,8 +39,7 @@
                     ?>
                     <div id="forma">
                         <?php
-                        if ($_GET['successfully'] == '2')
-                        {
+                        if ($_GET['successfully'] == '2') {
                             echo "<h1 style='color:blue'>Вы ввели не все данные!</h1>";
                         }
                         ?>
@@ -49,32 +48,33 @@
                                 <tr>
                                     <td><label>Тип принтера</label></td>
                                     <td><select name="type" id="type">
-                                        <option value="epson_snpch">Принтеры и МФУ Epson с СНПЧ</option>
-                                        <option value="laser">Принтеры лазерные</option>
-                                        <option value="mfu">МФУ</option>
-                                    </select>
+                                            <option value="epson_snpch">Принтеры и МФУ Epson с СНПЧ</option>
+                                            <option value="laser">Принтеры лазерные</option>
+                                            <option value="mfu">МФУ</option>
+                                        </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><label>Серия <em>(для принтеров и МФУ Epson с СНПЧ)</em></label></td>
                                     <td><select name="series" id="series">
-                                        <option value="epson_stylus">Epson Stylus</option>
-                                        <option value="epson_stylus_photo">Epson Stylus Photo</option>
-                                        <option value="epson_l_series">Epson L-серия</option>
-                                        <option value="epson_workforce">Epson WorkForce</option>
-                                    </select>
+                                            <option value="epson_stylus">Epson Stylus</option>
+                                            <option value="epson_stylus_photo">Epson Stylus Photo</option>
+                                            <option value="epson_l_series">Epson L-серия</option>
+                                            <option value="epson_workforce">Epson WorkForce</option>
+                                        </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><label>Ссылка на маленькое изображение <em>(пример: snpch/small/sn-1.jpg)</em>.
-                                        Изображение предварительно загрузить по ftp. Требование к изображению: ширина
-                                        жесткая <strong>150px</strong>. </label></td>
+                                            Изображение предварительно загрузить по ftp. Требование к изображению:
+                                            ширина
+                                            жесткая <strong>150px</strong>. </label></td>
                                     <td><input name="image_small" type="text" id="image_small" size="60"/></td>
                                 </tr>
                                 <tr>
                                     <td><label>Ссылка на большое изображение <em>(пример: snpch/sn-1.jpg)</em>.
-                                        Изображение предварительно загрузить по ftp. Требование к изображению: нет
-                                        ограничений, но рекомендуется 700*700px по большей стороне. </label></td>
+                                            Изображение предварительно загрузить по ftp. Требование к изображению: нет
+                                            ограничений, но рекомендуется 700*700px по большей стороне. </label></td>
                                     <td><input name="image_big" type="text" id="image_big" size="60"/></td>
                                 </tr>
                                 <tr>
@@ -135,7 +135,7 @@
                                 </tr>
                                 <tr>
                                     <td><label>Прочее <em>(для принудительного перехода строки используйте тег <strong>
-                                        &lt;br /&gt;</strong>)</em></label></td>
+                                                    &lt;br /&gt;</strong>)</em></label></td>
                                     <td><textarea name="information" cols="46" rows="6" id="information"></textarea>
                                     </td>
                                 </tr>
@@ -162,7 +162,8 @@
                                 <tr>
                                     <td><label>Дата <em>(автоматический)</em></label></td>
                                     <td><input name="date" type="text" id="date" size="60"
-                                               value="<?php $date = date("Y-m-d"); echo $date;?>"/></td>
+                                               value="<?php $date = date("Y-m-d");
+                                               echo $date; ?>"/></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"><input type="submit" name="submit" id="submit" value="Добавить"/>
@@ -182,7 +183,7 @@
     </div>
     <hr/>
     <!-- start footer -->
-    <?php include ("index/footer.txt"); ?>
+    <?php include("index/footer.txt"); ?>
 </div>
 </body>
 </html>

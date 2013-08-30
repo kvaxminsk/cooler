@@ -1,6 +1,6 @@
 <?php
-include ("lock.php");
-include ("blocks/bd.php"); /*Connecting to BD!*/
+include("lock.php");
+include("blocks/bd.php"); /*Connecting to BD!*/
 if (isset($_POST['type'])) {
     $type = $_POST['type'];
 }

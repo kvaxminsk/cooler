@@ -1,22 +1,22 @@
 <?php
-include ("lock.php");
-include ("blocks/bd.php");/*Connecting to BD!*/
+include("lock.php");
+include("blocks/bd.php"); /*Connecting to BD!*/
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD /xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <title>Редактирование</title>
-    <link href="default.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="index/index.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="index/index.css" rel="stylesheet" type="text/css" media="screen"/>
     <link rel="shortcut icon" href="favicon.ico"/>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <!-- начало стр -->
 <div id="wrapper">
-    <?php include ("index/header-callme.txt"); ?>
+    <?php include("index/header-callme.txt"); ?>
 
     <!-- start page -->
     <div id="page">
@@ -25,26 +25,23 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
             <!-- start menu -->
 
-            <?php include ("index/menu.txt"); ?>
+            <?php include("index/menu.txt"); ?>
 
             <!-- начало Right -->
             <div id="right">
-                <div id="text"><h1>Редактирование</h1><br /></div>
+                <div id="text"><h1>Редактирование</h1><br/></div>
                 <div id="text">
                     <?php
-                    if (isset($_GET['id_computer_case']))
-                    {
+                    if (isset($_GET['id_computer_case'])) {
                         $idComputerCase = htmlspecialchars(trim($_GET['id_computer_case']));
                     }
                     $result = mysql_query("SELECT * FROM  computer_case WHERE id =" . $idComputerCase, $db);
 
-                    if (!$result)
-                    {
+                    if (!$result) {
                         echo "<p>Запрос на выборку не прошел!<br /><strong>Код ошибки:</strong></p>";
                         exit (mysql_error());
                     }
-                    if (!(mysql_num_rows($result) > 0))
-                    {
+                    if (!(mysql_num_rows($result) > 0)) {
                         echo "<p>Нет записей!</p>";
                         exit ();
                     }
@@ -53,15 +50,17 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                     ?>
 
                     <form id="form1" method="post" action="add_computer_case.php">
-                        <input type="hidden" name="id_computer_case" id="id_computer_case" value="<?php echo  $idComputerCase;?>">
-                        <table  border="0" cellspacing="10" cellpadding="340">
+                        <input type="hidden" name="id_computer_case" id="id_computer_case"
+                               value="<?php echo $idComputerCase; ?>">
+                        <table border="0" cellspacing="10" cellpadding="340">
                             <!-- Процессор (computer_case)-->
                             <tr height="25px">
                                 <td id="td_add_computer_case">
 
 
                                     <label>Название корпуса:</label>
-                                    <input type="text" id="name_computer_case" name="name_computer_case" value="<?php echo $rowComputerCase['name_computer_case'];?>">
+                                    <input type="text" id="name_computer_case" name="name_computer_case"
+                                           value="<?php echo $rowComputerCase['name_computer_case']; ?>">
 
                                     </br>
                                     </br>
@@ -70,7 +69,7 @@ include ("blocks/bd.php");/*Connecting to BD!*/
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <input type="submit" name="submit" id="submit" value="Обновить" />
+                                    <input type="submit" name="submit" id="submit" value="Обновить"/>
                                 </td>
                                 <td></td>
                             </tr>
@@ -82,9 +81,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
             <div style="clear: both;">&nbsp;</div>
         </div>
     </div>
-    <hr />
+    <hr/>
     <!-- start footer -->
-    <?php include ("index/footer.txt"); ?>
+    <?php include("index/footer.txt"); ?>
 </div>
 
 </body>

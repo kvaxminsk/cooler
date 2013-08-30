@@ -1,6 +1,6 @@
 <?php
-include ("lock.php");
-include ("blocks/bd.php"); /*Connecting to BD!*/
+include("lock.php");
+include("blocks/bd.php"); /*Connecting to BD!*/
 if (isset($_POST['title'])) {
     $title = $_POST['title'];
     if ($title == '') {
@@ -130,11 +130,9 @@ if (isset($title) && isset($image) && isset($image_alt) && isset($image_title) &
 
 
     $id = mysql_insert_id();
-    header("Location:/admin/edit_beznal_computer.php?id=" . $id ."&successfully=" . $result ."&change=add");
-}
-else
-{
-    header("Location:/admin/new_beznal_computer.php?successfully=2"."&change=add");
+    header("Location:/admin/edit_beznal_computer.php?id=" . $id . "&successfully=" . $result . "&change=add");
+} else {
+    header("Location:/admin/new_beznal_computer.php?successfully=2" . "&change=add");
 }
 
 ?>

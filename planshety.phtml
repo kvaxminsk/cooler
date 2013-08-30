@@ -3,9 +3,9 @@ include ("blocks/bd.php");/*Connecting to BD!*/
 
 if (!empty($_GET))
 {
-    foreach($_GET as $key => $value)
+foreach($_GET as $key => $value)
 {
-$searchParams[$key] = htmlspecialchars(trim($value));
+    $searchParams[$key] = htmlspecialchars(trim($value));
 }
 $strSgl = "SELECT *,image_name_tablet.id_tablet as id_tablet_image FROM  tablet
 LEFT JOIN number_of_cores_tablet ON number_of_cores_tablet.id_number_of_cores = tablet.number_of_cores
@@ -20,59 +20,59 @@ WHERE";
 
 if((!empty($searchParams["min_cost"])) && ($searchParams["min_cost"] != 'Не важно'))
 {
-$strSgl .= " tablet.cost >= " .  $searchParams["min_cost"] . '   AND ';
+    $strSgl .= " tablet.cost >= '" .  $searchParams["min_cost"] . "'  AND";
 }
 
 if((!empty($searchParams["max_cost"])) && ($searchParams["max_cost"] != 'Не важно'))
 {
-$strSgl .= "   tablet.cost <= " .  $searchParams["max_cost"]. '   AND ';
+$strSgl .= "   tablet.cost <='" .  $searchParams["max_cost"]. "'  AND";
 }
 
 if((!empty($searchParams["select_min_number_of_cores"])) && ($searchParams["select_min_number_of_cores"] != 'Не важно'))
 {
-$strSgl .= " number_of_cores_tablet.name_number_of_cores >= " .  $searchParams["select_min_number_of_cores"] . '   AND ';
+    $strSgl .= " number_of_cores_tablet.name_number_of_cores >= '" .  $searchParams["select_min_number_of_cores"] . "'   AND ";
 }
 if((!empty($searchParams["select_max_number_of_cores"])) && ($searchParams["select_max_number_of_cores"] != 'Не важно'))
 {
-$strSgl .= " number_of_cores_tablet.name_number_of_cores <= " .  $searchParams["select_max_number_of_cores"]. '   AND ';
+    $strSgl .= " number_of_cores_tablet.name_number_of_cores <= '" .  $searchParams["select_max_number_of_cores"]. "'  AND";
 }
 
 if((!empty($searchParams["select_manufacture"])) && ($searchParams["select_manufacture"] != 'Не важно'))
 {
-$strSgl .= " manufacture_tablet.name_manufacture = " .  $searchParams["select_manufacture"]. '   AND ';
+$strSgl .= " manufacture_tablet.name_manufacture = '" .  $searchParams["select_manufacture"]. "'   AND";
 }
 if((!empty($searchParams["min_clock_speed"])) && ($searchParams["min_clock_speed"] != 'Не важно'))
 {
-$strSgl .= " clock_speed_tablet.name_clock_speed >= " .  $searchParams["min_clock_speed"]. '   AND ';
+    $strSgl .= " clock_speed_tablet.name_clock_speed >= '" .  $searchParams["min_clock_speed"]. "'  AND ";
 }
 
 if((!empty($searchParams["select_min_screen_size"])) && ($searchParams["select_min_screen_size"] != 'Не важно'))
 {
-$strSgl .= " screen_size_tablet.name_screen_size >= " .  $searchParams["select_min_screen_size"] . '   AND ';
+    $strSgl .= " screen_size_tablet.name_screen_size >=' " .  $searchParams["select_min_screen_size"] . "'   AND";
 }
 if((!empty($searchParams["select_max_screen_size"])) && ($searchParams["select_max_screen_size"] != 'Не важно'))
 {
-$strSgl .= " screen_size_tablet.name_screen_size <= " .  $searchParams["select_max_screen_size"] . '   AND ';
+$strSgl .= " screen_size_tablet.name_screen_size <=' " .  $searchParams["select_max_screen_size"] . "'   AND ";
 }
 if((!empty($searchParams["select_min_ram"])) && ($searchParams["select_min_ram"] != 'Не важно'))
 {
-$strSgl .= " ram_tablet.name_ram >= " .  $searchParams["select_min_ram"] . '   AND ';
+$strSgl .= " ram_tablet.name_ram >= '" .  $searchParams["select_min_ram"] . "'  AND";
 }
 if((!empty($searchParams["select_max_ram"])) && ($searchParams["select_max_ram"] != 'Не важно'))
 {
-$strSgl .= " ram_tablet.name_ram <= " .  $searchParams["select_max_ram"] . '   AND ';
+$strSgl .= " ram_tablet.name_ram <= '" .  $searchParams["select_max_ram"] . "'   AND ";
 }
 if((!empty($searchParams["select_operating_system"])) && ($searchParams["select_operating_system"] != 'Не важно'))
 {
-$strSgl .= " operating_system_tablet.name_operating_system = " .  $searchParams["select_operating_system"] . '   AND ';
+$strSgl .= " operating_system_tablet.name_operating_system = '" .  $searchParams["select_operating_system"] . "'  AND";
 }
 if((!empty($searchParams["select_min_internal_memory"])) && ($searchParams["select_min_internal_memory"] != 'Не важно'))
 {
-$strSgl .= " internal_memory_tablet.name_internal_memory >= " .  $searchParams["select_min_internal_memory"] . '   AND ';
+    $strSgl .= " internal_memory_tablet.name_internal_memory >= '" .  $searchParams["select_min_internal_memory"] . "'   AND ";
 }
 if((!empty($searchParams["select_max_internal_memory"])) && ($searchParams["select_max_internal_memory"] != 'Не важно'))
 {
-$strSgl .= " internal_memory_tablet.name_internal_memory <= " .  $searchParams["select_max_internal_memory"] . '   AND ';
+    $strSgl .= " internal_memory_tablet.name_internal_memory <= '" .  $searchParams["select_max_internal_memory"] . "'  AND" ;
 }
 if((!empty($searchParams["3g_modem"]))&& ($searchParams["3g_modem"] != 'Не важно'))
 {
@@ -80,7 +80,7 @@ $strSgl .= " tablet.3g_modem = 1 ". '   AND ';
 }
 $strSgl =  substr($strSgl,0,-5);
 $strSgl .=  " ORDER BY tablet.cost ASC";
-//    echo $strSgl;die();
+//echo $strSgl;die();
 /*var_dump($_GET);echo "<br/>";
 var_dump($strSgl);die();  */
 }
@@ -110,7 +110,6 @@ ORDER BY tablet.cost ASC";
     Минске недорого и с гарантией. Обратившись к нам, Вы сможете подобрать в Минске недорогой и очень
     производительный планшет."/>
     <link href="default.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="planshety/planshety.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="css/tablet.css" rel="stylesheet" type="text/css" media="screen" />
     <link rel="shortcut icon" href="favicon.ico"/>
     <script type="text/javascript" src="js/prototype.js"></script>
@@ -162,7 +161,7 @@ ORDER BY tablet.cost ASC";
 <div id='podbor'>
     <h3>Характеристики Планшета</h3>
 
-    <form id="search_with_parameters" name="search_with_parameters" action="planshety.phtml"
+    <form id="search_with_parameters" name="search_with_parameters" action="planshety.html"
           method="get">
         <table cellpadding="10" cellspacing="10">
             <tr align="left">
@@ -304,7 +303,7 @@ ORDER BY tablet.cost ASC";
                 <td>
                     <label>3G модем </label>
                     <?php if (!isset($searchParams)) { ?>
-                    <input type="checkbox" id="3g_modem" name="3g_modem" checked="checked"  value="1">
+                    <input type="checkbox" id="3g_modem" name="3g_modem"  value="1">
                     <?php
                                     } else {
                                         ?>
@@ -316,7 +315,7 @@ ORDER BY tablet.cost ASC";
             </tr>
             <tr align="left">
                 <td class="lineoranz" colspan="2">
-                    <a id="knopka-2" href="http://cooler.by/planshety.phtml">Новый подбор</a>
+                    <a id="knopka-2" href="http://cooler.by/planshety.html">Новый подбор</a>
                     <input id="knopka-1" type="submit" value="Подобрать">
                 </td>
             </tr>
@@ -339,7 +338,7 @@ while($myrow = mysql_fetch_array($result))
 <div id='komp'>
     <h3><?php echo $myrow["name_tablet"];?></h3>
 
-    <span class="img-slide"><a href="planshet.phtml?id=<?php echo $myrow["id_tablet"];?>" ><img  src='planshety/<?php echo $myrow["name_image_name"];?>_small.jpg' alt='Планшет' title='Планшет'/></a></span>
+    <span class="img-slide"><a href="planshet.html?id=<?php echo $myrow["id_tablet"];?>" ><img  src='planshety/<?php echo $myrow["name_image_name"];?>_small.jpg' alt='Планшет' title='Планшет'/></a></span>
     <form method='post'>
         <table style="float:right;margin-top: 24px;margin-right: 100px;margin-bottom: -5px">
             <tr>
@@ -429,7 +428,7 @@ while($myrow = mysql_fetch_array($result))
 <?php
                 $i++;
             }
-            ?>
+?>
 
 <div id="text_footer">
 

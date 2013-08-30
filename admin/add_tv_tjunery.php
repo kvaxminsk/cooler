@@ -1,6 +1,6 @@
 <?php
-include ("lock.php");
-include ("blocks/bd.php"); /*Connecting to BD!*/
+include("lock.php");
+include("blocks/bd.php"); /*Connecting to BD!*/
 if (isset($_POST['image_small'])) {
     $image_small = $_POST['image_small'];
     if ($image_small == '') {

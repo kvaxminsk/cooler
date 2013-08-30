@@ -1,31 +1,39 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-	background: #F5F5F5 url('images/img01.jpg') repeat-x;
+    background: #F5F5F5 url('images/img01.jpg') repeat-x;
     background-attachment: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	color: #474848;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #474848;
 }
 
 p, ul, ol {
-	line-height: 170%;
+    line-height: 170%;
 }
+
 a {
-	text-decoration: none;
-	color: #1D62B3;
+    text-decoration: none;
+    color: #1D62B3;
 }
+
 a:hover {
-	background: none;
-	color: #E43C15;
+    background: none;
+    color: #E43C15;
 }
+
 hr {
-	display: none;
+    display: none;
 }
-img {border: none;}
-/* ��� 
+
+img {
+    border: none;
+}
+
+/* ���
 
 #wrapper {
 	background: url('images/img08.gif') repeat-x left bottom;
@@ -34,155 +42,217 @@ img {border: none;}
  ���� */
 
 #menu {
-	height: 42px;
-	width: 960px;
-	margin: 0 auto;
+    height: 42px;
+    width: 960px;
+    margin: 0 auto;
 }
+
 #menu ul {
-	margin: 0 0 0 0px;
-	padding: 0;
-	list-style: none;
-	line-height: normal;
+    margin: 0 0 0 0px;
+    padding: 0;
+    list-style: none;
+    line-height: normal;
 }
+
 #menu li {
-	display: inline;
+    display: inline;
 }
+
 #menu a {
-	float: left;
-	height: 21px;
-	padding: 8px 17px 0px 18px;
-	font-size: 15px;
-	color: #000;
+    float: left;
+    height: 21px;
+    padding: 8px 17px 0px 18px;
+    font-size: 15px;
+    color: #000;
     background: #fff;
     margin-right: 340px;
     margin-top: 2px;
 }
+
 #menu a:hover {
-	background: #333333;
-	color: #FCFDDF;
+    background: #333333;
+    color: #FCFDDF;
 }
 
 /* Header */
 
 #header {
     margin: 0 auto;
-	height: 90px;
-	width: 960px;
+    height: 90px;
+    width: 960px;
 }
 
 #tel {
     float: right;
-	margin: 12px 0px 0 0px;
-	font: normal 15px "trebuchet ms";
+    margin: 12px 0px 0 0px;
+    font: normal 15px "trebuchet ms";
 }
+
 #dostavka {
     float: right;
-	margin: 12px 0px 0 15px;
-	font: normal 15px "trebuchet ms";
+    margin: 12px 0px 0 15px;
+    font: normal 15px "trebuchet ms";
 }
+
 #glv_komp {
     float: right;
-	margin-right: 30px;
+    margin-right: 30px;
     margin-top: 4px;
 }
+
 #logo {
-    margin: -60px  0px 0px 360px;
-	border: none;
+    margin: -60px 0px 0px 360px;
+    border: none;
 }
 
 /* Page */
 
 #page {
-	width: 960px;
-	margin: 0 auto;
-	background: #FFFFFF url('images/img06.gif');
+    width: 960px;
+    margin: 0 auto;
+    background: #FFFFFF url('images/img06.gif');
 }
+
 #bgtop {
-	height: 20px;
-	background: url('images/img07.gif');
+    height: 20px;
+    background: url('images/img07.gif');
 }
+
 #bgbottom {
-	padding-bottom: 20px;
-	background: url('images/img09.gif') no-repeat left bottom;
+    padding-bottom: 20px;
+    background: url('images/img09.gif') no-repeat left bottom;
 }
+
 #page ul {
-	list-style: none;
+    list-style: none;
 }
+
 .sidebar a {
-	background: none;
+    background: none;
 }
 
 /* Sidebar2*/
 
 #sidebar {
-	float: left;
-	width: 212px;
-	margin: -14px 0 200px 8px;
+    float: left;
+    width: 212px;
+    margin: -14px 0 200px 8px;
 }
+
 #sidebar ul {
-	line-height: normal;
+    line-height: normal;
 }
+
 #sidebar ul h4 {
     height: 19px;
-	width: 203px;
-	background-image: url('images/fon.gif');
-	margin: 12px 0 0 -7px;
-	padding: 5px 0 0 15px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 14px;
+    width: 203px;
+    background-image: url('images/fon.gif');
+    margin: 12px 0 0 -7px;
+    padding: 5px 0 0 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
 }
 
 #sidebar li {
-	padding: 5px 0 2px 25px;
-	background: url('images/img11.gif') no-repeat 10px 10px;
+    padding: 5px 0 2px 25px;
+    background: url('images/img11.gif') no-repeat 10px 10px;
 }
-
 
 /* Footer */
 
 #footer {
-	width: 960px;
-	height: 73px;
-	margin: 0 auto;
-	background: url('images/img10.gif') no-repeat;
+    width: 960px;
+    height: 73px;
+    margin: 0 auto;
+    background: url('images/img10.gif') no-repeat;
 }
 
 #footer p {
-	padding-top: 20px;
-	text-align: center;
-	font-size: 11px;
-	font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
 }
-#forma {border:1px double #CCCCCC; border-width:2px; padding:15px; width:680px; margin:5px;}
-#group_main{border:2px solid #000; padding:5px;}
+
+#forma {
+    border: 1px double #CCCCCC;
+    border-width: 2px;
+    padding: 15px;
+    width: 680px;
+    margin: 5px;
+}
+
+#group_main {
+    border: 2px solid #000;
+    padding: 5px;
+}
+
 .cena-slide {
     color: #E43C15;
     font-size: 13px;
 }
+
 #table_edit {
-border:1px double #CCCCCC; 
-margin-left: 8px;
-width: 710px;
+    border: 1px double #CCCCCC;
+    margin-left: 8px;
+    width: 710px;
 }
+
 #table_top {
     margin-bottom: 20px;
 }
-#table_icon {width:16px; height:16px; margin:5px;}
-#td_edit {border:1px double #CCCCCC; text-align:center; vertical-align:middle;}
-#td_edit1 {width:620px; border:1px double #CCCCCC; vertical-align:middle;}
+
+#table_icon {
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+}
+
+#td_edit {
+    border: 1px double #CCCCCC;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#td_edit1 {
+    width: 620px;
+    border: 1px double #CCCCCC;
+    vertical-align: middle;
+}
 
 input#go {
-    text-indent:-9999px;
-    line-height:0;
-	background: url(images/delete_red.png) no-repeat;
-    height:16px;
-    width:16px;
-	margin:5px;
+    text-indent: -9999px;
+    line-height: 0;
+    background: url(images/delete_red.png) no-repeat;
+    height: 16px;
+    width: 16px;
+    margin: 5px;
 }
-#td_radio {width:20px; border:1px double #CCCCCC; vertical-align:middle; text-align:center;}
-#td_tabl_sbor {text-align:center; font:bold 14px Verdana, Geneva, sans-serif; padding:5px;}
+
+#td_radio {
+    width: 20px;
+    border: 1px double #CCCCCC;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#td_tabl_sbor {
+    text-align: center;
+    font: bold 14px Verdana, Geneva, sans-serif;
+    padding: 5px;
+}
+
 /*class*/
-.td_edit {border:1px double #CCCCCC; text-align:center; vertical-align:middle;}
-.td_edit1 {width:620px; border:1px double #CCCCCC; vertical-align:middle;}
+.td_edit {
+    border: 1px double #CCCCCC;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.td_edit1 {
+    width: 620px;
+    border: 1px double #CCCCCC;
+    vertical-align: middle;
+}

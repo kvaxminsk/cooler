@@ -7,8 +7,8 @@
  * To change this template use File | Settings | File Templates.
  */
 
-include ("lock.php");
-include ("blocks/bd.php"); /*Connecting to BD!*/
+include("lock.php");
+include("blocks/bd.php"); /*Connecting to BD!*/
 
 echo '<option value="0" selected="selected">Корпус</option>';
 
@@ -22,7 +22,7 @@ if (isset($_POST['id_system_block'])) {
     $resultSelectComputerCase = mysql_query("SELECT computer_case.* FROM  computer_case, computer_case_system_block WHERE computer_case.id= computer_case_system_block.id_computer_case  AND computer_case_system_block.id_system_block = " . 0, $db);
 }
 while ($row = mysql_fetch_assoc($resultSelectComputerCase)) {
-    echo  '<option value="' . $row['id'] . '">' . $row['name_computer_case'] . '</option>';
+    echo '<option value="' . $row['id'] . '">' . $row['name_computer_case'] . '</option>';
 }
 
 

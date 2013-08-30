@@ -185,9 +185,9 @@ h1{
 }
 .msh {
     float: left;
-	width: 34px;
+	width: 40px;
     margin-left: 15px;		
-    text-align: center;
+    text-align: left;
 }
 .kln {
     float: left;
@@ -235,7 +235,7 @@ h1{
    margin: 0 0 -6px 7px;
 }
 
-/* популярные_товары */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ_пїЅпїЅпїЅпїЅпїЅпїЅ */
 #popul_tov {
     margin: 8px 0 0 -210px;
 	font-size: 12px;
